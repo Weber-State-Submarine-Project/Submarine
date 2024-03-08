@@ -10,16 +10,21 @@ class ServoController:
     
         servo.value = position
 
+    ''' The following functions will need to be modified once Hardware aquired '''
     def turnHardLeft():
+        ''' Turns Submarine Hard Right '''
         return
 
     def turnSoftLeft():
+        ''' Turns Submarine Soft Left'''
         return
 
     def turnHardRight():
+        ''' Turns Submarine Hard Right '''
         return
 
     def turnSoftRight():
+        ''' Turns Submarine Soft Right '''
         return
 
     def staightenUp():
