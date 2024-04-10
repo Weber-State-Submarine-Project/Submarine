@@ -2,6 +2,8 @@ from gpiozero import Servo as s
 from time import sleep
 import threading
 
+SW_Version = 1.0
+
 class ServoController:
     def moveServo(servo, position):
         ''' Moves a servo given a position '''
@@ -11,23 +13,43 @@ class ServoController:
         servo.value = position
 
     ''' The following functions will need to be modified once Hardware aquired '''
-    def turnHardLeft():
+    def turnHardLeft(left_servo, right_servo):
         ''' Turns Submarine Hard Right '''
-        return
+        
+        left = 1 # CHANGE WHEN HARDWARE IS AQUIRED
+        
+        moveServo(left_servo, left)
+        moveServo(right_servo, left)
+        
 
-    def turnSoftLeft():
+    def turnSoftLeft(left_servo, right_servo):
         ''' Turns Submarine Soft Left'''
-        return
+        
+        left = .5 # CHANGE WHEN HARDWARE IS AQUIRED
+        
+        moveServo(left_servo, left)
+        moveServo(right_servo, left)
 
-    def turnHardRight():
+    def turnHardRight(left_servo, right_servo):
         ''' Turns Submarine Hard Right '''
-        return
 
-    def turnSoftRight():
+        right = -1 # CHANGE WHEN HARDWARE IS AQUIRED
+        
+        moveServo(left_servo, right)
+        moveServo(right_servo, right)
+
+    def turnSoftRight(left_servo, right_servo):
         ''' Turns Submarine Soft Right '''
-        return
+        
+        right = -.5 # CHANGE WHEN HARDWARE IS AQUIRED
+        
+        moveServo(left_servo, right)
+        moveServo(right_servo, right)
 
-    def staightenUp():
+    def staightenUp(left_servo, right_servo):
         ''' return servos to neautral to swim straight '''
-        servo.value = 0 # Assuming 0 is neutral
-        return
+        
+        straight = 0 # Assuming 0 is neutral
+
+        moveServo(left_servo, straight)
+        moveServo(right_servo, straight)
