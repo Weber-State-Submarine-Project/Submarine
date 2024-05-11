@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="grid_map_rviz_plugin.cppcheck"
+  tests="4"
+  errors="0"
+  failures="0"
+  time="0.000"
+  skipped="4"
+>
+  <testcase
+    name="include/grid_map_rviz_plugin/GridMapDisplay.hpp"
+    classname="grid_map_rviz_plugin.cppcheck"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="include/grid_map_rviz_plugin/GridMapVisual.hpp"
+    classname="grid_map_rviz_plugin.cppcheck"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="src/GridMapDisplay.cpp"
+    classname="grid_map_rviz_plugin.cppcheck"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="src/GridMapVisual.cpp"
+    classname="grid_map_rviz_plugin.cppcheck"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <system-err>Tests Skipped due to cppcheck 2.7 performance issues</system-err>
+</testsuite>

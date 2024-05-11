@@ -1,0 +1,288 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_core':
+ - /home/submarine/gridmap_ws/build/grid_map_core/grid_map_core-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml
+
+[==========] Running 91 tests from 31 test suites.
+[----------] Global test environment set-up.
+[----------] 7 tests from CubicConvolutionInterpolation
+[ RUN      ] CubicConvolutionInterpolation.FlatWorld
+[       OK ] CubicConvolutionInterpolation.FlatWorld (0 ms)
+[ RUN      ] CubicConvolutionInterpolation.RationalFunctionWorld
+[       OK ] CubicConvolutionInterpolation.RationalFunctionWorld (4 ms)
+[ RUN      ] CubicConvolutionInterpolation.SaddleWorld
+[       OK ] CubicConvolutionInterpolation.SaddleWorld (1 ms)
+[ RUN      ] CubicConvolutionInterpolation.SecondOrderPolyWorld
+[       OK ] CubicConvolutionInterpolation.SecondOrderPolyWorld (0 ms)
+[ RUN      ] CubicConvolutionInterpolation.SineWorld
+[       OK ] CubicConvolutionInterpolation.SineWorld (9 ms)
+[ RUN      ] CubicConvolutionInterpolation.TanhWorld
+[       OK ] CubicConvolutionInterpolation.TanhWorld (1 ms)
+[ RUN      ] CubicConvolutionInterpolation.GaussianWorld
+[       OK ] CubicConvolutionInterpolation.GaussianWorld (2 ms)
+[----------] 7 tests from CubicConvolutionInterpolation (17 ms total)
+
+[----------] 7 tests from CubicInterpolation
+[ RUN      ] CubicInterpolation.FlatWorld
+[       OK ] CubicInterpolation.FlatWorld (0 ms)
+[ RUN      ] CubicInterpolation.RationalFunctionWorld
+[       OK ] CubicInterpolation.RationalFunctionWorld (3 ms)
+[ RUN      ] CubicInterpolation.SaddleWorld
+[       OK ] CubicInterpolation.SaddleWorld (1 ms)
+[ RUN      ] CubicInterpolation.SecondOrderPolyWorld
+[       OK ] CubicInterpolation.SecondOrderPolyWorld (0 ms)
+[ RUN      ] CubicInterpolation.SineWorld
+[       OK ] CubicInterpolation.SineWorld (10 ms)
+[ RUN      ] CubicInterpolation.TanhWorld
+[       OK ] CubicInterpolation.TanhWorld (0 ms)
+[ RUN      ] CubicInterpolation.GaussianWorld
+[       OK ] CubicInterpolation.GaussianWorld (3 ms)
+[----------] 7 tests from CubicInterpolation (17 ms total)
+
+[----------] 2 tests from PositionFromIndex
+[ RUN      ] PositionFromIndex.Simple
+[       OK ] PositionFromIndex.Simple (0 ms)
+[ RUN      ] PositionFromIndex.CircularBuffer
+[       OK ] PositionFromIndex.CircularBuffer (0 ms)
+[----------] 2 tests from PositionFromIndex (0 ms total)
+
+[----------] 3 tests from IndexFromPosition
+[ RUN      ] IndexFromPosition.Simple
+[       OK ] IndexFromPosition.Simple (0 ms)
+[ RUN      ] IndexFromPosition.EdgeCases
+[       OK ] IndexFromPosition.EdgeCases (0 ms)
+[ RUN      ] IndexFromPosition.CircularBuffer
+[       OK ] IndexFromPosition.CircularBuffer (0 ms)
+[----------] 3 tests from IndexFromPosition (0 ms total)
+
+[----------] 3 tests from checkIfPositionWithinMap
+[ RUN      ] checkIfPositionWithinMap.Inside
+[       OK ] checkIfPositionWithinMap.Inside (0 ms)
+[ RUN      ] checkIfPositionWithinMap.Outside
+[       OK ] checkIfPositionWithinMap.Outside (0 ms)
+[ RUN      ] checkIfPositionWithinMap.EdgeCases
+[       OK ] checkIfPositionWithinMap.EdgeCases (0 ms)
+[----------] 3 tests from checkIfPositionWithinMap (0 ms total)
+
+[----------] 1 test from getIndexShiftFromPositionShift
+[ RUN      ] getIndexShiftFromPositionShift.All
+[       OK ] getIndexShiftFromPositionShift.All (0 ms)
+[----------] 1 test from getIndexShiftFromPositionShift (0 ms total)
+
+[----------] 1 test from getPositionShiftFromIndexShift
+[ RUN      ] getPositionShiftFromIndexShift.All
+[       OK ] getPositionShiftFromIndexShift.All (0 ms)
+[----------] 1 test from getPositionShiftFromIndexShift (0 ms total)
+
+[----------] 1 test from checkIfIndexInRange
+[ RUN      ] checkIfIndexInRange.All
+[       OK ] checkIfIndexInRange.All (0 ms)
+[----------] 1 test from checkIfIndexInRange (0 ms total)
+
+[----------] 1 test from boundIndexToRange
+[ RUN      ] boundIndexToRange.All
+[       OK ] boundIndexToRange.All (0 ms)
+[----------] 1 test from boundIndexToRange (0 ms total)
+
+[----------] 1 test from wrapIndexToRange
+[ RUN      ] wrapIndexToRange.All
+[       OK ] wrapIndexToRange.All (0 ms)
+[----------] 1 test from wrapIndexToRange (0 ms total)
+
+[----------] 2 tests from boundPositionToRange
+[ RUN      ] boundPositionToRange.Simple
+[       OK ] boundPositionToRange.Simple (0 ms)
+[ RUN      ] boundPositionToRange.Position
+[       OK ] boundPositionToRange.Position (0 ms)
+[----------] 2 tests from boundPositionToRange (0 ms total)
+
+[----------] 6 tests from getSubmapInformation
+[ RUN      ] getSubmapInformation.Simple
+[       OK ] getSubmapInformation.Simple (0 ms)
+[ RUN      ] getSubmapInformation.Zero
+[       OK ] getSubmapInformation.Zero (0 ms)
+[ RUN      ] getSubmapInformation.ExceedingBoundaries
+[       OK ] getSubmapInformation.ExceedingBoundaries (0 ms)
+[ RUN      ] getSubmapInformation.CircularBuffer
+[       OK ] getSubmapInformation.CircularBuffer (0 ms)
+[ RUN      ] getSubmapInformation.Debug1
+[       OK ] getSubmapInformation.Debug1 (0 ms)
+[ RUN      ] getSubmapInformation.Debug2
+[       OK ] getSubmapInformation.Debug2 (0 ms)
+[----------] 6 tests from getSubmapInformation (0 ms total)
+
+[----------] 3 tests from getBufferRegionsForSubmap
+[ RUN      ] getBufferRegionsForSubmap.Trivial
+[       OK ] getBufferRegionsForSubmap.Trivial (0 ms)
+[ RUN      ] getBufferRegionsForSubmap.Simple
+[       OK ] getBufferRegionsForSubmap.Simple (0 ms)
+[ RUN      ] getBufferRegionsForSubmap.CircularBuffer
+[       OK ] getBufferRegionsForSubmap.CircularBuffer (0 ms)
+[----------] 3 tests from getBufferRegionsForSubmap (0 ms total)
+
+[----------] 2 tests from checkIncrementIndex
+[ RUN      ] checkIncrementIndex.Simple
+[       OK ] checkIncrementIndex.Simple (0 ms)
+[ RUN      ] checkIncrementIndex.CircularBuffer
+[       OK ] checkIncrementIndex.CircularBuffer (0 ms)
+[----------] 2 tests from checkIncrementIndex (0 ms total)
+
+[----------] 2 tests from checkIncrementIndexForSubmap
+[ RUN      ] checkIncrementIndexForSubmap.Simple
+[       OK ] checkIncrementIndexForSubmap.Simple (0 ms)
+[ RUN      ] checkIncrementIndexForSubmap.CircularBuffer
+[       OK ] checkIncrementIndexForSubmap.CircularBuffer (0 ms)
+[----------] 2 tests from checkIncrementIndexForSubmap (0 ms total)
+
+[----------] 1 test from getIndexFromLinearIndex
+[ RUN      ] getIndexFromLinearIndex.Simple
+[       OK ] getIndexFromLinearIndex.Simple (0 ms)
+[----------] 1 test from getIndexFromLinearIndex (0 ms total)
+
+[----------] 5 tests from GridMap
+[ RUN      ] GridMap.CopyConstructor
+[       OK ] GridMap.CopyConstructor (0 ms)
+[ RUN      ] GridMap.CopyAssign
+[       OK ] GridMap.CopyAssign (0 ms)
+[ RUN      ] GridMap.Move
+[       OK ] GridMap.Move (0 ms)
+[ RUN      ] GridMap.Transform
+[       OK ] GridMap.Transform (1 ms)
+[ RUN      ] GridMap.ClipToMap
+[       OK ] GridMap.ClipToMap (0 ms)
+[----------] 5 tests from GridMap (1 ms total)
+
+[----------] 3 tests from AddDataFrom
+[ RUN      ] AddDataFrom.ExtendMapAligned
+[       OK ] AddDataFrom.ExtendMapAligned (0 ms)
+[ RUN      ] AddDataFrom.ExtendMapNotAligned
+[       OK ] AddDataFrom.ExtendMapNotAligned (0 ms)
+[ RUN      ] AddDataFrom.CopyData
+[       OK ] AddDataFrom.CopyData (0 ms)
+[----------] 3 tests from AddDataFrom (0 ms total)
+
+[----------] 2 tests from ValueAtPosition
+[ RUN      ] ValueAtPosition.NearestNeighbor
+[       OK ] ValueAtPosition.NearestNeighbor (0 ms)
+[ RUN      ] ValueAtPosition.LinearInterpolated
+[       OK ] ValueAtPosition.LinearInterpolated (0 ms)
+[----------] 2 tests from ValueAtPosition (0 ms total)
+
+[----------] 2 tests from GridMapIterator
+[ RUN      ] GridMapIterator.Simple
+[       OK ] GridMapIterator.Simple (0 ms)
+[ RUN      ] GridMapIterator.LinearIndex
+[       OK ] GridMapIterator.LinearIndex (0 ms)
+[----------] 2 tests from GridMapIterator (0 ms total)
+
+[----------] 6 tests from LineIterator
+[ RUN      ] LineIterator.StartOutsideMap
+[       OK ] LineIterator.StartOutsideMap (0 ms)
+[ RUN      ] LineIterator.EndOutsideMap
+[       OK ] LineIterator.EndOutsideMap (0 ms)
+[ RUN      ] LineIterator.StartAndEndOutsideMap
+[       OK ] LineIterator.StartAndEndOutsideMap (0 ms)
+[ RUN      ] LineIterator.StartAndEndOutsideMapWithoutIntersectingMap
+[       OK ] LineIterator.StartAndEndOutsideMapWithoutIntersectingMap (0 ms)
+[ RUN      ] LineIterator.MovedMap
+[       OK ] LineIterator.MovedMap (0 ms)
+[ RUN      ] LineIterator.StartAndEndOutsideMovedMap
+[       OK ] LineIterator.StartAndEndOutsideMovedMap (0 ms)
+[----------] 6 tests from LineIterator (0 ms total)
+
+[----------] 1 test from EllipseIterator
+[ RUN      ] EllipseIterator.OneCellWideEllipse
+[       OK ] EllipseIterator.OneCellWideEllipse (0 ms)
+[----------] 1 test from EllipseIterator (0 ms total)
+
+[----------] 2 tests from SubmapIterator
+[ RUN      ] SubmapIterator.Simple
+[       OK ] SubmapIterator.Simple (0 ms)
+[ RUN      ] SubmapIterator.CircularBuffer
+[       OK ] SubmapIterator.CircularBuffer (0 ms)
+[----------] 2 tests from SubmapIterator (0 ms total)
+
+[----------] 5 tests from PolygonIterator
+[ RUN      ] PolygonIterator.FullCover
+[       OK ] PolygonIterator.FullCover (0 ms)
+[ RUN      ] PolygonIterator.Outside
+[       OK ] PolygonIterator.Outside (0 ms)
+[ RUN      ] PolygonIterator.Square
+[       OK ] PolygonIterator.Square (0 ms)
+[ RUN      ] PolygonIterator.TopLeftTriangle
+[       OK ] PolygonIterator.TopLeftTriangle (0 ms)
+[ RUN      ] PolygonIterator.MoveMap
+[       OK ] PolygonIterator.MoveMap (0 ms)
+[----------] 5 tests from PolygonIterator (0 ms total)
+
+[----------] 7 tests from Polygon
+[ RUN      ] Polygon.getCentroidTriangle
+[       OK ] Polygon.getCentroidTriangle (0 ms)
+[ RUN      ] Polygon.getCentroidRectangle
+[       OK ] Polygon.getCentroidRectangle (0 ms)
+[ RUN      ] Polygon.getBoundingBox
+[       OK ] Polygon.getBoundingBox (0 ms)
+[ RUN      ] Polygon.convexHullPoints
+[       OK ] Polygon.convexHullPoints (0 ms)
+[ RUN      ] Polygon.convexHullPolygon
+[       OK ] Polygon.convexHullPolygon (0 ms)
+[ RUN      ] Polygon.convexHullCircles
+[       OK ] Polygon.convexHullCircles (0 ms)
+[ RUN      ] Polygon.convexHullCircle
+[       OK ] Polygon.convexHullCircle (0 ms)
+[----------] 7 tests from Polygon (0 ms total)
+
+[----------] 2 tests from convertToInequalityConstraints
+[ RUN      ] convertToInequalityConstraints.triangle1
+[       OK ] convertToInequalityConstraints.triangle1 (0 ms)
+[ RUN      ] convertToInequalityConstraints.triangle2
+[       OK ] convertToInequalityConstraints.triangle2 (0 ms)
+[----------] 2 tests from convertToInequalityConstraints (0 ms total)
+
+[----------] 1 test from offsetInward
+[ RUN      ] offsetInward.triangle
+[       OK ] offsetInward.triangle (0 ms)
+[----------] 1 test from offsetInward (0 ms total)
+
+[----------] 2 tests from triangulation
+[ RUN      ] triangulation.triangle
+[       OK ] triangulation.triangle (0 ms)
+[ RUN      ] triangulation.rectangle
+[       OK ] triangulation.rectangle (0 ms)
+[----------] 2 tests from triangulation (0 ms total)
+
+[----------] 6 tests from EigenMatrixBaseAddons
+[ RUN      ] EigenMatrixBaseAddons.numberOfFinites
+[       OK ] EigenMatrixBaseAddons.numberOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.sumOfFinites
+[       OK ] EigenMatrixBaseAddons.sumOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.meanOfFinites
+[       OK ] EigenMatrixBaseAddons.meanOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.minCoeffOfFinites
+[       OK ] EigenMatrixBaseAddons.minCoeffOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.maxCoeffOfFinites
+[       OK ] EigenMatrixBaseAddons.maxCoeffOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.clamp
+[       OK ] EigenMatrixBaseAddons.clamp (0 ms)
+[----------] 6 tests from EigenMatrixBaseAddons (0 ms total)
+
+[----------] 1 test from SpiralIterator
+[ RUN      ] SpiralIterator.CenterOutOfMap
+[       OK ] SpiralIterator.CenterOutOfMap (0 ms)
+[----------] 1 test from SpiralIterator (0 ms total)
+
+[----------] 3 tests from SlidingWindowIterator
+[ RUN      ] SlidingWindowIterator.WindowSize3Cutoff
+[       OK ] SlidingWindowIterator.WindowSize3Cutoff (0 ms)
+[ RUN      ] SlidingWindowIterator.WindowSize5
+[       OK ] SlidingWindowIterator.WindowSize5 (0 ms)
+[ RUN      ] SlidingWindowIterator.WindowSize3Inside
+[       OK ] SlidingWindowIterator.WindowSize3Inside (0 ms)
+[----------] 3 tests from SlidingWindowIterator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 91 tests from 31 test suites ran. (35 ms total)
+[  PASSED  ] 91 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml'
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml'

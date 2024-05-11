@@ -1,0 +1,28 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_sdf/test_results/grid_map_sdf/uncrustify.xunit.xml
+
+No code style divergence in file 'include/grid_map_sdf/SignedDistanceField.hpp'
+
+No code style divergence in file 'include/grid_map_sdf/distance_transform/dt.hpp'
+
+No code style divergence in file 'include/grid_map_sdf/distance_transform/image.hpp'
+
+No code style divergence in file 'include/grid_map_sdf/distance_transform/imconv.hpp'
+
+No code style divergence in file 'include/grid_map_sdf/distance_transform/imutil.hpp'
+
+No code style divergence in file 'include/grid_map_sdf/distance_transform/misc.hpp'
+
+No code style divergence in file 'include/grid_map_sdf/distance_transform/pnmfile.hpp'
+
+No code style divergence in file 'src/SignedDistanceField.cpp'
+
+No code style divergence in file 'test/SignedDistanceFieldTest.cpp'
+
+No code style divergence in file 'test/test_grid_map_sdf.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_sdf/test_results/grid_map_sdf/uncrustify.xunit.xml'

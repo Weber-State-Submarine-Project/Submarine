@@ -1,0 +1,56 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cpplint.xunit.xml --filters=-legal/copyright,-build/include_order
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/FiltersDemo.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/ImageToGridmapDemo.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/InterpolationDemo.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/IteratorsDemo.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/OctomapToGridmapDemo.hpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/FiltersDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/ImageToGridmapDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/InterpolationDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/IteratorsDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/OctomapToGridmapDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/filters_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/image_to_gridmap_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/interpolation_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/iterator_benchmark.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/iterators_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/move_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/normal_filter_comparison_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/octomap_to_gridmap_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/opencv_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/resolution_change_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/simple_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/tutorial_demo_node.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cpplint.xunit.xml'

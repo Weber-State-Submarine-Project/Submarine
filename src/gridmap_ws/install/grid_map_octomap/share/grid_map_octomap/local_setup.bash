@@ -1,0 +1,1 @@
+/home/submarine/gridmap_ws/build/grid_map_octomap/ament_cmake_environment_hooks/local_setup.bash

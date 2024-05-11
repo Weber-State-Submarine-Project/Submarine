@@ -1,0 +1,170 @@
+[0.068s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_cv': CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cv:/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/gridmap_ws/install/grid_map:/home/submarine/gridmap_ws/install/grid_map_demos:/home/submarine/gridmap_ws/install/grid_map_visualization:/home/submarine/gridmap_ws/install/grid_map_sdf:/home/submarine/gridmap_ws/install/grid_map_rviz_plugin:/home/submarine/gridmap_ws/install/grid_map_pcl:/home/submarine/gridmap_ws/install/grid_map_loader:/home/submarine/gridmap_ws/install/grid_map_filters:/home/submarine/gridmap_ws/install/grid_map_ros:/home/submarine/gridmap_ws/install/grid_map_octomap:/home/submarine/gridmap_ws/install/grid_map_msgs:/home/submarine/gridmap_ws/install/grid_map_costmap_2d:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_cv/lib:/home/submarine/gridmap_ws/install/grid_map_demos/lib:/home/submarine/gridmap_ws/install/grid_map_visualization/lib:/home/submarine/gridmap_ws/install/grid_map_sdf/lib:/home/submarine/gridmap_ws/install/grid_map_rviz_plugin/lib:/home/submarine/gridmap_ws/install/grid_map_pcl/lib:/home/submarine/gridmap_ws/install/grid_map_loader/lib:/home/submarine/gridmap_ws/install/grid_map_filters/lib:/home/submarine/gridmap_ws/install/grid_map_ros/lib:/home/submarine/gridmap_ws/install/grid_map_octomap/lib:/home/submarine/gridmap_ws/install/grid_map_msgs/lib:/home/submarine/gridmap_ws/install/grid_map_core/lib:/home/submarine/submarine/ros_ws/install/ros_bt/lib:/home/submarine/submarine/ros_ws/install/ros_interfaces/lib:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces/lib:/home/submarine/submarine/ros_ws/install/behaviortree_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.081s] UpdateCTestConfiguration  from :/home/submarine/gridmap_ws/build/grid_map_cv/CTestConfiguration.ini
+[0.081s] Parse Config file:/home/submarine/gridmap_ws/build/grid_map_cv/CTestConfiguration.ini
+[0.082s]    Site: ece-linux-laptop13
+[0.082s]    Build name: (empty)
+[0.082s]  Add coverage exclude regular expressions.
+[0.082s] Create new tag: 20240503-2255 - Experimental
+[0.082s] UpdateCTestConfiguration  from :/home/submarine/gridmap_ws/build/grid_map_cv/CTestConfiguration.ini
+[0.082s] Parse Config file:/home/submarine/gridmap_ws/build/grid_map_cv/CTestConfiguration.ini
+[0.083s] Test project /home/submarine/gridmap_ws/build/grid_map_cv
+[0.083s] Constructing a list of tests
+[0.083s] Done constructing a list of tests
+[0.083s] Updating test list for fixtures
+[0.083s] Added 0 tests to meet fixture requirements
+[0.083s] Checking test dependency graph...
+[0.083s] Checking test dependency graph end
+[0.083s] test 1
+[0.084s]     Start 1: cpplint
+[0.084s] 
+[0.084s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/cpplint.xunit.xml" "--package-name" "grid_map_cv" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_cv/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"
+[0.084s] 1: Test timeout computed to be: 120
+[0.189s] 1: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_cv':
+[0.190s] 1:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/cpplint.xunit.xml --filters=-legal/copyright,-build/include_order
+[0.639s] 1: Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include' argument
+[0.639s] 1: 
+[0.639s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/GridMapCvConverter.hpp
+[0.639s] 1: 
+[0.639s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/GridMapCvProcessing.hpp
+[0.640s] 1: 
+[0.640s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/InpaintFilter.hpp
+[0.640s] 1: 
+[0.640s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/grid_map_cv.hpp
+[0.640s] 1: 
+[0.640s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/utilities.hpp
+[0.640s] 1: 
+[0.641s] 1: Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/src' argument
+[0.641s] 1: 
+[0.641s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/src/GridMapCvProcessing.cpp
+[0.641s] 1: 
+[0.641s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/src/InpaintFilter.cpp
+[0.641s] 1: 
+[0.641s] 1: Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test' argument
+[0.641s] 1: 
+[0.641s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test/GridMapCvProcessingTest.cpp
+[0.642s] 1: 
+[0.642s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test/GridMapCvTest.cpp
+[0.642s] 1: 
+[0.642s] 1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test/test_grid_map_cv.cpp
+[0.642s] 1: 
+[0.642s] 1: No problems found
+[0.657s] 1: -- run_test.py: return code 0
+[0.657s] 1: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/cpplint.xunit.xml'
+[0.674s] 1/6 Test #1: cpplint ..........................   Passed    0.59 sec
+[0.674s] test 2
+[0.674s]     Start 2: grid_map_cv-test
+[0.674s] 
+[0.675s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/grid_map_cv-test.gtest.xml" "--package-name" "grid_map_cv" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_cv/ament_cmake_gtest/grid_map_cv-test.txt" "--command" "/home/submarine/gridmap_ws/build/grid_map_cv/grid_map_cv-test" "--gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/grid_map_cv-test.gtest.xml"
+[0.675s] 2: Test timeout computed to be: 60
+[0.779s] 2: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_cv':
+[0.779s] 2:  - /home/submarine/gridmap_ws/build/grid_map_cv/grid_map_cv-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/grid_map_cv-test.gtest.xml
+[0.793s] 2: [==========] Running 6 tests from 2 test suites.
+[0.793s] 2: [----------] Global test environment set-up.
+[0.794s] 2: [----------] 4 tests from ImageConversion
+[0.794s] 2: [ RUN      ] ImageConversion.roundTrip8UC3
+[0.799s] 2: [       OK ] ImageConversion.roundTrip8UC3 (6 ms)
+[0.799s] 2: [ RUN      ] ImageConversion.roundTrip8UC4
+[0.799s] 2: [       OK ] ImageConversion.roundTrip8UC4 (0 ms)
+[0.800s] 2: [ RUN      ] ImageConversion.roundTrip16UC1
+[0.801s] 2: [       OK ] ImageConversion.roundTrip16UC1 (2 ms)
+[0.802s] 2: [ RUN      ] ImageConversion.roundTrip32FC1
+[0.803s] 2: [       OK ] ImageConversion.roundTrip32FC1 (2 ms)
+[0.803s] 2: [----------] 4 tests from ImageConversion (11 ms total)
+[0.804s] 2: 
+[0.804s] 2: [----------] 2 tests from GridMapCvProcessing
+[0.804s] 2: [ RUN      ] GridMapCvProcessing.changeResolution
+[0.805s] 2: [       OK ] GridMapCvProcessing.changeResolution (1 ms)
+[0.805s] 2: [ RUN      ] GridMapCvProcessing.changeResolutionForMovedMap
+[0.806s] 2: [       OK ] GridMapCvProcessing.changeResolutionForMovedMap (1 ms)
+[0.806s] 2: [----------] 2 tests from GridMapCvProcessing (2 ms total)
+[0.806s] 2: 
+[0.806s] 2: [----------] Global test environment tear-down
+[0.806s] 2: [==========] 6 tests from 2 test suites ran. (13 ms total)
+[0.806s] 2: [  PASSED  ] 6 tests.
+[0.808s] 2: -- run_test.py: return code 0
+[0.808s] 2: -- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/grid_map_cv-test.gtest.xml'
+[0.809s] 2: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/grid_map_cv-test.gtest.xml'
+[0.823s] 2/6 Test #2: grid_map_cv-test .................   Passed    0.15 sec
+[0.823s] test 3
+[0.823s]     Start 3: cppcheck
+[0.824s] 
+[0.824s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/cppcheck.xunit.xml" "--package-name" "grid_map_cv" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_cv/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include"
+[0.824s] 3: Test timeout computed to be: 300
+[0.911s] 3: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_cv':
+[0.911s] 3:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/cppcheck.xunit.xml --include_dirs /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include
+[1.023s] 3: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[1.045s] 3: -- run_test.py: return code 0
+[1.045s] 3: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/cppcheck.xunit.xml'
+[1.062s] 3/6 Test #3: cppcheck .........................   Passed    0.24 sec
+[1.062s] test 4
+[1.062s]     Start 4: lint_cmake
+[1.062s] 
+[1.062s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/lint_cmake.xunit.xml" "--package-name" "grid_map_cv" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_cv/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/lint_cmake.xunit.xml"
+[1.062s] 4: Test timeout computed to be: 60
+[1.152s] 4: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_cv':
+[1.152s] 4:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/lint_cmake.xunit.xml
+[1.270s] 4: 
+[1.270s] 4: No problems found
+[1.287s] 4: -- run_test.py: return code 0
+[1.287s] 4: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/lint_cmake.xunit.xml'
+[1.306s] 4/6 Test #4: lint_cmake .......................   Passed    0.24 sec
+[1.306s] test 5
+[1.306s]     Start 5: uncrustify
+[1.306s] 
+[1.307s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/uncrustify.xunit.xml" "--package-name" "grid_map_cv" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_cv/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/uncrustify.xunit.xml"
+[1.307s] 5: Test timeout computed to be: 60
+[1.399s] 5: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_cv':
+[1.399s] 5:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/uncrustify.xunit.xml
+[1.573s] 5: No code style divergence in file 'include/grid_map_cv/GridMapCvConverter.hpp'
+[1.573s] 5: 
+[1.573s] 5: No code style divergence in file 'include/grid_map_cv/GridMapCvProcessing.hpp'
+[1.573s] 5: 
+[1.574s] 5: No code style divergence in file 'include/grid_map_cv/InpaintFilter.hpp'
+[1.574s] 5: 
+[1.574s] 5: No code style divergence in file 'include/grid_map_cv/grid_map_cv.hpp'
+[1.574s] 5: 
+[1.574s] 5: No code style divergence in file 'include/grid_map_cv/utilities.hpp'
+[1.574s] 5: 
+[1.574s] 5: No code style divergence in file 'src/GridMapCvProcessing.cpp'
+[1.574s] 5: 
+[1.574s] 5: No code style divergence in file 'src/InpaintFilter.cpp'
+[1.575s] 5: 
+[1.575s] 5: No code style divergence in file 'test/GridMapCvProcessingTest.cpp'
+[1.575s] 5: 
+[1.575s] 5: No code style divergence in file 'test/GridMapCvTest.cpp'
+[1.575s] 5: 
+[1.575s] 5: No code style divergence in file 'test/test_grid_map_cv.cpp'
+[1.575s] 5: 
+[1.576s] 5: No problems found
+[1.595s] 5: -- run_test.py: return code 0
+[1.595s] 5: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/uncrustify.xunit.xml'
+[1.614s] 5/6 Test #5: uncrustify .......................   Passed    0.31 sec
+[1.614s] test 6
+[1.614s]     Start 6: xmllint
+[1.615s] 
+[1.615s] 6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/xmllint.xunit.xml" "--package-name" "grid_map_cv" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_cv/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/xmllint.xunit.xml"
+[1.615s] 6: Test timeout computed to be: 60
+[1.707s] 6: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_cv':
+[1.707s] 6:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/xmllint.xunit.xml
+[1.836s] 6: File 'filter_plugins.xml' is valid
+[1.837s] 6: 
+[1.837s] 6: File 'package.xml' is valid
+[1.837s] 6: 
+[1.837s] 6: No problems found
+[1.857s] 6: -- run_test.py: return code 0
+[1.857s] 6: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/xmllint.xunit.xml'
+[1.876s] 6/6 Test #6: xmllint ..........................   Passed    0.26 sec
+[1.876s] 
+[1.877s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 6
+[1.877s] 
+[1.877s] Label Time Summary:
+[1.877s] cppcheck      =   0.24 sec*proc (1 test)
+[1.877s] cpplint       =   0.59 sec*proc (1 test)
+[1.877s] gtest         =   0.15 sec*proc (1 test)
+[1.877s] lint_cmake    =   0.24 sec*proc (1 test)
+[1.878s] linter        =   1.64 sec*proc (5 tests)
+[1.878s] uncrustify    =   0.31 sec*proc (1 test)
+[1.878s] xmllint       =   0.26 sec*proc (1 test)
+[1.878s] 
+[1.878s] Total Test time (real) =   1.79 sec
+[1.884s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_cv' returned '0': CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cv:/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/gridmap_ws/install/grid_map:/home/submarine/gridmap_ws/install/grid_map_demos:/home/submarine/gridmap_ws/install/grid_map_visualization:/home/submarine/gridmap_ws/install/grid_map_sdf:/home/submarine/gridmap_ws/install/grid_map_rviz_plugin:/home/submarine/gridmap_ws/install/grid_map_pcl:/home/submarine/gridmap_ws/install/grid_map_loader:/home/submarine/gridmap_ws/install/grid_map_filters:/home/submarine/gridmap_ws/install/grid_map_ros:/home/submarine/gridmap_ws/install/grid_map_octomap:/home/submarine/gridmap_ws/install/grid_map_msgs:/home/submarine/gridmap_ws/install/grid_map_costmap_2d:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_cv/lib:/home/submarine/gridmap_ws/install/grid_map_demos/lib:/home/submarine/gridmap_ws/install/grid_map_visualization/lib:/home/submarine/gridmap_ws/install/grid_map_sdf/lib:/home/submarine/gridmap_ws/install/grid_map_rviz_plugin/lib:/home/submarine/gridmap_ws/install/grid_map_pcl/lib:/home/submarine/gridmap_ws/install/grid_map_loader/lib:/home/submarine/gridmap_ws/install/grid_map_filters/lib:/home/submarine/gridmap_ws/install/grid_map_ros/lib:/home/submarine/gridmap_ws/install/grid_map_octomap/lib:/home/submarine/gridmap_ws/install/grid_map_msgs/lib:/home/submarine/gridmap_ws/install/grid_map_core/lib:/home/submarine/submarine/ros_ws/install/ros_bt/lib:/home/submarine/submarine/ros_ws/install/ros_interfaces/lib:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces/lib:/home/submarine/submarine/ros_ws/install/behaviortree_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

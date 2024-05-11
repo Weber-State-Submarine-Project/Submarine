@@ -1,0 +1,105 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_costmap_2d/test':
+ - /home/submarine/gridmap_ws/build/grid_map_costmap_2d/test/costmap-2d-ros-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_costmap_2d/test_results/grid_map_costmap_2d/costmap-2d-ros-test.gtest.xml
+
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from Costmap2DROSConversion
+[ RUN      ] Costmap2DROSConversion.full_window
+
+[INFO] [1714776941.762900702] [test_from_ros_costmaps]: ***********************************************************
+[INFO] [1714776941.763092295] [test_from_ros_costmaps]:                  Copy Full Window
+[INFO] [1714776941.763107595] [test_from_ros_costmaps]: ***********************************************************
+[INFO] [1714776941.773666470] [five_by_five.five_by_five]: 
+	five_by_five lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1714776941.777026115] [five_by_five.five_by_five]: Creating Costmap
+[INFO] [1714776941.777663920] [five_by_five.five_by_five]: Configuring
+[INFO] [1714776941.788962965] [five_by_five.five_by_five]: Activating
+[INFO] [1714776941.789038616] [five_by_five.five_by_five]: Checking transform
+[INFO] [1714776941.789075750] [five_by_five.five_by_five]: Timed out waiting for transform from base_link_5x5 to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1714776942.289607631] [five_by_five.five_by_five]: start
+25 25 25 25 25 
+50 50 50 50 50 
+75 75 75 75 75 
+101 101 101 101 101 
+126 126 126 126 126 
+-1 -1 -1 -1 -1 
+100 100 100 100 100 
+79 79 79 79 79 
+69 69 69 69 69 
+59 59 59 59 59 
+Original cost: 254
+New Cost: 100
+
+[INFO] [1714776942.540007745] [five_by_five.five_by_five]: Deactivating
+[INFO] [1714776942.689931913] [five_by_five.five_by_five]: Shutting down
+[INFO] [1714776942.697609585] [five_by_five.five_by_five]: Destroying
+[       OK ] Costmap2DROSConversion.full_window (941 ms)
+[ RUN      ] Costmap2DROSConversion.cost_map_centres
+
+[INFO] [1714776942.703222110] [test_from_ros_costmaps]: ***********************************************************
+[INFO] [1714776942.703265937] [test_from_ros_costmaps]:                  Check Subwindow Centres
+[INFO] [1714776942.703352029] [test_from_ros_costmaps]: ***********************************************************
+[INFO] [1714776942.703366408] [test_from_ros_costmaps]: Subwindows are centred as closely as possible to the robot
+[INFO] [1714776942.703378983] [test_from_ros_costmaps]: pose, though not exactly. They still need to align with
+[INFO] [1714776942.703390516] [test_from_ros_costmaps]: the underlying ros costmap so that they don't introduce a
+[INFO] [1714776942.703402761] [test_from_ros_costmaps]: new kind of error. As a result, the centre is shifted from
+[INFO] [1714776942.703414574] [test_from_ros_costmaps]: the robot pose to the nearest appropriate point which aligns
+[INFO] [1714776942.703427230] [test_from_ros_costmaps]: the new cost map exactly on top of the original ros costmap.
+
+[INFO] [1714776942.709622750] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: 
+	five_by_five_three_by_three_offset lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1714776942.710946966] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: Creating Costmap
+[INFO] [1714776942.711602225] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: Configuring
+[INFO] [1714776942.715837017] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: Activating
+[INFO] [1714776942.715897989] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: Checking transform
+[INFO] [1714776942.715921556] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: Timed out waiting for transform from base_link_5x5_3x3_offset to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1714776943.216073584] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: start
+[INFO] [1714776943.474032782] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: 
+	five_by_five_three_by_three_centre lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1714776943.475220605] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: Creating Costmap
+[INFO] [1714776943.476134080] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: Configuring
+[INFO] [1714776943.480651014] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: Activating
+[INFO] [1714776943.480710392] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: Checking transform
+[INFO] [1714776943.480727917] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: Timed out waiting for transform from base_link_5x5_3x3_centre to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1714776943.980951870] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: start
+[INFO] [1714776944.243207173] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: 
+	five_by_five_twohalf_by_twohalf_offset lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1714776944.244742780] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: Creating Costmap
+[INFO] [1714776944.246073547] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: Configuring
+[INFO] [1714776944.253113457] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: Activating
+[INFO] [1714776944.253163808] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: Checking transform
+[INFO] [1714776944.253182746] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: Timed out waiting for transform from base_link_5x5_2_5x2_5_offset to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1714776944.753384333] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: start
+[INFO] [1714776945.003762521] [test_from_ros_costmaps]:   grid_map_5x5_3x3_offset : -3.5  2.5
+[INFO] [1714776945.003839925] [test_from_ros_costmaps]:   grid_map_5x5_3x3_offset : -3.5 -3.5
+[INFO] [1714776945.003890146] [test_from_ros_costmaps]:   grid_map_5x5_3x3_offset : -9.75  2.25
+
+[INFO] [1714776945.003954574] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: Deactivating
+[INFO] [1714776945.153603659] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: Shutting down
+[INFO] [1714776945.163816370] [five_by_five_twohalf_by_twohalf_offset.five_by_five_twohalf_by_twohalf_offset]: Destroying
+[INFO] [1714776945.173202560] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: Deactivating
+[INFO] [1714776945.181236000] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: Shutting down
+[INFO] [1714776945.189426123] [five_by_five_three_by_three_centre.five_by_five_three_by_three_centre]: Destroying
+[INFO] [1714776945.195493998] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: Deactivating
+[INFO] [1714776945.216419429] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: Shutting down
+[INFO] [1714776945.222599908] [five_by_five_three_by_three_offset.five_by_five_three_by_three_offset]: Destroying
+[       OK ] Costmap2DROSConversion.cost_map_centres (2523 ms)
+[----------] 2 tests from Costmap2DROSConversion (3464 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (3464 ms total)
+[  PASSED  ] 2 tests.
+[INFO] [1714776945.226621639] [test_from_ros_costmaps]: gtest return value: 0
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_costmap_2d/test_results/grid_map_costmap_2d/costmap-2d-ros-test.gtest.xml'
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_costmap_2d/test_results/grid_map_costmap_2d/costmap-2d-ros-test.gtest.xml'

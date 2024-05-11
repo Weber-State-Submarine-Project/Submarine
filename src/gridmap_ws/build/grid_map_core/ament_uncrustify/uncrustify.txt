@@ -1,0 +1,110 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_core':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/uncrustify.xunit.xml
+
+No code style divergence in file 'include/grid_map_core/BufferRegion.hpp'
+
+No code style divergence in file 'include/grid_map_core/CubicInterpolation.hpp'
+
+No code style divergence in file 'include/grid_map_core/GridMap.hpp'
+
+No code style divergence in file 'include/grid_map_core/GridMapMath.hpp'
+
+No code style divergence in file 'include/grid_map_core/Polygon.hpp'
+
+No code style divergence in file 'include/grid_map_core/SubmapGeometry.hpp'
+
+No code style divergence in file 'include/grid_map_core/TypeDefs.hpp'
+
+No code style divergence in file 'include/grid_map_core/eigen_plugins/DenseBasePlugin.hpp'
+
+No code style divergence in file 'include/grid_map_core/eigen_plugins/Functors.hpp'
+
+No code style divergence in file 'include/grid_map_core/eigen_plugins/FunctorsPlugin.hpp'
+
+No code style divergence in file 'include/grid_map_core/grid_map_core.hpp'
+
+No code style divergence in file 'include/grid_map_core/gtest_eigen.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/CircleIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/EllipseIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/GridMapIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/LineIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/PolygonIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/SlidingWindowIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/SpiralIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/SubmapIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/iterators.hpp'
+
+No code style divergence in file 'src/BufferRegion.cpp'
+
+No code style divergence in file 'src/CubicInterpolation.cpp'
+
+No code style divergence in file 'src/GridMap.cpp'
+
+No code style divergence in file 'src/GridMapMath.cpp'
+
+No code style divergence in file 'src/Polygon.cpp'
+
+No code style divergence in file 'src/SubmapGeometry.cpp'
+
+No code style divergence in file 'src/iterators/CircleIterator.cpp'
+
+No code style divergence in file 'src/iterators/EllipseIterator.cpp'
+
+No code style divergence in file 'src/iterators/GridMapIterator.cpp'
+
+No code style divergence in file 'src/iterators/LineIterator.cpp'
+
+No code style divergence in file 'src/iterators/PolygonIterator.cpp'
+
+No code style divergence in file 'src/iterators/SlidingWindowIterator.cpp'
+
+No code style divergence in file 'src/iterators/SpiralIterator.cpp'
+
+No code style divergence in file 'src/iterators/SubmapIterator.cpp'
+
+No code style divergence in file 'test/CubicConvolutionInterpolationTest.cpp'
+
+No code style divergence in file 'test/CubicInterpolationTest.cpp'
+
+No code style divergence in file 'test/EigenPluginsTest.cpp'
+
+No code style divergence in file 'test/EllipseIteratorTest.cpp'
+
+No code style divergence in file 'test/GridMapIteratorTest.cpp'
+
+No code style divergence in file 'test/GridMapMathTest.cpp'
+
+No code style divergence in file 'test/GridMapTest.cpp'
+
+No code style divergence in file 'test/LineIteratorTest.cpp'
+
+No code style divergence in file 'test/PolygonIteratorTest.cpp'
+
+No code style divergence in file 'test/PolygonTest.cpp'
+
+No code style divergence in file 'test/SlidingWindowIteratorTest.cpp'
+
+No code style divergence in file 'test/SpiralIteratorTest.cpp'
+
+No code style divergence in file 'test/SubmapIteratorTest.cpp'
+
+No code style divergence in file 'test/test_grid_map_core.cpp'
+
+No code style divergence in file 'test/test_helpers.cpp'
+
+No code style divergence in file 'test/test_helpers.hpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/uncrustify.xunit.xml'

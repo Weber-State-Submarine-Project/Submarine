@@ -1,0 +1,80 @@
+[0.037s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_octomap': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/submarine/gridmap_ws/src/grid_map/grid_map_octomap -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/submarine/gridmap_ws/install/grid_map_octomap
+[0.151s] -- The C compiler identification is GNU 11.4.0
+[0.260s] -- The CXX compiler identification is GNU 11.4.0
+[0.278s] -- Detecting C compiler ABI info
+[0.416s] -- Detecting C compiler ABI info - done
+[0.431s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.431s] -- Detecting C compile features
+[0.432s] -- Detecting C compile features - done
+[0.442s] -- Detecting CXX compiler ABI info
+[0.594s] -- Detecting CXX compiler ABI info - done
+[0.610s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.611s] -- Detecting CXX compile features
+[0.612s] -- Detecting CXX compile features - done
+[0.624s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.929s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.044s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.125s] -- Found grid_map_cmake_helpers: 2.0.0 (/home/submarine/gridmap_ws/install/grid_map_cmake_helpers/share/grid_map_cmake_helpers/cmake)
+[1.127s] -- Found grid_map_core: 2.0.0 (/home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/cmake)
+[1.154s] -- Found Octomap (version 1.9.8): /opt/ros/humble/include
+[1.161s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.348s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.353s] -- Looking for pthread.h
+[1.480s] -- Looking for pthread.h - found
+[1.480s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.623s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.625s] -- Found Threads: TRUE  
+[1.636s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.636s] -- Configured cppcheck include dirs: /home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/include
+[1.636s] -- Configured cppcheck exclude dirs and/or files: 
+[1.638s] -- Added test 'lint_cmake' to check CMake code style
+[1.642s] -- Added test 'uncrustify' to check C / C++ code style
+[1.642s] -- Configured uncrustify additional arguments: 
+[1.644s] -- Added test 'xmllint' to check XML markup files
+[1.652s] -- Configuring done
+[1.673s] -- Generating done
+[1.676s] -- Build files have been written to: /home/submarine/gridmap_ws/build/grid_map_octomap
+[1.687s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_octomap' returned '0': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/submarine/gridmap_ws/src/grid_map/grid_map_octomap -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/submarine/gridmap_ws/install/grid_map_octomap
+[1.689s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_octomap': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/submarine/gridmap_ws/build/grid_map_octomap -- -j8 -l8
+[1.790s] [ 33%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.790s] [ 33%] [32mBuilding CXX object CMakeFiles/grid_map_octomap.dir/src/GridMapOctomapConverter.cpp.o[0m
+[1.790s] [ 33%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[4.363s] [ 44%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[4.579s] [ 44%] Built target gtest_main
+[6.786s] [ 55%] [32m[1mLinking CXX static library libgrid_map_octomap.a[0m
+[7.047s] [ 55%] Built target grid_map_octomap
+[10.103s] [ 66%] [32m[1mLinking CXX static library libgtest.a[0m
+[10.246s] [ 66%] Built target gtest
+[10.293s] [ 77%] [32mBuilding CXX object CMakeFiles/grid_map_octomap-test.dir/test/test_grid_map_octomap.cpp.o[0m
+[10.294s] [ 88%] [32mBuilding CXX object CMakeFiles/grid_map_octomap-test.dir/test/OctomapConverterTest.cpp.o[0m
+[14.674s] [100%] [32m[1mLinking CXX executable grid_map_octomap-test[0m
+[15.092s] [100%] Built target grid_map_octomap-test
+[15.118s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_octomap' returned '0': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/submarine/gridmap_ws/build/grid_map_octomap -- -j8 -l8
+[15.204s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_octomap': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/submarine/gridmap_ws/build/grid_map_octomap
+[15.223s] -- Install configuration: ""
+[15.224s] -- Execute custom install script
+[15.225s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/lib/libgrid_map_octomap.a
+[15.250s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/environment/library_path.sh
+[15.275s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/environment/library_path.dsv
+[15.298s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/ament_index/resource_index/package_run_dependencies/grid_map_octomap
+[15.323s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/ament_index/resource_index/parent_prefix_path/grid_map_octomap
+[15.344s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/environment/ament_prefix_path.sh
+[15.366s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/environment/ament_prefix_path.dsv
+[15.389s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/environment/path.sh
+[15.411s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/environment/path.dsv
+[15.434s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/local_setup.bash
+[15.459s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/local_setup.sh
+[15.480s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/local_setup.zsh
+[15.504s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/local_setup.dsv
+[15.526s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/package.dsv
+[15.548s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/ament_index/resource_index/packages/grid_map_octomap
+[15.571s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.590s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.610s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/cmake/ament_cmake_export_libraries-extras.cmake
+[15.631s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/cmake/grid_map_octomapConfig.cmake
+[15.652s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/cmake/grid_map_octomapConfig-version.cmake
+[15.673s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_octomap/share/grid_map_octomap/package.xml
+[15.694s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_octomap/include/grid_map_octomap
+[15.694s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_octomap/include/grid_map_octomap/grid_map_octomap.hpp
+[15.697s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_octomap/include/grid_map_octomap/GridMapOctomapConverter.hpp
+[15.703s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_octomap' returned '0': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/submarine/gridmap_ws/build/grid_map_octomap

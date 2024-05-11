@@ -1,0 +1,8 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cppcheck.xunit.xml --include_dirs /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include
+
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cppcheck.xunit.xml'

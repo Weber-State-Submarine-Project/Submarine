@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240503-2255-Experimental"
+	Name="ece-linux-laptop13"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="ece-linux-laptop13"
+	OSRelease="6.5.0-28-generic"
+	OSVersion="#29~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  4 14:39:20 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="17"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="11099"
+	TotalPhysicalMemory="5814"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1713.77"
+	>
+	<Testing>
+		<StartDateTime>May 03 16:55 MDT</StartDateTime>
+		<StartTestTime>1714776935</StartTestTime>
+		<TestList>
+			<Test>./cpplint</Test>
+			<Test>./grid_map_core-test</Test>
+			<Test>./cppcheck</Test>
+			<Test>./lint_cmake</Test>
+			<Test>./uncrustify</Test>
+			<Test>./xmllint</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>cpplint</Name>
+			<Path>.</Path>
+			<FullName>./cpplint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cpplint.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>2.55545</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cpplint.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_core':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cpplint.xunit.xml --filters=-legal/copyright,-build/include_order
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_core/include' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/BufferRegion.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/CubicInterpolation.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/GridMap.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/GridMapMath.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/Polygon.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/SubmapGeometry.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/TypeDefs.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/eigen_plugins/DenseBasePlugin.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/eigen_plugins/Functors.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/eigen_plugins/FunctorsPlugin.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/grid_map_core.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/gtest_eigen.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/iterators/CircleIterator.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/iterators/EllipseIterator.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/iterators/GridMapIterator.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/iterators/LineIterator.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/iterators/PolygonIterator.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/iterators/SlidingWindowIterator.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/iterators/SpiralIterator.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/iterators/SubmapIterator.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include/grid_map_core/iterators/iterators.hpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_core/src' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/BufferRegion.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/CubicInterpolation.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/GridMap.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/GridMapMath.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/Polygon.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/SubmapGeometry.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/iterators/CircleIterator.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/iterators/EllipseIterator.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/iterators/GridMapIterator.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/iterators/LineIterator.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/iterators/PolygonIterator.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/iterators/SlidingWindowIterator.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/iterators/SpiralIterator.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/src/iterators/SubmapIterator.cpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_core/test' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/CubicConvolutionInterpolationTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/CubicInterpolationTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/EigenPluginsTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/EllipseIteratorTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/GridMapIteratorTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/GridMapMathTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/GridMapTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/LineIteratorTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/PolygonIteratorTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/PolygonTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/SlidingWindowIteratorTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/SpiralIteratorTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/SubmapIteratorTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/test_grid_map_core.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/test_helpers.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_core/test/test_helpers.hpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cpplint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cpplint</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>grid_map_core-test</Name>
+			<Path>.</Path>
+			<FullName>./grid_map_core-test</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_cmake_gtest/grid_map_core-test.txt" "--command" "/home/submarine/gridmap_ws/build/grid_map_core/grid_map_core-test" "--gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.150621</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_cmake_gtest/grid_map_core-test.txt" "--command" "/home/submarine/gridmap_ws/build/grid_map_core/grid_map_core-test" "--gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_core':
+ - /home/submarine/gridmap_ws/build/grid_map_core/grid_map_core-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml
+[==========] Running 91 tests from 31 test suites.
+[----------] Global test environment set-up.
+[----------] 7 tests from CubicConvolutionInterpolation
+[ RUN      ] CubicConvolutionInterpolation.FlatWorld
+[       OK ] CubicConvolutionInterpolation.FlatWorld (0 ms)
+[ RUN      ] CubicConvolutionInterpolation.RationalFunctionWorld
+[       OK ] CubicConvolutionInterpolation.RationalFunctionWorld (4 ms)
+[ RUN      ] CubicConvolutionInterpolation.SaddleWorld
+[       OK ] CubicConvolutionInterpolation.SaddleWorld (1 ms)
+[ RUN      ] CubicConvolutionInterpolation.SecondOrderPolyWorld
+[       OK ] CubicConvolutionInterpolation.SecondOrderPolyWorld (0 ms)
+[ RUN      ] CubicConvolutionInterpolation.SineWorld
+[       OK ] CubicConvolutionInterpolation.SineWorld (9 ms)
+[ RUN      ] CubicConvolutionInterpolation.TanhWorld
+[       OK ] CubicConvolutionInterpolation.TanhWorld (1 ms)
+[ RUN      ] CubicConvolutionInterpolation.GaussianWorld
+[       OK ] CubicConvolutionInterpolation.GaussianWorld (2 ms)
+[----------] 7 tests from CubicConvolutionInterpolation (17 ms total)
+
+[----------] 7 tests from CubicInterpolation
+[ RUN      ] CubicInterpolation.FlatWorld
+[       OK ] CubicInterpolation.FlatWorld (0 ms)
+[ RUN      ] CubicInterpolation.RationalFunctionWorld
+[       OK ] CubicInterpolation.RationalFunctionWorld (3 ms)
+[ RUN      ] CubicInterpolation.SaddleWorld
+[       OK ] CubicInterpolation.SaddleWorld (1 ms)
+[ RUN      ] CubicInterpolation.SecondOrderPolyWorld
+[       OK ] CubicInterpolation.SecondOrderPolyWorld (0 ms)
+[ RUN      ] CubicInterpolation.SineWorld
+[       OK ] CubicInterpolation.SineWorld (10 ms)
+[ RUN      ] CubicInterpolation.TanhWorld
+[       OK ] CubicInterpolation.TanhWorld (0 ms)
+[ RUN      ] CubicInterpolation.GaussianWorld
+[       OK ] CubicInterpolation.GaussianWorld (3 ms)
+[----------] 7 tests from CubicInterpolation (17 ms total)
+
+[----------] 2 tests from PositionFromIndex
+[ RUN      ] PositionFromIndex.Simple
+[       OK ] PositionFromIndex.Simple (0 ms)
+[ RUN      ] PositionFromIndex.CircularBuffer
+[       OK ] PositionFromIndex.CircularBuffer (0 ms)
+[----------] 2 tests from PositionFromIndex (0 ms total)
+
+[----------] 3 tests from IndexFromPosition
+[ RUN      ] IndexFromPosition.Simple
+[       OK ] IndexFromPosition.Simple (0 ms)
+[ RUN      ] IndexFromPosition.EdgeCases
+[       OK ] IndexFromPosition.EdgeCases (0 ms)
+[ RUN      ] IndexFromPosition.CircularBuffer
+[       OK ] IndexFromPosition.CircularBuffer (0 ms)
+[----------] 3 tests from IndexFromPosition (0 ms total)
+
+[----------] 3 tests from checkIfPositionWithinMap
+[ RUN      ] checkIfPositionWithinMap.Inside
+[       OK ] checkIfPositionWithinMap.Inside (0 ms)
+[ RUN      ] checkIfPositionWithinMap.Outside
+[       OK ] checkIfPositionWithinMap.Outside (0 ms)
+[ RUN      ] checkIfPositionWithinMap.EdgeCases
+[       OK ] checkIfPositionWithinMap.EdgeCases (0 ms)
+[----------] 3 tests from checkIfPositionWithinMap (0 ms total)
+
+[----------] 1 test from getIndexShiftFromPositionShift
+[ RUN      ] getIndexShiftFromPositionShift.All
+[       OK ] getIndexShiftFromPositionShift.All (0 ms)
+[----------] 1 test from getIndexShiftFromPositionShift (0 ms total)
+
+[----------] 1 test from getPositionShiftFromIndexShift
+[ RUN      ] getPositionShiftFromIndexShift.All
+[       OK ] getPositionShiftFromIndexShift.All (0 ms)
+[----------] 1 test from getPositionShiftFromIndexShift (0 ms total)
+
+[----------] 1 test from checkIfIndexInRange
+[ RUN      ] checkIfIndexInRange.All
+[       OK ] checkIfIndexInRange.All (0 ms)
+[----------] 1 test from checkIfIndexInRange (0 ms total)
+
+[----------] 1 test from boundIndexToRange
+[ RUN      ] boundIndexToRange.All
+[       OK ] boundIndexToRange.All (0 ms)
+[----------] 1 test from boundIndexToRange (0 ms total)
+
+[----------] 1 test from wrapIndexToRange
+[ RUN      ] wrapIndexToRange.All
+[       OK ] wrapIndexToRange.All (0 ms)
+[----------] 1 test from wrapIndexToRange (0 ms total)
+
+[----------] 2 tests from boundPositionToRange
+[ RUN      ] boundPositionToRange.Simple
+[       OK ] boundPositionToRange.Simple (0 ms)
+[ RUN      ] boundPositionToRange.Position
+[       OK ] boundPositionToRange.Position (0 ms)
+[----------] 2 tests from boundPositionToRange (0 ms total)
+
+[----------] 6 tests from getSubmapInformation
+[ RUN      ] getSubmapInformation.Simple
+[       OK ] getSubmapInformation.Simple (0 ms)
+[ RUN      ] getSubmapInformation.Zero
+[       OK ] getSubmapInformation.Zero (0 ms)
+[ RUN      ] getSubmapInformation.ExceedingBoundaries
+[       OK ] getSubmapInformation.ExceedingBoundaries (0 ms)
+[ RUN      ] getSubmapInformation.CircularBuffer
+[       OK ] getSubmapInformation.CircularBuffer (0 ms)
+[ RUN      ] getSubmapInformation.Debug1
+[       OK ] getSubmapInformation.Debug1 (0 ms)
+[ RUN      ] getSubmapInformation.Debug2
+[       OK ] getSubmapInformation.Debug2 (0 ms)
+[----------] 6 tests from getSubmapInformation (0 ms total)
+
+[----------] 3 tests from getBufferRegionsForSubmap
+[ RUN      ] getBufferRegionsForSubmap.Trivial
+[       OK ] getBufferRegionsForSubmap.Trivial (0 ms)
+[ RUN      ] getBufferRegionsForSubmap.Simple
+[       OK ] getBufferRegionsForSubmap.Simple (0 ms)
+[ RUN      ] getBufferRegionsForSubmap.CircularBuffer
+[       OK ] getBufferRegionsForSubmap.CircularBuffer (0 ms)
+[----------] 3 tests from getBufferRegionsForSubmap (0 ms total)
+
+[----------] 2 tests from checkIncrementIndex
+[ RUN      ] checkIncrementIndex.Simple
+[       OK ] checkIncrementIndex.Simple (0 ms)
+[ RUN      ] checkIncrementIndex.CircularBuffer
+[       OK ] checkIncrementIndex.CircularBuffer (0 ms)
+[----------] 2 tests from checkIncrementIndex (0 ms total)
+
+[----------] 2 tests from checkIncrementIndexForSubmap
+[ RUN      ] checkIncrementIndexForSubmap.Simple
+[       OK ] checkIncrementIndexForSubmap.Simple (0 ms)
+[ RUN      ] checkIncrementIndexForSubmap.CircularBuffer
+[       OK ] checkIncrementIndexForSubmap.CircularBuffer (0 ms)
+[----------] 2 tests from checkIncrementIndexForSubmap (0 ms total)
+
+[----------] 1 test from getIndexFromLinearIndex
+[ RUN      ] getIndexFromLinearIndex.Simple
+[       OK ] getIndexFromLinearIndex.Simple (0 ms)
+[----------] 1 test from getIndexFromLinearIndex (0 ms total)
+
+[----------] 5 tests from GridMap
+[ RUN      ] GridMap.CopyConstructor
+[       OK ] GridMap.CopyConstructor (0 ms)
+[ RUN      ] GridMap.CopyAssign
+[       OK ] GridMap.CopyAssign (0 ms)
+[ RUN      ] GridMap.Move
+[       OK ] GridMap.Move (0 ms)
+[ RUN      ] GridMap.Transform
+[       OK ] GridMap.Transform (1 ms)
+[ RUN      ] GridMap.ClipToMap
+[       OK ] GridMap.ClipToMap (0 ms)
+[----------] 5 tests from GridMap (1 ms total)
+
+[----------] 3 tests from AddDataFrom
+[ RUN      ] AddDataFrom.ExtendMapAligned
+[       OK ] AddDataFrom.ExtendMapAligned (0 ms)
+[ RUN      ] AddDataFrom.ExtendMapNotAligned
+[       OK ] AddDataFrom.ExtendMapNotAligned (0 ms)
+[ RUN      ] AddDataFrom.CopyData
+[       OK ] AddDataFrom.CopyData (0 ms)
+[----------] 3 tests from AddDataFrom (0 ms total)
+
+[----------] 2 tests from ValueAtPosition
+[ RUN      ] ValueAtPosition.NearestNeighbor
+[       OK ] ValueAtPosition.NearestNeighbor (0 ms)
+[ RUN      ] ValueAtPosition.LinearInterpolated
+[       OK ] ValueAtPosition.LinearInterpolated (0 ms)
+[----------] 2 tests from ValueAtPosition (0 ms total)
+
+[----------] 2 tests from GridMapIterator
+[ RUN      ] GridMapIterator.Simple
+[       OK ] GridMapIterator.Simple (0 ms)
+[ RUN      ] GridMapIterator.LinearIndex
+[       OK ] GridMapIterator.LinearIndex (0 ms)
+[----------] 2 tests from GridMapIterator (0 ms total)
+
+[----------] 6 tests from LineIterator
+[ RUN      ] LineIterator.StartOutsideMap
+[       OK ] LineIterator.StartOutsideMap (0 ms)
+[ RUN      ] LineIterator.EndOutsideMap
+[       OK ] LineIterator.EndOutsideMap (0 ms)
+[ RUN      ] LineIterator.StartAndEndOutsideMap
+[       OK ] LineIterator.StartAndEndOutsideMap (0 ms)
+[ RUN      ] LineIterator.StartAndEndOutsideMapWithoutIntersectingMap
+[       OK ] LineIterator.StartAndEndOutsideMapWithoutIntersectingMap (0 ms)
+[ RUN      ] LineIterator.MovedMap
+[       OK ] LineIterator.MovedMap (0 ms)
+[ RUN      ] LineIterator.StartAndEndOutsideMovedMap
+[       OK ] LineIterator.StartAndEndOutsideMovedMap (0 ms)
+[----------] 6 tests from LineIterator (0 ms total)
+
+[----------] 1 test from EllipseIterator
+[ RUN      ] EllipseIterator.OneCellWideEllipse
+[       OK ] EllipseIterator.OneCellWideEllipse (0 ms)
+[----------] 1 test from EllipseIterator (0 ms total)
+
+[----------] 2 tests from SubmapIterator
+[ RUN      ] SubmapIterator.Simple
+[       OK ] SubmapIterator.Simple (0 ms)
+[ RUN      ] SubmapIterator.CircularBuffer
+[       OK ] SubmapIterator.CircularBuffer (0 ms)
+[----------] 2 tests from SubmapIterator (0 ms total)
+
+[----------] 5 tests from PolygonIterator
+[ RUN      ] PolygonIterator.FullCover
+[       OK ] PolygonIterator.FullCover (0 ms)
+[ RUN      ] PolygonIterator.Outside
+[       OK ] PolygonIterator.Outside (0 ms)
+[ RUN      ] PolygonIterator.Square
+[       OK ] PolygonIterator.Square (0 ms)
+[ RUN      ] PolygonIterator.TopLeftTriangle
+[       OK ] PolygonIterator.TopLeftTriangle (0 ms)
+[ RUN      ] PolygonIterator.MoveMap
+[       OK ] PolygonIterator.MoveMap (0 ms)
+[----------] 5 tests from PolygonIterator (0 ms total)
+
+[----------] 7 tests from Polygon
+[ RUN      ] Polygon.getCentroidTriangle
+[       OK ] Polygon.getCentroidTriangle (0 ms)
+[ RUN      ] Polygon.getCentroidRectangle
+[       OK ] Polygon.getCentroidRectangle (0 ms)
+[ RUN      ] Polygon.getBoundingBox
+[       OK ] Polygon.getBoundingBox (0 ms)
+[ RUN      ] Polygon.convexHullPoints
+[       OK ] Polygon.convexHullPoints (0 ms)
+[ RUN      ] Polygon.convexHullPolygon
+[       OK ] Polygon.convexHullPolygon (0 ms)
+[ RUN      ] Polygon.convexHullCircles
+[       OK ] Polygon.convexHullCircles (0 ms)
+[ RUN      ] Polygon.convexHullCircle
+[       OK ] Polygon.convexHullCircle (0 ms)
+[----------] 7 tests from Polygon (0 ms total)
+
+[----------] 2 tests from convertToInequalityConstraints
+[ RUN      ] convertToInequalityConstraints.triangle1
+[       OK ] convertToInequalityConstraints.triangle1 (0 ms)
+[ RUN      ] convertToInequalityConstraints.triangle2
+[       OK ] convertToInequalityConstraints.triangle2 (0 ms)
+[----------] 2 tests from convertToInequalityConstraints (0 ms total)
+
+[----------] 1 test from offsetInward
+[ RUN      ] offsetInward.triangle
+[       OK ] offsetInward.triangle (0 ms)
+[----------] 1 test from offsetInward (0 ms total)
+
+[----------] 2 tests from triangulation
+[ RUN      ] triangulation.triangle
+[       OK ] triangulation.triangle (0 ms)
+[ RUN      ] triangulation.rectangle
+[       OK ] triangulation.rectangle (0 ms)
+[----------] 2 tests from triangulation (0 ms total)
+
+[----------] 6 tests from EigenMatrixBaseAddons
+[ RUN      ] EigenMatrixBaseAddons.numberOfFinites
+[       OK ] EigenMatrixBaseAddons.numberOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.sumOfFinites
+[       OK ] EigenMatrixBaseAddons.sumOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.meanOfFinites
+[       OK ] EigenMatrixBaseAddons.meanOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.minCoeffOfFinites
+[       OK ] EigenMatrixBaseAddons.minCoeffOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.maxCoeffOfFinites
+[       OK ] EigenMatrixBaseAddons.maxCoeffOfFinites (0 ms)
+[ RUN      ] EigenMatrixBaseAddons.clamp
+[       OK ] EigenMatrixBaseAddons.clamp (0 ms)
+[----------] 6 tests from EigenMatrixBaseAddons (0 ms total)
+
+[----------] 1 test from SpiralIterator
+[ RUN      ] SpiralIterator.CenterOutOfMap
+[       OK ] SpiralIterator.CenterOutOfMap (0 ms)
+[----------] 1 test from SpiralIterator (0 ms total)
+
+[----------] 3 tests from SlidingWindowIterator
+[ RUN      ] SlidingWindowIterator.WindowSize3Cutoff
+[       OK ] SlidingWindowIterator.WindowSize3Cutoff (0 ms)
+[ RUN      ] SlidingWindowIterator.WindowSize5
+[       OK ] SlidingWindowIterator.WindowSize5 (0 ms)
+[ RUN      ] SlidingWindowIterator.WindowSize3Inside
+[       OK ] SlidingWindowIterator.WindowSize3Inside (0 ms)
+[----------] 3 tests from SlidingWindowIterator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 91 tests from 31 test suites ran. (35 ms total)
+[  PASSED  ] 91 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml'
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/grid_map_core-test.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>cppcheck</Name>
+			<Path>.</Path>
+			<FullName>./cppcheck</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cppcheck.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_core/include"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.274918</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cppcheck.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_core/include"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_core':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cppcheck.xunit.xml --include_dirs /home/submarine/gridmap_ws/src/grid_map/grid_map_core/include
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/cppcheck.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cppcheck</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>lint_cmake</Name>
+			<Path>.</Path>
+			<FullName>./lint_cmake</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/lint_cmake.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/lint_cmake.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.234262</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/lint_cmake.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/lint_cmake.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_core':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/lint_cmake.xunit.xml
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/lint_cmake.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>lint_cmake</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>uncrustify</Name>
+			<Path>.</Path>
+			<FullName>./uncrustify</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/uncrustify.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/uncrustify.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.553992</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/uncrustify.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/uncrustify.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_core':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/uncrustify.xunit.xml
+No code style divergence in file 'include/grid_map_core/BufferRegion.hpp'
+
+No code style divergence in file 'include/grid_map_core/CubicInterpolation.hpp'
+
+No code style divergence in file 'include/grid_map_core/GridMap.hpp'
+
+No code style divergence in file 'include/grid_map_core/GridMapMath.hpp'
+
+No code style divergence in file 'include/grid_map_core/Polygon.hpp'
+
+No code style divergence in file 'include/grid_map_core/SubmapGeometry.hpp'
+
+No code style divergence in file 'include/grid_map_core/TypeDefs.hpp'
+
+No code style divergence in file 'include/grid_map_core/eigen_plugins/DenseBasePlugin.hpp'
+
+No code style divergence in file 'include/grid_map_core/eigen_plugins/Functors.hpp'
+
+No code style divergence in file 'include/grid_map_core/eigen_plugins/FunctorsPlugin.hpp'
+
+No code style divergence in file 'include/grid_map_core/grid_map_core.hpp'
+
+No code style divergence in file 'include/grid_map_core/gtest_eigen.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/CircleIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/EllipseIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/GridMapIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/LineIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/PolygonIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/SlidingWindowIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/SpiralIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/SubmapIterator.hpp'
+
+No code style divergence in file 'include/grid_map_core/iterators/iterators.hpp'
+
+No code style divergence in file 'src/BufferRegion.cpp'
+
+No code style divergence in file 'src/CubicInterpolation.cpp'
+
+No code style divergence in file 'src/GridMap.cpp'
+
+No code style divergence in file 'src/GridMapMath.cpp'
+
+No code style divergence in file 'src/Polygon.cpp'
+
+No code style divergence in file 'src/SubmapGeometry.cpp'
+
+No code style divergence in file 'src/iterators/CircleIterator.cpp'
+
+No code style divergence in file 'src/iterators/EllipseIterator.cpp'
+
+No code style divergence in file 'src/iterators/GridMapIterator.cpp'
+
+No code style divergence in file 'src/iterators/LineIterator.cpp'
+
+No code style divergence in file 'src/iterators/PolygonIterator.cpp'
+
+No code style divergence in file 'src/iterators/SlidingWindowIterator.cpp'
+
+No code style divergence in file 'src/iterators/SpiralIterator.cpp'
+
+No code style divergence in file 'src/iterators/SubmapIterator.cpp'
+
+No code style divergence in file 'test/CubicConvolutionInterpolationTest.cpp'
+
+No code style divergence in file 'test/CubicInterpolationTest.cpp'
+
+No code style divergence in file 'test/EigenPluginsTest.cpp'
+
+No code style divergence in file 'test/EllipseIteratorTest.cpp'
+
+No code style divergence in file 'test/GridMapIteratorTest.cpp'
+
+No code style divergence in file 'test/GridMapMathTest.cpp'
+
+No code style divergence in file 'test/GridMapTest.cpp'
+
+No code style divergence in file 'test/LineIteratorTest.cpp'
+
+No code style divergence in file 'test/PolygonIteratorTest.cpp'
+
+No code style divergence in file 'test/PolygonTest.cpp'
+
+No code style divergence in file 'test/SlidingWindowIteratorTest.cpp'
+
+No code style divergence in file 'test/SpiralIteratorTest.cpp'
+
+No code style divergence in file 'test/SubmapIteratorTest.cpp'
+
+No code style divergence in file 'test/test_grid_map_core.cpp'
+
+No code style divergence in file 'test/test_helpers.cpp'
+
+No code style divergence in file 'test/test_helpers.hpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/uncrustify.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>uncrustify</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>xmllint</Name>
+			<Path>.</Path>
+			<FullName>./xmllint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/xmllint.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/xmllint.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.390703</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/xmllint.xunit.xml" "--package-name" "grid_map_core" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_core/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/xmllint.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_core':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/xmllint.xunit.xml
+File 'package.xml' is valid
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_core/test_results/grid_map_core/xmllint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>xmllint</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>May 03 16:55 MDT</EndDateTime>
+		<EndTestTime>1714776939</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

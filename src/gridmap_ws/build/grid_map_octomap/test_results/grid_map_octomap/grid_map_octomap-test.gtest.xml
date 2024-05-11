@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" time="1.787" timestamp="2024-05-03T16:55:40" name="AllTests">
+  <testsuite name="OctomapConversion" tests="2" failures="0" disabled="0" errors="0" time="1.787" timestamp="2024-05-03T16:55:40">
+    <testcase name="convertOctomapToGridMap" status="run" result="completed" time="0.894" timestamp="2024-05-03T16:55:40" classname="grid_map_octomap.OctomapConversion" />
+    <testcase name="convertOctomapToGridMapWithBoundingBox" status="run" result="completed" time="0.893" timestamp="2024-05-03T16:55:41" classname="grid_map_octomap.OctomapConversion" />
+  </testsuite>
+</testsuites>

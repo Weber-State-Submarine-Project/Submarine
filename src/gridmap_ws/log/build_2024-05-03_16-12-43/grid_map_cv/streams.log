@@ -1,0 +1,107 @@
+[0.043s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_cv': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/submarine/gridmap_ws/src/grid_map/grid_map_cv -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/submarine/gridmap_ws/install/grid_map_cv
+[0.160s] -- The C compiler identification is GNU 11.4.0
+[0.278s] -- The CXX compiler identification is GNU 11.4.0
+[0.291s] -- Detecting C compiler ABI info
+[0.429s] -- Detecting C compiler ABI info - done
+[0.444s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.444s] -- Detecting C compile features
+[0.445s] -- Detecting C compile features - done
+[0.451s] -- Detecting CXX compiler ABI info
+[0.609s] -- Detecting CXX compiler ABI info - done
+[0.622s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.623s] -- Detecting CXX compile features
+[0.624s] -- Detecting CXX compile features - done
+[0.634s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.915s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.060s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.142s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.270s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.285s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.309s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.342s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.390s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.787s] -- Found filters: 2.1.0 (/opt/ros/humble/share/filters/cmake)
+[1.790s] -- Found grid_map_cmake_helpers: 2.0.0 (/home/submarine/gridmap_ws/install/grid_map_cmake_helpers/share/grid_map_cmake_helpers/cmake)
+[1.791s] -- Found grid_map_core: 2.0.0 (/home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/cmake)
+[1.816s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[1.902s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[2.066s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.075s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.185s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.471s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.480s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.529s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.556s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.581s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.634s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.672s] -- Looking for pthread.h
+[2.990s] -- Looking for pthread.h - found
+[2.991s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.283s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.286s] -- Found Threads: TRUE  
+[3.613s] -- Found OpenCV: /usr (found version "4.5.4") found components: photo 
+[3.614s] -- Setting build type to Release as none was specified.
+[3.621s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.949s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.978s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.979s] -- Configured cppcheck include dirs: /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include
+[3.980s] -- Configured cppcheck exclude dirs and/or files: 
+[3.983s] -- Added test 'lint_cmake' to check CMake code style
+[3.994s] -- Added test 'uncrustify' to check C / C++ code style
+[3.995s] -- Configured uncrustify additional arguments: 
+[3.997s] -- Added test 'xmllint' to check XML markup files
+[4.026s] -- Configuring done
+[4.114s] -- Generating done
+[4.119s] -- Build files have been written to: /home/submarine/gridmap_ws/build/grid_map_cv
+[4.155s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_cv' returned '0': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/submarine/gridmap_ws/src/grid_map/grid_map_cv -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/submarine/gridmap_ws/install/grid_map_cv
+[4.156s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_cv': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/submarine/gridmap_ws/build/grid_map_cv -- -j8 -l8
+[4.375s] [  9%] [32mBuilding CXX object CMakeFiles/grid_map_cv.dir/src/GridMapCvProcessing.cpp.o[0m
+[4.394s] [ 18%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[4.399s] [ 27%] [32mBuilding CXX object CMakeFiles/grid_map_cv.dir/src/InpaintFilter.cpp.o[0m
+[4.438s] [ 36%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[7.227s] [ 45%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[7.462s] [ 45%] Built target gtest_main
+[18.737s] [ 54%] [32m[1mLinking CXX shared library libgrid_map_cv.so[0m
+[19.086s] [ 54%] Built target grid_map_cv
+[21.121s] [ 63%] [32m[1mLinking CXX static library libgtest.a[0m
+[21.237s] [ 63%] Built target gtest
+[21.286s] [ 81%] [32mBuilding CXX object CMakeFiles/grid_map_cv-test.dir/test/GridMapCvProcessingTest.cpp.o[0m
+[21.287s] [ 81%] [32mBuilding CXX object CMakeFiles/grid_map_cv-test.dir/test/test_grid_map_cv.cpp.o[0m
+[21.291s] [ 90%] [32mBuilding CXX object CMakeFiles/grid_map_cv-test.dir/test/GridMapCvTest.cpp.o[0m
+[28.523s] [100%] [32m[1mLinking CXX executable grid_map_cv-test[0m
+[28.797s] [100%] Built target grid_map_cv-test
+[28.834s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_cv' returned '0': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/submarine/gridmap_ws/build/grid_map_cv -- -j8 -l8
+[28.960s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_cv': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/submarine/gridmap_ws/build/grid_map_cv
+[28.985s] -- Install configuration: "Release"
+[28.987s] -- Execute custom install script
+[28.988s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/lib/libgrid_map_cv.so
+[29.017s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/filter_plugins.xml
+[29.047s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/environment/library_path.sh
+[29.077s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/environment/library_path.dsv
+[29.105s] -- Up-to-date symlink: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv//filter_plugins.xml
+[29.106s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/ament_index/resource_index/package_run_dependencies/grid_map_cv
+[29.136s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/ament_index/resource_index/parent_prefix_path/grid_map_cv
+[29.166s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/environment/ament_prefix_path.sh
+[29.196s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/environment/ament_prefix_path.dsv
+[29.226s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/environment/path.sh
+[29.256s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/environment/path.dsv
+[29.286s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/local_setup.bash
+[29.314s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/local_setup.sh
+[29.343s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/local_setup.zsh
+[29.372s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/local_setup.dsv
+[29.401s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/package.dsv
+[29.430s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/ament_index/resource_index/packages/grid_map_cv
+[29.459s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/ament_index/resource_index/filters__pluginlib__plugin/grid_map_cv
+[29.488s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.517s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/cmake/ament_cmake_export_libraries-extras.cmake
+[29.546s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/cmake/ament_cmake_export_dependencies-extras.cmake
+[29.574s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/cmake/grid_map_cvConfig.cmake
+[29.604s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/cmake/grid_map_cvConfig-version.cmake
+[29.633s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_cv/share/grid_map_cv/package.xml
+[29.662s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_cv/include/grid_map_cv
+[29.663s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_cv/include/grid_map_cv/utilities.hpp
+[29.663s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_cv/include/grid_map_cv/GridMapCvProcessing.hpp
+[29.664s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_cv/include/grid_map_cv/InpaintFilter.hpp
+[29.664s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_cv/include/grid_map_cv/grid_map_cv.hpp
+[29.665s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_cv/include/grid_map_cv/GridMapCvConverter.hpp
+[29.672s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_cv' returned '0': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_core:/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble LD_LIBRARY_PATH=/home/submarine/gridmap_ws/install/grid_map_core/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/submarine/gridmap_ws/build/grid_map_cv

@@ -1,0 +1,74 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_filters':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_filters/test_results/grid_map_filters/uncrustify.xunit.xml
+
+No code style divergence in file 'include/EigenLab/EigenLab.hpp'
+
+No code style divergence in file 'include/grid_map_filters/BufferNormalizerFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/ColorBlendingFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/ColorFillFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/ColorMapFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/CurvatureFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/DeletionFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/DuplicationFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/LightIntensityFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/MathExpressionFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/MeanInRadiusFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/MinInRadiusFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/NormalColorMapFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/NormalVectorsFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/SetBasicLayersFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/SlidingWindowMathExpressionFilter.hpp'
+
+No code style divergence in file 'include/grid_map_filters/ThresholdFilter.hpp'
+
+No code style divergence in file 'src/BufferNormalizerFilter.cpp'
+
+No code style divergence in file 'src/ColorBlendingFilter.cpp'
+
+No code style divergence in file 'src/ColorFillFilter.cpp'
+
+No code style divergence in file 'src/ColorMapFilter.cpp'
+
+No code style divergence in file 'src/CurvatureFilter.cpp'
+
+No code style divergence in file 'src/DeletionFilter.cpp'
+
+No code style divergence in file 'src/DuplicationFilter.cpp'
+
+No code style divergence in file 'src/LightIntensityFilter.cpp'
+
+No code style divergence in file 'src/MathExpressionFilter.cpp'
+
+No code style divergence in file 'src/MeanInRadiusFilter.cpp'
+
+No code style divergence in file 'src/MinInRadiusFilter.cpp'
+
+No code style divergence in file 'src/NormalColorMapFilter.cpp'
+
+No code style divergence in file 'src/NormalVectorsFilter.cpp'
+
+No code style divergence in file 'src/SetBasicLayersFilter.cpp'
+
+No code style divergence in file 'src/SlidingWindowMathExpressionFilter.cpp'
+
+No code style divergence in file 'src/ThresholdFilter.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_filters/test_results/grid_map_filters/uncrustify.xunit.xml'

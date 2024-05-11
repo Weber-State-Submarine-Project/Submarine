@@ -1,0 +1,48 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/uncrustify.xunit.xml
+
+No code style divergence in file 'include/grid_map_pcl/GridMapPclConverter.hpp'
+
+No code style divergence in file 'include/grid_map_pcl/GridMapPclLoader.hpp'
+
+No code style divergence in file 'include/grid_map_pcl/PclLoaderParameters.hpp'
+
+No code style divergence in file 'include/grid_map_pcl/PointcloudProcessor.hpp'
+
+No code style divergence in file 'include/grid_map_pcl/grid_map_pcl.hpp'
+
+No code style divergence in file 'include/grid_map_pcl/helpers.hpp'
+
+No code style divergence in file 'src/GridMapPclConverter.cpp'
+
+No code style divergence in file 'src/GridMapPclLoader.cpp'
+
+No code style divergence in file 'src/PclLoaderParameters.cpp'
+
+No code style divergence in file 'src/PointcloudProcessor.cpp'
+
+No code style divergence in file 'src/grid_map_pcl_loader_node.cpp'
+
+No code style divergence in file 'src/helpers.cpp'
+
+No code style divergence in file 'test/GridMapPclLoaderTest.cpp'
+
+No code style divergence in file 'test/HelpersTest.cpp'
+
+No code style divergence in file 'test/PointcloudCreator.cpp'
+
+No code style divergence in file 'test/PointcloudCreator.hpp'
+
+No code style divergence in file 'test/PointcloudProcessorTest.cpp'
+
+No code style divergence in file 'test/test_grid_map_pcl.cpp'
+
+No code style divergence in file 'test/test_helpers.cpp'
+
+No code style divergence in file 'test/test_helpers.hpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/uncrustify.xunit.xml'

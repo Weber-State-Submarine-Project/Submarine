@@ -1,0 +1,50 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_visualization':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_visualization/test_results/grid_map_visualization/uncrustify.xunit.xml
+
+No code style divergence in file 'include/grid_map_visualization/GridMapVisualization.hpp'
+
+No code style divergence in file 'include/grid_map_visualization/GridMapVisualizationHelpers.hpp'
+
+No code style divergence in file 'include/grid_map_visualization/visualizations/FlatPointCloudVisualization.hpp'
+
+No code style divergence in file 'include/grid_map_visualization/visualizations/GridCellsVisualization.hpp'
+
+No code style divergence in file 'include/grid_map_visualization/visualizations/MapRegionVisualization.hpp'
+
+No code style divergence in file 'include/grid_map_visualization/visualizations/OccupancyGridVisualization.hpp'
+
+No code style divergence in file 'include/grid_map_visualization/visualizations/PointCloudVisualization.hpp'
+
+No code style divergence in file 'include/grid_map_visualization/visualizations/VectorVisualization.hpp'
+
+No code style divergence in file 'include/grid_map_visualization/visualizations/VisualizationBase.hpp'
+
+No code style divergence in file 'include/grid_map_visualization/visualizations/VisualizationFactory.hpp'
+
+No code style divergence in file 'src/GridMapVisualization.cpp'
+
+No code style divergence in file 'src/GridMapVisualizationHelpers.cpp'
+
+No code style divergence in file 'src/grid_map_visualization_node.cpp'
+
+No code style divergence in file 'src/visualizations/FlatPointCloudVisualization.cpp'
+
+No code style divergence in file 'src/visualizations/GridCellsVisualization.cpp'
+
+No code style divergence in file 'src/visualizations/MapRegionVisualization.cpp'
+
+No code style divergence in file 'src/visualizations/OccupancyGridVisualization.cpp'
+
+No code style divergence in file 'src/visualizations/PointCloudVisualization.cpp'
+
+No code style divergence in file 'src/visualizations/VectorVisualization.cpp'
+
+No code style divergence in file 'src/visualizations/VisualizationBase.cpp'
+
+No code style divergence in file 'src/visualizations/VisualizationFactory.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_visualization/test_results/grid_map_visualization/uncrustify.xunit.xml'

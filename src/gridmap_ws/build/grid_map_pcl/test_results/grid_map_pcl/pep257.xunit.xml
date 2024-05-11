@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="grid_map_pcl.pep257"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.018"
+>
+  <testcase
+    name="./launch/grid_map_pcl_loader_launch.py"
+    classname="grid_map_pcl.pep257"/>
+  <system-out>Checked files:
+* ./launch/grid_map_pcl_loader_launch.py</system-out>
+</testsuite>

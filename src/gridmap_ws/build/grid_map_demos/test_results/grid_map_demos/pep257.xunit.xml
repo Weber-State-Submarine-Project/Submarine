@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="grid_map_demos.pep257"
+  tests="13"
+  errors="0"
+  failures="0"
+  time="0.069"
+>
+  <testcase
+    name="./launch/filters_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/grid_map_loader_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/image_to_gridmap_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/interpolation_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/iterators_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/move_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/normal_filter_comparison_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/octomap_to_gridmap_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/opencv_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/resolution_change_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/simple_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./launch/tutorial_demo_launch.py"
+    classname="grid_map_demos.pep257"/>
+  <testcase
+    name="./scripts/image_publisher.py"
+    classname="grid_map_demos.pep257"/>
+  <system-out>Checked files:
+* ./launch/filters_demo_launch.py
+* ./launch/grid_map_loader_demo_launch.py
+* ./launch/image_to_gridmap_demo_launch.py
+* ./launch/interpolation_demo_launch.py
+* ./launch/iterators_demo_launch.py
+* ./launch/move_demo_launch.py
+* ./launch/normal_filter_comparison_launch.py
+* ./launch/octomap_to_gridmap_demo_launch.py
+* ./launch/opencv_demo_launch.py
+* ./launch/resolution_change_demo_launch.py
+* ./launch/simple_demo_launch.py
+* ./launch/tutorial_demo_launch.py
+* ./scripts/image_publisher.py</system-out>
+</testsuite>

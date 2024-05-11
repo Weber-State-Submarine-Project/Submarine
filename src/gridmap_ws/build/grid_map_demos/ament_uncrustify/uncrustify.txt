@@ -1,0 +1,52 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/uncrustify.xunit.xml
+
+No code style divergence in file 'include/grid_map_demos/FiltersDemo.hpp'
+
+No code style divergence in file 'include/grid_map_demos/ImageToGridmapDemo.hpp'
+
+No code style divergence in file 'include/grid_map_demos/InterpolationDemo.hpp'
+
+No code style divergence in file 'include/grid_map_demos/IteratorsDemo.hpp'
+
+No code style divergence in file 'include/grid_map_demos/OctomapToGridmapDemo.hpp'
+
+No code style divergence in file 'src/FiltersDemo.cpp'
+
+No code style divergence in file 'src/ImageToGridmapDemo.cpp'
+
+No code style divergence in file 'src/InterpolationDemo.cpp'
+
+No code style divergence in file 'src/IteratorsDemo.cpp'
+
+No code style divergence in file 'src/OctomapToGridmapDemo.cpp'
+
+No code style divergence in file 'src/filters_demo_node.cpp'
+
+No code style divergence in file 'src/image_to_gridmap_demo_node.cpp'
+
+No code style divergence in file 'src/interpolation_demo_node.cpp'
+
+No code style divergence in file 'src/iterator_benchmark.cpp'
+
+No code style divergence in file 'src/iterators_demo_node.cpp'
+
+No code style divergence in file 'src/move_demo_node.cpp'
+
+No code style divergence in file 'src/normal_filter_comparison_node.cpp'
+
+No code style divergence in file 'src/octomap_to_gridmap_demo_node.cpp'
+
+No code style divergence in file 'src/opencv_demo_node.cpp'
+
+No code style divergence in file 'src/resolution_change_demo_node.cpp'
+
+No code style divergence in file 'src/simple_demo_node.cpp'
+
+No code style divergence in file 'src/tutorial_demo_node.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/uncrustify.xunit.xml'

@@ -1,0 +1,151 @@
+[0.028s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_core': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble /usr/bin/cmake /home/submarine/gridmap_ws/src/grid_map/grid_map_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/submarine/gridmap_ws/install/grid_map_core
+[0.172s] -- The C compiler identification is GNU 11.4.0
+[0.281s] -- The CXX compiler identification is GNU 11.4.0
+[0.294s] -- Detecting C compiler ABI info
+[0.415s] -- Detecting C compiler ABI info - done
+[0.431s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.435s] -- Detecting C compile features
+[0.436s] -- Detecting C compile features - done
+[0.441s] -- Detecting CXX compiler ABI info
+[0.574s] -- Detecting CXX compiler ABI info - done
+[0.589s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.589s] -- Detecting CXX compile features
+[0.590s] -- Detecting CXX compile features - done
+[0.605s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.836s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.919s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.029s] -- Found grid_map_cmake_helpers: 2.0.0 (/home/submarine/gridmap_ws/install/grid_map_cmake_helpers/share/grid_map_cmake_helpers/cmake)
+[1.043s] -- Setting build type to Release as none was specified.
+[1.048s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.217s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.221s] -- Looking for pthread.h
+[1.373s] -- Looking for pthread.h - found
+[1.373s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.516s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.517s] -- Found Threads: TRUE  
+[1.536s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.536s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/submarine/gridmap_ws/src/grid_map/grid_map_core/include>
+[1.537s] -- Configured cppcheck exclude dirs and/or files: 
+[1.541s] -- Added test 'lint_cmake' to check CMake code style
+[1.549s] -- Added test 'uncrustify' to check C / C++ code style
+[1.550s] -- Configured uncrustify additional arguments: 
+[1.551s] -- Added test 'xmllint' to check XML markup files
+[1.559s] -- Configuring done
+[1.577s] -- Generating done
+[1.579s] -- Build files have been written to: /home/submarine/gridmap_ws/build/grid_map_core
+[1.585s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_core' returned '0': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble /usr/bin/cmake /home/submarine/gridmap_ws/src/grid_map/grid_map_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/submarine/gridmap_ws/install/grid_map_core
+[1.589s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_core': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble /usr/bin/cmake --build /home/submarine/gridmap_ws/build/grid_map_core -- -j8 -l8
+[1.695s] [  2%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/GridMap.cpp.o[0m
+[1.698s] [  5%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/GridMapMath.cpp.o[0m
+[1.698s] [  8%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/SubmapGeometry.cpp.o[0m
+[1.701s] [ 11%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/BufferRegion.cpp.o[0m
+[1.701s] [ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.704s] [ 17%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/Polygon.cpp.o[0m
+[1.707s] [ 20%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/CubicInterpolation.cpp.o[0m
+[1.707s] [ 22%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[4.534s] [ 25%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[4.537s] [ 28%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/iterators/GridMapIterator.cpp.o[0m
+[4.556s] [ 31%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/iterators/SubmapIterator.cpp.o[0m
+[4.652s] [ 31%] Built target gtest_main
+[4.675s] [ 34%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/iterators/CircleIterator.cpp.o[0m
+[6.364s] [ 37%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/iterators/EllipseIterator.cpp.o[0m
+[7.649s] [ 40%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/iterators/SpiralIterator.cpp.o[0m
+[8.053s] [ 42%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/iterators/PolygonIterator.cpp.o[0m
+[8.161s] [ 45%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/iterators/LineIterator.cpp.o[0m
+[8.708s] [ 48%] [32mBuilding CXX object CMakeFiles/grid_map_core.dir/src/iterators/SlidingWindowIterator.cpp.o[0m
+[20.483s] [ 51%] [32m[1mLinking CXX static library libgtest.a[0m
+[20.553s] [ 51%] Built target gtest
+[20.696s] [ 54%] [32m[1mLinking CXX static library libgrid_map_core.a[0m
+[20.766s] [ 54%] Built target grid_map_core
+[20.808s] [ 57%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/test_grid_map_core.cpp.o[0m
+[20.811s] [ 62%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/GridMapTest.cpp.o[0m
+[20.811s] [ 62%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/LineIteratorTest.cpp.o[0m
+[20.811s] [ 65%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/CubicInterpolationTest.cpp.o[0m
+[20.811s] [ 68%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/GridMapMathTest.cpp.o[0m
+[20.817s] [ 74%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/GridMapIteratorTest.cpp.o[0m
+[20.817s] [ 74%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/CubicConvolutionInterpolationTest.cpp.o[0m
+[20.817s] [ 77%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/test_helpers.cpp.o[0m
+[24.233s] [ 80%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/EllipseIteratorTest.cpp.o[0m
+[27.083s] [ 82%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/SubmapIteratorTest.cpp.o[0m
+[27.990s] [ 85%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/PolygonIteratorTest.cpp.o[0m
+[28.659s] [ 88%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/PolygonTest.cpp.o[0m
+[28.759s] [ 91%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/EigenPluginsTest.cpp.o[0m
+[29.868s] [ 94%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/SpiralIteratorTest.cpp.o[0m
+[30.011s] [ 97%] [32mBuilding CXX object CMakeFiles/grid_map_core-test.dir/test/SlidingWindowIteratorTest.cpp.o[0m
+[37.588s] [100%] [32m[1mLinking CXX executable grid_map_core-test[0m
+[37.829s] [100%] Built target grid_map_core-test
+[37.863s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_core' returned '0': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble /usr/bin/cmake --build /home/submarine/gridmap_ws/build/grid_map_core -- -j8 -l8
+[38.078s] Invoking command in '/home/submarine/gridmap_ws/build/grid_map_core': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble /usr/bin/cmake --install /home/submarine/gridmap_ws/build/grid_map_core
+[38.094s] -- Install configuration: "Release"
+[38.095s] -- Execute custom install script
+[38.096s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/grid_map_conventions.pdf
+[38.113s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/grid_map_conventions.png
+[38.130s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/grid_map_layers.pdf
+[38.145s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/grid_map_layers.png
+[38.161s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/interpolationGaussWorld.gif
+[38.177s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/interpolationSineWorld.gif
+[38.193s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/circle_iterator.gif
+[38.208s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/circle_iterator_preview.gif
+[38.223s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/ellipse_iterator.gif
+[38.238s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/ellipse_iterator_preview.gif
+[38.254s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/grid_map_iterator.gif
+[38.270s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/grid_map_iterator_preview.gif
+[38.297s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/line_iterator.gif
+[38.315s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/line_iterator_preview.gif
+[38.333s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/polygon_iterator.gif
+[38.350s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/polygon_iterator_preview.gif
+[38.365s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/spiral_iterator.gif
+[38.379s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/spiral_iterator_preview.gif
+[38.396s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/submap_iterator.gif
+[38.411s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/iterators/submap_iterator_preview.gif
+[38.427s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/move_method.gif
+[38.442s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/doc/setposition_method.gif
+[38.459s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/environment/library_path.sh
+[38.474s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/environment/library_path.dsv
+[38.490s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/ament_index/resource_index/package_run_dependencies/grid_map_core
+[38.505s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/ament_index/resource_index/parent_prefix_path/grid_map_core
+[38.521s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/environment/ament_prefix_path.sh
+[38.537s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/environment/ament_prefix_path.dsv
+[38.558s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/environment/path.sh
+[38.572s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/environment/path.dsv
+[38.586s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/local_setup.bash
+[38.604s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/local_setup.sh
+[38.619s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/local_setup.zsh
+[38.633s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/local_setup.dsv
+[38.650s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/package.dsv
+[38.668s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/ament_index/resource_index/packages/grid_map_core
+[38.686s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/cmake/grid_map_core-extras.cmake
+[38.700s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/cmake/ament_cmake_export_targets-extras.cmake
+[38.716s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/cmake/ament_cmake_export_dependencies-extras.cmake
+[38.730s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/cmake/grid_map_coreConfig.cmake
+[38.748s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/cmake/grid_map_coreConfig-version.cmake
+[38.765s] -- Symlinking: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/package.xml
+[38.779s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/lib/libgrid_map_core.a
+[38.781s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core
+[38.781s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core
+[38.782s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators
+[38.782s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators/CircleIterator.hpp
+[38.782s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators/SlidingWindowIterator.hpp
+[38.782s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators/EllipseIterator.hpp
+[38.782s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators/SubmapIterator.hpp
+[38.783s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators/LineIterator.hpp
+[38.783s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators/SpiralIterator.hpp
+[38.783s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators/PolygonIterator.hpp
+[38.783s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators/iterators.hpp
+[38.784s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/iterators/GridMapIterator.hpp
+[38.784s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/SubmapGeometry.hpp
+[38.784s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/CubicInterpolation.hpp
+[38.789s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/eigen_plugins
+[38.789s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/eigen_plugins/Functors.hpp
+[38.789s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/eigen_plugins/DenseBasePlugin.hpp
+[38.790s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/eigen_plugins/FunctorsPlugin.hpp
+[38.790s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/gtest_eigen.hpp
+[38.790s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/BufferRegion.hpp
+[38.791s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/grid_map_core.hpp
+[38.791s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/TypeDefs.hpp
+[38.791s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/GridMapMath.hpp
+[38.792s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/GridMap.hpp
+[38.792s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/include/grid_map_core/grid_map_core/Polygon.hpp
+[38.792s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/cmake/export_grid_map_coreExport.cmake
+[38.793s] -- Installing: /home/submarine/gridmap_ws/install/grid_map_core/share/grid_map_core/cmake/export_grid_map_coreExport-release.cmake
+[38.800s] Invoked command in '/home/submarine/gridmap_ws/build/grid_map_core' returned '0': AMENT_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/submarine/gridmap_ws/install/grid_map_cmake_helpers:/home/submarine/submarine/ros_ws/install/ros_bt:/home/submarine/submarine/ros_ws/install/ros_interfaces:/home/submarine/submarine/ros_ws/install/ros2_sub:/home/submarine/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/submarine/ros_ws/install/behaviortree_cpp:/opt/ros/humble /usr/bin/cmake --install /home/submarine/gridmap_ws/build/grid_map_core

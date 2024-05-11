@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared -Wl,-soname,libodometer.so -o libodometer.so CMakeFiles/odometer.dir/Odometer.cc.o  -lgz-sensors::gz-sensors 

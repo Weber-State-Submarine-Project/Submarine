@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240503-2255-Experimental"
+	Name="ece-linux-laptop13"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="ece-linux-laptop13"
+	OSRelease="6.5.0-28-generic"
+	OSVersion="#29~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  4 14:39:20 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="17"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="11099"
+	TotalPhysicalMemory="5814"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1396.69"
+	>
+	<Testing>
+		<StartDateTime>May 03 16:55 MDT</StartDateTime>
+		<StartTestTime>1714776941</StartTestTime>
+		<TestList>
+			<Test>./cpplint</Test>
+			<Test>./grid_map_ros-test</Test>
+			<Test>./cppcheck</Test>
+			<Test>./lint_cmake</Test>
+			<Test>./uncrustify</Test>
+			<Test>./xmllint</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>cpplint</Name>
+			<Path>.</Path>
+			<FullName>./cpplint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cpplint.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.763104</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cpplint.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_ros':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cpplint.xunit.xml --filters=-legal/copyright,-build/include_order
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_ros/include' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/include/grid_map_ros/GridMapMsgHelpers.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/include/grid_map_ros/GridMapRosConverter.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/include/grid_map_ros/PolygonRosConverter.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/include/grid_map_ros/grid_map_ros.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/include/grid_map_ros/message_traits.hpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_ros/src' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/src/GridMapMsgHelpers.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/src/GridMapRosConverter.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/src/PolygonRosConverter.cpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_ros/test' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/test/GridMapRosTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/test/test_grid_map_ros.cpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cpplint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cpplint</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>grid_map_ros-test</Name>
+			<Path>.</Path>
+			<FullName>./grid_map_ros-test</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_cmake_gtest/grid_map_ros-test.txt" "--command" "/home/submarine/gridmap_ws/build/grid_map_ros/grid_map_ros-test" "--gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.262975</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_cmake_gtest/grid_map_ros-test.txt" "--command" "/home/submarine/gridmap_ws/build/grid_map_ros/grid_map_ros-test" "--gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_ros':
+ - /home/submarine/gridmap_ws/build/grid_map_ros/grid_map_ros-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml
+[==========] Running 9 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from RosMessageConversion
+[ RUN      ] RosMessageConversion.roundTrip
+[       OK ] RosMessageConversion.roundTrip (0 ms)
+[----------] 1 test from RosMessageConversion (0 ms total)
+
+[----------] 2 tests from RosbagHandling
+[ RUN      ] RosbagHandling.saveLoad
+[INFO] [1714776942.595402579] [rosbag2_storage]: Opened database 'test.bag/test.bag_0.db3' for READ_WRITE.
+[INFO] [1714776942.601368220] [rosbag2_storage]: Opened database 'test.bag/test.bag_0.db3' for READ_ONLY.
+[       OK ] RosbagHandling.saveLoad (30 ms)
+[ RUN      ] RosbagHandling.saveLoadWithTime
+[INFO] [1714776942.606985865] [rosbag2_storage]: Opened database 'test.bag/test.bag_0.db3' for READ_WRITE.
+[INFO] [1714776942.612207499] [rosbag2_storage]: Opened database 'test.bag/test.bag_0.db3' for READ_ONLY.
+[       OK ] RosbagHandling.saveLoadWithTime (10 ms)
+[----------] 2 tests from RosbagHandling (40 ms total)
+
+[----------] 2 tests from OccupancyGridConversion
+[ RUN      ] OccupancyGridConversion.withMove
+[       OK ] OccupancyGridConversion.withMove (0 ms)
+[ RUN      ] OccupancyGridConversion.roundTrip
+[       OK ] OccupancyGridConversion.roundTrip (1 ms)
+[----------] 2 tests from OccupancyGridConversion (1 ms total)
+
+[----------] 2 tests from CostmapConversion
+[ RUN      ] CostmapConversion.withMove
+[       OK ] CostmapConversion.withMove (0 ms)
+[ RUN      ] CostmapConversion.roundTrip
+[       OK ] CostmapConversion.roundTrip (0 ms)
+[----------] 2 tests from CostmapConversion (0 ms total)
+
+[----------] 2 tests from ImageConversion
+[ RUN      ] ImageConversion.roundTripBGRA8
+[       OK ] ImageConversion.roundTripBGRA8 (2 ms)
+[ RUN      ] ImageConversion.roundTripMONO16
+[       OK ] ImageConversion.roundTripMONO16 (2 ms)
+[----------] 2 tests from ImageConversion (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 5 test suites ran. (45 ms total)
+[  PASSED  ] 9 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml'
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>cppcheck</Name>
+			<Path>.</Path>
+			<FullName>./cppcheck</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cppcheck.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_ros/include"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.213055</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cppcheck.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_ros/include"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_ros':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cppcheck.xunit.xml --include_dirs /home/submarine/gridmap_ws/src/grid_map/grid_map_ros/include
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/cppcheck.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cppcheck</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>lint_cmake</Name>
+			<Path>.</Path>
+			<FullName>./lint_cmake</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/lint_cmake.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/lint_cmake.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.18441</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/lint_cmake.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/lint_cmake.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_ros':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/lint_cmake.xunit.xml
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/lint_cmake.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>lint_cmake</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>uncrustify</Name>
+			<Path>.</Path>
+			<FullName>./uncrustify</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/uncrustify.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/uncrustify.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.292955</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/uncrustify.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/uncrustify.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_ros':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/uncrustify.xunit.xml
+No code style divergence in file 'include/grid_map_ros/GridMapMsgHelpers.hpp'
+
+No code style divergence in file 'include/grid_map_ros/GridMapRosConverter.hpp'
+
+No code style divergence in file 'include/grid_map_ros/PolygonRosConverter.hpp'
+
+No code style divergence in file 'include/grid_map_ros/grid_map_ros.hpp'
+
+No code style divergence in file 'include/grid_map_ros/message_traits.hpp'
+
+No code style divergence in file 'src/GridMapMsgHelpers.cpp'
+
+No code style divergence in file 'src/GridMapRosConverter.cpp'
+
+No code style divergence in file 'src/PolygonRosConverter.cpp'
+
+No code style divergence in file 'test/GridMapRosTest.cpp'
+
+No code style divergence in file 'test/test_grid_map_ros.cpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/uncrustify.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>uncrustify</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>xmllint</Name>
+			<Path>.</Path>
+			<FullName>./xmllint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/xmllint.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/xmllint.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.208616</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/xmllint.xunit.xml" "--package-name" "grid_map_ros" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_ros/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/xmllint.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_ros':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/xmllint.xunit.xml
+File 'package.xml' is valid
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/xmllint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>xmllint</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>May 03 16:55 MDT</EndDateTime>
+		<EndTestTime>1714776943</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

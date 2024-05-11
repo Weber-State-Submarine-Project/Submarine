@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="grid_map_visualization.xmllint"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.065"
+>
+  <testcase
+    name="package.xml"
+    classname="grid_map_visualization.xmllint"/>
+  <system-out>Checked files:
+* package.xml</system-out>
+</testsuite>

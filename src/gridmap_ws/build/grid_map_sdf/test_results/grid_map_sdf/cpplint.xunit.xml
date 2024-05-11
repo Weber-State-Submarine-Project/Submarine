@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="grid_map_sdf.cpplint"
+  tests="10"
+  failures="0"
+  errors="0"
+  time="0.496"
+>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/SignedDistanceField.hpp"
+    classname="grid_map_sdf.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/dt.hpp"
+    classname="grid_map_sdf.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/image.hpp"
+    classname="grid_map_sdf.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/imconv.hpp"
+    classname="grid_map_sdf.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/imutil.hpp"
+    classname="grid_map_sdf.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/misc.hpp"
+    classname="grid_map_sdf.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/pnmfile.hpp"
+    classname="grid_map_sdf.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/src/SignedDistanceField.cpp"
+    classname="grid_map_sdf.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/test/SignedDistanceFieldTest.cpp"
+    classname="grid_map_sdf.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/test/test_grid_map_sdf.cpp"
+    classname="grid_map_sdf.cpplint"/>
+  <system-out>Checked files:
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/SignedDistanceField.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/dt.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/image.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/imconv.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/imutil.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/misc.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/include/grid_map_sdf/distance_transform/pnmfile.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/src/SignedDistanceField.cpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/test/SignedDistanceFieldTest.cpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_sdf/test/test_grid_map_sdf.cpp</system-out>
+</testsuite>

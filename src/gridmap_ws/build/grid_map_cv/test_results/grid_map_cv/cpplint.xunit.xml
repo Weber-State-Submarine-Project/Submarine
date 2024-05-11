@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="grid_map_cv.cpplint"
+  tests="10"
+  failures="0"
+  errors="0"
+  time="0.309"
+>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/GridMapCvConverter.hpp"
+    classname="grid_map_cv.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/GridMapCvProcessing.hpp"
+    classname="grid_map_cv.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/InpaintFilter.hpp"
+    classname="grid_map_cv.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/grid_map_cv.hpp"
+    classname="grid_map_cv.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/utilities.hpp"
+    classname="grid_map_cv.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/src/GridMapCvProcessing.cpp"
+    classname="grid_map_cv.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/src/InpaintFilter.cpp"
+    classname="grid_map_cv.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test/GridMapCvProcessingTest.cpp"
+    classname="grid_map_cv.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test/GridMapCvTest.cpp"
+    classname="grid_map_cv.cpplint"/>
+  <testcase
+    name="/home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test/test_grid_map_cv.cpp"
+    classname="grid_map_cv.cpplint"/>
+  <system-out>Checked files:
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/GridMapCvConverter.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/GridMapCvProcessing.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/InpaintFilter.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/grid_map_cv.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/include/grid_map_cv/utilities.hpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/src/GridMapCvProcessing.cpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/src/InpaintFilter.cpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test/GridMapCvProcessingTest.cpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test/GridMapCvTest.cpp
+* /home/submarine/gridmap_ws/src/grid_map/grid_map_cv/test/test_grid_map_cv.cpp</system-out>
+</testsuite>

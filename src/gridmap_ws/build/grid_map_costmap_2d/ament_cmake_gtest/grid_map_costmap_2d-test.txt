@@ -1,0 +1,57 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_costmap_2d/test':
+ - /home/submarine/gridmap_ws/build/grid_map_costmap_2d/test/grid_map_costmap_2d-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_costmap_2d/test_results/grid_map_costmap_2d/grid_map_costmap_2d-test.gtest.xml
+
+[==========] Running 16 tests from 4 test suites.
+[----------] Global test environment set-up.
+[----------] 4 tests from TestCostmap2DConversion/0, where TypeParam = grid_map::Costmap2DTranslationTable<3l, 2l, 1l, 0l>
+[ RUN      ] TestCostmap2DConversion/0.initializeFromCostmap2d
+[       OK ] TestCostmap2DConversion/0.initializeFromCostmap2d (1 ms)
+[ RUN      ] TestCostmap2DConversion/0.initializeFromGridMap
+[       OK ] TestCostmap2DConversion/0.initializeFromGridMap (0 ms)
+[ RUN      ] TestCostmap2DConversion/0.addLayerFromCostmap2d
+[       OK ] TestCostmap2DConversion/0.addLayerFromCostmap2d (0 ms)
+[ RUN      ] TestCostmap2DConversion/0.setCostmap2DFromGridMap
+[       OK ] TestCostmap2DConversion/0.setCostmap2DFromGridMap (0 ms)
+[----------] 4 tests from TestCostmap2DConversion/0 (1 ms total)
+
+[----------] 4 tests from TestCostmap2DConversion/1, where TypeParam = grid_map::Costmap2DTranslationTable<5l, 500l, 400l, 100l>
+[ RUN      ] TestCostmap2DConversion/1.initializeFromCostmap2d
+[       OK ] TestCostmap2DConversion/1.initializeFromCostmap2d (0 ms)
+[ RUN      ] TestCostmap2DConversion/1.initializeFromGridMap
+[       OK ] TestCostmap2DConversion/1.initializeFromGridMap (0 ms)
+[ RUN      ] TestCostmap2DConversion/1.addLayerFromCostmap2d
+[       OK ] TestCostmap2DConversion/1.addLayerFromCostmap2d (0 ms)
+[ RUN      ] TestCostmap2DConversion/1.setCostmap2DFromGridMap
+[       OK ] TestCostmap2DConversion/1.setCostmap2DFromGridMap (0 ms)
+[----------] 4 tests from TestCostmap2DConversion/1 (0 ms total)
+
+[----------] 4 tests from TestCostmap2DConversion/2, where TypeParam = grid_map::Costmap2DTranslationTable<255l, 254l, 253l, 0l>
+[ RUN      ] TestCostmap2DConversion/2.initializeFromCostmap2d
+[       OK ] TestCostmap2DConversion/2.initializeFromCostmap2d (0 ms)
+[ RUN      ] TestCostmap2DConversion/2.initializeFromGridMap
+[       OK ] TestCostmap2DConversion/2.initializeFromGridMap (0 ms)
+[ RUN      ] TestCostmap2DConversion/2.addLayerFromCostmap2d
+[       OK ] TestCostmap2DConversion/2.addLayerFromCostmap2d (0 ms)
+[ RUN      ] TestCostmap2DConversion/2.setCostmap2DFromGridMap
+[       OK ] TestCostmap2DConversion/2.setCostmap2DFromGridMap (0 ms)
+[----------] 4 tests from TestCostmap2DConversion/2 (0 ms total)
+
+[----------] 4 tests from TestCostmap2DConversion/3, where TypeParam = grid_map::Costmap2DTranslationTable<-1l, 100l, 99l, 0l>
+[ RUN      ] TestCostmap2DConversion/3.initializeFromCostmap2d
+[       OK ] TestCostmap2DConversion/3.initializeFromCostmap2d (0 ms)
+[ RUN      ] TestCostmap2DConversion/3.initializeFromGridMap
+[       OK ] TestCostmap2DConversion/3.initializeFromGridMap (0 ms)
+[ RUN      ] TestCostmap2DConversion/3.addLayerFromCostmap2d
+[       OK ] TestCostmap2DConversion/3.addLayerFromCostmap2d (0 ms)
+[ RUN      ] TestCostmap2DConversion/3.setCostmap2DFromGridMap
+[       OK ] TestCostmap2DConversion/3.setCostmap2DFromGridMap (0 ms)
+[----------] 4 tests from TestCostmap2DConversion/3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 4 test suites ran. (1 ms total)
+[  PASSED  ] 16 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_costmap_2d/test_results/grid_map_costmap_2d/grid_map_costmap_2d-test.gtest.xml'
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_costmap_2d/test_results/grid_map_costmap_2d/grid_map_costmap_2d-test.gtest.xml'

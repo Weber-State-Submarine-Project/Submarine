@@ -1,0 +1,338 @@
+UpdateCTestConfiguration  from :/home/submarine/gridmap_ws/build/grid_map_pcl/CTestConfiguration.ini
+Parse Config file:/home/submarine/gridmap_ws/build/grid_map_pcl/CTestConfiguration.ini
+   Site: ece-linux-laptop13
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20240503-2255 - Experimental
+UpdateCTestConfiguration  from :/home/submarine/gridmap_ws/build/grid_map_pcl/CTestConfiguration.ini
+Parse Config file:/home/submarine/gridmap_ws/build/grid_map_pcl/CTestConfiguration.ini
+Test project /home/submarine/gridmap_ws/build/grid_map_pcl
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: cpplint
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/cpplint.xunit.xml" "--package-name" "grid_map_pcl" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"
+1: Test timeout computed to be: 120
+1: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl':
+1:  - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/cpplint.xunit.xml --filters=-legal/copyright,-build/include_order
+1: Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/include' argument
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/include/grid_map_pcl/GridMapPclConverter.hpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/include/grid_map_pcl/GridMapPclLoader.hpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/include/grid_map_pcl/PclLoaderParameters.hpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/include/grid_map_pcl/PointcloudProcessor.hpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/include/grid_map_pcl/grid_map_pcl.hpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/include/grid_map_pcl/helpers.hpp
+1: 
+1: Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/src' argument
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/src/GridMapPclConverter.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/src/GridMapPclLoader.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/src/PclLoaderParameters.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/src/PointcloudProcessor.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/src/grid_map_pcl_loader_node.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/src/helpers.cpp
+1: 
+1: Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/test' argument
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/test/GridMapPclLoaderTest.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/test/HelpersTest.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/test/PointcloudCreator.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/test/PointcloudCreator.hpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/test/PointcloudProcessorTest.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/test/test_grid_map_pcl.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/test/test_helpers.cpp
+1: 
+1: Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/test/test_helpers.hpp
+1: 
+1: No problems found
+1: -- run_test.py: return code 0
+1: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/cpplint.xunit.xml'
+1/8 Test #1: cpplint ..........................   Passed    1.16 sec
+test 2
+    Start 2: grid_map_pcl-test
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/grid_map_pcl-test.gtest.xml" "--package-name" "grid_map_pcl" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/ament_cmake_gtest/grid_map_pcl-test.txt" "--command" "/home/submarine/gridmap_ws/build/grid_map_pcl/grid_map_pcl-test" "--gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/grid_map_pcl-test.gtest.xml"
+2: Test timeout computed to be: 300
+2: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_pcl':
+2:  - /home/submarine/gridmap_ws/build/grid_map_pcl/grid_map_pcl-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/grid_map_pcl-test.gtest.xml
+2: [==========] Running 10 tests from 3 test suites.
+2: [----------] Global test environment set-up.
+2: [----------] 8 tests from GridMapPclLoaderTest
+2: [ RUN      ] GridMapPclLoaderTest.FlatGroundRealDataset
+2: [       OK ] GridMapPclLoaderTest.FlatGroundRealDataset (271 ms)
+2: [ RUN      ] GridMapPclLoaderTest.PerfectPlane
+2: [WARN] [1714776945.901852003] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776945.905043786] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776945.916333467] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776945.916613576] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776945.928359238] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776945.928801992] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776945.939687055] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776945.940382875] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776945.949962021] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776945.952035491] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.253323035] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.256647421] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.263612825] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.270217548] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.273624649] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.281510250] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.284784065] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.291622605] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.295860374] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.603297215] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.606101062] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.615754702] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.616192516] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.625806296] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.628929109] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.636326405] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.639492094] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.646474742] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.649812755] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.948048310] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.950303361] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.959160010] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.960786657] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.970901347] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776946.973196668] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.983288022] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776946.986679401] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.303160085] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.307297121] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.313398466] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.317725812] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.324455220] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.328041036] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.335479971] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.338168727] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.345967710] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.350718240] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.673189137] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.673782281] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.684151002] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.684869035] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.694593892] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.696312912] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.705402170] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.706511444] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776947.715415372] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776947.717126557] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.015243860] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.016169367] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.025748547] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.026628333] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.036153104] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.037291536] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.046384947] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.049045906] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.356029645] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.358622487] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.368933357] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.370952966] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.382164925] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.383302735] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.392456306] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.393406933] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.705570444] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.707797187] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.716411893] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.718444939] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.726470651] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.730884677] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.737502790] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776948.741253272] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776948.748126104] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776949.038391832] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776949.039481575] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776949.048418950] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776949.050324641] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776949.060589665] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [WARN] [1714776949.060843581] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776949.071338323] [GridMapPclLoaderTest]: Less than 4 points in a cell
+2: [WARN] [1714776949.071456248] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+2: [       OK ] GridMapPclLoaderTest.PerfectPlane (3529 ms)
+2: [ RUN      ] GridMapPclLoaderTest.NoisyPlane
+2: [       OK ] GridMapPclLoaderTest.NoisyPlane (57162 ms)
+2: [ RUN      ] GridMapPclLoaderTest.NoisyDoublePlane
+2: [       OK ] GridMapPclLoaderTest.NoisyDoublePlane (12411 ms)
+2: [ RUN      ] GridMapPclLoaderTest.InitializeGeometry
+2: [       OK ] GridMapPclLoaderTest.InitializeGeometry (552 ms)
+2: [ RUN      ] GridMapPclLoaderTest.NoisyStepTerrain
+2: [       OK ] GridMapPclLoaderTest.NoisyStepTerrain (50028 ms)
+2: [ RUN      ] GridMapPclLoaderTest.CalculateElevation
+2: [       OK ] GridMapPclLoaderTest.CalculateElevation (8598 ms)
+2: [ RUN      ] GridMapPclLoaderTest.SavePointclouds
+2: [       OK ] GridMapPclLoaderTest.SavePointclouds (8080 ms)
+2: [----------] 8 tests from GridMapPclLoaderTest (140631 ms total)
+2: 
+2: [----------] 1 test from HelpersTest
+2: [ RUN      ] HelpersTest.MeanPositionTest
+2: [       OK ] HelpersTest.MeanPositionTest (11 ms)
+2: [----------] 1 test from HelpersTest (11 ms total)
+2: 
+2: [----------] 1 test from PointcloudProcessorTest
+2: [ RUN      ] PointcloudProcessorTest.ExtractClusters
+2: [       OK ] PointcloudProcessorTest.ExtractClusters (9232 ms)
+2: [----------] 1 test from PointcloudProcessorTest (9232 ms total)
+2: 
+2: [----------] Global test environment tear-down
+2: [==========] 10 tests from 3 test suites ran. (149874 ms total)
+2: [  PASSED  ] 10 tests.
+2: -- run_test.py: return code 0
+2: -- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/grid_map_pcl-test.gtest.xml'
+2: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/grid_map_pcl-test.gtest.xml'
+2/8 Test #2: grid_map_pcl-test ................   Passed  150.34 sec
+test 3
+    Start 3: cppcheck
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/cppcheck.xunit.xml" "--package-name" "grid_map_pcl" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/include"
+3: Test timeout computed to be: 300
+3: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl':
+3:  - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/cppcheck.xunit.xml --include_dirs /home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/include
+3: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+3: -- run_test.py: return code 0
+3: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/cppcheck.xunit.xml'
+3/8 Test #3: cppcheck .........................   Passed    0.22 sec
+test 4
+    Start 4: flake8
+
+4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/flake8.xunit.xml" "--package-name" "grid_map_pcl" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/flake8.xunit.xml"
+4: Test timeout computed to be: 60
+4: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl':
+4:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/flake8.xunit.xml
+4: 
+4: 1 files checked
+4: No problems found
+4: 
+4: Checked files:
+4: 
+4: * ./launch/grid_map_pcl_loader_launch.py
+4: -- run_test.py: return code 0
+4: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/flake8.xunit.xml'
+4/8 Test #4: flake8 ...........................   Passed    0.63 sec
+test 5
+    Start 5: lint_cmake
+
+5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/lint_cmake.xunit.xml" "--package-name" "grid_map_pcl" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/lint_cmake.xunit.xml"
+5: Test timeout computed to be: 60
+5: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl':
+5:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/lint_cmake.xunit.xml
+5: 
+5: No problems found
+5: -- run_test.py: return code 0
+5: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/lint_cmake.xunit.xml'
+5/8 Test #5: lint_cmake .......................   Passed    0.24 sec
+test 6
+    Start 6: pep257
+
+6: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/pep257.xunit.xml" "--package-name" "grid_map_pcl" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/pep257.xunit.xml"
+6: Test timeout computed to be: 60
+6: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl':
+6:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/pep257.xunit.xml
+6: checking ./launch/grid_map_pcl_loader_launch.py
+6: No problems found
+6: -- run_test.py: return code 0
+6: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/pep257.xunit.xml'
+6/8 Test #6: pep257 ...........................   Passed    0.34 sec
+test 7
+    Start 7: uncrustify
+
+7: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/uncrustify.xunit.xml" "--package-name" "grid_map_pcl" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/uncrustify.xunit.xml"
+7: Test timeout computed to be: 60
+7: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl':
+7:  - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/uncrustify.xunit.xml
+7: No code style divergence in file 'include/grid_map_pcl/GridMapPclConverter.hpp'
+7: 
+7: No code style divergence in file 'include/grid_map_pcl/GridMapPclLoader.hpp'
+7: 
+7: No code style divergence in file 'include/grid_map_pcl/PclLoaderParameters.hpp'
+7: 
+7: No code style divergence in file 'include/grid_map_pcl/PointcloudProcessor.hpp'
+7: 
+7: No code style divergence in file 'include/grid_map_pcl/grid_map_pcl.hpp'
+7: 
+7: No code style divergence in file 'include/grid_map_pcl/helpers.hpp'
+7: 
+7: No code style divergence in file 'src/GridMapPclConverter.cpp'
+7: 
+7: No code style divergence in file 'src/GridMapPclLoader.cpp'
+7: 
+7: No code style divergence in file 'src/PclLoaderParameters.cpp'
+7: 
+7: No code style divergence in file 'src/PointcloudProcessor.cpp'
+7: 
+7: No code style divergence in file 'src/grid_map_pcl_loader_node.cpp'
+7: 
+7: No code style divergence in file 'src/helpers.cpp'
+7: 
+7: No code style divergence in file 'test/GridMapPclLoaderTest.cpp'
+7: 
+7: No code style divergence in file 'test/HelpersTest.cpp'
+7: 
+7: No code style divergence in file 'test/PointcloudCreator.cpp'
+7: 
+7: No code style divergence in file 'test/PointcloudCreator.hpp'
+7: 
+7: No code style divergence in file 'test/PointcloudProcessorTest.cpp'
+7: 
+7: No code style divergence in file 'test/test_grid_map_pcl.cpp'
+7: 
+7: No code style divergence in file 'test/test_helpers.cpp'
+7: 
+7: No code style divergence in file 'test/test_helpers.hpp'
+7: 
+7: No problems found
+7: -- run_test.py: return code 0
+7: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/uncrustify.xunit.xml'
+7/8 Test #7: uncrustify .......................   Passed    0.32 sec
+test 8
+    Start 8: xmllint
+
+8: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/xmllint.xunit.xml" "--package-name" "grid_map_pcl" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/xmllint.xunit.xml"
+8: Test timeout computed to be: 60
+8: -- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl':
+8:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/xmllint.xunit.xml
+8: File 'package.xml' is valid
+8: 
+8: No problems found
+8: -- run_test.py: return code 0
+8: -- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/xmllint.xunit.xml'
+8/8 Test #8: xmllint ..........................   Passed    0.30 sec
+
+[0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 8
+
+Label Time Summary:
+cppcheck      =   0.22 sec*proc (1 test)
+cpplint       =   1.16 sec*proc (1 test)
+flake8        =   0.63 sec*proc (1 test)
+gtest         = 150.34 sec*proc (1 test)
+lint_cmake    =   0.24 sec*proc (1 test)
+linter        =   3.20 sec*proc (7 tests)
+pep257        =   0.34 sec*proc (1 test)
+uncrustify    =   0.32 sec*proc (1 test)
+xmllint       =   0.30 sec*proc (1 test)
+
+Total Test time (real) = 153.54 sec

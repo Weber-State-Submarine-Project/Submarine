@@ -1,0 +1,21 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/pep257.xunit.xml
+
+checking ./launch/filters_demo_launch.py
+checking ./launch/grid_map_loader_demo_launch.py
+checking ./launch/image_to_gridmap_demo_launch.py
+checking ./launch/interpolation_demo_launch.py
+checking ./launch/iterators_demo_launch.py
+checking ./launch/move_demo_launch.py
+checking ./launch/normal_filter_comparison_launch.py
+checking ./launch/octomap_to_gridmap_demo_launch.py
+checking ./launch/opencv_demo_launch.py
+checking ./launch/resolution_change_demo_launch.py
+checking ./launch/simple_demo_launch.py
+checking ./launch/tutorial_demo_launch.py
+checking ./scripts/image_publisher.py
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/pep257.xunit.xml'

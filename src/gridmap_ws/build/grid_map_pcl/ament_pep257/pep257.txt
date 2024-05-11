@@ -1,0 +1,9 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl':
+ - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/pep257.xunit.xml
+
+checking ./launch/grid_map_pcl_loader_launch.py
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/pep257.xunit.xml'

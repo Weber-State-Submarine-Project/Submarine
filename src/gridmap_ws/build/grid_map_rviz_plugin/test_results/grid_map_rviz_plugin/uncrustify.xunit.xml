@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="grid_map_rviz_plugin.uncrustify"
+  tests="4"
+  failures="0"
+  errors="0"
+  time="0.035"
+>
+  <testcase
+    name="include/grid_map_rviz_plugin/GridMapDisplay.hpp"
+    classname="grid_map_rviz_plugin.uncrustify"/>
+  <testcase
+    name="include/grid_map_rviz_plugin/GridMapVisual.hpp"
+    classname="grid_map_rviz_plugin.uncrustify"/>
+  <testcase
+    name="src/GridMapDisplay.cpp"
+    classname="grid_map_rviz_plugin.uncrustify"/>
+  <testcase
+    name="src/GridMapVisual.cpp"
+    classname="grid_map_rviz_plugin.uncrustify"/>
+  <system-out>Checked files:
+* include/grid_map_rviz_plugin/GridMapDisplay.hpp
+* include/grid_map_rviz_plugin/GridMapVisual.hpp
+* src/GridMapDisplay.cpp
+* src/GridMapVisual.cpp</system-out>
+</testsuite>

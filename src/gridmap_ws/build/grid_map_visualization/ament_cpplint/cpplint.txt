@@ -1,0 +1,54 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_visualization':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/submarine/gridmap_ws/build/grid_map_visualization/test_results/grid_map_visualization/cpplint.xunit.xml --filters=-legal/copyright,-build/include_order
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/GridMapVisualization.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/GridMapVisualizationHelpers.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/visualizations/FlatPointCloudVisualization.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/visualizations/GridCellsVisualization.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/visualizations/MapRegionVisualization.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/visualizations/OccupancyGridVisualization.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/visualizations/PointCloudVisualization.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/visualizations/VectorVisualization.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/visualizations/VisualizationBase.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/include/grid_map_visualization/visualizations/VisualizationFactory.hpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/GridMapVisualization.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/GridMapVisualizationHelpers.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/grid_map_visualization_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/visualizations/FlatPointCloudVisualization.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/visualizations/GridCellsVisualization.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/visualizations/MapRegionVisualization.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/visualizations/OccupancyGridVisualization.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/visualizations/PointCloudVisualization.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/visualizations/VectorVisualization.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/visualizations/VisualizationBase.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_visualization/src/visualizations/VisualizationFactory.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_visualization/test_results/grid_map_visualization/cpplint.xunit.xml'

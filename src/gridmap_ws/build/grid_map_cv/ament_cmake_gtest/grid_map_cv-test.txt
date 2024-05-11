@@ -1,0 +1,31 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_cv':
+ - /home/submarine/gridmap_ws/build/grid_map_cv/grid_map_cv-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/grid_map_cv-test.gtest.xml
+
+[==========] Running 6 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 4 tests from ImageConversion
+[ RUN      ] ImageConversion.roundTrip8UC3
+[       OK ] ImageConversion.roundTrip8UC3 (6 ms)
+[ RUN      ] ImageConversion.roundTrip8UC4
+[       OK ] ImageConversion.roundTrip8UC4 (0 ms)
+[ RUN      ] ImageConversion.roundTrip16UC1
+[       OK ] ImageConversion.roundTrip16UC1 (2 ms)
+[ RUN      ] ImageConversion.roundTrip32FC1
+[       OK ] ImageConversion.roundTrip32FC1 (2 ms)
+[----------] 4 tests from ImageConversion (11 ms total)
+
+[----------] 2 tests from GridMapCvProcessing
+[ RUN      ] GridMapCvProcessing.changeResolution
+[       OK ] GridMapCvProcessing.changeResolution (1 ms)
+[ RUN      ] GridMapCvProcessing.changeResolutionForMovedMap
+[       OK ] GridMapCvProcessing.changeResolutionForMovedMap (1 ms)
+[----------] 2 tests from GridMapCvProcessing (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test suites ran. (13 ms total)
+[  PASSED  ] 6 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/grid_map_cv-test.gtest.xml'
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_cv/test_results/grid_map_cv/grid_map_cv-test.gtest.xml'

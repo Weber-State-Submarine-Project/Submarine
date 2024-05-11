@@ -1,0 +1,50 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_ros':
+ - /home/submarine/gridmap_ws/build/grid_map_ros/grid_map_ros-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml
+
+[==========] Running 9 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from RosMessageConversion
+[ RUN      ] RosMessageConversion.roundTrip
+[       OK ] RosMessageConversion.roundTrip (0 ms)
+[----------] 1 test from RosMessageConversion (0 ms total)
+
+[----------] 2 tests from RosbagHandling
+[ RUN      ] RosbagHandling.saveLoad
+[INFO] [1714776942.595402579] [rosbag2_storage]: Opened database 'test.bag/test.bag_0.db3' for READ_WRITE.
+[INFO] [1714776942.601368220] [rosbag2_storage]: Opened database 'test.bag/test.bag_0.db3' for READ_ONLY.
+[       OK ] RosbagHandling.saveLoad (30 ms)
+[ RUN      ] RosbagHandling.saveLoadWithTime
+[INFO] [1714776942.606985865] [rosbag2_storage]: Opened database 'test.bag/test.bag_0.db3' for READ_WRITE.
+[INFO] [1714776942.612207499] [rosbag2_storage]: Opened database 'test.bag/test.bag_0.db3' for READ_ONLY.
+[       OK ] RosbagHandling.saveLoadWithTime (10 ms)
+[----------] 2 tests from RosbagHandling (40 ms total)
+
+[----------] 2 tests from OccupancyGridConversion
+[ RUN      ] OccupancyGridConversion.withMove
+[       OK ] OccupancyGridConversion.withMove (0 ms)
+[ RUN      ] OccupancyGridConversion.roundTrip
+[       OK ] OccupancyGridConversion.roundTrip (1 ms)
+[----------] 2 tests from OccupancyGridConversion (1 ms total)
+
+[----------] 2 tests from CostmapConversion
+[ RUN      ] CostmapConversion.withMove
+[       OK ] CostmapConversion.withMove (0 ms)
+[ RUN      ] CostmapConversion.roundTrip
+[       OK ] CostmapConversion.roundTrip (0 ms)
+[----------] 2 tests from CostmapConversion (0 ms total)
+
+[----------] 2 tests from ImageConversion
+[ RUN      ] ImageConversion.roundTripBGRA8
+[       OK ] ImageConversion.roundTripBGRA8 (2 ms)
+[ RUN      ] ImageConversion.roundTripMONO16
+[       OK ] ImageConversion.roundTripMONO16 (2 ms)
+[----------] 2 tests from ImageConversion (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 5 test suites ran. (45 ms total)
+[  PASSED  ] 9 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml'
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_ros/test_results/grid_map_ros/grid_map_ros-test.gtest.xml'

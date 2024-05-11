@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="grid_map_costmap_2d.uncrustify"
+  tests="6"
+  failures="0"
+  errors="0"
+  time="0.059"
+>
+  <testcase
+    name="include/grid_map_costmap_2d/costmap_2d_converter.hpp"
+    classname="grid_map_costmap_2d.uncrustify"/>
+  <testcase
+    name="include/grid_map_costmap_2d/grid_map_costmap_2d.hpp"
+    classname="grid_map_costmap_2d.uncrustify"/>
+  <testcase
+    name="test/test_costmap_2d_converter.cpp"
+    classname="grid_map_costmap_2d.uncrustify"/>
+  <testcase
+    name="test/test_costmap_2d_ros.cpp"
+    classname="grid_map_costmap_2d.uncrustify"/>
+  <testcase
+    name="test/test_costmap_2d_ros.hpp"
+    classname="grid_map_costmap_2d.uncrustify"/>
+  <testcase
+    name="test/test_grid_map_costmap_2d.cpp"
+    classname="grid_map_costmap_2d.uncrustify"/>
+  <system-out>Checked files:
+* include/grid_map_costmap_2d/costmap_2d_converter.hpp
+* include/grid_map_costmap_2d/grid_map_costmap_2d.hpp
+* test/test_costmap_2d_converter.cpp
+* test/test_costmap_2d_ros.cpp
+* test/test_costmap_2d_ros.hpp
+* test/test_grid_map_costmap_2d.cpp</system-out>
+</testsuite>

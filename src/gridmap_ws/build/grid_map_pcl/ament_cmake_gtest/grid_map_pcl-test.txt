@@ -1,0 +1,132 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_pcl':
+ - /home/submarine/gridmap_ws/build/grid_map_pcl/grid_map_pcl-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/grid_map_pcl-test.gtest.xml
+
+[==========] Running 10 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 8 tests from GridMapPclLoaderTest
+[ RUN      ] GridMapPclLoaderTest.FlatGroundRealDataset
+[       OK ] GridMapPclLoaderTest.FlatGroundRealDataset (271 ms)
+[ RUN      ] GridMapPclLoaderTest.PerfectPlane
+[WARN] [1714776945.901852003] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776945.905043786] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776945.916333467] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776945.916613576] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776945.928359238] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776945.928801992] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776945.939687055] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776945.940382875] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776945.949962021] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776945.952035491] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.253323035] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.256647421] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.263612825] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.270217548] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.273624649] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.281510250] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.284784065] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.291622605] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.295860374] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.603297215] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.606101062] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.615754702] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.616192516] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.625806296] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.628929109] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.636326405] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.639492094] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.646474742] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.649812755] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.948048310] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.950303361] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.959160010] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.960786657] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.970901347] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776946.973196668] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.983288022] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776946.986679401] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.303160085] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.307297121] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.313398466] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.317725812] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.324455220] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.328041036] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.335479971] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.338168727] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.345967710] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.350718240] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.673189137] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.673782281] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.684151002] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.684869035] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.694593892] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.696312912] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.705402170] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.706511444] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776947.715415372] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776947.717126557] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.015243860] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.016169367] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.025748547] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.026628333] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.036153104] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.037291536] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.046384947] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.049045906] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.356029645] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.358622487] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.368933357] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.370952966] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.382164925] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.383302735] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.392456306] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.393406933] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.705570444] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.707797187] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.716411893] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.718444939] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.726470651] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.730884677] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.737502790] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776948.741253272] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776948.748126104] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776949.038391832] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776949.039481575] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776949.048418950] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776949.050324641] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776949.060589665] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[WARN] [1714776949.060843581] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776949.071338323] [GridMapPclLoaderTest]: Less than 4 points in a cell
+[WARN] [1714776949.071456248] [GridMapPclLoaderTest]: No clusters found in the grid map cell
+[       OK ] GridMapPclLoaderTest.PerfectPlane (3529 ms)
+[ RUN      ] GridMapPclLoaderTest.NoisyPlane
+[       OK ] GridMapPclLoaderTest.NoisyPlane (57162 ms)
+[ RUN      ] GridMapPclLoaderTest.NoisyDoublePlane
+[       OK ] GridMapPclLoaderTest.NoisyDoublePlane (12411 ms)
+[ RUN      ] GridMapPclLoaderTest.InitializeGeometry
+[       OK ] GridMapPclLoaderTest.InitializeGeometry (552 ms)
+[ RUN      ] GridMapPclLoaderTest.NoisyStepTerrain
+[       OK ] GridMapPclLoaderTest.NoisyStepTerrain (50028 ms)
+[ RUN      ] GridMapPclLoaderTest.CalculateElevation
+[       OK ] GridMapPclLoaderTest.CalculateElevation (8598 ms)
+[ RUN      ] GridMapPclLoaderTest.SavePointclouds
+[       OK ] GridMapPclLoaderTest.SavePointclouds (8080 ms)
+[----------] 8 tests from GridMapPclLoaderTest (140631 ms total)
+
+[----------] 1 test from HelpersTest
+[ RUN      ] HelpersTest.MeanPositionTest
+[       OK ] HelpersTest.MeanPositionTest (11 ms)
+[----------] 1 test from HelpersTest (11 ms total)
+
+[----------] 1 test from PointcloudProcessorTest
+[ RUN      ] PointcloudProcessorTest.ExtractClusters
+[       OK ] PointcloudProcessorTest.ExtractClusters (9232 ms)
+[----------] 1 test from PointcloudProcessorTest (9232 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 3 test suites ran. (149874 ms total)
+[  PASSED  ] 10 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/grid_map_pcl-test.gtest.xml'
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_pcl/test_results/grid_map_pcl/grid_map_pcl-test.gtest.xml'

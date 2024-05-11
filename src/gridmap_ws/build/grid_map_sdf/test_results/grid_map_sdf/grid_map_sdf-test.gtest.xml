@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="5" failures="0" disabled="0" errors="0" time="0.003" timestamp="2024-05-03T16:55:40" name="AllTests">
+  <testsuite name="SignedDistanceField" tests="5" failures="0" disabled="0" errors="0" time="0.003" timestamp="2024-05-03T16:55:40">
+    <testcase name="EmptyMap" status="run" result="completed" time="0" timestamp="2024-05-03T16:55:40" classname="grid_map_sdf.SignedDistanceField" />
+    <testcase name="GetDistanceFlat" status="run" result="completed" time="0.001" timestamp="2024-05-03T16:55:40" classname="grid_map_sdf.SignedDistanceField" />
+    <testcase name="GetDistance" status="run" result="completed" time="0" timestamp="2024-05-03T16:55:40" classname="grid_map_sdf.SignedDistanceField" />
+    <testcase name="GetDistanceGradient" status="run" result="completed" time="0.001" timestamp="2024-05-03T16:55:40" classname="grid_map_sdf.SignedDistanceField" />
+    <testcase name="GetInterpolatedDistance" status="run" result="completed" time="0.001" timestamp="2024-05-03T16:55:40" classname="grid_map_sdf.SignedDistanceField" />
+  </testsuite>
+</testsuites>

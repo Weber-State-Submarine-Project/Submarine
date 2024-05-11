@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="grid_map_filters.xmllint"
+  tests="2"
+  errors="0"
+  failures="0"
+  time="0.150"
+>
+  <testcase
+    name="filter_plugins.xml"
+    classname="grid_map_filters.xmllint"/>
+  <testcase
+    name="package.xml"
+    classname="grid_map_filters.xmllint"/>
+  <system-out>Checked files:
+* filter_plugins.xml
+* package.xml</system-out>
+</testsuite>

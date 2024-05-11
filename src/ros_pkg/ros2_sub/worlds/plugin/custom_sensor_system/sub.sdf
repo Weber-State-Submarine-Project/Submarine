@@ -1,0 +1,574 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="multi_lrauv"> 
+    <physics name="1ms" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    
+    <plugin filename="gz-sim-imu-system"
+      name="gz::sim::systems::Imu">
+    </plugin>
+    <plugin
+      filename="gz-sim-contact-system"
+      name="gz::sim::systems::Contact">
+    </plugin>
+
+    <plugin
+      filename="gz-sim-buoyancy-system"
+      name="gz::sim::systems::Buoyancy">
+      <uniform_fluid_density>1000</uniform_fluid_density>
+    </plugin>
+    
+    <plugin
+      filename="gz-sim-particle-emitter-system"
+      name="gz::sim::systems::ParticleEmitter">
+    </plugin>
+
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    
+    <plugin
+      filename="OdometerSystem"
+      name="custom::OdometerSystem">
+    </plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 80 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.5 0.5 0.5 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <include>
+      <pose>23 -12.3 0 0 0 0 </pose>
+      <uri>file://models/tethys/model.sdf</uri>
+
+      <!-- Joint controllers -->
+      <plugin
+        filename="gz-sim-joint-position-controller-system"
+        name="gz::sim::systems::JointPositionController">
+        <joint_name>horizontal_fins_joint</joint_name>
+        <p_gain>0.1</p_gain>
+      </plugin>
+
+      <plugin
+        filename="gz-sim-joint-position-controller-system"
+        name="gz::sim::systems::JointPositionController">
+        <joint_name>vertical_fins_joint</joint_name>
+        <p_gain>0.1</p_gain>
+        <topic>angular_vel</topic>
+      </plugin>
+
+      <plugin
+        filename="gz-sim-thruster-system"
+        name="gz::sim::systems::Thruster">
+        <namespace>tethys</namespace>
+        <joint_name>propeller_joint</joint_name>
+        <thrust_coefficient>0.004422</thrust_coefficient>
+        <fluid_density>1000</fluid_density>
+        <propeller_diameter>0.2</propeller_diameter>
+      </plugin>
+
+      <!-- Lift and drag -->
+
+      <!-- Vertical fin -->
+      <plugin
+        filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+        <air_density>1000</air_density>
+        <cla>20</cla>
+        <cla_stall>-1.1</cla_stall>
+        <cda>0.01</cda>
+        <cda_stall>0.03</cda_stall>
+        <alpha_stall>0.17</alpha_stall>
+        <a0>0</a0>
+        <area>0.05</area>
+        <upward>0 1 0</upward>
+        <forward>1 0 0</forward>
+        <link_name>vertical_fins</link_name>
+        <cp>0 0 0</cp>
+      </plugin>
+
+      <!-- Horizontal fin -->
+      <plugin
+        filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+        <air_density>1000</air_density>
+        <cla>4.13</cla>
+        <cla_stall>-1.1</cla_stall>
+        <cda>0.2</cda>
+        <cda_stall>0.03</cda_stall>
+        <alpha_stall>0.17</alpha_stall>
+        <a0>0</a0>
+        <area>0.0244</area>
+        <upward>0 0 1</upward>
+        <forward>1 0 0</forward>
+        <link_name>horizontal_fins</link_name>
+        <cp>0 0 0</cp>
+      </plugin>
+
+      <plugin
+        filename="gz-sim-hydrodynamics-system"
+        name="gz::sim::systems::Hydrodynamics">
+        <link_name>base_link</link_name>
+        <xDotU>-4.876161</xDotU>
+        <yDotV>-126.324739</yDotV>
+        <zDotW>-126.324739</zDotW>
+        <kDotP>0</kDotP>
+        <mDotQ>-33.46</mDotQ>
+        <nDotR>-33.46</nDotR>
+        <yUabsU>0</yUabsU>
+        <xU>0</xU>
+        <yVabsV>-601.27</yVabsV>
+        <yV>0</yV>
+        <zWabsW>-601.27</zWabsW>
+        <zW>0</zW>
+        <kPabsP>-0.1916</kPabsP>
+        <kP>0</kP>
+        <mQabsQ>-632.698957</mQabsQ>
+        <mQ>0</mQ>
+        <nRabsR>-632.698957</nRabsR>
+        <nR>0</nR>
+      </plugin>
+
+      </include>
+      <model name = "roof">
+            <pose> 0 4.6 .2  0 0 0 </pose>
+            <static>true</static>
+            <link name="roof_link">
+                <collision name="roof_collision">
+                <geometry>
+                    <box>
+                        <size>55 40 .1</size>
+                    </box>
+                </geometry>
+                </collision>
+            </link>
+        </model>
+    <!--pool is designed with swenson pools ~specs*2 since the sub is ~twice the size and cannot effectively be changed without breaking physics-->
+      <model name = "pool">
+            <pose> 0 4.6 -2 0 0 0 </pose>
+            <static>true</static>
+            <link name="pool_link">
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>51 40 4</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.478 0.647 0.702 0.5</ambient>
+                    <diffuse>0.478 0.647 0.702 0.5</diffuse>               
+                </material>
+                </visual>
+            </link>
+        </model>
+        <model name = "shallow_wall">
+            <pose> 26.5 4.6 -2 0 0 0 </pose>
+            <static>true</static>
+            <link name="shallow_wall_link">
+                <collision name="shallow_wall_collision">
+                <geometry>
+                    <box>
+                        <size>1 40 6</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>1 40 6</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+
+                </visual>
+            </link>
+        </model>
+        <model name = "shallow_left_wall">
+            <pose> 18 24.2 -2 0 0 0</pose>
+            <static>true</static>
+            <link name="shallow_left_wall_link">
+                <collision name="shallow_left_wall_collision">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+
+                </visual>
+            </link>
+        </model>
+        <model name = "shallow_right_wall2">
+            <pose> 0 -15 -2 0 0 0</pose>
+            <static>true</static>
+            <link name="shallow_right_wall2_link">
+                <collision name="shallow_right_wall2_collision">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+                </visual>
+            </link>
+        </model>
+        <model name = "shallow_left_wall2">
+            <pose> 0 24.2 -2 0 0 0</pose>
+            <static>true</static>
+            <link name="shallow_left_wall2_link">
+                <collision name="shallow_right_wall2_collision">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+                </visual>
+            </link>
+        </model>
+        <model name = "slant_right_wall">
+            <pose> -2.31 -15 -3.72 0 -0.19 0</pose>
+            <static>true</static>
+            <link name="slant_right_wall_link">
+                <collision name="slant_right_wall_collision">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+                </visual>
+            </link>
+        </model>
+        <model name = "slant_left_wall">
+            <pose> -1.53 24.2 -3.66 0 -0.19 0</pose>
+            <static>true</static>
+            <link name="slant_left_wall_link">
+                <collision name="slant_right_wall_collision">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name = "shallow_right_wall">
+            <pose> 18 -15 -2 0 0 0</pose>
+            <static>true</static>
+            <link name="shallow_right_wall_link">
+                <collision name="shallow_right_wall_collision">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 1 6</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+                </visual>
+            </link>
+        </model>
+        <model name = "shallow_ground">
+            <pose> 18 4.6 -4.5 0 0 0</pose>
+            <static>true</static>
+            <link name="shallow_ground_link">
+                <collision name="shallow_ground_collision">
+                <geometry>
+                    <box>
+                        <size>18 40 1</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 40 1</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+                </visual>
+            </link>
+        </model>
+        <model name = "slant_ground">
+            <pose> -.19 4.6 -6.34 0 .19 3.14</pose>
+            <static>true</static>
+            <link name="slant_ground_link">
+                <collision name="slant_ground_collision">
+                <geometry>
+                    <box>
+                        <size>22 40 .5</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>22 40 .5</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name = "deep_wall">
+            <pose> -26.5 4.6 -4 0 0 1.5708 </pose>
+            <static>true</static>
+            <link name="deep_wall_link">
+                <collision name="deep_wall_collision">
+                <geometry>
+                    <box>
+                        <size>40 1 10</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>40 1 10</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+
+                </visual>
+            </link>
+        </model>
+        <model name = "deep_left_wall">
+            <pose> -18 24.2 -4 0 0 0</pose>
+            <static>true</static>
+            <link name="deep_left_wall_link">
+                <collision name="deep_left_wall_collision">
+                <geometry>
+                    <box>
+                        <size>18 1 10</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 1 10</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+
+                </visual>
+            </link>
+        </model>
+        <model name = "deep_right_wall">
+            <pose> -18 -15 -4 0 0 0</pose>
+            <static>true</static>
+            <link name="deep_right_wall_link">
+                <collision name="deep_right_wall_collision">
+                <geometry>
+                    <box>
+                        <size>18 1 10</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 1 10</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+                </visual>
+            </link>
+        </model>
+        <model name = "deep_ground">
+            <pose> -18 4.6 -8.5 0 0 0</pose>
+            <static>true</static>
+            <link name="deep_ground_link">
+                <collision name="deep_ground_collision">
+                <geometry>
+                    <box>
+                        <size>18 40 1</size>
+                    </box>
+                </geometry>
+                </collision>
+                <visual name="visual">
+                <geometry>
+                    <box>
+                        <size>18 40 1</size>
+                    </box>
+                </geometry>
+                <material>
+                    <ambient>0.6 0.4 0.2 1</ambient>
+                    <diffuse>0.7 0.5 0.3 1</diffuse>
+                    <specular>0.8 0.6 0.4 1</specular>                
+                </material>
+                </visual>
+            </link>
+        </model>
+<!--forward-->
+<!--
+<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
+    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+                <match field="data">16777235</match>
+    </input> 
+    <output type="gz.msgs.Double" topic="/model/tethys/joint/propeller_joint/cmd_thrust">
+        data: -1
+    </output>
+</plugin>
+-->
+<!--backward-->
+<!--
+<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
+    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+        <match field="data">16777237</match>
+    </input>
+    <output type="gz.msgs.Double" topic="/model/tethys/joint/propeller_joint/cmd_thrust">
+        data: 1
+    </output>
+</plugin>
+-->
+<!--left-->
+<!--
+<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
+    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+        <match field="data">16777234</match>
+    </input>
+    <output type="gz.msgs.Double" topic="/fins">
+        data: .3
+    </output>
+</plugin>
+-->
+<!--right-->
+<!--
+<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
+    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+        <match field="data">16777236</match>
+    </input>
+    <output type="gz.msgs.Double" topic="/fins">
+        data: -.3
+    </output>
+</plugin>
+<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
+    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+        <match field="data">48</match>
+    </input>
+    <output type="gz.msgs.Double" topic="/fins">
+        data: 0
+    </output>
+
+</plugin>
+-->
+  </world>
+</sdf>

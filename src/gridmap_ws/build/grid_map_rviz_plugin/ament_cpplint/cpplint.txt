@@ -1,0 +1,20 @@
+-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_rviz_plugin':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/submarine/gridmap_ws/build/grid_map_rviz_plugin/test_results/grid_map_rviz_plugin/cpplint.xunit.xml --filters=-legal/copyright,-build/include_order
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_rviz_plugin/include' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_rviz_plugin/include/grid_map_rviz_plugin/GridMapDisplay.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_rviz_plugin/include/grid_map_rviz_plugin/GridMapVisual.hpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_rviz_plugin/src' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_rviz_plugin/src/GridMapDisplay.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_rviz_plugin/src/GridMapVisual.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_rviz_plugin/test_results/grid_map_rviz_plugin/cpplint.xunit.xml'

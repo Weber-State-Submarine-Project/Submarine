@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240503-2255-Experimental"
+	Name="ece-linux-laptop13"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="ece-linux-laptop13"
+	OSRelease="6.5.0-28-generic"
+	OSVersion="#29~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  4 14:39:20 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="17"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="11099"
+	TotalPhysicalMemory="5814"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3366.9"
+	>
+	<Testing>
+		<StartDateTime>May 03 16:55 MDT</StartDateTime>
+		<StartTestTime>1714776939</StartTestTime>
+		<TestList>
+			<Test>./cpplint</Test>
+			<Test>./grid_map_octomap-test</Test>
+			<Test>./cppcheck</Test>
+			<Test>./lint_cmake</Test>
+			<Test>./uncrustify</Test>
+			<Test>./xmllint</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>cpplint</Name>
+			<Path>.</Path>
+			<FullName>./cpplint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cpplint.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.364776</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cpplint.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cpplint.xunit.xml --filters=-legal/copyright,-build/include_order
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/include' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/include/grid_map_octomap/GridMapOctomapConverter.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/include/grid_map_octomap/grid_map_octomap.hpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/src' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/src/GridMapOctomapConverter.cpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/test' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/test/OctomapConverterTest.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/test/test_grid_map_octomap.cpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cpplint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cpplint</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>grid_map_octomap-test</Name>
+			<Path>.</Path>
+			<FullName>./grid_map_octomap-test</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/grid_map_octomap-test.gtest.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_cmake_gtest/grid_map_octomap-test.txt" "--command" "/home/submarine/gridmap_ws/build/grid_map_octomap/grid_map_octomap-test" "--gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/grid_map_octomap-test.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.89646</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/grid_map_octomap-test.gtest.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_cmake_gtest/grid_map_octomap-test.txt" "--command" "/home/submarine/gridmap_ws/build/grid_map_octomap/grid_map_octomap-test" "--gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/grid_map_octomap-test.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/build/grid_map_octomap':
+ - /home/submarine/gridmap_ws/build/grid_map_octomap/grid_map_octomap-test --gtest_output=xml:/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/grid_map_octomap-test.gtest.xml
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from OctomapConversion
+[ RUN      ] OctomapConversion.convertOctomapToGridMap
+[       OK ] OctomapConversion.convertOctomapToGridMap (894 ms)
+[ RUN      ] OctomapConversion.convertOctomapToGridMapWithBoundingBox
+[       OK ] OctomapConversion.convertOctomapToGridMapWithBoundingBox (893 ms)
+[----------] 2 tests from OctomapConversion (1787 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (1787 ms total)
+[  PASSED  ] 2 tests.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/grid_map_octomap-test.gtest.xml'
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/grid_map_octomap-test.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>cppcheck</Name>
+			<Path>.</Path>
+			<FullName>./cppcheck</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cppcheck.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/include"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.23735</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cppcheck.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/include"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cppcheck.xunit.xml --include_dirs /home/submarine/gridmap_ws/src/grid_map/grid_map_octomap/include
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/cppcheck.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cppcheck</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>lint_cmake</Name>
+			<Path>.</Path>
+			<FullName>./lint_cmake</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/lint_cmake.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/lint_cmake.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.245588</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/lint_cmake.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/lint_cmake.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/lint_cmake.xunit.xml
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/lint_cmake.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>lint_cmake</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>uncrustify</Name>
+			<Path>.</Path>
+			<FullName>./uncrustify</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/uncrustify.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/uncrustify.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.233635</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/uncrustify.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/uncrustify.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/uncrustify.xunit.xml
+No code style divergence in file 'include/grid_map_octomap/GridMapOctomapConverter.hpp'
+
+No code style divergence in file 'include/grid_map_octomap/grid_map_octomap.hpp'
+
+No code style divergence in file 'src/GridMapOctomapConverter.cpp'
+
+No code style divergence in file 'test/OctomapConverterTest.cpp'
+
+No code style divergence in file 'test/test_grid_map_octomap.cpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/uncrustify.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>uncrustify</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>xmllint</Name>
+			<Path>.</Path>
+			<FullName>./xmllint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/xmllint.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/xmllint.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.214428</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/xmllint.xunit.xml" "--package-name" "grid_map_octomap" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/xmllint.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_octomap':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/xmllint.xunit.xml
+File 'package.xml' is valid
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_octomap/test_results/grid_map_octomap/xmllint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>xmllint</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>May 03 16:55 MDT</EndDateTime>
+		<EndTestTime>1714776942</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

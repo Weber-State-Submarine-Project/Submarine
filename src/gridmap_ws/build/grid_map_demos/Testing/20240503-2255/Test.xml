@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240503-2255-Experimental"
+	Name="ece-linux-laptop13"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="ece-linux-laptop13"
+	OSRelease="6.5.0-28-generic"
+	OSVersion="#29~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  4 14:39:20 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="17"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="11099"
+	TotalPhysicalMemory="5814"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2225.74"
+	>
+	<Testing>
+		<StartDateTime>May 03 16:55 MDT</StartDateTime>
+		<StartTestTime>1714776948</StartTestTime>
+		<TestList>
+			<Test>./cpplint</Test>
+			<Test>./cppcheck</Test>
+			<Test>./flake8</Test>
+			<Test>./lint_cmake</Test>
+			<Test>./pep257</Test>
+			<Test>./uncrustify</Test>
+			<Test>./xmllint</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>cpplint</Name>
+			<Path>.</Path>
+			<FullName>./cpplint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cpplint.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.855566</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cpplint.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_cpplint/cpplint.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cpplint.xunit.xml" "--filters=-legal/copyright,-build/include_order"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cpplint.xunit.xml --filters=-legal/copyright,-build/include_order
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/FiltersDemo.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/ImageToGridmapDemo.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/InterpolationDemo.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/IteratorsDemo.hpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include/grid_map_demos/OctomapToGridmapDemo.hpp
+
+Using '--root=/home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src' argument
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/FiltersDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/ImageToGridmapDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/InterpolationDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/IteratorsDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/OctomapToGridmapDemo.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/filters_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/image_to_gridmap_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/interpolation_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/iterator_benchmark.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/iterators_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/move_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/normal_filter_comparison_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/octomap_to_gridmap_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/opencv_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/resolution_change_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/simple_demo_node.cpp
+
+Done processing /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/src/tutorial_demo_node.cpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cpplint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cpplint</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>cppcheck</Name>
+			<Path>.</Path>
+			<FullName>./cppcheck</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cppcheck.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.243846</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cppcheck.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cppcheck.xunit.xml" "--include_dirs" "/home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cppcheck.xunit.xml --include_dirs /home/submarine/gridmap_ws/src/grid_map/grid_map_demos/include
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/cppcheck.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>cppcheck</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>flake8</Name>
+			<Path>.</Path>
+			<FullName>./flake8</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/flake8.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/flake8.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.08547</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/flake8.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/flake8.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/flake8.xunit.xml
+
+13 files checked
+No problems found
+
+Checked files:
+
+* ./launch/filters_demo_launch.py
+* ./launch/tutorial_demo_launch.py
+* ./launch/resolution_change_demo_launch.py
+* ./launch/image_to_gridmap_demo_launch.py
+* ./launch/grid_map_loader_demo_launch.py
+* ./launch/iterators_demo_launch.py
+* ./launch/opencv_demo_launch.py
+* ./launch/move_demo_launch.py
+* ./launch/normal_filter_comparison_launch.py
+* ./launch/octomap_to_gridmap_demo_launch.py
+* ./launch/interpolation_demo_launch.py
+* ./launch/simple_demo_launch.py
+* ./scripts/image_publisher.py
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/flake8.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>flake8</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>lint_cmake</Name>
+			<Path>.</Path>
+			<FullName>./lint_cmake</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/lint_cmake.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/lint_cmake.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.215755</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/lint_cmake.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/lint_cmake.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/lint_cmake.xunit.xml
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/lint_cmake.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>lint_cmake</Label>
+				<Label>linter</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>pep257</Name>
+			<Path>.</Path>
+			<FullName>./pep257</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/pep257.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/pep257.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.353362</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/pep257.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/pep257.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/pep257.xunit.xml
+checking ./launch/filters_demo_launch.py
+checking ./launch/grid_map_loader_demo_launch.py
+checking ./launch/image_to_gridmap_demo_launch.py
+checking ./launch/interpolation_demo_launch.py
+checking ./launch/iterators_demo_launch.py
+checking ./launch/move_demo_launch.py
+checking ./launch/normal_filter_comparison_launch.py
+checking ./launch/octomap_to_gridmap_demo_launch.py
+checking ./launch/opencv_demo_launch.py
+checking ./launch/resolution_change_demo_launch.py
+checking ./launch/simple_demo_launch.py
+checking ./launch/tutorial_demo_launch.py
+checking ./scripts/image_publisher.py
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/pep257.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>pep257</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>uncrustify</Name>
+			<Path>.</Path>
+			<FullName>./uncrustify</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/uncrustify.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/uncrustify.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.335429</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/uncrustify.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/uncrustify.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/uncrustify.xunit.xml
+No code style divergence in file 'include/grid_map_demos/FiltersDemo.hpp'
+
+No code style divergence in file 'include/grid_map_demos/ImageToGridmapDemo.hpp'
+
+No code style divergence in file 'include/grid_map_demos/InterpolationDemo.hpp'
+
+No code style divergence in file 'include/grid_map_demos/IteratorsDemo.hpp'
+
+No code style divergence in file 'include/grid_map_demos/OctomapToGridmapDemo.hpp'
+
+No code style divergence in file 'src/FiltersDemo.cpp'
+
+No code style divergence in file 'src/ImageToGridmapDemo.cpp'
+
+No code style divergence in file 'src/InterpolationDemo.cpp'
+
+No code style divergence in file 'src/IteratorsDemo.cpp'
+
+No code style divergence in file 'src/OctomapToGridmapDemo.cpp'
+
+No code style divergence in file 'src/filters_demo_node.cpp'
+
+No code style divergence in file 'src/image_to_gridmap_demo_node.cpp'
+
+No code style divergence in file 'src/interpolation_demo_node.cpp'
+
+No code style divergence in file 'src/iterator_benchmark.cpp'
+
+No code style divergence in file 'src/iterators_demo_node.cpp'
+
+No code style divergence in file 'src/move_demo_node.cpp'
+
+No code style divergence in file 'src/normal_filter_comparison_node.cpp'
+
+No code style divergence in file 'src/octomap_to_gridmap_demo_node.cpp'
+
+No code style divergence in file 'src/opencv_demo_node.cpp'
+
+No code style divergence in file 'src/resolution_change_demo_node.cpp'
+
+No code style divergence in file 'src/simple_demo_node.cpp'
+
+No code style divergence in file 'src/tutorial_demo_node.cpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/uncrustify.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>uncrustify</Label>
+			</Labels>
+		</Test>
+		<Test Status="passed">
+			<Name>xmllint</Name>
+			<Path>.</Path>
+			<FullName>./xmllint</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/xmllint.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/xmllint.xunit.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.303749</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/xmllint.xunit.xml" "--package-name" "grid_map_demos" "--output-file" "/home/submarine/gridmap_ws/build/grid_map_demos/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/xmllint.xunit.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_demos':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/xmllint.xunit.xml
+File 'package.xml' is valid
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_demos/test_results/grid_map_demos/xmllint.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>linter</Label>
+				<Label>xmllint</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>May 03 16:55 MDT</EndDateTime>
+		<EndTestTime>1714776951</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
