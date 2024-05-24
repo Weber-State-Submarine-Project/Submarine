@@ -13,6 +13,8 @@ find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(octomap_msgs REQUIRED)
+find_package(octomap REQUIRED)
 
 
 add_executable(odom src/odom.cpp)
@@ -20,6 +22,10 @@ ament_target_dependencies(odom rclcpp sensor_msgs nav_msgs std_msgs tf2_geometry
 
 add_executable(controller src/controller.cpp)
 ament_target_dependencies(controller rclcpp geometry_msgs std_msgs)
+
+add_executable(octo src/octomap.cpp)
+ament_target_dependencies(octo rclcpp octomap_msgs octomap nav_msgs)
+
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -36,7 +42,8 @@ install(DIRECTORY
 
 install(TARGETS
     odom 
-    controller 
+    controller
+    octo
 DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

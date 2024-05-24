@@ -309,11 +309,11 @@
         <pose>0 0 0 0 0 0</pose>
         <topic>scan/left</topic>
         <gz_frame_id>left_sonar</gz_frame_id>
-        <update_rate>20</update_rate> 
+        <update_rate>25</update_rate> 
         <lidar>
         <scan>
         <horizontal>
-            <samples>35</samples> 
+            <samples>10</samples> 
             <resolution>1</resolution>
             <min_angle>-.14</min_angle>  
             <max_angle>.14</max_angle> 
@@ -368,7 +368,7 @@
         <pose>0 0 0  0 0 0</pose>
         <topic>scan/down</topic>
         <gz_frame_id>down_sonar</gz_frame_id>
-        <update_rate>71</update_rate> 
+        <update_rate>70</update_rate> 
         <lidar>
         <scan>
         <horizontal>

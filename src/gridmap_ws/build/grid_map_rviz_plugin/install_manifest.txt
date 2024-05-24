@@ -1,3 +1,0 @@
-/home/submarine/gridmap_ws/install/grid_map_rviz_plugin/lib/libgrid_map_rviz_plugin.so
-/home/submarine/gridmap_ws/install/grid_map_rviz_plugin/share/grid_map_rviz_plugin/cmake/grid_map_rviz_pluginExport.cmake
-/home/submarine/gridmap_ws/install/grid_map_rviz_plugin/share/grid_map_rviz_plugin/cmake/grid_map_rviz_pluginExport-release.cmake

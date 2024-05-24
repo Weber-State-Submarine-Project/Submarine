@@ -1,1 +1,0 @@
-/home/submarine/gridmap_ws/build/grid_map_msgs/rosidl_cmake/srv/GetGridMap_Response.msg

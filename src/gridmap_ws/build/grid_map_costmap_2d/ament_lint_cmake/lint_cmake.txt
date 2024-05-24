@@ -1,9 +1,0 @@
--- run_test.py: invoking following command in '/home/submarine/gridmap_ws/src/grid_map/grid_map_costmap_2d':
- - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/submarine/gridmap_ws/build/grid_map_costmap_2d/test_results/grid_map_costmap_2d/lint_cmake.xunit.xml
-
-
-No problems found
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/home/submarine/gridmap_ws/build/grid_map_costmap_2d/test_results/grid_map_costmap_2d/lint_cmake.xunit.xml'

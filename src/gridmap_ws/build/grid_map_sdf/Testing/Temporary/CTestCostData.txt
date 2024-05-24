@@ -1,7 +1,0 @@
-cpplint 1 0.750302
-grid_map_sdf-test 1 0.114608
-cppcheck 1 0.252191
-lint_cmake 1 0.228464
-uncrustify 1 0.313806
-xmllint 1 0.366361
----

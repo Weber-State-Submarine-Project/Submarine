@@ -1,1 +1,0 @@
-/home/submarine/gridmap_ws/build/grid_map_cv/ament_cmake_environment_hooks/local_setup.zsh

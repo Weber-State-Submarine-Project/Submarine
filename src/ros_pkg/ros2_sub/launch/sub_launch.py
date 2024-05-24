@@ -1,9 +1,8 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node,SetParameter
 from ament_index_python.packages import get_package_share_directory
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, SetEnvironmentVariable, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.actions import SetEnvironmentVariable
 from launch_xml.launch_description_sources import XMLLaunchDescriptionSource
 import os
 
@@ -22,6 +21,14 @@ def generate_launch_description():
         name='odom',
         output='screen'
     )
+
+    octo = Node(
+        package='ros2_sub',
+        executable='octo',
+        name='octo',
+        output='screen'
+    )
+
 
     web_link = IncludeLaunchDescription(
         XMLLaunchDescriptionSource(
@@ -82,6 +89,11 @@ def generate_launch_description():
         name='rviz2',
         arguments=['-d',rviz_config]
     )
+    
+    delayed_rviz_launch = TimerAction(
+        period=10.0,  # Delay time in seconds
+        actions=[rviz]
+    )
 
     ekf = Node(
         package='robot_localization',
@@ -117,6 +129,31 @@ def generate_launch_description():
         ]
     )
 
+    grid_map = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+        os.path.join(get_package_share_directory('grid_map_pcl'),'launch','grid_map_pcl_loader_launch.py')),
+    )
+
+    octomap = IncludeLaunchDescription(
+                XMLLaunchDescriptionSource(
+                    os.path.join(get_package_share_directory('octomap_server'), 'launch', 'octomap_mapping.launch.xml')),
+            )
+            
+    # Define a TimerAction for the first octomap
+    delayed_octomap = TimerAction(
+    	period=30.0,  # Delay time in seconds for the first octomap
+    	actions=[octomap]
+    )
+
+    # Define a TimerAction for the second octomap (if needed)
+    delayed_octo= TimerAction(
+    	period=30.0,  # Delay time in seconds for the second octomap
+    	actions=[octo]
+    )
+    
+
+
+    
     return LaunchDescription([
         SetEnvironmentVariable(name='GZ_SIM_RESOURCE_PATH', value=sub_path),
         SetParameter(name='use_sim_time',value=True),
@@ -129,7 +166,10 @@ def generate_launch_description():
         ekf,
        #keyboard,
        #control,
-        ros_bt,
         web_link,
-        rviz
+        ros_bt,
+        rviz,
+        #grid_map,
+        octomap,
+        octo
         ])

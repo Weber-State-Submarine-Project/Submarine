@@ -1,1 +1,0 @@
-/home/submarine/gridmap_ws/src/grid_map/grid_map_pcl/launch/grid_map_pcl_loader_launch.py

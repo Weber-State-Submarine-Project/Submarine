@@ -1,7 +1,0 @@
-cpplint 1 0.763104
-grid_map_ros-test 1 0.262975
-cppcheck 1 0.213055
-lint_cmake 1 0.18441
-uncrustify 1 0.292955
-xmllint 1 0.208616
----

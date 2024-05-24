@@ -1,7 +1,0 @@
-/home/submarine/gridmap_ws/install/grid_map_sdf/include/grid_map_sdf/distance_transform/imutil.hpp
-/home/submarine/gridmap_ws/install/grid_map_sdf/include/grid_map_sdf/distance_transform/dt.hpp
-/home/submarine/gridmap_ws/install/grid_map_sdf/include/grid_map_sdf/distance_transform/misc.hpp
-/home/submarine/gridmap_ws/install/grid_map_sdf/include/grid_map_sdf/distance_transform/imconv.hpp
-/home/submarine/gridmap_ws/install/grid_map_sdf/include/grid_map_sdf/distance_transform/pnmfile.hpp
-/home/submarine/gridmap_ws/install/grid_map_sdf/include/grid_map_sdf/distance_transform/image.hpp
-/home/submarine/gridmap_ws/install/grid_map_sdf/include/grid_map_sdf/SignedDistanceField.hpp

@@ -26,7 +26,7 @@ public:
 
     publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
     timer_ = this->create_wall_timer(
-      400ms, std::bind(&OdomNode::calculate_velocity, this));
+      500ms, std::bind(&OdomNode::calculate_velocity, this));
   }
 
 private:
@@ -44,38 +44,38 @@ private:
         tf2::Matrix3x3(current_quaternion).getRPY(roll, pitch, yaw_);
     }
 
-   void calculate_velocity() {
+    void calculate_velocity() {
         auto odom_msg = nav_msgs::msg::Odometry();
         odom_msg.header.stamp = this->now();
         odom_msg.header.frame_id = "odom";
         odom_msg.child_frame_id = "base_link";
-        odom_msg.pose.pose.position.x = pose_.x;
-        odom_msg.pose.pose.position.y = pose_.y;
-        publisher_->publish(odom_msg);
-        
+        odom_msg.pose.pose.position.x = pose_.x - 23;
+        odom_msg.pose.pose.position.y = pose_.y + 12.3;     
 
         double time_difference = (current_time_ - last_time_).seconds();
-        double distance_difference_x =  std::abs(current_distance_x_ - last_distance_x_);
-        double distance_difference_y =  std::abs(current_distance_y_ - last_distance_y_);
-        // Calculate velocity (m/s)
-        double velocity_x = 0.0;
-        double velocity_y = 0.0;
-        if (time_difference > 0) {
-            velocity_x = distance_difference_x / time_difference;
-            velocity_y = distance_difference_y / time_difference;                
-        }
+        double distance_difference_x = current_distance_x_ - last_distance_x_;
+        double distance_difference_y = current_distance_y_ - last_distance_y_;
+
+        // Calculate velocity in the world frame (m/s)
+        double velocity_x_world = distance_difference_x*1.3 / time_difference;
+        double velocity_y_world = distance_difference_y*1.3 / time_difference;
+
+        // Rotate the velocity vector from the world frame to the submarine's frame
+        double velocity_x_sub = velocity_x_world * cos(yaw_) + velocity_y_world * sin(yaw_);
+        double velocity_y_sub = -velocity_x_world * sin(yaw_) + velocity_y_world * cos(yaw_);
 
         // Publish the velocity in an Odometry message
-        odom_msg.twist.twist.linear.x = -velocity_x;
-        odom_msg.twist.twist.linear.y = -velocity_y;	    
+        odom_msg.twist.twist.linear.x = velocity_x_sub;
+        odom_msg.twist.twist.linear.y = velocity_y_sub;
+
         publisher_->publish(odom_msg);
-        
+
         // Update last distance and time
         last_distance_x_ = current_distance_x_;
         last_distance_y_ = current_distance_y_;
         last_time_ = current_time_;
-            
-  }
+    }
+
  
   void odom_callback(const geometry_msgs::msg::Vector3::SharedPtr msg){
     current_distance_x_ = msg->x;

@@ -1,1 +1,0 @@
-/home/submarine/gridmap_ws/src/grid_map/grid_map_rviz_plugin/include/grid_map_rviz_plugin/GridMapVisual.hpp
