@@ -23,9 +23,7 @@
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "std_msgs/msg/int32.hpp"
-#include "octomap_msgs/msg/octomap.hpp"
-#include <octomap/octomap.h>
-#include <octomap_msgs/conversions.h>
+
 
 namespace chr = std::chrono;
 using namespace BT;
@@ -180,149 +178,6 @@ public:
         return NodeStatus::SUCCESS;
     }
 };
-
-class CheckOctomap : public RosTopicSubNode<octomap_msgs::msg::Octomap>
-{
-public:
-    CheckOctomap(const std::string& name, const NodeConfiguration& config, const RosNodeParams& params)
-        : RosTopicSubNode<octomap_msgs::msg::Octomap>(name, config, params)
-    {}
-    
-    // It is mandatory to define this STATIC method.
-    static PortsList providedPorts()
-    {
-	return {OutputPort<std::shared_ptr<octomap_msgs::msg::Octomap>>("octo")};
-    }
-    // Override the virtual function tick()
-    NodeStatus onTick(const std::shared_ptr<octomap_msgs::msg::Octomap>& octo) override
-    {
-    	if (!octo) {
-            std::cout << "ERROR: Received a null octomap pointer.\n";
-            return NodeStatus::FAILURE;
-        }
-        
-        auto tree = std::unique_ptr<octomap::OcTree>(dynamic_cast<octomap::OcTree*>(octomap_msgs::binaryMsgToMap(*octo)));
-        if (!tree) {
-            std::cout << "ERROR: Conversion from message to OcTree failed.\n";
-    	}
-        octomap::point3d point(1.,2.,3.);
-        octomap::OcTreeNode* node = tree->search(point);
-        if(node)
-            std::cout <<"node exists\n";
-        else
-            std::cout <<"failed to create node\n";
-        
-        
-      	std::cout<<"Got octomap\n";
-        setOutput("octo", octo);
-        return NodeStatus::SUCCESS;
-    }
-};
-
-class AddDataToOctomap : public SyncActionNode
-{
-public:
-    AddDataToOctomap(const std::string& name, const NodeConfiguration& config)
-        : SyncActionNode(name, config),
-          node_(rclcpp::Node::make_shared("add_data_node"))
-    {
-        publisher_ = node_->create_publisher<octomap_msgs::msg::Octomap>("/octomap_binary", 10);
-    }
-    // It is mandatory to define this STATIC method.
-    static PortsList providedPorts()
-    {
-        return {InputPort<OccupancyGrid>("map"), InputPort<std::shared_ptr<octomap_msgs::msg::Octomap>>("octo")};
-    }
-    NodeStatus tick() override    
-    {
-    	std::cout << "Adding data to the map\n";
-	Expected<OccupancyGrid> msg = getInput<OccupancyGrid>("map");
-	if (!msg) {
-            std::cout << "ERROR: Failed to get input map.\n";
-            return NodeStatus::FAILURE;
-        }
-	    OccupancyGrid map=msg.value();
-    	int max_x = map.info.width;
-    	int max_y = map.info.height;
-    	
-    	Expected<std::shared_ptr<octomap_msgs::msg::Octomap>> octo = getInput<std::shared_ptr<octomap_msgs::msg::Octomap>>("octo");
-    	if (!octo) {
-            std::cout << "ERROR: Received a null octomap pointer.\n";
-            return NodeStatus::FAILURE;
-        }
-        
-        auto original_tree = std::unique_ptr<octomap::OcTree>(dynamic_cast<octomap::OcTree*>(octomap_msgs::binaryMsgToMap(*octo.value())));
-    	if (!original_tree) {
-            std::cout << "ERROR: Conversion from message to OcTree failed.\n";
-            return NodeStatus::FAILURE;
-    	}
-    	std::string original_serialized = serializeOctreeToString(original_tree);
-    	
-    	//for(double x = 0; x < max_x; x++){
-    	  //  for (double y = 0; y < max_y; y++) {
-            	if (!addData(octo.value(), 1., 2., 3.)) {
-            	    std::cout << "ERROR: Failed to add data at coordinate (0," << "0," << ",0)\n";
-            	    return NodeStatus::FAILURE;
-            	}
-    	    //}
-    	//}
-    	
-    	// Serialize the modified Octomap
-    	auto modified_tree = std::unique_ptr<octomap::OcTree>(dynamic_cast<octomap::OcTree*>(octomap_msgs::binaryMsgToMap(*octo.value())));
-    	if (!modified_tree) {
-            std::cout << "ERROR: Conversion from message to OcTree failed.\n";
-            return NodeStatus::FAILURE;
-    	}
-    	std::string modified_serialized = serializeOctreeToString(modified_tree);
-
-    	// Compare the original and modified Octomaps
-    	if (original_serialized == modified_serialized) {
-            std::cout << "ERROR: The Octomap has not changed after adding data.\n";
-            return NodeStatus::FAILURE;
-    	}
-    	publisher_->publish(*octo.value());
-        std::cout << "Finished adding data to the map\n";
-    	return NodeStatus::SUCCESS;
-    }
-    
-private:
-    // Function to add data to octomap at a specific coordinate
-    bool addData(const std::shared_ptr<octomap_msgs::msg::Octomap>& octo_msg, double x, double y, double z) {
-    	auto tree = std::unique_ptr<octomap::OcTree>(dynamic_cast<octomap::OcTree*>(octomap_msgs::binaryMsgToMap(*octo_msg)));
-
-    	if (!tree) {
-            std::cout << "ERROR: Conversion from message to OcTree failed.\n";
-            return false;
-    	}
-
-    	// Add data to OcTree
-    	octomap::point3d point(x, y, z);
-    	tree->updateNode(point, true); // Set to 'true' to mark as occupied
-    	tree->updateInnerOccupancy();
-        
-        octomap::OcTreeNode* node = tree->search(point);
-        if(node)
-            std::cout <<"node exists\n";
-        else
-            std::cout <<"failed to create node\n";
-
- 
-    	// Serialize the modified OcTree back to the non-const octomap message copy
-    	octomap_msgs::binaryMapToMsg(*tree, *octo_msg);
-
-    	return true;
-    }
-    
-    // Function to serialize OcTree to string for comparison
-    std::string serializeOctreeToString(const std::unique_ptr<octomap::OcTree>& tree) {
-    	std::stringstream ss;
-    	tree->writeBinary(ss);
-    	return ss.str();
-    }
-    rclcpp::Node::SharedPtr node_;
-    rclcpp::Publisher<octomap_msgs::msg::Octomap>::SharedPtr publisher_;
-};
-
 
 class Turn90Degrees : public SyncActionNode
 {
@@ -485,6 +340,7 @@ public:
     {
         publisher_ = node_->create_publisher<std_msgs::msg::Float64>("/model/tethys/joint/propeller_joint/cmd_thrust", 10); 
         publisher2_ = node_->create_publisher<std_msgs::msg::Float64>("/angular_vel", 10);
+        publisher3_ = node_->create_publisher<std_msgs::msg::Int32>("/done", 10); 
     }
     // It is mandatory to define this STATIC method.
     static PortsList providedPorts()
@@ -494,10 +350,14 @@ public:
 
     NodeStatus tick() override    
     { 
-        std_msgs::msg::Float64 val3;
-        val3.data = 0; 
+        std_msgs::msg::Float64 val2;
+        val2.data = 0; 
 
-        publisher2_->publish(val3);
+        std_msgs::msg::Int32 val3;
+        val3.data = 1;
+    
+        publisher3_->publish(val3);
+        publisher2_->publish(val2);
 
         Expected<std::shared_ptr<nav_msgs::msg::Odometry>> velocity_in = getInput<std::shared_ptr<nav_msgs::msg::Odometry>>("vel");
         double velocity = velocity_in.value()->twist.twist.linear.x;
@@ -520,6 +380,7 @@ private:
     rclcpp::Node::SharedPtr node_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher_; 
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher2_; 
+    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr publisher3_; 
 };
 
 
@@ -559,8 +420,10 @@ class MapFinished : public SyncActionNode
 public:
     MapFinished(const std::string& name, const NodeConfig& config)
         : SyncActionNode(name, config), tf_buffer_(std::make_shared<rclcpp::Clock>(RCL_SYSTEM_TIME)),
-          tf_listener_(tf_buffer_)
+          tf_listener_(tf_buffer_),
+          node_(rclcpp::Node::make_shared("stop_node"))
     {
+        publisher_ = node_->create_publisher<std_msgs::msg::Int32>("/done", 10); 
         // Initialize the starting position
         starting_position_ = Pose();
     }
@@ -578,6 +441,8 @@ public:
         // Get the inputs
         auto map_input = getInput<OccupancyGrid>("map");
         auto starting_position_input = getInput<Pose>("starting_position");
+        std_msgs::msg::Int32 val;
+        val.data = 0;
 
         if (!map_input)
         {
@@ -599,6 +464,7 @@ public:
         if(!tf_buffer_.canTransform("map", "base_link", tf2::TimePointZero, tf2::durationFromSec(1.0)))
         {
             std::cout << "Waiting for transform...\n";
+            publisher_->publish(val);
             return NodeStatus::FAILURE;
         }
 
@@ -612,23 +478,29 @@ public:
         {
             // Handle the case where the current pose could not be retrieved
             std::cout << "Failed to retrieve current pose.\n";
+            publisher_->publish(val);
             return NodeStatus::FAILURE;
         }
 
         // Check if the current position is approximately equal to the starting position
         if (isApproximatelyEqual(current_pose.pose, starting_position_) && test == 1)
         {
+            val.data = 1;
             std::cout << "We are back at the starting position!\n";
+            publisher_->publish(val);
             return NodeStatus::SUCCESS;
         }
         else
         {
             std::cout << "Current Pose X: "<< current_pose.pose.position.x << " Y: " << current_pose.pose.position.y << "\nStart POS X: "<< starting_position_.position.x << " Y: " << starting_position_.position.y <<"\n";
+            publisher_->publish(val);
             return NodeStatus::FAILURE;
         }
     }
 
 private:
+    rclcpp::Node::SharedPtr node_;
+    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr publisher_; 
     Pose starting_position_;
     rclcpp::Clock::SharedPtr clock_;
     tf2_ros::Buffer tf_buffer_;
@@ -908,9 +780,6 @@ static const char* xml_text = R"(
                 </Sequence>
             </RetryUntilSuccessful>
             <MapService map = "{map}"/>
-	    <CheckOctomap octo = "{octo}"/>
-	    <WaitForSeconds seconds="1"/>
-            <AddDataToOctomap map = "{map}" octo = "{octo}"/>
             <PublishLog message="place holder"/>
             <SaySomething   message="mission completed!" />
         </Sequence> 
@@ -933,7 +802,6 @@ int main(int argc, char **argv)
     factory.registerNodeType<Forward>("Forward");
     factory.registerNodeType<Stop>("Stop");
     factory.registerNodeType<PublishLog>("PublishLog");
-    factory.registerNodeType<AddDataToOctomap>("AddDataToOctomap");
         
     // Register the map service node
     auto map_service_node = std::make_shared<rclcpp::Node>("get_map_client");
@@ -978,13 +846,7 @@ int main(int argc, char **argv)
     start_params.default_port_value ="/start";
     factory.registerNodeType<CheckStart>("CheckStart", start_params);
     
-    auto octomap_node = std::make_shared<rclcpp::Node>("check_octomap");
-    RosNodeParams octomap_params;
-    octomap_params.nh = octomap_node;
-    octomap_params.default_port_value ="/octomap_binary";
-    factory.registerNodeType<CheckOctomap>("CheckOctomap", octomap_params);
-
-
+    
 
     // Create the behavior tree from the XML text
     auto tree = factory.createTreeFromText(xml_text);

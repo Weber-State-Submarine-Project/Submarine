@@ -16,6 +16,14 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(octomap_msgs REQUIRED)
 find_package(octomap REQUIRED)
 
+# Add OpenMP support
+find_package(OpenMP REQUIRED)
+if(OPENMP_FOUND)
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
+endif()
+
 
 add_executable(odom src/odom.cpp)
 ament_target_dependencies(odom rclcpp sensor_msgs nav_msgs std_msgs tf2_geometry_msgs geometry_msgs)
@@ -24,7 +32,12 @@ add_executable(controller src/controller.cpp)
 ament_target_dependencies(controller rclcpp geometry_msgs std_msgs)
 
 add_executable(octo src/octomap.cpp)
-ament_target_dependencies(octo rclcpp octomap_msgs octomap nav_msgs)
+ament_target_dependencies(octo rclcpp octomap_msgs octomap nav_msgs std_msgs)
+
+# Link OpenMP
+if(OPENMP_FOUND)
+  target_link_libraries(octo OpenMP::OpenMP_CXX)
+endif()
 
 
 # uncomment the following section in order to fill in

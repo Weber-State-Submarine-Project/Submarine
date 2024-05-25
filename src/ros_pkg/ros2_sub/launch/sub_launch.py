@@ -136,7 +136,7 @@ def generate_launch_description():
 
     octomap = IncludeLaunchDescription(
                 XMLLaunchDescriptionSource(
-                    os.path.join(get_package_share_directory('octomap_server'), 'launch', 'octomap_mapping.launch.xml')),
+                    os.path.join(get_package_share_directory('ros2_sub'), 'launch', 'octomap_mapping.launch.xml')),
             )
             
     # Define a TimerAction for the first octomap
@@ -161,7 +161,7 @@ def generate_launch_description():
         sub_state_publisher,
         bridge,
         odom_convert,
-        nav2,
+        #nav2,
         slam,
         ekf,
        #keyboard,
