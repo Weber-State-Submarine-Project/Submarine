@@ -723,6 +723,7 @@ static const char* xml_text = R"(
             <SaySomething message="mission started..." />
             <RetryUntilSuccessful num_attempts="5000">
                 <Sequence>
+                    <BatteryOK/>
                     <RetryUntilSuccessful num_attempts="200">
                     	<Sequence>
                     	    <Fallback name="turn">
