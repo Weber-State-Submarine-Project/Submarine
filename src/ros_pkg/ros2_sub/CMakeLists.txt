@@ -28,9 +28,6 @@ endif()
 add_executable(odom src/odom.cpp)
 ament_target_dependencies(odom rclcpp sensor_msgs nav_msgs std_msgs tf2_geometry_msgs geometry_msgs)
 
-add_executable(controller src/controller.cpp)
-ament_target_dependencies(controller rclcpp geometry_msgs std_msgs)
-
 add_executable(octo src/octomap.cpp)
 ament_target_dependencies(octo rclcpp octomap_msgs octomap nav_msgs std_msgs)
 
@@ -55,7 +52,6 @@ install(DIRECTORY
 
 install(TARGETS
     odom 
-    controller
     octo
 DESTINATION lib/${PROJECT_NAME})
 

@@ -517,58 +517,5 @@
                 </visual>
             </link>
         </model>
-<!--forward-->
-<!--
-<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
-    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
-                <match field="data">16777235</match>
-    </input> 
-    <output type="gz.msgs.Double" topic="/model/tethys/joint/propeller_joint/cmd_thrust">
-        data: -1
-    </output>
-</plugin>
--->
-<!--backward-->
-<!--
-<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
-    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
-        <match field="data">16777237</match>
-    </input>
-    <output type="gz.msgs.Double" topic="/model/tethys/joint/propeller_joint/cmd_thrust">
-        data: 1
-    </output>
-</plugin>
--->
-<!--left-->
-<!--
-<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
-    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
-        <match field="data">16777234</match>
-    </input>
-    <output type="gz.msgs.Double" topic="/fins">
-        data: .3
-    </output>
-</plugin>
--->
-<!--right-->
-<!--
-<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
-    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
-        <match field="data">16777236</match>
-    </input>
-    <output type="gz.msgs.Double" topic="/fins">
-        data: -.3
-    </output>
-</plugin>
-<plugin filename="gz-sim-triggered-publisher-system" name="gz::sim::systems::TriggeredPublisher">
-    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
-        <match field="data">48</match>
-    </input>
-    <output type="gz.msgs.Double" topic="/fins">
-        data: 0
-    </output>
-
-</plugin>
--->
   </world>
 </sdf>

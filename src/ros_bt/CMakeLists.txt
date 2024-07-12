@@ -7,7 +7,7 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(ros_interfaces REQUIRED)
+#find_package(ros_interfaces REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(rclcpp_components REQUIRED)
@@ -28,7 +28,7 @@ find_package(octomap_server REQUIRED)
 
 
 add_executable(sub_exec src/sub_exec.cpp)
-ament_target_dependencies(sub_exec rclcpp ros_interfaces behaviortree_cpp behaviortree_ros2 nav2_msgs geometry_msgs nav_msgs std_msgs sensor_msgs tf2 tf2_ros tf2_geometry_msgs nav2_util octomap_msgs octomap octomap_server)
+ament_target_dependencies(sub_exec rclcpp behaviortree_cpp behaviortree_ros2 geometry_msgs nav2_msgs nav_msgs std_msgs sensor_msgs tf2 tf2_ros tf2_geometry_msgs nav2_util octomap_msgs octomap octomap_server)
 
 
 install(TARGETS

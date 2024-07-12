@@ -36,13 +36,6 @@ def generate_launch_description():
         )
 
     
-    control = Node(
-        package='ros2_sub',
-        executable='controller',
-        name='controller',
-        output='screen'
-    )
-
     ros_bt = Node(
         package='ros_bt',
         executable='sub_exec',
@@ -71,13 +64,6 @@ def generate_launch_description():
             output='screen'
     )
 
-    keyboard = Node(
-        package='teleop_twist_keyboard',
-        executable='teleop_twist_keyboard',
-        output='screen',
-        prefix='xterm -e'
-    )
-
     rviz_config = os.path.join(
         get_package_share_directory('ros2_sub'),
         'rviz',
@@ -90,11 +76,6 @@ def generate_launch_description():
         arguments=['-d',rviz_config]
     )
     
-    delayed_rviz_launch = TimerAction(
-        period=10.0,  # Delay time in seconds
-        actions=[rviz]
-    )
-
     ekf = Node(
         package='robot_localization',
         executable='ekf_node',
@@ -102,10 +83,6 @@ def generate_launch_description():
         output='screen',
         parameters=[os.path.join(sub_path, 'config','ekf.yaml')]
     )
-    nav2 = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-        os.path.join(get_package_share_directory('ros2_sub'), 'launch', 'navigation_launch.py')),
-        )
 
     slam = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -133,21 +110,6 @@ def generate_launch_description():
                 XMLLaunchDescriptionSource(
                     os.path.join(get_package_share_directory('ros2_sub'), 'launch', 'octomap_mapping.launch.xml')),
             )
-            
-    # Define a TimerAction for the first octomap
-    delayed_octomap = TimerAction(
-    	period=30.0,  # Delay time in seconds for the first octomap
-    	actions=[octomap]
-    )
-
-    # Define a TimerAction for the second octomap (if needed)
-    delayed_octo= TimerAction(
-    	period=30.0,  # Delay time in seconds for the second octomap
-    	actions=[octo]
-    )
-    
-
-
     
     return LaunchDescription([
         SetEnvironmentVariable(name='GZ_SIM_RESOURCE_PATH', value=sub_path),
@@ -156,11 +118,8 @@ def generate_launch_description():
         sub_state_publisher,
         bridge,
         odom_convert,
-        #nav2,
         slam,
         ekf,
-       #keyboard,
-       #control,
         web_link,
         ros_bt,
         rviz,
