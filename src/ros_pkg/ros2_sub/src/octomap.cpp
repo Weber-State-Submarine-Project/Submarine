@@ -66,6 +66,31 @@ private:
                     tree->updateNode(point, true); // Set to 'true' to mark as occupied
                 }
             }
+            
+            //fill in any missing x along the floor
+            std::set<float> x_set;
+            // Insert only the x values into the set
+            for (const auto& pair : xz_values) {
+                x_set.insert(pair.first);
+            }
+            //store the x values that are not in the original pair list
+            std::vector<float> new_x;
+
+            // Iterate through the range and save missing x
+            for(float x = start_x_; x <= max_x; x += .04) {
+                if (x_set.find(x) == x_set.end()) {
+                    new_x.push_back(x);
+                }
+            }
+
+            for(float x : new_x) {
+               float z = findZForX(xz_values,x); 
+               for(float y = start_y_; y <= max_y; y+= .04){
+                    octomap::point3d point(x, y, z);
+                    tree->updateNode(point, true); // Set to 'true' to mark as occupied
+                }
+
+            }
 
             //top wall for starting x
             z_min = findZForX(xz_values, start_x_);
@@ -182,7 +207,7 @@ private:
     
     // Function to find the z value for a given x coordinate
     float findZForX(const std::vector<std::pair<float, float>>& xz_values, float x) {
-        const float tolerance = 2.0f; // Define a tolerance range of 2 meters
+        const float tolerance = 2.0f; // Define a tolerance range of 1 meters
         for (const auto& xz_pair : xz_values) {
             if (std::abs(xz_pair.first - x) <= tolerance) {
                 return xz_pair.second; // Return the z value if x is within the tolerance range

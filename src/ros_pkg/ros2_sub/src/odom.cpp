@@ -57,8 +57,8 @@ private:
         double distance_difference_y = current_distance_y_ - last_distance_y_;
 
         // Calculate velocity in the world frame (m/s)
-        double velocity_x_world = distance_difference_x*1.3 / time_difference;
-        double velocity_y_world = distance_difference_y*1.3 / time_difference;
+        double velocity_x_world = distance_difference_x / time_difference;
+        double velocity_y_world = distance_difference_y / time_difference;
 
         // Rotate the velocity vector from the world frame to the submarine's frame
         double velocity_x_sub = velocity_x_world * cos(yaw_) + velocity_y_world * sin(yaw_);

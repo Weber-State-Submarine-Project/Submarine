@@ -33,16 +33,7 @@ using namespace std::literals::chrono_literals;
 using OccupancyGrid = nav_msgs::msg::OccupancyGrid;
 
 int test = 0;
-int dead_battery = 0;
 int pressed_stop = 0;
-
-// Simple function that return a NodeStatus
-NodeStatus CheckBattery()
-{
-    //battery check logic needs to be added here, if < 5% return fail and set dead_battery = 1
-    std::cout << "[ Battery: OK ]" << std::endl;
-    return NodeStatus::SUCCESS;
-}
 
 // SyncActionNode (synchronous action) with an input port.
 /*
@@ -364,11 +355,15 @@ public:
         std_msgs::msg::Float64 val;
         if(std::abs(velocity) > 0.02){
             std::cout<<"Slowing Down\n";
-            val.data = 4;
+            val.data = 10;
             publisher_->publish(val);//speed is hardcoded for ease of simulation, will need to be changed for hardware    
             return NodeStatus::FAILURE;
         }  
         else{
+            val3.data = 0;
+    
+            publisher3_->publish(val3);
+
             std::cout<<"Stop Complete";
             val.data = 0;
             publisher_->publish(val);
@@ -668,14 +663,7 @@ public:
         std::stringstream ss;
 
         if(msg.value() == "place holder"){
-            if(dead_battery){
-                ss << std::put_time(std::localtime(&now_c), "%F %T") << " - The battery has died, navigation canceled";
-                std_msgs::msg::String message;
-                message.data = ss.str();
-                publisher_->publish(message); 
-                return NodeStatus::SUCCESS;
-            }
-            else if(pressed_stop){
+            if(pressed_stop){
                 ss << std::put_time(std::localtime(&now_c), "%F %T") << " - User canceled navigation";
                 std_msgs::msg::String message;
                 message.data = ss.str();
@@ -723,7 +711,6 @@ static const char* xml_text = R"(
             <SaySomething message="mission started..." />
             <RetryUntilSuccessful num_attempts="5000">
                 <Sequence>
-                    <BatteryOK/>
                     <RetryUntilSuccessful num_attempts="200">
                     	<Sequence>
                     	    <Fallback name="turn">
@@ -743,12 +730,9 @@ static const char* xml_text = R"(
                             </Inverter>
                             <Sequence>
                             	<MapService map = "{map}"/>
-                    		<MapFinished map = "{map}" starting_position="{starting_pos}"/>	
+                    		    <MapFinished map = "{map}" starting_position="{starting_pos}"/>	
                                 <Inverter>
                                     <CheckStart/>
-                                </Inverter>
-                                <Inverter>
-                	                <BatteryOK/>
                                 </Inverter>
                             </Sequence>
                             <Sequence>
@@ -765,9 +749,6 @@ static const char* xml_text = R"(
                     <Fallback>
                         <Inverter>
                             <CheckStart/>
-                        </Inverter>
-                        <Inverter>
-                	        <BatteryOK/>
                         </Inverter>
                         <MapFinished map = "{map}" starting_position="{starting_pos}"/>
                     </Fallback>
@@ -794,7 +775,6 @@ int main(int argc, char **argv)
     
     // Initialize the BehaviorTreeFactory
     BehaviorTreeFactory factory;
-    factory.registerSimpleCondition("BatteryOK", std::bind(CheckBattery));
     factory.registerNodeType<WaitForSeconds>("WaitForSeconds");
     factory.registerNodeType<SaySomething>("SaySomething");
     factory.registerNodeType<MapFinished>("MapFinished");

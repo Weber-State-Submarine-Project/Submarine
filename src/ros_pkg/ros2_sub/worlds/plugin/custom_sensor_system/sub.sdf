@@ -440,7 +440,7 @@
 
                 </visual>
             </link>
-        </model>
+        </model> 
         <model name = "deep_left_wall">
             <pose> -18 24.2 -4 0 0 0</pose>
             <static>true</static>

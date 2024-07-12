@@ -129,11 +129,6 @@ def generate_launch_description():
         ]
     )
 
-    grid_map = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-        os.path.join(get_package_share_directory('grid_map_pcl'),'launch','grid_map_pcl_loader_launch.py')),
-    )
-
     octomap = IncludeLaunchDescription(
                 XMLLaunchDescriptionSource(
                     os.path.join(get_package_share_directory('ros2_sub'), 'launch', 'octomap_mapping.launch.xml')),
@@ -169,7 +164,6 @@ def generate_launch_description():
         web_link,
         ros_bt,
         rviz,
-        #grid_map,
         octomap,
         octo
         ])
