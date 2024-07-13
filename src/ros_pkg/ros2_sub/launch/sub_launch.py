@@ -13,7 +13,7 @@ def generate_launch_description():
     gz_sim = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')),
-            launch_arguments={'gz_args': '-r '+os.path.join(sub_path,'worlds/plugin/custom_sensor_system/sub.sdf'+' -s --headless-rendering')}.items(),
+            launch_arguments={'gz_args': '-r '+os.path.join(sub_path,'worlds/plugin/custom_sensor_system/sub.sdf')}.items(),#+' -s --headless-rendering')}.items(),
         )
     odom_convert = Node(
         package='ros2_sub',
@@ -122,7 +122,7 @@ def generate_launch_description():
         ekf,
         web_link,
         ros_bt,
-        rviz,
+        #rviz,
         octomap,
         octo
         ])
