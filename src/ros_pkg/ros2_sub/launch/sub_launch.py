@@ -34,8 +34,12 @@ def generate_launch_description():
         XMLLaunchDescriptionSource(
         os.path.join(get_package_share_directory('rosbridge_server'), 'launch', 'rosbridge_websocket_launch.xml')),
         )
-
-    
+    foxglove_bridge = IncludeLaunchDescription(
+        XMLLaunchDescriptionSource(
+            os.path.join(get_package_share_directory('foxglove_bridge'), 'launch', 'foxglove_bridge_launch.xml')
+        ),
+        launch_arguments={'port': '8765'}.items()
+    ) 
     ros_bt = Node(
         package='ros_bt',
         executable='sub_exec',
@@ -51,8 +55,8 @@ def generate_launch_description():
             '/imu@sensor_msgs/msg/Imu[gz.msgs.IMU',
             '/scan/left@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
             '/scan/left/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
-            '/scan/down@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
-            '/scan/down/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
+            #'/scan/down@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
+            #'/scan/down/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
             '/scan/front@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan',
             '/scan/front/points@sensor_msgs/msg/PointCloud2[gz.msgs.PointCloudPacked',
             '/model/tethys/joint/propeller_joint/ang_vel@std_msgs/msg/Float64[gz.msgs.Double',
@@ -110,6 +114,13 @@ def generate_launch_description():
                 XMLLaunchDescriptionSource(
                     os.path.join(get_package_share_directory('ros2_sub'), 'launch', 'octomap_mapping.launch.xml')),
             )
+            
+    down_sonar = Node(
+        package='sonars',
+        executable='sonar_node',
+        name='down_sonar',
+        output='screen',
+        )
     
     return LaunchDescription([
         SetEnvironmentVariable(name='GZ_SIM_RESOURCE_PATH', value=sub_path),
@@ -124,5 +135,7 @@ def generate_launch_description():
         ros_bt,
         rviz,
         octomap,
-        octo
+        octo,
+        foxglove_bridge,
+        down_sonar
         ])
