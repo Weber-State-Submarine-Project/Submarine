@@ -262,7 +262,7 @@ public:
         std_msgs::msg::Float64 val3;
         val3.data = 0; 
 
-        auto dist = latest_distance.value()->ranges[5];
+        auto dist = latest_distance.value()->ranges[0];
         if(dist < 1)
         {     
             std::cout <<"DIST: " << dist <<"\n";
