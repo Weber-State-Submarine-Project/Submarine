@@ -4,6 +4,10 @@
 #include "octomap_msgs/conversions.h"
 #include "nav_msgs/msg/occupancy_grid.hpp"
 #include "std_msgs/msg/int32.hpp"
+#include "sensor_msgs/msg/point_cloud2.hpp"
+#include <pcl_conversions/pcl_conversions.h>
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
 #include <set>
 
 
@@ -12,7 +16,7 @@ class OctomapProcessingNode : public rclcpp::Node
 public:
     OctomapProcessingNode()
     : Node("octomap_processing_node"),
-      publisher_(this->create_publisher<octomap_msgs::msg::Octomap>("/octomap_new", 10)),done_(0),max_x_(0),max_y_(0)
+      publisher_(this->create_publisher<octomap_msgs::msg::Octomap>("/octomap_new", 10)), pointcloud_publisher_(this->create_publisher<sensor_msgs::msg::PointCloud2>("/octomap_pointcloud", 10)), done_(0),max_x_(0),max_y_(0)
     {
         done_subscription_ = this->create_subscription<std_msgs::msg::Int32>(
             "/done", 10,
@@ -23,6 +27,10 @@ public:
         map_subscription_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
             "/map", 10,
             std::bind(&OctomapProcessingNode::mapCallback, this, std::placeholders::_1));
+            timer_ = this->create_wall_timer(
+            std::chrono::seconds(1),
+            std::bind(&OctomapProcessingNode::publish_pointcloud, this)
+        );
     }
 
 private:
@@ -161,10 +169,27 @@ private:
 
             // Publish the updated octomap message with the header
             publisher_->publish(updated_octomap_msg);
+            
+            // Convert the octomap to a PointCloud2 message
+            pcl::PointCloud<pcl::PointXYZ> pcl_cloud;
+            for (octomap::OcTree::leaf_iterator it = tree->begin_leafs(), end = tree->end_leafs(); it != end; ++it) {
+                if (tree->isNodeOccupied(*it)) {
+                    pcl_cloud.push_back(pcl::PointXYZ(it.getX(), it.getY(), it.getZ()));
+                }
+            }
+
+            pcl::toROSMsg(pcl_cloud, cloud_msg_);
+            cloud_msg_.header.frame_id = "map";  // Set the appropriate frame ID
+            cloud_msg_.header.stamp = this->get_clock()->now();
             done_ = 0;
         }
-
     }    
+    
+    void publish_pointcloud()
+    {
+        cloud_msg_.header.stamp = this->get_clock()->now();  // Update the timestamp
+        pointcloud_publisher_->publish(cloud_msg_);
+    }
 
     // Function to find the z value for each x coordinate
     std::pair<std::vector<std::pair<float, float>>, size_t> findZValuesForX(std::unique_ptr<octomap::OcTree>& tree) {
@@ -222,6 +247,9 @@ private:
     rclcpp::Subscription<octomap_msgs::msg::Octomap>::SharedPtr subscription_;
     rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr map_subscription_;
     rclcpp::Publisher<octomap_msgs::msg::Octomap>::SharedPtr publisher_;
+    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pointcloud_publisher_;
+    sensor_msgs::msg::PointCloud2 cloud_msg_;
+    rclcpp::TimerBase::SharedPtr timer_;
     int done_;
     double max_x_;
     double max_y_;

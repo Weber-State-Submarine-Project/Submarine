@@ -33,13 +33,16 @@ def generate_launch_description():
     web_link = IncludeLaunchDescription(
         XMLLaunchDescriptionSource(
         os.path.join(get_package_share_directory('rosbridge_server'), 'launch', 'rosbridge_websocket_launch.xml')),
+        launch_arguments={'port': '9090'}.items()
         )
+    
     foxglove_bridge = IncludeLaunchDescription(
         XMLLaunchDescriptionSource(
             os.path.join(get_package_share_directory('foxglove_bridge'), 'launch', 'foxglove_bridge_launch.xml')
         ),
-        launch_arguments={'port': '8765'}.items()
-    ) 
+        launch_arguments={'port': '8765', 'send_buffer_limit': '100000000'}.items()
+    )
+ 
     ros_bt = Node(
         package='ros_bt',
         executable='sub_exec',
@@ -132,11 +135,11 @@ def generate_launch_description():
         odom_convert,
         slam,
         ekf,
-        web_link,
         ros_bt,
         rviz,
         octomap,
         octo,
         foxglove_bridge,
+        #web_link,
         #down_sonar
         ])

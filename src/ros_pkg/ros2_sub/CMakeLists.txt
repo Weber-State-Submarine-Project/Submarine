@@ -15,6 +15,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(octomap_msgs REQUIRED)
 find_package(octomap REQUIRED)
+find_package(pcl_conversions REQUIRED)
 
 # Add OpenMP support
 find_package(OpenMP REQUIRED)
@@ -29,7 +30,7 @@ add_executable(odom src/odom.cpp)
 ament_target_dependencies(odom rclcpp sensor_msgs nav_msgs std_msgs tf2_geometry_msgs geometry_msgs)
 
 add_executable(octo src/octomap.cpp)
-ament_target_dependencies(octo rclcpp octomap_msgs octomap nav_msgs std_msgs)
+ament_target_dependencies(octo rclcpp octomap_msgs octomap nav_msgs std_msgs sensor_msgs pcl_conversions)
 
 # Link OpenMP
 if(OPENMP_FOUND)
