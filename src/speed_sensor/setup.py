@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'sonars'
+package_name = 'speed_sensor'
 
 setup(
     name=package_name,
@@ -20,8 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'down_sonar_node = sonars.down_sonar_node:main',
-            'side_sonar_node = sonars.side_sonar_node:main',
+            'velocity_sensor = speed_sensor.velocity_sensor:main',
         ],
     },
 )

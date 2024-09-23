@@ -1,0 +1,138 @@
+{
+  "configById": {
+    "Publish!1k8p6ac": {
+      "buttonText": "Start",
+      "buttonTooltip": "",
+      "advancedView": false,
+      "value": "{\n  \"data\": 1\n}",
+      "topicName": "/start",
+      "datatype": "std_msgs/msg/Int32",
+      "buttonColor": "#33ff00"
+    },
+    "Publish!3n2b3xj": {
+      "buttonText": "Stop",
+      "buttonTooltip": "",
+      "advancedView": false,
+      "value": "{\n  \"data\": 0\n}",
+      "topicName": "/start",
+      "datatype": "std_msgs/msg/Int32",
+      "buttonColor": "#ff0000"
+    },
+    "3D!4ff83i5": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "followTf": "map",
+      "scene": {},
+      "transforms": {},
+      "topics": {
+        "/octomap_pointcloud": {
+          "visible": true
+        },
+        "/map": {
+          "visible": true
+        },
+        "/octomap_point_cloud_centers": {
+          "visible": true
+        }
+      },
+      "layers": {
+        "grid": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "091a1ea4-cdbf-4e59-9fb5-c84eb31b8d9d",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {}
+    },
+    "RawMessages!3h5cd8h": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/web_message"
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {
+    "14c58eb3-b715-466d-af05-6f9e6ba3f1e5": {
+      "sourceCode": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>Foxglove Button</title>\n  <style>\n    #startStopButton {\n      padding: 10px 20px;\n      font-size: 16px;\n      color: white;\n      background-color: green;\n      border: none;\n      cursor: pointer;\n    }\n  </style>\n</head>\n<body>\n  <button id=\"startStopButton\">Start</button>\n\n  <script src=\"https://cdn.jsdelivr.net/npm/roslib@1/build/roslib.min.js\"></script>\n  <script>\n    const ros = new ROSLIB.Ros({\n      url: 'ws://localhost:9090'\n    });\n\n    const topic = new ROSLIB.Topic({\n      ros: ros,\n      name: '/start',\n      messageType: 'std_msgs/Int32'\n    });\n\n    let isPublishingOne = false;\n    let intervalId;\n\n    const button = document.getElementById('startStopButton');\n\n    function publishMessage(value) {\n      const message = new ROSLIB.Message({\n        data: value\n      });\n      topic.publish(message);\n    }\n\n    function startPublishing() {\n      intervalId = setInterval(() => publishMessage(1), 1000);\n      button.textContent = 'Stop';\n      button.style.backgroundColor = 'red';\n      isPublishingOne = true;\n    }\n\n    function stopPublishing() {\n      clearInterval(intervalId);\n      publishMessage(0);\n      button.textContent = 'Start';\n      button.style.backgroundColor = 'green';\n      isPublishingOne = false;\n    }\n\n    button.addEventListener('click', () => {\n      if (isPublishingOne) {\n        stopPublishing();\n      } else {\n        startPublishing();\n      }\n    });\n\n    // Start by publishing 0\n    publishMessage(0);\n  </script>\n</body>\n</html>\n",
+      "name": "14c58eb3"
+    },
+    "6a3ef9ea-6ad4-4d16-8ca8-c40163560fa4": {
+      "sourceCode": "import { useState } from \"react\";\nimport { PanelExtensionContext, RenderState } from \"@foxglove/studio\";\n\nexport const output = \"/start\";\n\nexport function initPanel(context: PanelExtensionContext) {\n  context.onRender = (renderState: RenderState, done: () => void) => {\n    done();\n  };\n}\n\nexport function ExamplePanel({ context }: { context: PanelExtensionContext }) {\n  const [isStarted, setIsStarted] = useState(false);\n\n  const handleClick = () => {\n    const newState = !isStarted;\n    setIsStarted(newState);\n    context.publish({\n      topic: \"/start\",\n      message: newState ? 1 : 0,\n    });\n  };\n\n  return (\n    <button\n      onClick={handleClick}\n      style={{\n        backgroundColor: isStarted ? \"red\" : \"green\",\n        color: \"white\",\n        padding: \"10px 20px\",\n        fontSize: \"16px\",\n        border: \"none\",\n        borderRadius: \"5px\",\n        cursor: \"pointer\",\n      }}\n    >\n      {isStarted ? \"Stop\" : \"Start\"}\n    </button>\n  );\n}\n",
+      "name": "6a3ef9ea"
+    },
+    "193a08e3-1b29-4dff-a909-9e9353d8a78e": {
+      "sourceCode": "// ==UserScript==\n// @name         Foxglove Publish Button Controller\n// @namespace    http://tampermonkey.net/\n// @version      1.0\n// @description  Controls buttons in Foxglove Publish\n// @author       Your Name\n// @match        https://foxglove.dev/*\n// @grant        none\n// ==/UserScript==\n\n// Include the DOM library in your TypeScript configuration\n// (as shown in the tsconfig.json example)\n\nexport const inputTopics = ['/some_topic'];\nexport const output = '/your/output/topic';\n\n(function() {\n    'use strict';\n\n    const startButton = document.getElementById('startButton') as HTMLButtonElement;\n    const stopButton = document.getElementById('stopButton') as HTMLButtonElement;\n\n    if (startButton && stopButton) {\n        startButton.addEventListener('click', () => {\n            console.log('Start button clicked');\n            // Your logic for starting the publishing process\n        });\n\n        stopButton.addEventListener('click', () => {\n            console.log('Stop button clicked');\n            // Your logic for stopping the publishing process\n        });\n    }\n})();",
+      "name": "193a08e3"
+    }
+  },
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": {
+      "direction": "row",
+      "first": {
+        "first": "Publish!1k8p6ac",
+        "second": "Publish!3n2b3xj",
+        "direction": "row",
+        "splitPercentage": 50.753768844221106
+      },
+      "second": "3D!4ff83i5",
+      "splitPercentage": 14.31654676258993
+    },
+    "second": "RawMessages!3h5cd8h",
+    "direction": "row",
+    "splitPercentage": 75.4054054054054
+  }
+}
