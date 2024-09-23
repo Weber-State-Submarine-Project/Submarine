@@ -73,7 +73,7 @@ def generate_launch_description():
     #/scan/down/points
     down_sonar = Node(
         package='sonars',
-        executable='sonar_node',
+        executable='down_sonar_node',
         name='down_sonar',
         output='screen',
         )
@@ -98,9 +98,9 @@ def generate_launch_description():
 
     #/odom
     speed_sensor = Node(
-        package='speed_sensor'
-        executable='velocity_sensor'
-        name='speed_sensor'
+        package='speed_sensor',
+        executable='velocity_sensor',
+        name='speed_sensor',
         output='screen',
         )
 
@@ -113,8 +113,13 @@ def generate_launch_description():
         )
 
     #add motor controller here
+    motor_control = Node(
+        package='',
+        executable='',
+        name='',
+        output='',
 
-    
+    #add sensors/controllers as they are completed 
     return LaunchDescription([
         sub_state_publisher,
         slam,

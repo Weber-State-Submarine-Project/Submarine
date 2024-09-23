@@ -117,7 +117,7 @@ public:
 private:
     void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
     {
-        latest_distance_ = msg->ranges[5];
+        latest_distance_ = msg->ranges[0];
     }
 
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;
@@ -258,6 +258,7 @@ private:
     std::shared_ptr<nav_msgs::msg::OccupancyGrid> latest_map_;
 };
 
+//THIS LOGIC NEEDS SOME REWRITING SO THAT THE BOAT TURNS RIGHT USING LEFT MOTOR FORWARD RIGHT MOTOR REVERSE INSTEAD OF FINS
 class Turn90Degrees : public SyncActionNode
 {
 public:
@@ -303,7 +304,7 @@ public:
 
         // Calculate the angle difference between the current yaw and the target yaw
         double angle_difference = std::atan2(std::sin(yaw - target_yaw), std::cos(yaw - target_yaw));
-        
+        // ------------------------------------------------------------------------REWRITE THIS PART--------------------------------------------------------
         if(std::fabs(angle_difference) < angle_tolerance_) {
             std_msgs::msg::Float64 val;
             val.data = 0;
@@ -314,8 +315,7 @@ public:
         }
         else{
             std_msgs::msg::Float64 val;
-            val.data = -0.3; // Adjust this value for hardware if necessary
-            publisher_->publish(val);
+            val.data = -0.3;             publisher_->publish(val);
             std::cout << "Current angle: "<<yaw<<", target angle: " << target_yaw << "\n";
             std::cout << "Angle Difference: " << angle_difference << "\n";
             return NodeStatus::FAILURE;
@@ -330,6 +330,7 @@ private:
     const double angle_tolerance_ = 0.02; // radians
 };
 
+//THIS LOGIC NEEDS SOME REWRITING SO THAT THE BOAT TURNS  USING LEFT AND RIGHT MOTORS INSTEAD OF FINS
 class AdjustDistance : public SyncActionNode
 {
 public:
@@ -348,6 +349,7 @@ public:
 
     NodeStatus tick() override    
     {   
+    // ------------------------------------------------------------------------REWRITE THIS PART--------------------------------------------------------
         auto dist = side_node_->get_latest_distance();
         std_msgs::msg::Float64 val;
         val.data = -0.3; // Adjust this value for hardware if necessary
@@ -386,7 +388,7 @@ private:
 };
 
 
-//will likely need adjustment for hardware, the simulation propeller is controlled by a float, this may not be the case for the motor
+// THIS NEEDS A REWRITE TO COMMAND BOTH MOTORS TO GO FORWARD AT A GIVEN SPEED
 class Forward : public SyncActionNode
 {
 public:
@@ -394,7 +396,7 @@ public:
         : SyncActionNode(name, config),
           node_(rclcpp::Node::make_shared("forward_node"))
     {
-        publisher_ = node_->create_publisher<std_msgs::msg::Float64>("/model/tethys/joint/propeller_joint/cmd_thrust", 10); // Create a publisher to control fin angle
+        publisher_ = node_->create_publisher<std_msgs::msg::Float64>("/model/tethys/joint/propeller_joint/cmd_thrust", 10); 
     }
     // It is mandatory to define this STATIC method.
     static PortsList providedPorts()
@@ -404,6 +406,7 @@ public:
 
     NodeStatus tick() override    
     {   
+    // ------------------------------------------------------------------------REWRITE THIS PART--------------------------------------------------------
         std_msgs::msg::Float64 val;
         std::cout << "Moving Forward\n";
         val.data = -1;
@@ -416,6 +419,7 @@ private:
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher_; // Add a publisher member
 };
 
+// THIS NEEDS A REWRITE TO COMMAND BOTH MOTORS TO GO REVERSE AT A GIVEN SPEED
 class Stop : public SyncActionNode
 {
 public:
@@ -425,7 +429,6 @@ public:
           velocity_node_(velocity_node)
     {
         publisher_ = node_->create_publisher<std_msgs::msg::Float64>("/model/tethys/joint/propeller_joint/cmd_thrust", 10); 
-        publisher2_ = node_->create_publisher<std_msgs::msg::Float64>("/angular_vel", 10);
         publisher3_ = node_->create_publisher<std_msgs::msg::Int32>("/done", 10); 
     }
     
@@ -436,14 +439,11 @@ public:
 
     NodeStatus tick() override    
     { 
-        std_msgs::msg::Float64 val2;
-        val2.data = 0; 
 
         std_msgs::msg::Int32 val3;
         val3.data = 1;
     
         publisher3_->publish(val3);
-        publisher2_->publish(val2);
 
         auto velocity_msg = velocity_node_->get_latest_velocity();
         if (!velocity_msg) {
@@ -453,11 +453,13 @@ public:
         std_msgs::msg::Float64 val;
         if(std::abs(velocity) > 0.02){
             std::cout<<"Slowing Down\n";
+    // --------------------------------------------------------REWRITE THIS PART TO REVERSE THE MOTORS--------------------------------------------------------
             val.data = 10;
-            publisher_->publish(val); // speed is hardcoded for ease of simulation, will need to be changed for hardware    
+            publisher_->publish(val); 
             return NodeStatus::FAILURE;
         }  
         else{
+    //----------------------------------------------------------STOP MOTORS---------------------------------------------------------------------------------
             val3.data = 0;
     
             publisher3_->publish(val3);
@@ -472,7 +474,6 @@ public:
 private:
     rclcpp::Node::SharedPtr node_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher_; 
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher2_; 
     rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr publisher3_; 
     std::shared_ptr<Velocity> velocity_node_;
 };
