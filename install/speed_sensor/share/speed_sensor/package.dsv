@@ -1,0 +1,6 @@
+source;share/speed_sensor/hook/pythonpath.ps1
+source;share/speed_sensor/hook/pythonpath.dsv
+source;share/speed_sensor/hook/pythonpath.sh
+source;share/speed_sensor/hook/ament_prefix_path.ps1
+source;share/speed_sensor/hook/ament_prefix_path.dsv
+source;share/speed_sensor/hook/ament_prefix_path.sh

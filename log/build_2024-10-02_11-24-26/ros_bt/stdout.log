@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/sub_exec.dir/src/sub_exec.cpp.o[0m
+[100%] [32m[1mLinking CXX executable sub_exec[0m
+[100%] Built target sub_exec
+-- Install configuration: ""
+-- Installing: /home/submarine/ros_ws/install/ros_bt/lib/ros_bt/sub_exec
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/ros_bt/lib/ros_bt/sub_exec" to ""
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ament_index/resource_index/package_run_dependencies/ros_bt
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ament_index/resource_index/parent_prefix_path/ros_bt
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/ament_prefix_path.sh
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/path.sh
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/path.dsv
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.bash
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.sh
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.zsh
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.dsv
+-- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.dsv
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ament_index/resource_index/packages/ros_bt
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/cmake/ros_btConfig.cmake
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/cmake/ros_btConfig-version.cmake
+-- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.xml

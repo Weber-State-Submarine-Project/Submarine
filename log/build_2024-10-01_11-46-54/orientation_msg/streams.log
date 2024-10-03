@@ -1,0 +1,18 @@
+[0.033s] Invoking command in '/home/submarine/ros_ws/build/orientation_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/orientation_msg -- -j4 -l4
+[0.228s] [  2%] Built target orientation_msg__rosidl_generator_type_description
+[0.287s] [  2%] Built target ament_cmake_python_copy_orientation_msg
+[0.331s] [  4%] Built target orientation_msg__cpp
+[0.356s] [ 22%] Built target orientation_msg__rosidl_generator_c
+[0.465s] gmake[2]: *** No rule to make target '/opt/ros/jazzy/lib/libfastcdr.so.2.2.2', needed by 'liborientation_msg__rosidl_typesupport_fastrtps_c.so'.  Stop.
+[0.465s] gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/orientation_msg__rosidl_typesupport_fastrtps_c.dir/all] Error 2
+[0.465s] gmake[1]: *** Waiting for unfinished jobs....
+[0.485s] [ 31%] Built target orientation_msg__rosidl_typesupport_cpp
+[0.498s] [ 40%] Built target orientation_msg__rosidl_typesupport_introspection_c
+[0.770s] running egg_info
+[0.789s] writing orientation_msg.egg-info/PKG-INFO
+[0.790s] writing dependency_links to orientation_msg.egg-info/dependency_links.txt
+[0.791s] writing top-level names to orientation_msg.egg-info/top_level.txt
+[0.848s] reading manifest file 'orientation_msg.egg-info/SOURCES.txt'
+[0.849s] writing manifest file 'orientation_msg.egg-info/SOURCES.txt'
+[0.933s] [ 40%] Built target ament_cmake_python_build_orientation_msg_egg
+[0.936s] gmake: *** [Makefile:146: all] Error 2

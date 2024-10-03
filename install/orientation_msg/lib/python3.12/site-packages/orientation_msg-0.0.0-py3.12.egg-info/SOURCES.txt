@@ -1,0 +1,9 @@
+setup.py
+orientation_msg/__init__.py
+orientation_msg.egg-info/PKG-INFO
+orientation_msg.egg-info/SOURCES.txt
+orientation_msg.egg-info/dependency_links.txt
+orientation_msg.egg-info/top_level.txt
+orientation_msg/msg/__init__.py
+orientation_msg/msg/_esc.py
+orientation_msg/msg/_orientation.py

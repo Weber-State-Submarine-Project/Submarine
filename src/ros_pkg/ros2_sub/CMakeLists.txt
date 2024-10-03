@@ -16,6 +16,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(octomap_msgs REQUIRED)
 find_package(octomap REQUIRED)
+find_package(pcl_conversions REQUIRED)
 
 include_directories(${OCTOMAP_INCLUDE_DIRS})
 
@@ -27,12 +28,8 @@ if(OPENMP_FOUND)
   set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
 endif()
 
-
-add_executable(odom src/odom.cpp)
-ament_target_dependencies(odom rclcpp sensor_msgs nav_msgs std_msgs tf2_geometry_msgs geometry_msgs)
-
 add_executable(octo src/octomap.cpp)
-ament_target_dependencies(octo rclcpp octomap_msgs octomap nav_msgs std_msgs)
+ament_target_dependencies(octo rclcpp octomap_msgs octomap nav_msgs std_msgs sensor_msgs pcl_conversions)
 
 target_link_libraries(octo ${OCTOMAP_LIBRARIES} octomath)
 # Link OpenMP
@@ -47,15 +44,12 @@ endif()
 
 install(DIRECTORY
     launch
-    rviz
     config
     models
-    worlds
     DESTINATION share/${PROJECT_NAME}/
 )
 
 install(TARGETS
-    odom 
     octo
 DESTINATION lib/${PROJECT_NAME})
 

@@ -1,0 +1,150 @@
+[0.039s] Invoking command in '/home/submarine/ros_ws/build/ros2_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/ros2_sub -- -j4 -l4
+[0.114s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.785s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.834s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.852s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.877s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.906s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.021s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.027s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.154s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.271s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.293s] -- Found nav_msgs: 5.3.5 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.360s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.399s] -- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[1.404s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.407s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.566s] -- Found octomap_msgs: 2.0.0 (/opt/ros/jazzy/share/octomap_msgs/cmake)
+[1.603s] -- Found pcl_conversions: 2.6.1 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[1.734s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[1.734s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.734s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.734s]   cmake_policy command to set the policy and suppress this warning.
+[1.734s] 
+[1.734s]   CMake variable FLANN_ROOT is set to:
+[1.734s] 
+[1.734s]     /usr
+[1.734s] 
+[1.734s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.734s]   .cmake module might still use it.
+[1.735s] Call Stack (most recent call first):
+[1.735s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[1.735s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[1.735s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[1.735s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.735s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.735s]   CMakeLists.txt:19 (find_package)
+[1.735s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.735s] [0m
+[1.735s] -- Found flann version 1.9.2
+[1.739s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[4.889s] -- Checking for module 'libusb-1.0'
+[4.925s] --   Found libusb-1.0, version 1.0.27
+[5.043s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[5.043s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.319s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.327s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[5.349s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[5.379s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+[6.165s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.177s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.871s] -- Found Qhull version 8.0.2
+[7.585s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.280s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[8.281s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[8.283s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[8.284s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[8.285s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[8.287s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[8.287s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[8.288s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[8.298s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[8.298s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[8.298s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[8.298s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[8.299s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[8.299s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[8.299s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[8.300s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[8.301s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[8.303s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[8.305s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[8.306s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[8.307s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[8.308s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[8.314s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[8.316s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[8.318s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[8.325s] -- Found OpenMP: TRUE (found version "4.5")  
+[8.347s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[8.987s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.988s] -- Configured cppcheck include dirs: 
+[8.988s] -- Configured cppcheck exclude dirs and/or files: 
+[8.989s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.989s] -- Configured 'flake8' exclude dirs and/or files: 
+[8.990s] -- Added test 'lint_cmake' to check CMake code style
+[8.991s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.994s] -- Added test 'uncrustify' to check C / C++ code style
+[8.995s] -- Configured uncrustify additional arguments: 
+[8.995s] -- Added test 'xmllint' to check XML markup files
+[8.998s] -- Configuring done (8.9s)
+[9.102s] -- Generating done (0.1s)
+[9.113s] -- Build files have been written to: /home/submarine/ros_ws/build/ros2_sub
+[9.235s] [ 50%] [32mBuilding CXX object CMakeFiles/octo.dir/src/octomap.cpp.o[0m
+[18.893s] In file included from [01m[K/usr/include/c++/13/bits/stl_tempbuf.h:62[m[K,
+[18.893s]                  from [01m[K/usr/include/c++/13/memory:66[m[K,
+[18.893s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+[18.893s]                  from [01m[K/home/submarine/ros_ws/src/ros_pkg/ros2_sub/src/octomap.cpp:1[m[K:
+[18.893s] /usr/include/c++/13/bits/stl_pair.h: In instantiation of ‘[01m[Kconstexpr std::pair<typename std::__strip_reference_wrapper<typename std::decay<_Tp>::type>::__type, typename std::__strip_reference_wrapper<typename std::decay<_Tp2>::type>::__type> std::[01;32m[Kmake_pair[m[K(_T1&&, _T2&&) [35m[K[with _T1 = float&; _T2 = float&; typename __strip_reference_wrapper<typename decay<_Tp>::type>::__type = float; typename decay<_Tp>::type = float; typename __strip_reference_wrapper<typename decay<_Tp2>::type>::__type = float; typename decay<_Tp2>::type = float][m[K[m[K’:
+[18.894s] [01m[K/home/submarine/ros_ws/src/ros_pkg/ros2_sub/src/octomap.cpp:207:55:[m[K   required from here
+[18.894s] [01m[K/usr/include/c++/13/bits/stl_pair.h:922:5:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[18.894s]   922 |     [01;36m[Kmake_pair[m[K(_T1&& __x, _T2&& __y)
+[18.894s]       |     [01;36m[K^~~~~~~~~[m[K
+[38.686s] [100%] [32m[1mLinking CXX executable octo[0m
+[41.860s] [100%] Built target octo
+[41.885s] Invoked command in '/home/submarine/ros_ws/build/ros2_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/ros2_sub -- -j4 -l4
+[41.933s] Invoking command in '/home/submarine/ros_ws/build/ros2_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/ros2_sub
+[41.952s] -- Install configuration: ""
+[41.953s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch
+[41.953s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/sub_launch.py
+[41.953s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/online_async_launch.py
+[41.953s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/octomap_mapping.launch.xml
+[41.953s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config
+[41.953s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/Pool Map.json
+[41.953s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/ekf.yaml
+[41.953s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/mapper_params_online_async.yaml
+[41.953s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Roughness.png
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Normal.png
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Albedo.png
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Metalness.png
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/scripts
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/scripts/model.material
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/model.sdf
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes
+[41.954s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/tethys.dae
+[41.955s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/propeller.dae
+[41.955s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/base.dae
+[41.955s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/MaxSonar.dae
+[41.955s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/model.config
+[41.955s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/lib/ros2_sub/octo
+[41.972s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/ros2_sub/lib/ros2_sub/octo" to ""
+[41.973s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/package_run_dependencies/ros2_sub
+[41.973s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/parent_prefix_path/ros2_sub
+[41.973s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/ament_prefix_path.sh
+[41.973s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/ament_prefix_path.dsv
+[41.973s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/path.sh
+[41.973s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/path.dsv
+[41.973s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.bash
+[41.973s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.sh
+[41.973s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.zsh
+[41.974s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.dsv
+[41.974s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.dsv
+[41.974s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/packages/ros2_sub
+[41.974s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/cmake/ros2_subConfig.cmake
+[41.974s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/cmake/ros2_subConfig-version.cmake
+[41.974s] -- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.xml
+[41.977s] Invoked command in '/home/submarine/ros_ws/build/ros2_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/ros2_sub

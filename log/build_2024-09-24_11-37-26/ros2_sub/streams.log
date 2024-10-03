@@ -1,0 +1,48 @@
+[0.023s] Invoking command in '/home/submarine/ros_ws/build/ros2_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/ros2_sub -- -j4 -l4
+[0.225s] [100%] Built target octo
+[0.256s] Invoked command in '/home/submarine/ros_ws/build/ros2_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/ros2_sub -- -j4 -l4
+[0.319s] Invoking command in '/home/submarine/ros_ws/build/ros2_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/ros2_sub
+[0.380s] -- Install configuration: ""
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/sub_launch.py
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/online_async_launch.py
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/octomap_mapping.launch.xml
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/Pool Map.json
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/ekf.yaml
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/mapper_params_online_async.yaml
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials
+[0.381s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures
+[0.382s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Roughness.png
+[0.382s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Normal.png
+[0.382s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Albedo.png
+[0.391s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Metalness.png
+[0.394s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/scripts
+[0.394s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/scripts/model.material
+[0.395s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/model.sdf
+[0.395s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes
+[0.395s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/tethys.dae
+[0.438s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/propeller.dae
+[0.471s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/base.dae
+[0.727s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/MaxSonar.dae
+[1.008s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/model.config
+[1.011s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/lib/ros2_sub/octo
+[1.038s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/ros2_sub/lib/ros2_sub/octo" to ""
+[1.038s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/package_run_dependencies/ros2_sub
+[1.038s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/parent_prefix_path/ros2_sub
+[1.038s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/ament_prefix_path.sh
+[1.039s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/ament_prefix_path.dsv
+[1.039s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/path.sh
+[1.039s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/path.dsv
+[1.039s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.bash
+[1.039s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.sh
+[1.039s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.zsh
+[1.039s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.dsv
+[1.039s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.dsv
+[1.039s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/packages/ros2_sub
+[1.040s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/cmake/ros2_subConfig.cmake
+[1.040s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/cmake/ros2_subConfig-version.cmake
+[1.040s] -- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.xml
+[1.255s] Invoked command in '/home/submarine/ros_ws/build/ros2_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/ros2_sub

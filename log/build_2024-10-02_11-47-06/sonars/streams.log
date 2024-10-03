@@ -1,0 +1,23 @@
+[2.184s] Invoking command in '/home/submarine/ros_ws/src/sonars': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/submarine/ros_ws/build/sonars/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sonars build --build-base /home/submarine/ros_ws/build/sonars/build install --record /home/submarine/ros_ws/build/sonars/install.log --single-version-externally-managed install_data
+[2.760s] running egg_info
+[2.821s] writing ../../build/sonars/sonars.egg-info/PKG-INFO
+[2.822s] writing dependency_links to ../../build/sonars/sonars.egg-info/dependency_links.txt
+[2.823s] writing entry points to ../../build/sonars/sonars.egg-info/entry_points.txt
+[2.824s] writing requirements to ../../build/sonars/sonars.egg-info/requires.txt
+[2.825s] writing top-level names to ../../build/sonars/sonars.egg-info/top_level.txt
+[2.918s] reading manifest file '../../build/sonars/sonars.egg-info/SOURCES.txt'
+[2.922s] writing manifest file '../../build/sonars/sonars.egg-info/SOURCES.txt'
+[2.922s] running build
+[2.922s] running build_py
+[2.923s] running install
+[2.932s] running install_lib
+[2.974s] running install_data
+[2.976s] running install_egg_info
+[3.018s] removing '/home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars-0.0.0-py3.12.egg-info' (and everything under it)
+[3.021s] Copying ../../build/sonars/sonars.egg-info to /home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars-0.0.0-py3.12.egg-info
+[3.021s] running install_scripts
+[3.285s] Installing down_sonar_node script to /home/submarine/ros_ws/install/sonars/lib/sonars
+[3.286s] Installing front_sonar_node script to /home/submarine/ros_ws/install/sonars/lib/sonars
+[3.287s] Installing side_sonar_node script to /home/submarine/ros_ws/install/sonars/lib/sonars
+[3.289s] writing list of installed files to '/home/submarine/ros_ws/build/sonars/install.log'
+[3.438s] Invoked command in '/home/submarine/ros_ws/src/sonars' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/submarine/ros_ws/build/sonars/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sonars build --build-base /home/submarine/ros_ws/build/sonars/build install --record /home/submarine/ros_ws/build/sonars/install.log --single-version-externally-managed install_data

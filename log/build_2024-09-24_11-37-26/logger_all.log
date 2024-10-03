@@ -1,0 +1,699 @@
+[0.155s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.156s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff948c1520>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff94a71340>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff94a71340>>, mixin_verb=('build',))
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.207s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.208s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/submarine/ros_ws'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/behaviortree_ros2) by extension 'ros'
+[0.254s] DEBUG:colcon.colcon_core.package_identification:Package 'src/BehaviorTree.ROS2/behaviortree_ros2' with type 'ros.ament_cmake' and name 'behaviortree_ros2'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_interfaces) by extension 'ros'
+[0.255s] DEBUG:colcon.colcon_core.package_identification:Package 'src/BehaviorTree.ROS2/btcpp_ros2_interfaces' with type 'ros.ament_cmake' and name 'btcpp_ros2_interfaces'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extensions ['ros']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/BehaviorTree.ROS2/btcpp_ros2_samples) by extension 'ros'
+[0.256s] DEBUG:colcon.colcon_core.package_identification:Package 'src/BehaviorTree.ROS2/btcpp_ros2_samples' with type 'ros.ament_cmake' and name 'btcpp_ros2_samples'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_sub) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_sub) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_sub) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_sub) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_sub) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_sub) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_sub) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_sub) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_sub) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller_sub' with type 'ros.ament_cmake' and name 'controller_sub'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extension 'python'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extensions ['python_setup_py']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping) by extension 'python_setup_py'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_mapping) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_mapping) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_mapping) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_mapping) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_mapping) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_mapping) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_mapping) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_mapping) by extension 'ros'
+[0.259s] DEBUG:colcon.colcon_core.package_identification:Package 'src/octomap_mapping/octomap_mapping' with type 'ros.ament_cmake' and name 'octomap_mapping'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_server) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_server) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_server) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_server) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_server) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_server) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_server) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_server) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_mapping/octomap_server) by extension 'ros'
+[0.262s] DEBUG:colcon.colcon_core.package_identification:Package 'src/octomap_mapping/octomap_server' with type 'ros.ament_cmake' and name 'octomap_server'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_rviz_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_rviz_plugins) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_rviz_plugins) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_rviz_plugins) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_rviz_plugins) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_rviz_plugins) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_rviz_plugins) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_rviz_plugins) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/octomap_rviz_plugins) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'src/octomap_rviz_plugins' with type 'ros.ament_cmake' and name 'octomap_rviz_plugins'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extension 'ros'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extensions ['cmake', 'python']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extension 'cmake'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extension 'python'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extensions ['python_setup_py']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl) by extension 'python_setup_py'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/pcl_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/pcl_ros) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/pcl_ros) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/pcl_ros) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/pcl_ros) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/pcl_ros) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/pcl_ros) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/pcl_ros) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/pcl_ros) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/perception_pcl/pcl_ros' with type 'ros.ament_cmake' and name 'pcl_ros'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/perception_pcl) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/perception_pcl) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/perception_pcl) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/perception_pcl) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/perception_pcl) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/perception_pcl) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/perception_pcl) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/perception_pcl) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/perception_pcl/perception_pcl) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'src/perception_pcl/perception_pcl' with type 'ros.ament_cmake' and name 'perception_pcl'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_bt) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_bt) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_bt) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_bt) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_bt) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_bt) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_bt) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_bt) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_bt) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_bt' with type 'ros.ament_cmake' and name 'ros_bt'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extension 'ros'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extensions ['cmake', 'python']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extension 'cmake'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extension 'python'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extensions ['python_setup_py']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg) by extension 'python_setup_py'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg/ros2_sub) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg/ros2_sub) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg/ros2_sub) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg/ros2_sub) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg/ros2_sub) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg/ros2_sub) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg/ros2_sub) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg/ros2_sub) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_pkg/ros2_sub) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_pkg/ros2_sub' with type 'ros.ament_cmake' and name 'ros2_sub'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonars) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonars) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonars) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonars) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonars) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonars) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonars) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonars) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonars) by extension 'ros'
+[0.271s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sonars' with type 'ros.ament_python' and name 'sonars'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/speed_sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/speed_sensor) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/speed_sensor) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/speed_sensor) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/speed_sensor) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/speed_sensor) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/speed_sensor) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/speed_sensor) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/speed_sensor) by extension 'ros'
+[0.272s] DEBUG:colcon.colcon_core.package_identification:Package 'src/speed_sensor' with type 'ros.ament_python' and name 'speed_sensor'
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/submarine/ros_ws/install/speed_sensor' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/submarine/ros_ws/install/servo_node' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/submarine/ros_ws/install/perception_pcl' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/submarine/ros_ws/install/octomap_mapping' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/submarine/ros_ws/install/octomap_server' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/submarine/ros_ws/install/pcl_ros' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/submarine/ros_ws/install/btcpp_ros2_samples' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/submarine/ros_ws/install/behaviortree_cpp' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/submarine/ros_ws/install/perception_pcl' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/submarine/ros_ws/install/octomap_mapping' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/submarine/ros_ws/install/octomap_server' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/submarine/ros_ws/install/pcl_ros' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/submarine/ros_ws/install/btcpp_ros2_samples' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/submarine/ros_ws/install/behaviortree_cpp' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.305s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/submarine/ros_ws/install
+[0.306s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/submarine/ryans_ws/install
+[0.308s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 384 installed packages in /opt/ros/jazzy
+[0.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.385s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.385s] DEBUG:colcon.colcon_core.verb:Building package 'btcpp_ros2_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/btcpp_ros2_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/btcpp_ros2_interfaces', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/BehaviorTree.ROS2/btcpp_ros2_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'controller_sub' build argument 'cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'controller_sub' build argument 'cmake_target' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'controller_sub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'controller_sub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'controller_sub' build argument 'cmake_clean_first' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'controller_sub' build argument 'cmake_force_configure' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'controller_sub' build argument 'ament_cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'controller_sub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'controller_sub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.386s] DEBUG:colcon.colcon_core.verb:Building package 'controller_sub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/controller_sub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/controller_sub', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/controller_sub', 'symlink_install': False, 'test_result_base': None}
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'octomap_rviz_plugins' build argument 'cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'octomap_rviz_plugins' build argument 'cmake_target' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'octomap_rviz_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'octomap_rviz_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'octomap_rviz_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'octomap_rviz_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'octomap_rviz_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'octomap_rviz_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.386s] Level 5:colcon.colcon_core.verb:set package 'octomap_rviz_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.386s] DEBUG:colcon.colcon_core.verb:Building package 'octomap_rviz_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/octomap_rviz_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/octomap_rviz_plugins', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/octomap_rviz_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'pcl_ros' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'pcl_ros' build argument 'cmake_target' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'pcl_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'pcl_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'pcl_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'pcl_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'pcl_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'pcl_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'pcl_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.387s] DEBUG:colcon.colcon_core.verb:Building package 'pcl_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/pcl_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/pcl_ros', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/perception_pcl/pcl_ros', 'symlink_install': False, 'test_result_base': None}
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ros2_sub' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ros2_sub' build argument 'cmake_target' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ros2_sub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ros2_sub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ros2_sub' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ros2_sub' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ros2_sub' build argument 'ament_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ros2_sub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ros2_sub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_sub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/ros2_sub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/ros2_sub', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/ros_pkg/ros2_sub', 'symlink_install': False, 'test_result_base': None}
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ros_bt' build argument 'cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ros_bt' build argument 'cmake_target' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ros_bt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ros_bt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ros_bt' build argument 'cmake_clean_first' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ros_bt' build argument 'cmake_force_configure' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ros_bt' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ros_bt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ros_bt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'ros_bt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/ros_bt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/ros_bt', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/ros_bt', 'symlink_install': False, 'test_result_base': None}
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'sonars' build argument 'cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'sonars' build argument 'cmake_target' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'sonars' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'sonars' build argument 'cmake_clean_cache' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'sonars' build argument 'cmake_clean_first' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'sonars' build argument 'cmake_force_configure' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'sonars' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'sonars' build argument 'catkin_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'sonars' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.389s] DEBUG:colcon.colcon_core.verb:Building package 'sonars' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/sonars', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/sonars', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/sonars', 'symlink_install': False, 'test_result_base': None}
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_target' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.389s] DEBUG:colcon.colcon_core.verb:Building package 'speed_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/speed_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/speed_sensor', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/speed_sensor', 'symlink_install': False, 'test_result_base': None}
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_target' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.389s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'behaviortree_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.390s] DEBUG:colcon.colcon_core.verb:Building package 'behaviortree_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/behaviortree_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/behaviortree_ros2', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/BehaviorTree.ROS2/behaviortree_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'octomap_server' build argument 'cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'octomap_server' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'octomap_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'octomap_server' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'octomap_server' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'octomap_server' build argument 'cmake_force_configure' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'octomap_server' build argument 'ament_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'octomap_server' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'octomap_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.390s] DEBUG:colcon.colcon_core.verb:Building package 'octomap_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/octomap_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/octomap_server', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/octomap_mapping/octomap_server', 'symlink_install': False, 'test_result_base': None}
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'perception_pcl' build argument 'cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'perception_pcl' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'perception_pcl' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'perception_pcl' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'perception_pcl' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'perception_pcl' build argument 'cmake_force_configure' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'perception_pcl' build argument 'ament_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'perception_pcl' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'perception_pcl' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.391s] DEBUG:colcon.colcon_core.verb:Building package 'perception_pcl' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/perception_pcl', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/perception_pcl', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/perception_pcl/perception_pcl', 'symlink_install': False, 'test_result_base': None}
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_target' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_clean_first' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'cmake_force_configure' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'ament_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'btcpp_ros2_samples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.391s] DEBUG:colcon.colcon_core.verb:Building package 'btcpp_ros2_samples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/btcpp_ros2_samples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/btcpp_ros2_samples', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/BehaviorTree.ROS2/btcpp_ros2_samples', 'symlink_install': False, 'test_result_base': None}
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'octomap_mapping' build argument 'cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'octomap_mapping' build argument 'cmake_target' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'octomap_mapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'octomap_mapping' build argument 'cmake_clean_cache' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'octomap_mapping' build argument 'cmake_clean_first' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'octomap_mapping' build argument 'cmake_force_configure' from command line to 'False'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'octomap_mapping' build argument 'ament_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'octomap_mapping' build argument 'catkin_cmake_args' from command line to 'None'
+[0.391s] Level 5:colcon.colcon_core.verb:set package 'octomap_mapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.392s] DEBUG:colcon.colcon_core.verb:Building package 'octomap_mapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/submarine/ros_ws/build/octomap_mapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/submarine/ros_ws/install/octomap_mapping', 'merge_install': False, 'path': '/home/submarine/ros_ws/src/octomap_mapping/octomap_mapping', 'symlink_install': False, 'test_result_base': None}
+[0.392s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.393s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.394s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/submarine/ros_ws/src/perception_pcl/pcl_ros' with build type 'ament_cmake'
+[0.394s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/submarine/ros_ws/src/perception_pcl/pcl_ros'
+[0.396s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.397s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.403s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/submarine/ros_ws/src/BehaviorTree.ROS2/btcpp_ros2_interfaces' with build type 'ament_cmake'
+[0.403s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/submarine/ros_ws/src/BehaviorTree.ROS2/btcpp_ros2_interfaces'
+[0.404s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.410s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/submarine/ros_ws/src/controller_sub' with build type 'ament_cmake'
+[0.410s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/submarine/ros_ws/src/controller_sub'
+[0.410s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.411s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.417s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/submarine/ros_ws/src/octomap_rviz_plugins' with build type 'ament_cmake'
+[0.417s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/submarine/ros_ws/src/octomap_rviz_plugins'
+[0.417s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.417s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/pcl_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/pcl_ros -- -j4 -l4
+[0.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/btcpp_ros2_interfaces -- -j4 -l4
+[0.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/controller_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/controller_sub -- -j4 -l4
+[0.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/octomap_rviz_plugins -- -j4 -l4
+[0.732s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/controller_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/controller_sub -- -j4 -l4
+[0.955s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/controller_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/controller_sub
+[1.028s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_sub)
+[1.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/controller_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/controller_sub
+[1.042s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub' for CMake module files
+[1.048s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub' for CMake config files
+[1.048s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_sub', 'cmake_prefix_path')
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/hook/cmake_prefix_path.ps1'
+[1.051s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/hook/cmake_prefix_path.dsv'
+[1.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/hook/cmake_prefix_path.sh'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/lib'
+[1.058s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/bin'
+[1.059s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/lib/pkgconfig/controller_sub.pc'
+[1.059s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/lib/python3.12/site-packages'
+[1.060s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/bin'
+[1.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.ps1'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.dsv'
+[1.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.sh'
+[1.075s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.bash'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.zsh'
+[1.083s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/controller_sub/share/colcon-core/packages/controller_sub)
+[1.123s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/octomap_rviz_plugins -- -j4 -l4
+[1.161s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_sub)
+[1.162s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub' for CMake module files
+[1.163s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub' for CMake config files
+[1.163s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_sub', 'cmake_prefix_path')
+[1.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/hook/cmake_prefix_path.ps1'
+[1.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/hook/cmake_prefix_path.dsv'
+[1.170s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/hook/cmake_prefix_path.sh'
+[1.173s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/lib'
+[1.173s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/bin'
+[1.173s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/lib/pkgconfig/controller_sub.pc'
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/lib/python3.12/site-packages'
+[1.176s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/controller_sub/bin'
+[1.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.ps1'
+[1.177s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.dsv'
+[1.178s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.sh'
+[1.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.bash'
+[1.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.zsh'
+[1.183s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/controller_sub/share/colcon-core/packages/controller_sub)
+[1.184s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/submarine/ros_ws/src/ros_pkg/ros2_sub' with build type 'ament_cmake'
+[1.185s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/submarine/ros_ws/src/ros_pkg/ros2_sub'
+[1.185s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.185s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/ros2_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/ros2_sub -- -j4 -l4
+[1.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/pcl_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/pcl_ros -- -j4 -l4
+[1.255s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/octomap_rviz_plugins
+[1.287s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(octomap_rviz_plugins)
+[1.288s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins' for CMake module files
+[1.289s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins' for CMake config files
+[1.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('octomap_rviz_plugins', 'cmake_prefix_path')
+[1.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/cmake_prefix_path.ps1'
+[1.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/octomap_rviz_plugins
+[1.291s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/cmake_prefix_path.dsv'
+[1.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/cmake_prefix_path.sh'
+[1.294s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/lib'
+[1.294s] Level 1:colcon.colcon_core.shell:create_environment_hook('octomap_rviz_plugins', 'ld_library_path_lib')
+[1.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/ld_library_path_lib.ps1'
+[1.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/ld_library_path_lib.dsv'
+[1.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/ld_library_path_lib.sh'
+[1.301s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/bin'
+[1.301s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/lib/pkgconfig/octomap_rviz_plugins.pc'
+[1.301s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/lib/python3.12/site-packages'
+[1.302s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/bin'
+[1.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.ps1'
+[1.303s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.dsv'
+[1.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.sh'
+[1.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.bash'
+[1.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.zsh'
+[1.314s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/octomap_rviz_plugins/share/colcon-core/packages/octomap_rviz_plugins)
+[1.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/ros2_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/ros2_sub -- -j4 -l4
+[1.445s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(octomap_rviz_plugins)
+[1.446s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins' for CMake module files
+[1.447s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins' for CMake config files
+[1.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('octomap_rviz_plugins', 'cmake_prefix_path')
+[1.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/cmake_prefix_path.ps1'
+[1.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/cmake_prefix_path.dsv'
+[1.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/cmake_prefix_path.sh'
+[1.450s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/lib'
+[1.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('octomap_rviz_plugins', 'ld_library_path_lib')
+[1.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/ld_library_path_lib.ps1'
+[1.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/ld_library_path_lib.dsv'
+[1.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/hook/ld_library_path_lib.sh'
+[1.454s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/bin'
+[1.454s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/lib/pkgconfig/octomap_rviz_plugins.pc'
+[1.455s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/lib/python3.12/site-packages'
+[1.455s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/octomap_rviz_plugins/bin'
+[1.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.ps1'
+[1.457s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.dsv'
+[1.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.sh'
+[1.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.bash'
+[1.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.zsh'
+[1.463s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/octomap_rviz_plugins/share/colcon-core/packages/octomap_rviz_plugins)
+[1.465s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/submarine/ros_ws/src/ros_bt' with build type 'ament_cmake'
+[1.465s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/submarine/ros_ws/src/ros_bt'
+[1.466s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.467s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/ros_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/ros_bt -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/ros_bt
+[1.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/pcl_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/pcl_ros
+[1.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/ros2_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/ros2_sub
+[1.681s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pcl_ros)
+[1.682s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros' for CMake module files
+[1.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/pcl_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/pcl_ros
+[1.683s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros' for CMake config files
+[1.684s] Level 1:colcon.colcon_core.shell:create_environment_hook('pcl_ros', 'cmake_prefix_path')
+[1.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/cmake_prefix_path.ps1'
+[1.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/cmake_prefix_path.dsv'
+[1.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/cmake_prefix_path.sh'
+[1.687s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/lib'
+[1.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('pcl_ros', 'ld_library_path_lib')
+[1.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/ld_library_path_lib.ps1'
+[1.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/ld_library_path_lib.dsv'
+[1.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/ld_library_path_lib.sh'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/bin'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/lib/pkgconfig/pcl_ros.pc'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/lib/python3.12/site-packages'
+[1.690s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/bin'
+[1.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.ps1'
+[1.692s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.dsv'
+[1.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.sh'
+[1.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.bash'
+[1.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.zsh'
+[1.695s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/pcl_ros/share/colcon-core/packages/pcl_ros)
+[1.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/btcpp_ros2_interfaces -- -j4 -l4
+[1.879s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pcl_ros)
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros' for CMake module files
+[1.881s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros' for CMake config files
+[1.882s] Level 1:colcon.colcon_core.shell:create_environment_hook('pcl_ros', 'cmake_prefix_path')
+[1.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/cmake_prefix_path.ps1'
+[1.883s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/cmake_prefix_path.dsv'
+[1.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/cmake_prefix_path.sh'
+[1.885s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/lib'
+[1.885s] Level 1:colcon.colcon_core.shell:create_environment_hook('pcl_ros', 'ld_library_path_lib')
+[1.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/ld_library_path_lib.ps1'
+[1.886s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/ld_library_path_lib.dsv'
+[1.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/hook/ld_library_path_lib.sh'
+[1.887s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/bin'
+[1.887s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/lib/pkgconfig/pcl_ros.pc'
+[1.888s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/lib/python3.12/site-packages'
+[1.888s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/pcl_ros/bin'
+[1.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.ps1'
+[1.890s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.dsv'
+[1.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.sh'
+[1.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.bash'
+[1.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.zsh'
+[1.893s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/pcl_ros/share/colcon-core/packages/pcl_ros)
+[1.893s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/submarine/ros_ws/src/octomap_mapping/octomap_server' with build type 'ament_cmake'
+[1.894s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/submarine/ros_ws/src/octomap_mapping/octomap_server'
+[1.894s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.894s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.914s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/octomap_server': CMAKE_PREFIX_PATH=/home/submarine/ros_ws/install/pcl_ros:/home/submarine/ros_ws/install/ros_bt:/home/submarine/ros_ws/install/ros2_sub:/home/submarine/ros_ws/install/perception_pcl:/home/submarine/ros_ws/install/octomap_mapping:/home/submarine/ros_ws/install/octomap_server:/home/submarine/ros_ws/install/octomap_rviz_plugins:/home/submarine/ros_ws/install/controller_sub:/home/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/ros_ws/install/behaviortree_cpp:/home/submarine/ryans_ws/install/orientation_msg:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/submarine/ros_ws/install/pcl_ros/lib:/home/submarine/ros_ws/install/octomap_server/lib:/home/submarine/ros_ws/install/octomap_rviz_plugins/lib:/home/submarine/ros_ws/install/behaviortree_ros2/lib:/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib:/home/submarine/ros_ws/install/behaviortree_cpp/lib:/home/submarine/ryans_ws/install/orientation_msg/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/submarine/ros_ws/src/octomap_mapping/octomap_server -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/octomap_server
+[2.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/btcpp_ros2_interfaces
+[2.219s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_interfaces)
+[2.220s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces' for CMake module files
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces' for CMake config files
+[2.222s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'cmake_prefix_path')
+[2.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.ps1'
+[2.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/btcpp_ros2_interfaces
+[2.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.dsv'
+[2.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.sh'
+[2.314s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib'
+[2.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'ld_library_path_lib')
+[2.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.ps1'
+[2.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.dsv'
+[2.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.sh'
+[2.410s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/bin'
+[2.410s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/pkgconfig/btcpp_ros2_interfaces.pc'
+[2.410s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages'
+[2.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'pythonpath')
+[2.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.ps1'
+[2.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.dsv'
+[2.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.sh'
+[2.416s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/bin'
+[2.417s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.ps1'
+[2.418s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.dsv'
+[2.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.sh'
+[2.421s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.bash'
+[2.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.zsh'
+[2.425s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/colcon-core/packages/btcpp_ros2_interfaces)
+[2.441s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_sub)
+[2.442s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub' for CMake module files
+[2.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/ros2_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/ros2_sub
+[2.443s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub' for CMake config files
+[2.446s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_sub', 'cmake_prefix_path')
+[2.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/hook/cmake_prefix_path.ps1'
+[2.447s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/hook/cmake_prefix_path.dsv'
+[2.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/hook/cmake_prefix_path.sh'
+[2.449s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/lib'
+[2.449s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/bin'
+[2.449s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/lib/pkgconfig/ros2_sub.pc'
+[2.450s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/lib/python3.12/site-packages'
+[2.450s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/bin'
+[2.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.ps1'
+[2.452s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.dsv'
+[2.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.sh'
+[2.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.bash'
+[2.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.zsh'
+[2.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/ros2_sub/share/colcon-core/packages/ros2_sub)
+[2.522s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_sub)
+[2.523s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub' for CMake module files
+[2.524s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub' for CMake config files
+[2.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_sub', 'cmake_prefix_path')
+[2.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/hook/cmake_prefix_path.ps1'
+[2.526s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/hook/cmake_prefix_path.dsv'
+[2.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/hook/cmake_prefix_path.sh'
+[2.531s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/lib'
+[2.532s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/bin'
+[2.532s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/lib/pkgconfig/ros2_sub.pc'
+[2.532s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/lib/python3.12/site-packages'
+[2.532s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros2_sub/bin'
+[2.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.ps1'
+[2.649s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.dsv'
+[2.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.sh'
+[2.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.bash'
+[2.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.zsh'
+[2.653s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/ros2_sub/share/colcon-core/packages/ros2_sub)
+[2.655s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/submarine/ros_ws/src/sonars' with build type 'ament_python'
+[2.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('sonars', 'ament_prefix_path')
+[2.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/sonars/share/sonars/hook/ament_prefix_path.ps1'
+[2.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/sonars/share/sonars/hook/ament_prefix_path.dsv'
+[2.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/sonars/share/sonars/hook/ament_prefix_path.sh'
+[2.660s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.660s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.669s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(btcpp_ros2_interfaces)
+[2.669s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces' for CMake module files
+[2.670s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces' for CMake config files
+[2.671s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'cmake_prefix_path')
+[2.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.ps1'
+[2.672s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.dsv'
+[2.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/cmake_prefix_path.sh'
+[2.674s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib'
+[2.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'ld_library_path_lib')
+[2.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.ps1'
+[2.675s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.dsv'
+[2.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/ld_library_path_lib.sh'
+[2.678s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/bin'
+[2.678s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/pkgconfig/btcpp_ros2_interfaces.pc'
+[2.678s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages'
+[2.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('btcpp_ros2_interfaces', 'pythonpath')
+[2.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.ps1'
+[2.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.dsv'
+[2.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/hook/pythonpath.sh'
+[2.683s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/bin'
+[2.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.ps1'
+[2.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.dsv'
+[2.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.sh'
+[2.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.bash'
+[2.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.zsh'
+[2.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/colcon-core/packages/btcpp_ros2_interfaces)
+[2.693s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/submarine/ros_ws/src/BehaviorTree.ROS2/behaviortree_ros2' with build type 'ament_cmake'
+[2.693s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/submarine/ros_ws/src/BehaviorTree.ROS2/behaviortree_ros2'
+[2.694s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.695s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.162s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/submarine/ros_ws/src/sonars'
+[3.163s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.163s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/submarine/ros_ws/build/behaviortree_ros2': CMAKE_PREFIX_PATH=/home/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/ros_ws/install/ros_bt:/home/submarine/ros_ws/install/ros2_sub:/home/submarine/ros_ws/install/perception_pcl:/home/submarine/ros_ws/install/octomap_mapping:/home/submarine/ros_ws/install/octomap_server:/home/submarine/ros_ws/install/pcl_ros:/home/submarine/ros_ws/install/octomap_rviz_plugins:/home/submarine/ros_ws/install/controller_sub:/home/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/ros_ws/install/behaviortree_cpp:/home/submarine/ryans_ws/install/orientation_msg:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib:/home/submarine/ros_ws/install/octomap_server/lib:/home/submarine/ros_ws/install/pcl_ros/lib:/home/submarine/ros_ws/install/octomap_rviz_plugins/lib:/home/submarine/ros_ws/install/behaviortree_ros2/lib:/home/submarine/ros_ws/install/behaviortree_cpp/lib:/home/submarine/ryans_ws/install/orientation_msg/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:/home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages:/home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages:/home/submarine/ros_ws/install/servo_node/lib/python3.12/site-packages:/home/submarine/ryans_ws/install/orientation_package/lib/python3.12/site-packages:/home/submarine/ryans_ws/install/orientation_msg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/submarine/ros_ws/build/behaviortree_ros2 -- -j4 -l4
+[3.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/submarine/ros_ws/build/ros_bt' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/ros_bt -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/ros_bt
+[3.208s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_bt)
+[3.209s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros_bt' for CMake module files
+[3.210s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros_bt' for CMake config files
+[3.210s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros_bt/bin'
+[3.210s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros_bt/lib/pkgconfig/ros_bt.pc'
+[3.211s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros_bt/lib/python3.12/site-packages'
+[3.211s] Level 1:colcon.colcon_core.environment:checking '/home/submarine/ros_ws/install/ros_bt/bin'
+[3.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.ps1'
+[3.213s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.dsv'
+[3.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.sh'
+[3.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.bash'
+[3.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.zsh'
+[3.218s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/submarine/ros_ws/install/ros_bt/share/colcon-core/packages/ros_bt)
+[12.017s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.017s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.017s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[12.017s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.028s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.029s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.029s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.046s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.047s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/submarine/ros_ws/install/local_setup.ps1'
+[12.048s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/submarine/ros_ws/install/_local_setup_util_ps1.py'
+[12.050s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/submarine/ros_ws/install/setup.ps1'
+[12.053s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/submarine/ros_ws/install/local_setup.sh'
+[12.053s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/submarine/ros_ws/install/_local_setup_util_sh.py'
+[12.054s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/submarine/ros_ws/install/setup.sh'
+[12.056s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/submarine/ros_ws/install/local_setup.bash'
+[12.058s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/submarine/ros_ws/install/setup.bash'
+[12.059s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/submarine/ros_ws/install/local_setup.zsh'
+[12.061s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/submarine/ros_ws/install/setup.zsh'

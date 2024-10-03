@@ -1,0 +1,133 @@
+[  5%] Built target filter_project_inliers_node
+[ 11%] Built target filter_extract_indices_node
+[ 17%] Built target filter_passthrough_node
+[ 22%] Built target pcl_ros_tf
+[ 28%] Built target filter_voxel_grid_node
+[ 34%] Built target filter_radius_outlier_removal_node
+[ 40%] Built target filter_statistical_outlier_removal_node
+[ 45%] Built target filter_crop_box_node
+[ 51%] Built target pcd_to_pointcloud
+[ 57%] Built target pointcloud_to_pcd
+[ 62%] Built target pcd_to_pointcloud_lib
+[ 68%] Built target pointcloud_to_pcd_lib
+[ 74%] Built target dummy_topics
+[100%] Built target pcl_ros_filters
+-- Install configuration: ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_extract_indices_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_extract_indices_node" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_passthrough_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_passthrough_node" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_project_inliers_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_project_inliers_node" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_radius_outlier_removal_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_radius_outlier_removal_node" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_statistical_outlier_removal_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_statistical_outlier_removal_node" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_crop_box_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_crop_box_node" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_voxel_grid_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_voxel_grid_node" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/pcd_to_pointcloud
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/pcd_to_pointcloud" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/pointcloud_to_pcd
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/pointcloud_to_pcd" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/point_cloud.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/impl
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/impl/transforms.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/surface
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/surface/moving_least_squares.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/surface/convex_hull.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/publisher.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io/concatenate_data.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io/concatenate_fields.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io/bag_io.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io/pcd_io.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/pcl_node.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/transforms.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/fpfh_omp.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/normal_3d_tbb.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/shot_omp.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/normal_3d.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/pfh.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/feature.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/shot.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/normal_3d_omp.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/principal_curvatures.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/moment_invariants.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/vfh.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/boundary.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/fpfh.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/extract_indices.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/crop_box.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/radius_outlier_removal.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/voxel_grid.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/passthrough.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/statistical_outlier_removal.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/project_inliers.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/filter.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/sac_segmentation.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/extract_clusters.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/segment_differences.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/extract_polygonal_prism_data.hpp
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/libpcl_ros_tf.a
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/libpcd_to_pointcloud_lib.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/libpcd_to_pointcloud_lib.so" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/libpcl_ros_filters.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/libpcl_ros_filters.so" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/lib/libpointcloud_to_pcd_lib.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/pcl_ros/lib/libpointcloud_to_pcd_lib.so" to ""
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_segmentation.xml
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_features.xml
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_filters.xml
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_io.xml
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_surface.xml
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/surface
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/surface/sample_convex_hull.launch
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/io
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/io/sample_concatenate_data.launch
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/features
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/features/sample_normal_3d.launch
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_statistical_outlier_removal.launch
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_voxel_grid.launch
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/statistical_outlier_removal.rviz
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/voxel_grid.rviz
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/segmentation
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/segmentation/sample_extract_clusters.launch
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/data
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/data/.gitignore
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/library_path.sh
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/library_path.dsv
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/ament_index/resource_index/package_run_dependencies/pcl_ros
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/ament_index/resource_index/parent_prefix_path/pcl_ros
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.sh
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.dsv
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/path.sh
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/path.dsv
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/local_setup.bash
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/local_setup.sh
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/local_setup.zsh
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/local_setup.dsv
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.dsv
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/ament_index/resource_index/packages/pcl_ros
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/ament_index/resource_index/rclcpp_components/pcl_ros
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport.cmake
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport-noconfig.cmake
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig.cmake
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig-version.cmake
+-- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.xml

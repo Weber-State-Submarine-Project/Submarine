@@ -1,0 +1,8 @@
+{
+  "package_name": "orientation_msg",
+  "output_dir": "/home/submarine/ros_ws/build/orientation_msg/rosidl_generator_type_description/orientation_msg",
+  "idl_tuples": [
+    "/home/submarine/ros_ws/build/orientation_msg/rosidl_adapter/orientation_msg:msg/Orientation.idl",
+    "/home/submarine/ros_ws/build/orientation_msg/rosidl_adapter/orientation_msg:msg/Esc.idl"
+  ]
+}

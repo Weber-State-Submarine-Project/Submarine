@@ -1,0 +1,271 @@
+[0.030s] Invoking command in '/home/submarine/ros_ws/build/orientation_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/orientation_package:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake /home/submarine/ros_ws/src/orientation_msg -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/orientation_msg
+[0.207s] -- The C compiler identification is GNU 13.2.0
+[0.556s] -- The CXX compiler identification is GNU 13.2.0
+[0.656s] -- Detecting C compiler ABI info
+[1.021s] -- Detecting C compiler ABI info - done
+[1.042s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.043s] -- Detecting C compile features
+[1.045s] -- Detecting C compile features - done
+[1.068s] -- Detecting CXX compiler ABI info
+[1.330s] -- Detecting CXX compiler ABI info - done
+[1.351s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.352s] -- Detecting CXX compile features
+[1.352s] -- Detecting CXX compile features - done
+[1.365s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.737s] -- Found Python3: /home/submarine/.local/share/pipx/venvs/bluerobotics-ping/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.076s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.099s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.255s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.381s] -- Found rosidl_adapter: 4.6.3 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[3.377s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[4.252s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.300s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.307s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[5.505s] -- Found PythonExtra: /home/submarine/.local/share/pipx/venvs/bluerobotics-ping/bin/python3  
+[6.186s] -- Found Python3: /home/submarine/.local/share/pipx/venvs/bluerobotics-ping/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[6.245s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[6.318s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.319s] -- Configured cppcheck include dirs: 
+[6.319s] -- Configured cppcheck exclude dirs and/or files: 
+[6.321s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.321s] -- Configured 'flake8' exclude dirs and/or files: 
+[6.325s] -- Added test 'lint_cmake' to check CMake code style
+[6.327s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.334s] -- Added test 'uncrustify' to check C / C++ code style
+[6.334s] -- Configured uncrustify additional arguments: 
+[6.336s] -- Added test 'xmllint' to check XML markup files
+[6.341s] -- Configuring done (6.3s)
+[6.387s] -- Generating done (0.0s)
+[6.391s] -- Build files have been written to: /home/submarine/ros_ws/build/orientation_msg
+[6.407s] Invoked command in '/home/submarine/ros_ws/build/orientation_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/orientation_package:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake /home/submarine/ros_ws/src/orientation_msg -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/orientation_msg
+[6.409s] Invoking command in '/home/submarine/ros_ws/build/orientation_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/orientation_package:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/orientation_msg -- -j4 -l4
+[6.513s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[6.532s] [  2%] Built target ament_cmake_python_copy_orientation_msg
+[6.838s] running egg_info
+[6.839s] creating orientation_msg.egg-info
+[6.858s] writing orientation_msg.egg-info/PKG-INFO
+[6.858s] writing dependency_links to orientation_msg.egg-info/dependency_links.txt
+[6.859s] writing top-level names to orientation_msg.egg-info/top_level.txt
+[6.859s] writing manifest file 'orientation_msg.egg-info/SOURCES.txt'
+[6.918s] reading manifest file 'orientation_msg.egg-info/SOURCES.txt'
+[6.920s] writing manifest file 'orientation_msg.egg-info/SOURCES.txt'
+[6.937s] [  2%] Built target orientation_msg__rosidl_generator_type_description
+[6.961s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.993s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.032s] [  6%] Built target ament_cmake_python_build_orientation_msg_egg
+[7.559s] [  6%] Built target orientation_msg__cpp
+[7.640s] [ 15%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_generator_c.dir/rosidl_generator_c/orientation_msg/msg/detail/esc__description.c.o[0m
+[7.640s] [ 15%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_generator_c.dir/rosidl_generator_c/orientation_msg/msg/detail/orientation__functions.c.o[0m
+[7.641s] [ 15%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_generator_c.dir/rosidl_generator_c/orientation_msg/msg/detail/orientation__description.c.o[0m
+[7.641s] [ 15%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_generator_c.dir/rosidl_generator_c/orientation_msg/msg/detail/orientation__type_support.c.o[0m
+[7.731s] [ 18%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_generator_c.dir/rosidl_generator_c/orientation_msg/msg/detail/esc__functions.c.o[0m
+[7.736s] [ 20%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_generator_c.dir/rosidl_generator_c/orientation_msg/msg/detail/esc__type_support.c.o[0m
+[7.826s] [ 22%] [32m[1mLinking C shared library liborientation_msg__rosidl_generator_c.so[0m
+[7.912s] [ 22%] Built target orientation_msg__rosidl_generator_c
+[7.940s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.940s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.940s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.940s] [ 31%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.514s] [ 34%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/orientation_msg/msg/orientation__type_support.cpp.o[0m
+[8.521s] [ 36%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orientation_msg/msg/orientation__type_support.cpp.o[0m
+[8.614s] [ 38%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orientation_msg/msg/detail/orientation__type_support.c.o[0m
+[8.639s] [ 40%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/orientation_msg/msg/esc__type_support.cpp.o[0m
+[8.831s] [ 43%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orientation_msg/msg/detail/orientation__type_support_c.cpp.o[0m
+[8.842s] [ 45%] [32m[1mLinking CXX shared library liborientation_msg__rosidl_typesupport_c.so[0m
+[8.861s] [ 47%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/orientation_msg/msg/detail/esc__type_support.c.o[0m
+[8.941s] [ 47%] Built target orientation_msg__rosidl_typesupport_c
+[8.952s] [ 50%] [32m[1mLinking C shared library liborientation_msg__rosidl_typesupport_introspection_c.so[0m
+[8.970s] [ 52%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.038s] [ 52%] Built target orientation_msg__rosidl_typesupport_introspection_c
+[9.068s] [ 54%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[9.506s] [ 56%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/orientation_msg/msg/esc__type_support.cpp.o[0m
+[9.750s] [ 59%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orientation_msg/msg/detail/dds_fastrtps/orientation__type_support.cpp.o[0m
+[9.763s] [ 61%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orientation_msg/msg/detail/orientation__type_support.cpp.o[0m
+[10.053s] [ 63%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/orientation_msg/msg/detail/esc__type_support_c.cpp.o[0m
+[10.313s] [ 65%] [32m[1mLinking CXX shared library liborientation_msg__rosidl_typesupport_cpp.so[0m
+[10.420s] [ 65%] Built target orientation_msg__rosidl_typesupport_cpp
+[10.446s] [ 68%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/orientation_msg/msg/detail/esc__type_support.cpp.o[0m
+[10.553s] [ 70%] [32mBuilding CXX object CMakeFiles/orientation_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/orientation_msg/msg/detail/dds_fastrtps/esc__type_support.cpp.o[0m
+[11.170s] [ 72%] [32m[1mLinking CXX shared library liborientation_msg__rosidl_typesupport_introspection_cpp.so[0m
+[11.184s] [ 75%] [32m[1mLinking CXX shared library liborientation_msg__rosidl_typesupport_fastrtps_c.so[0m
+[11.365s] [ 75%] Built target orientation_msg__rosidl_typesupport_introspection_cpp
+[11.390s] [ 75%] Built target orientation_msg__rosidl_typesupport_fastrtps_c
+[11.608s] [ 77%] [32m[1mLinking CXX shared library liborientation_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.783s] [ 77%] Built target orientation_msg__rosidl_typesupport_fastrtps_cpp
+[11.870s] [ 77%] Built target orientation_msg
+[11.913s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[12.588s] [ 79%] Built target orientation_msg__py
+[12.630s] [ 84%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_generator_py.dir/rosidl_generator_py/orientation_msg/msg/_esc_s.c.o[0m
+[12.630s] [ 84%] [32mBuilding C object CMakeFiles/orientation_msg__rosidl_generator_py.dir/rosidl_generator_py/orientation_msg/msg/_orientation_s.c.o[0m
+[12.890s] [ 86%] [32m[1mLinking C shared library liborientation_msg__rosidl_generator_py.so[0m
+[12.973s] [ 86%] Built target orientation_msg__rosidl_generator_py
+[13.018s] [ 93%] [32mBuilding C object CMakeFiles/orientation_msg_s__rosidl_typesupport_c.dir/rosidl_generator_py/orientation_msg/_orientation_msg_s.ep.rosidl_typesupport_c.c.o[0m
+[13.019s] [ 93%] [32mBuilding C object CMakeFiles/orientation_msg_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/orientation_msg/_orientation_msg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[13.019s] [ 93%] [32mBuilding C object CMakeFiles/orientation_msg_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/orientation_msg/_orientation_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[13.227s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/orientation_msg/orientation_msg_s__rosidl_typesupport_introspection_c.so[0m
+[13.227s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/orientation_msg/orientation_msg_s__rosidl_typesupport_c.so[0m
+[13.238s] [100%] [32m[1mLinking C shared module rosidl_generator_py/orientation_msg/orientation_msg_s__rosidl_typesupport_fastrtps_c.so[0m
+[13.294s] [100%] Built target orientation_msg_s__rosidl_typesupport_c
+[13.296s] [100%] Built target orientation_msg_s__rosidl_typesupport_introspection_c
+[13.310s] [100%] Built target orientation_msg_s__rosidl_typesupport_fastrtps_c
+[13.334s] Invoked command in '/home/submarine/ros_ws/build/orientation_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/orientation_package:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/orientation_msg -- -j4 -l4
+[13.471s] Invoking command in '/home/submarine/ros_ws/build/orientation_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/orientation_package:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/orientation_msg
+[13.490s] -- Install configuration: ""
+[13.490s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/ament_index/resource_index/rosidl_interfaces/orientation_msg
+[13.490s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/msg/Orientation.json
+[13.491s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/msg/Esc.json
+[13.491s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg
+[13.491s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg
+[13.491s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail
+[13.491s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__description.c
+[13.491s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__description.c
+[13.491s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__type_support.c
+[13.491s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__functions.c
+[13.492s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__struct.h
+[13.492s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__type_support.h
+[13.492s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__struct.h
+[13.492s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__functions.h
+[13.492s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__functions.h
+[13.492s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__type_support.c
+[13.492s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__type_support.h
+[13.492s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__functions.c
+[13.493s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/esc.h
+[13.493s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/orientation.h
+[13.493s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/rosidl_generator_c__visibility_control.h
+[13.493s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/environment/library_path.sh
+[13.493s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/environment/library_path.dsv
+[13.494s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_generator_c.so
+[13.494s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_generator_c.so" to ""
+[13.494s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg
+[13.494s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg
+[13.494s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail
+[13.495s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__rosidl_typesupport_fastrtps_c.h
+[13.495s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__rosidl_typesupport_fastrtps_c.h
+[13.495s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.495s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_fastrtps_c.so
+[13.495s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_fastrtps_c.so" to ""
+[13.496s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg
+[13.496s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg
+[13.496s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail
+[13.496s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__type_support.c
+[13.496s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__rosidl_typesupport_introspection_c.h
+[13.496s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__rosidl_typesupport_introspection_c.h
+[13.496s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__type_support.c
+[13.496s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.496s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_introspection_c.so
+[13.497s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_introspection_c.so" to ""
+[13.497s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_c.so
+[13.497s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_c.so" to ""
+[13.498s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg
+[13.498s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg
+[13.498s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail
+[13.498s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__traits.hpp
+[13.498s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__struct.hpp
+[13.498s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__type_support.hpp
+[13.498s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__traits.hpp
+[13.498s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__builder.hpp
+[13.498s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__struct.hpp
+[13.498s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__builder.hpp
+[13.499s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__type_support.hpp
+[13.499s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/esc.hpp
+[13.499s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/rosidl_generator_cpp__visibility_control.hpp
+[13.499s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/orientation.hpp
+[13.499s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg
+[13.499s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg
+[13.499s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail
+[13.499s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/dds_fastrtps
+[13.499s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__rosidl_typesupport_fastrtps_cpp.hpp
+[13.500s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__rosidl_typesupport_fastrtps_cpp.hpp
+[13.500s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.500s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_fastrtps_cpp.so
+[13.500s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[13.500s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg
+[13.501s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg
+[13.501s] -- Up-to-date: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail
+[13.501s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__rosidl_typesupport_introspection_cpp.hpp
+[13.501s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__type_support.cpp
+[13.501s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/esc__type_support.cpp
+[13.501s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/include/orientation_msg/orientation_msg/msg/detail/orientation__rosidl_typesupport_introspection_cpp.hpp
+[13.501s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_introspection_cpp.so
+[13.502s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_introspection_cpp.so" to ""
+[13.502s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_cpp.so
+[13.502s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_typesupport_cpp.so" to ""
+[13.502s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/environment/pythonpath.sh
+[13.503s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/environment/pythonpath.dsv
+[13.503s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg-0.0.0-py3.12.egg-info
+[13.503s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg-0.0.0-py3.12.egg-info/SOURCES.txt
+[13.503s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg-0.0.0-py3.12.egg-info/PKG-INFO
+[13.503s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg-0.0.0-py3.12.egg-info/dependency_links.txt
+[13.503s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg-0.0.0-py3.12.egg-info/top_level.txt
+[13.503s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg
+[13.504s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/orientation_msg_s__rosidl_typesupport_introspection_c.so
+[13.504s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/_orientation_msg_s.ep.rosidl_typesupport_fastrtps_c.c
+[13.504s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/_orientation_msg_s.ep.rosidl_typesupport_c.c
+[13.504s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/orientation_msg_s__rosidl_typesupport_c.so
+[13.504s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/orientation_msg_s__rosidl_typesupport_fastrtps_c.so
+[13.505s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/__init__.py
+[13.505s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/_orientation_msg_s.ep.rosidl_typesupport_introspection_c.c
+[13.505s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg
+[13.505s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg/_esc.py
+[13.505s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg/_esc_s.c
+[13.505s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg/__init__.py
+[13.505s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg/_orientation.py
+[13.506s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg/_orientation_s.c
+[13.570s] Listing '/home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg'...
+[13.570s] Compiling '/home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/__init__.py'...
+[13.570s] Listing '/home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg'...
+[13.570s] Compiling '/home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg/__init__.py'...
+[13.570s] Compiling '/home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg/_esc.py'...
+[13.571s] Compiling '/home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/msg/_orientation.py'...
+[13.584s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/orientation_msg_s__rosidl_typesupport_fastrtps_c.so
+[13.585s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/orientation_msg_s__rosidl_typesupport_fastrtps_c.so" to ""
+[13.585s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/orientation_msg_s__rosidl_typesupport_introspection_c.so
+[13.585s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/orientation_msg_s__rosidl_typesupport_introspection_c.so" to ""
+[13.586s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/orientation_msg_s__rosidl_typesupport_c.so
+[13.586s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/python3.12/site-packages/orientation_msg/orientation_msg_s__rosidl_typesupport_c.so" to ""
+[13.586s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_generator_py.so
+[13.587s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/orientation_msg/lib/liborientation_msg__rosidl_generator_py.so" to ""
+[13.587s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/msg/Orientation.idl
+[13.587s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/msg/Esc.idl
+[13.587s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/msg/Orientation.msg
+[13.588s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/msg/Esc.msg
+[13.588s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/ament_index/resource_index/package_run_dependencies/orientation_msg
+[13.588s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/ament_index/resource_index/parent_prefix_path/orientation_msg
+[13.588s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/environment/ament_prefix_path.sh
+[13.588s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/environment/ament_prefix_path.dsv
+[13.588s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/environment/path.sh
+[13.589s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/environment/path.dsv
+[13.589s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/local_setup.bash
+[13.589s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/local_setup.sh
+[13.589s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/local_setup.zsh
+[13.589s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/local_setup.dsv
+[13.590s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/package.dsv
+[13.590s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/ament_index/resource_index/packages/orientation_msg
+[13.590s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/export_orientation_msg__rosidl_generator_cExport.cmake
+[13.590s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/export_orientation_msg__rosidl_generator_cExport-noconfig.cmake
+[13.591s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/export_orientation_msg__rosidl_typesupport_fastrtps_cExport.cmake
+[13.591s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/export_orientation_msg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[13.591s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msg__rosidl_typesupport_introspection_cExport.cmake
+[13.591s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[13.591s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msg__rosidl_typesupport_cExport.cmake
+[13.592s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msg__rosidl_typesupport_cExport-noconfig.cmake
+[13.592s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/export_orientation_msg__rosidl_generator_cppExport.cmake
+[13.592s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/export_orientation_msg__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.592s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/export_orientation_msg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[13.592s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msg__rosidl_typesupport_introspection_cppExport.cmake
+[13.593s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[13.593s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msg__rosidl_typesupport_cppExport.cmake
+[13.593s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msg__rosidl_typesupport_cppExport-noconfig.cmake
+[13.593s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/export_orientation_msg__rosidl_generator_pyExport.cmake
+[13.593s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/export_orientation_msg__rosidl_generator_pyExport-noconfig.cmake
+[13.594s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/rosidl_cmake-extras.cmake
+[13.594s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.594s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/ament_cmake_export_libraries-extras.cmake
+[13.594s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/ament_cmake_export_targets-extras.cmake
+[13.594s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.595s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.595s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.595s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msgConfig.cmake
+[13.595s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/cmake/orientation_msgConfig-version.cmake
+[13.595s] -- Installing: /home/submarine/ros_ws/install/orientation_msg/share/orientation_msg/package.xml
+[13.600s] Invoked command in '/home/submarine/ros_ws/build/orientation_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/orientation_package:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/orientation_msg

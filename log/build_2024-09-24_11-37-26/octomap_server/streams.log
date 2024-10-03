@@ -1,0 +1,162 @@
+[0.019s] Invoking command in '/home/submarine/ros_ws/build/octomap_server': CMAKE_PREFIX_PATH=/home/submarine/ros_ws/install/pcl_ros:/home/submarine/ros_ws/install/ros_bt:/home/submarine/ros_ws/install/ros2_sub:/home/submarine/ros_ws/install/perception_pcl:/home/submarine/ros_ws/install/octomap_mapping:/home/submarine/ros_ws/install/octomap_server:/home/submarine/ros_ws/install/octomap_rviz_plugins:/home/submarine/ros_ws/install/controller_sub:/home/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/ros_ws/install/behaviortree_cpp:/home/submarine/ryans_ws/install/orientation_msg:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/submarine/ros_ws/install/pcl_ros/lib:/home/submarine/ros_ws/install/octomap_server/lib:/home/submarine/ros_ws/install/octomap_rviz_plugins/lib:/home/submarine/ros_ws/install/behaviortree_ros2/lib:/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib:/home/submarine/ros_ws/install/behaviortree_cpp/lib:/home/submarine/ryans_ws/install/orientation_msg/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/submarine/ros_ws/src/octomap_mapping/octomap_server -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/octomap_server
+[0.162s] -- The C compiler identification is GNU 13.2.0
+[0.294s] -- The CXX compiler identification is GNU 13.2.0
+[0.335s] -- Detecting C compiler ABI info
+[0.615s] -- Detecting C compiler ABI info - done
+[0.635s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.635s] -- Detecting C compile features
+[0.635s] -- Detecting C compile features - done
+[0.650s] -- Detecting CXX compiler ABI info
+[0.878s] -- Detecting CXX compiler ABI info - done
+[0.893s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.893s] -- Detecting CXX compile features
+[0.894s] -- Detecting CXX compile features - done
+[0.988s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.65.0") found components: system filesystem iostreams serialization 
+[0.991s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[0.991s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[0.992s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[0.992s]   cmake_policy command to set the policy and suppress this warning.
+[0.992s] 
+[0.992s]   CMake variable FLANN_ROOT is set to:
+[0.992s] 
+[0.992s]     /usr
+[0.992s] 
+[0.993s]   For compatibility, find_package is ignoring the variable, but code in a
+[0.993s]   .cmake module might still use it.
+[0.993s] Call Stack (most recent call first):
+[0.993s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[0.993s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[0.993s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[0.993s]   CMakeLists.txt:13 (find_package)
+[0.994s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.994s] [0m
+[0.994s] -- Found flann version 1.9.2
+[1.643s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[1.644s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[1.698s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.871s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.873s] -- Found Threads: TRUE  
+[1.876s] -- Found GLEW: /usr/lib/aarch64-linux-gnu/libGLEW.so  
+[1.897s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[2.235s] -- Found MPI_C: /usr/lib/aarch64-linux-gnu/libmpi.so (found version "3.1") 
+[2.235s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[2.240s] -- Found JsonCpp: /usr/lib/aarch64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[2.264s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[2.297s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+[2.318s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[2.573s] -- Found X11: /usr/include   
+[2.573s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[2.754s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[2.754s] -- Looking for gethostbyname
+[2.925s] -- Looking for gethostbyname - found
+[2.925s] -- Looking for connect
+[3.095s] -- Looking for connect - found
+[3.096s] -- Looking for remove
+[3.264s] -- Looking for remove - found
+[3.264s] -- Looking for shmat
+[3.437s] -- Looking for shmat - found
+[3.437s] -- Looking for IceConnectionNumber in ICE
+[3.612s] -- Looking for IceConnectionNumber in ICE - found
+[3.836s] -- Found EXPAT: /usr/lib/aarch64-linux-gnu/libexpat.so (found version "2.6.1") 
+[3.840s] -- Found double-conversion: /usr/lib/aarch64-linux-gnu/libdouble-conversion.so  
+[3.845s] -- Found LZ4: /usr/lib/aarch64-linux-gnu/liblz4.so (found version "1.9.4") 
+[3.848s] -- Found LZMA: /usr/lib/aarch64-linux-gnu/liblzma.so (found version "5.4.5") 
+[3.868s] -- Found JPEG: /usr/lib/aarch64-linux-gnu/libjpeg.so (found version "80") 
+[3.892s] -- Found TIFF: /usr/lib/aarch64-linux-gnu/libtiff.so (found version "4.5.1")  
+[3.898s] -- Found Freetype: /usr/lib/aarch64-linux-gnu/libfreetype.so (found version "2.13.2") 
+[3.906s] -- Found utf8cpp: /usr/include/utf8cpp  
+[4.053s] -- Checking for module 'libusb-1.0'
+[4.084s] --   Found libusb-1.0, version 1.0.27
+[4.155s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[4.157s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[4.157s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.272s] -- Found OpenNI2: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[4.272s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.278s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[4.278s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[5.025s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.036s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.722s] -- Found Qhull version 8.0.2
+[6.426s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.109s] -- looking for PCL_COMMON
+[7.110s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[7.111s] -- looking for PCL_KDTREE
+[7.112s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[7.112s] -- looking for PCL_OCTREE
+[7.113s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[7.113s] -- looking for PCL_SEARCH
+[7.115s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[7.115s] -- looking for PCL_SAMPLE_CONSENSUS
+[7.116s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[7.116s] -- looking for PCL_FILTERS
+[7.117s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[7.117s] -- looking for PCL_2D
+[7.118s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[7.118s] -- looking for PCL_GEOMETRY
+[7.118s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[7.119s] -- looking for PCL_IO
+[7.120s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[7.120s] -- looking for PCL_FEATURES
+[7.121s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[7.122s] -- looking for PCL_ML
+[7.123s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[7.123s] -- looking for PCL_SEGMENTATION
+[7.124s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[7.125s] -- looking for PCL_VISUALIZATION
+[7.126s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[7.126s] -- looking for PCL_SURFACE
+[7.128s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[7.128s] -- looking for PCL_REGISTRATION
+[7.129s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[7.130s] -- looking for PCL_KEYPOINTS
+[7.131s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[7.131s] -- looking for PCL_TRACKING
+[7.133s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[7.133s] -- looking for PCL_RECOGNITION
+[7.134s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[7.135s] -- looking for PCL_STEREO
+[7.136s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[7.136s] -- looking for PCL_APPS
+[7.138s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[7.139s] -- looking for PCL_IN_HAND_SCANNER
+[7.139s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[7.139s] -- looking for PCL_MODELER
+[7.140s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[7.140s] -- looking for PCL_POINT_CLOUD_EDITOR
+[7.141s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[7.141s] -- looking for PCL_OUTOFCORE
+[7.143s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[7.143s] -- looking for PCL_PEOPLE
+[7.145s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[7.146s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[7.153s] -- Found ament_cmake_auto: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[7.437s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.902s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[7.933s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[7.969s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.007s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.239s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[8.247s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[8.440s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[8.470s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[8.513s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.073s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[9.075s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[9.075s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[9.419s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[9.487s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.491s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.496s] -- Configured cppcheck include dirs: /home/submarine/ros_ws/src/octomap_mapping/octomap_server/include
+[9.496s] -- Configured cppcheck exclude dirs and/or files: 
+[9.499s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.499s] -- Configured cpplint exclude dirs and/or files: 
+[9.501s] -- Added test 'flake8' to check Python code syntax and style conventions
+[9.501s] -- Configured 'flake8' exclude dirs and/or files: 
+[9.503s] -- Added test 'lint_cmake' to check CMake code style
+[9.504s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[9.507s] -- Added test 'uncrustify' to check C / C++ code style
+[9.507s] -- Configured uncrustify additional arguments: 
+[9.508s] -- Added test 'xmllint' to check XML markup files
+[9.513s] -- Configuring done (9.5s)
+[10.050s] -- Generating done (0.5s)
+[10.057s] -- Build files have been written to: /home/submarine/ros_ws/build/octomap_server

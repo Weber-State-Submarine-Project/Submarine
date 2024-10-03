@@ -1,0 +1,45 @@
+[0.034s] Invoking command in '/home/submarine/ros_ws/build/ros2_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/ros_pkg/ros2_sub -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/ros2_sub
+[0.089s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.276s] -- Found rclcpp: 28.1.3 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.394s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.437s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.471s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.507s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.699s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.703s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.944s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.234s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.331s] -- Found nav_msgs: 5.3.5 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[2.491s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.579s] -- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[2.592s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[2.596s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.123s] -- Found octomap_msgs: 2.0.0 (/opt/ros/jazzy/share/octomap_msgs/cmake)
+[3.230s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.809s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.814s] -- Configured cppcheck include dirs: 
+[3.814s] -- Configured cppcheck exclude dirs and/or files: 
+[3.814s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.815s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.822s] -- Added test 'lint_cmake' to check CMake code style
+[3.825s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.829s] -- Added test 'uncrustify' to check C / C++ code style
+[3.829s] -- Configured uncrustify additional arguments: 
+[3.829s] -- Added test 'xmllint' to check XML markup files
+[3.832s] -- Configuring done (3.8s)
+[3.952s] -- Generating done (0.0s)
+[3.953s] -- Build files have been written to: /home/submarine/ros_ws/build/ros2_sub
+[3.954s] Invoked command in '/home/submarine/ros_ws/build/ros2_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/ros_pkg/ros2_sub -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/ros2_sub
+[3.961s] Invoking command in '/home/submarine/ros_ws/build/ros2_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/ros2_sub -- -j4 -l4
+[5.147s] [ 50%] [32mBuilding CXX object CMakeFiles/octo.dir/src/octomap.cpp.o[0m
+[12.743s] In file included from [01m[K/usr/include/c++/13/bits/stl_tempbuf.h:62[m[K,
+[12.744s]                  from [01m[K/usr/include/c++/13/memory:66[m[K,
+[12.747s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+[12.747s]                  from [01m[K/home/submarine/ros_ws/src/ros_pkg/ros2_sub/src/octomap.cpp:1[m[K:
+[12.748s] /usr/include/c++/13/bits/stl_pair.h: In instantiation of ‘[01m[Kconstexpr std::pair<typename std::__strip_reference_wrapper<typename std::decay<_Tp>::type>::__type, typename std::__strip_reference_wrapper<typename std::decay<_Tp2>::type>::__type> std::[01;32m[Kmake_pair[m[K(_T1&&, _T2&&) [35m[K[with _T1 = float&; _T2 = float&; typename __strip_reference_wrapper<typename decay<_Tp>::type>::__type = float; typename decay<_Tp>::type = float; typename __strip_reference_wrapper<typename decay<_Tp2>::type>::__type = float; typename decay<_Tp2>::type = float][m[K[m[K’:
+[12.748s] [01m[K/home/submarine/ros_ws/src/ros_pkg/ros2_sub/src/octomap.cpp:182:55:[m[K   required from here
+[12.748s] [01m[K/usr/include/c++/13/bits/stl_pair.h:922:5:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<float, float>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[12.748s]   922 |     [01;36m[Kmake_pair[m[K(_T1&& __x, _T2&& __y)
+[12.748s]       |     [01;36m[K^~~~~~~~~[m[K
+[46.192s] [100%] [32m[1mLinking CXX executable octo[0m
+[48.429s] [100%] Built target octo

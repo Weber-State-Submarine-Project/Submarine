@@ -1,0 +1,29 @@
+[33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable FLANN_ROOT is set to:
+
+    /usr
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+  CMakeLists.txt:13 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+gmake[2]: *** [CMakeFiles/pointcloud_to_pcd_lib.dir/build.make:76: CMakeFiles/pointcloud_to_pcd_lib.dir/tools/pointcloud_to_pcd.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/pcl_ros_filters.dir/build.make:76: CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/extract_indices.cpp.o] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:464: CMakeFiles/pointcloud_to_pcd_lib.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/pcl_ros_filters.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/pcd_to_pointcloud_lib.dir/build.make:76: CMakeFiles/pcd_to_pointcloud_lib.dir/tools/pcd_to_pointcloud.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:412: CMakeFiles/pcd_to_pointcloud_lib.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:516: tests/filters/CMakeFiles/dummy_topics.dir/all] Error 2
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,137 @@
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+[33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable FLANN_ROOT is set to:
+
+    /usr
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+  CMakeLists.txt:13 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found flann version 1.9.2
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.27
+-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+-- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+-- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+-- Found Qhull version 8.0.2
+-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+-- Found PCL_2D: /usr/include/pcl-1.14  
+-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found pcl_conversions: 2.6.1 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+-- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 28.1.3 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)
+-- Found tf2_eigen: 0.36.4 (/opt/ros/jazzy/share/tf2_eigen/cmake)
+-- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Checking to see if CXX compiler accepts flag -Wl,--version-script,"/home/submarine/ros_ws/build/pcl_ros/class_loader_hide_library_symbols__pcl_ros_filters.script"
+-- Checking to see if CXX compiler accepts flag -Wl,--version-script,"/home/submarine/ros_ws/build/pcl_ros/class_loader_hide_library_symbols__pcl_ros_filters.script" - yes
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/submarine/ros_ws/src/perception_pcl/pcl_ros/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (49.9s)
+-- Generating done (0.8s)
+-- Build files have been written to: /home/submarine/ros_ws/build/pcl_ros
+[  2%] [32mBuilding CXX object CMakeFiles/pcl_ros_tf.dir/src/transforms.cpp.o[0m
+[  5%] [32m[1mLinking CXX static library libpcl_ros_tf.a[0m
+[  5%] Built target pcl_ros_tf
+[  8%] [32mBuilding CXX object CMakeFiles/filter_project_inliers_node.dir/rclcpp_components/node_main_filter_project_inliers_node.cpp.o[0m
+[ 11%] [32m[1mLinking CXX executable filter_project_inliers_node[0m
+[ 11%] Built target filter_project_inliers_node
+[ 14%] [32mBuilding CXX object CMakeFiles/filter_radius_outlier_removal_node.dir/rclcpp_components/node_main_filter_radius_outlier_removal_node.cpp.o[0m
+[ 17%] [32m[1mLinking CXX executable filter_radius_outlier_removal_node[0m
+[ 17%] Built target filter_radius_outlier_removal_node
+[ 20%] [32mBuilding CXX object CMakeFiles/filter_statistical_outlier_removal_node.dir/rclcpp_components/node_main_filter_statistical_outlier_removal_node.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/filter_crop_box_node.dir/rclcpp_components/node_main_filter_crop_box_node.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/filter_passthrough_node.dir/rclcpp_components/node_main_filter_passthrough_node.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/filter_extract_indices_node.dir/rclcpp_components/node_main_filter_extract_indices_node.cpp.o[0m
+[ 31%] [32m[1mLinking CXX executable filter_statistical_outlier_removal_node[0m
+[ 31%] Built target filter_statistical_outlier_removal_node
+[ 34%] [32mBuilding CXX object CMakeFiles/filter_voxel_grid_node.dir/rclcpp_components/node_main_filter_voxel_grid_node.cpp.o[0m
+[ 37%] [32m[1mLinking CXX executable filter_crop_box_node[0m
+[ 37%] Built target filter_crop_box_node
+[ 40%] [32mBuilding CXX object CMakeFiles/pcd_to_pointcloud_lib.dir/tools/pcd_to_pointcloud.cpp.o[0m
+[ 42%] [32m[1mLinking CXX executable filter_passthrough_node[0m
+[ 42%] Built target filter_passthrough_node
+[ 45%] [32mBuilding CXX object CMakeFiles/pcd_to_pointcloud.dir/rclcpp_components/node_main_pcd_to_pointcloud.cpp.o[0m
+[ 48%] [32m[1mLinking CXX executable filter_extract_indices_node[0m
+[ 48%] Built target filter_extract_indices_node
+[ 51%] [32mBuilding CXX object CMakeFiles/pointcloud_to_pcd_lib.dir/tools/pointcloud_to_pcd.cpp.o[0m
+[ 54%] [32m[1mLinking CXX executable filter_voxel_grid_node[0m
+[ 54%] Built target filter_voxel_grid_node
+[ 57%] [32mBuilding CXX object CMakeFiles/pointcloud_to_pcd.dir/rclcpp_components/node_main_pointcloud_to_pcd.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable pcd_to_pointcloud[0m
+[ 60%] Built target pcd_to_pointcloud
+[ 62%] [32mBuilding CXX object tests/filters/CMakeFiles/dummy_topics.dir/dummy_topics.cpp.o[0m
+[ 65%] [32m[1mLinking CXX executable pointcloud_to_pcd[0m
+[ 65%] Built target pointcloud_to_pcd
+[ 68%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/extract_indices.cpp.o[0m
+gmake[2]: *** [CMakeFiles/pointcloud_to_pcd_lib.dir/build.make:76: CMakeFiles/pointcloud_to_pcd_lib.dir/tools/pointcloud_to_pcd.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/pcl_ros_filters.dir/build.make:76: CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/extract_indices.cpp.o] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:464: CMakeFiles/pointcloud_to_pcd_lib.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:204: CMakeFiles/pcl_ros_filters.dir/all] Interrupt
+gmake[2]: *** [CMakeFiles/pcd_to_pointcloud_lib.dir/build.make:76: CMakeFiles/pcd_to_pointcloud_lib.dir/tools/pcd_to_pointcloud.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:412: CMakeFiles/pcd_to_pointcloud_lib.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:516: tests/filters/CMakeFiles/dummy_topics.dir/all] Error 2
+gmake: *** [Makefile:146: all] Interrupt

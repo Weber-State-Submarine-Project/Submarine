@@ -1,0 +1,10 @@
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/uninstall.dir
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/ros2_sub_uninstall.dir
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/octo.dir
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/test.dir
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/edit_cache.dir
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/rebuild_cache.dir
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/list_install_components.dir
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/install.dir
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/install/local.dir
+/home/submarine/ros_ws/build/ros2_sub/CMakeFiles/install/strip.dir

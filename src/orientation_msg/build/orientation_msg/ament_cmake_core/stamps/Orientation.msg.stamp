@@ -1,0 +1,38 @@
+# Orientation.msg
+
+# Acceleration m/s^2
+float64 acc_x
+float64 acc_y
+float64 acc_z
+
+# Gyro
+float64 gyro_x
+float64 gyro_y
+float64 gyro_z
+
+# Magnetometer
+float64 mag_x
+float64 mag_y
+float64 mag_z
+
+# Linear Acceleration
+float64 lin_acc_x
+float64 lin_acc_y
+float64 lin_acc_z
+
+# Raw Acceleration
+#string raw_acc_x
+#string raw_acc_y
+#string raw_acc_z
+
+# Raw Gyro
+#string raw_gyro_x
+#string raw_gyro_y
+#string raw_gyro_z
+
+# Raw Magnetometer
+#string raw_mag_x
+#string raw_mag_y
+#string raw_mag_z
+
+

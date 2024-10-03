@@ -1,0 +1,41 @@
+[2.083s] Invoking command in '/home/submarine/ros_ws/src/sonars': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/submarine/ros_ws/build/sonars/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sonars build --build-base /home/submarine/ros_ws/build/sonars/build install --record /home/submarine/ros_ws/build/sonars/install.log --single-version-externally-managed install_data
+[2.712s] running egg_info
+[2.714s] creating ../../build/sonars/sonars.egg-info
+[2.754s] writing ../../build/sonars/sonars.egg-info/PKG-INFO
+[2.755s] writing dependency_links to ../../build/sonars/sonars.egg-info/dependency_links.txt
+[2.756s] writing entry points to ../../build/sonars/sonars.egg-info/entry_points.txt
+[2.757s] writing requirements to ../../build/sonars/sonars.egg-info/requires.txt
+[2.757s] writing top-level names to ../../build/sonars/sonars.egg-info/top_level.txt
+[2.758s] writing manifest file '../../build/sonars/sonars.egg-info/SOURCES.txt'
+[2.852s] reading manifest file '../../build/sonars/sonars.egg-info/SOURCES.txt'
+[2.854s] writing manifest file '../../build/sonars/sonars.egg-info/SOURCES.txt'
+[2.856s] running build
+[2.856s] running build_py
+[2.856s] creating /home/submarine/ros_ws/build/sonars/build
+[2.857s] creating /home/submarine/ros_ws/build/sonars/build/lib
+[2.857s] creating /home/submarine/ros_ws/build/sonars/build/lib/sonars
+[2.858s] copying sonars/down_sonar_node.py -> /home/submarine/ros_ws/build/sonars/build/lib/sonars
+[2.859s] copying sonars/__init__.py -> /home/submarine/ros_ws/build/sonars/build/lib/sonars
+[2.860s] copying sonars/side_sonar_node.py -> /home/submarine/ros_ws/build/sonars/build/lib/sonars
+[2.862s] running install
+[2.881s] running install_lib
+[2.923s] creating /home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars
+[2.924s] copying /home/submarine/ros_ws/build/sonars/build/lib/sonars/down_sonar_node.py -> /home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars
+[2.924s] copying /home/submarine/ros_ws/build/sonars/build/lib/sonars/__init__.py -> /home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars
+[2.924s] copying /home/submarine/ros_ws/build/sonars/build/lib/sonars/side_sonar_node.py -> /home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars
+[2.927s] byte-compiling /home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars/down_sonar_node.py to down_sonar_node.cpython-312.pyc
+[2.927s] byte-compiling /home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars/__init__.py to __init__.cpython-312.pyc
+[2.927s] byte-compiling /home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars/side_sonar_node.py to side_sonar_node.cpython-312.pyc
+[2.929s] running install_data
+[2.929s] creating /home/submarine/ros_ws/install/sonars/share/ament_index
+[2.929s] creating /home/submarine/ros_ws/install/sonars/share/ament_index/resource_index
+[2.929s] creating /home/submarine/ros_ws/install/sonars/share/ament_index/resource_index/packages
+[2.929s] copying resource/sonars -> /home/submarine/ros_ws/install/sonars/share/ament_index/resource_index/packages
+[2.930s] copying package.xml -> /home/submarine/ros_ws/install/sonars/share/sonars
+[2.930s] running install_egg_info
+[2.972s] Copying ../../build/sonars/sonars.egg-info to /home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages/sonars-0.0.0-py3.12.egg-info
+[2.973s] running install_scripts
+[3.285s] Installing down_sonar_node script to /home/submarine/ros_ws/install/sonars/lib/sonars
+[3.288s] Installing side_sonar_node script to /home/submarine/ros_ws/install/sonars/lib/sonars
+[3.288s] writing list of installed files to '/home/submarine/ros_ws/build/sonars/install.log'
+[3.429s] Invoked command in '/home/submarine/ros_ws/src/sonars' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/submarine/ros_ws/build/sonars/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/sonars build --build-base /home/submarine/ros_ws/build/sonars/build install --record /home/submarine/ros_ws/build/sonars/install.log --single-version-externally-managed install_data

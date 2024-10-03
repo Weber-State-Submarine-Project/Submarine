@@ -1,0 +1,9 @@
+pcl_ros::ExtractIndices;lib/libpcl_ros_filters.so
+pcl_ros::PassThrough;lib/libpcl_ros_filters.so
+pcl_ros::ProjectInliers;lib/libpcl_ros_filters.so
+pcl_ros::RadiusOutlierRemoval;lib/libpcl_ros_filters.so
+pcl_ros::StatisticalOutlierRemoval;lib/libpcl_ros_filters.so
+pcl_ros::CropBox;lib/libpcl_ros_filters.so
+pcl_ros::VoxelGrid;lib/libpcl_ros_filters.so
+pcl_ros::PCDPublisher;lib/libpcd_to_pointcloud_lib.so
+pcl_ros::PointCloudToPCD;lib/libpointcloud_to_pcd_lib.so

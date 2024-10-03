@@ -1,0 +1,4 @@
+source;share/orientation_msg/local_setup.bash
+source;share/orientation_msg/local_setup.dsv
+source;share/orientation_msg/local_setup.sh
+source;share/orientation_msg/local_setup.zsh

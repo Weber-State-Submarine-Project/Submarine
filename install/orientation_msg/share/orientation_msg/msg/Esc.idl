@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from orientation_msg/msg/Esc.msg
+// generated code does not contain a copyright notice
+
+
+module orientation_msg {
+  module msg {
+    @verbatim (language="comment", text=
+      "esc.msg is a custom msg for controlling both esc motors")
+    struct Esc {
+      @verbatim (language="comment", text=
+        "Left or Right ESC")
+      string motor_selection;
+
+      @verbatim (language="comment", text=
+        "Range from -100 to 100 (Negative: Reverse)")
+      int64 power_percentage;
+    };
+  };
+};

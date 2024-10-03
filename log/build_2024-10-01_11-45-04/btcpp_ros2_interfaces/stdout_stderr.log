@@ -1,0 +1,17 @@
+[  1%] Built target btcpp_ros2_interfaces__rosidl_generator_type_description
+[  1%] Built target ament_cmake_python_copy_btcpp_ros2_interfaces
+[ 22%] Built target btcpp_ros2_interfaces__rosidl_generator_c
+[ 24%] Built target btcpp_ros2_interfaces__cpp
+gmake[2]: *** No rule to make target '/opt/ros/jazzy/lib/libfastcdr.so.2.2.2', needed by 'libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.so'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 33%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_c
+[ 42%] Built target btcpp_ros2_interfaces__rosidl_typesupport_c
+running egg_info
+writing btcpp_ros2_interfaces.egg-info/PKG-INFO
+writing dependency_links to btcpp_ros2_interfaces.egg-info/dependency_links.txt
+writing top-level names to btcpp_ros2_interfaces.egg-info/top_level.txt
+reading manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'
+[ 42%] Built target ament_cmake_python_build_btcpp_ros2_interfaces_egg
+gmake: *** [Makefile:146: all] Error 2

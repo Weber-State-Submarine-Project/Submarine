@@ -1,0 +1,15 @@
+/home/submarine/ros_ws/install/octomap_mapping/share/ament_index/resource_index/package_run_dependencies/octomap_mapping
+/home/submarine/ros_ws/install/octomap_mapping/share/ament_index/resource_index/parent_prefix_path/octomap_mapping
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/environment/ament_prefix_path.sh
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/environment/ament_prefix_path.dsv
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/environment/path.sh
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/environment/path.dsv
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/local_setup.bash
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/local_setup.sh
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/local_setup.zsh
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/local_setup.dsv
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/package.dsv
+/home/submarine/ros_ws/install/octomap_mapping/share/ament_index/resource_index/packages/octomap_mapping
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/cmake/octomap_mappingConfig.cmake
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/cmake/octomap_mappingConfig-version.cmake
+/home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/package.xml

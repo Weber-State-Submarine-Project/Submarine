@@ -1,0 +1,44 @@
+[100%] Built target octo
+-- Install configuration: ""
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/sub_launch.py
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/online_async_launch.py
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/octomap_mapping.launch.xml
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/Pool Map.json
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/ekf.yaml
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/mapper_params_online_async.yaml
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Roughness.png
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Normal.png
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Albedo.png
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Metalness.png
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/scripts
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/scripts/model.material
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/model.sdf
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/tethys.dae
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/propeller.dae
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/base.dae
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/MaxSonar.dae
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/model.config
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/lib/ros2_sub/octo
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/ros2_sub/lib/ros2_sub/octo" to ""
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/package_run_dependencies/ros2_sub
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/parent_prefix_path/ros2_sub
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/ament_prefix_path.sh
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/ament_prefix_path.dsv
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/path.sh
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/path.dsv
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.bash
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.sh
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.zsh
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.dsv
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.dsv
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/packages/ros2_sub
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/cmake/ros2_subConfig.cmake
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/cmake/ros2_subConfig-version.cmake
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.xml

@@ -11,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'brping'],
     zip_safe=True,
     maintainer='submarine',
     maintainer_email='benjamin.l.stone2@gmail.com',
@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'down_sonar_node = sonars.down_sonar_node:main',
             'side_sonar_node = sonars.side_sonar_node:main',
+            'front_sonar_node = sonars.front_sonar_node:main',
         ],
     },
 )

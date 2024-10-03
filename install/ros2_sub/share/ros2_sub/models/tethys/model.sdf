@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+    <model name="tethys">
+        <!-- Body -->
+        <link name="base_link">
+            <inertial>
+                <mass>147.85</mass>
+                <inertia>
+                    <ixx>3.000000</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>41.980233</iyy>
+                    <iyz>0</iyz>
+                    <izz>41.980233</izz>
+                </inertia>
+            </inertial>
+            <collision name="main_body_buoyancy">
+                <geometry>
+                    <box>
+                        <size>2 0.3 0.246445166667</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual name="visual">
+    		<geometry>
+		<mesh>
+		    <uri>meshes/tethys.dae</uri>
+		    <submesh>
+		        <name>Body</name>
+		        <center>false</center>
+		    </submesh>
+		</mesh>
+	    </geometry>
+	    <material>
+		<ambient>1 1 1 1</ambient> <!-- White color in RGBA -->
+		<diffuse>1 1 1 1</diffuse> <!-- White color in RGBA -->
+	    </material>
+	</visual>
+
+        </link>
+        <link name='base_footprint'>
+            <pose relative_to='base_link'>0 0 0 0 0 0</pose>
+            <inertial>
+                <mass>0.00001</mass>
+            </inertial>
+
+        </link>
+        <!-- Horizontal fins -->
+        <link name="horizontal_fins">
+            <pose>1.05 0 0 0 0 0</pose>
+            <inertial>
+                <pose>0 0 0 1.57 0 0.5</pose>
+                <mass>0.2</mass>
+                <inertia>
+                    <ixx>0.0007924568755</ixx>
+                    <ixy>-0.0000000002674</ixy>
+                    <ixz>0.0003978158176</ixz>
+                    <iyy>0.0010546736475</iyy>
+                    <iyz>-0.0000000006729</iyz>
+                    <izz>0.0002633558262</izz>
+                </inertia>
+            </inertial>
+            <collision name="collision">
+                <geometry>
+                    <box>
+                        <size>0.1 0.1 0.02</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>-1.05 0 0 0 0 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>meshes/tethys.dae</uri>
+                        <submesh>
+                            <name>Fins_Horizontal</name>
+                            <center>false</center>
+                        </submesh>
+                    </mesh>
+                    <material>
+			<ambient>1 1 1 1</ambient> <!-- White color in RGBA -->
+			<diffuse>1 1 1 1</diffuse> <!-- White color in RGBA -->
+	    	    </material>
+                </geometry>
+                <material>
+			<ambient>1 1 1 1</ambient> <!-- White color in RGBA -->
+			<diffuse>1 1 1 1</diffuse> <!-- White color in RGBA -->
+	        </material>
+            </visual>
+        </link>
+        <!-- Vertical fins -->
+        <link name="vertical_fins">
+            <pose>1.05 0 0 0 3.1415 0</pose>
+            <inertial>
+                <mass>0.2</mass>
+                <inertia>
+                    <ixx>0.0007924568755</ixx>
+                    <ixy>-0.0000000002674</ixy>
+                    <ixz>0.0003978158176</ixz>
+                    <iyy>0.0010546736475</iyy>
+                    <iyz>-0.0000000006729</iyz>
+                    <izz>0.0002633558262</izz>
+                </inertia>
+            </inertial>
+            <collision name="collision">
+                <geometry>
+                    <box>
+                        <size>0.1 0.1 0.02</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>1.05 0 0 0 3.1415 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>meshes/tethys.dae</uri>
+                        <submesh>
+                            <name>Fins_vertical</name>
+                            <center>false</center>
+                        </submesh>
+                    </mesh>
+                </geometry>
+                <material>
+			<ambient>1 1 1 1</ambient> <!-- White color in RGBA -->
+			<diffuse>1 1 1 1</diffuse> <!-- White color in RGBA -->
+	        </material>
+            </visual>
+        </link>
+        <!-- Propeller -->
+        <link name="propeller">
+            <pose>1.43162 0 0 0 0 0</pose>
+            <inertial>
+                <pose>0 0 0 0 0 0</pose>
+                <mass>0.09</mass>
+                <inertia>
+                    <ixx>0.000143971303</ixx>
+                    <ixy>0.000000000008</ixy>
+                    <ixz>-0.000000000224</ixz>
+                    <iyy>0.000140915448</iyy>
+                    <iyz>-0.000025236433</iyz>
+                    <izz>0.000033571862</izz>
+                </inertia>
+            </inertial>
+            <collision name="collision">
+                <geometry>
+                    <box>
+                        <size>0.03 0.1 0.03</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>-1.43162 0 0 0 0 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>meshes/tethys.dae</uri>
+                        <submesh>
+                            <name>Prop</name>
+                            <center>false</center>
+                        </submesh>
+                    </mesh>
+                </geometry>
+                <material>
+			<ambient>1 1 1 1</ambient> <!-- White color in RGBA -->
+			<diffuse>1 1 1 1</diffuse> <!-- White color in RGBA -->
+	        </material>
+            </visual>
+        </link>
+        <!-- Joints -->
+        <joint name="horizontal_fins_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <parent>base_link</parent>
+            <child>horizontal_fins</child>
+            <axis>
+                <xyz>0 1 0</xyz>
+                <limit>
+                    <lower>-0.261799</lower>
+                    <upper>0.261799</upper>
+                    <effort>-1</effort>
+                    <velocity>-1</velocity>
+                </limit>
+            </axis>
+        </joint>
+        <joint name="vertical_fins_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <parent>base_link</parent>
+            <child>vertical_fins</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <lower>-0.261799</lower>
+                    <upper>0.261799</upper>
+                    <effort>-1</effort>
+                    <velocity>-1</velocity>
+                </limit>
+            </axis>
+        </joint>
+        <joint name="propeller_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <parent>base_link</parent>
+            <child>propeller</child>
+            <axis>
+                <xyz>1 0 0</xyz>
+                <limit>
+                    <lower>-1e+12</lower>
+                    <upper>1e+12</upper>
+                    <effort>-1</effort>
+                    <velocity>-1</velocity>
+                </limit>
+            </axis>
+        </joint>
+        <!--Sonar sensors are not currently available in gz, so we will use lidar modified to be as close to the sonar specs as possible to simulate
+        specs:
+        Range: 5-600cm
+        angle 8-16 degrees
+        single range value
+        ~71 Hz data rate-->
+        <!--Front Sonar has larger distance since the gz model of the sub doesn't have a good enough turn radius-->
+        <link name='front_sonar'>
+        <pose relative_to="base_link">-.8 0 0 0 0 -3.1415</pose>
+            <inertial>
+                <mass>0.00001</mass>
+            </inertial>
+            <collision name="front_sonar_collision">
+                <geometry>
+                    <box>
+                        <size>.0001 .0001 .0001</size>
+                    </box>
+                </geometry>
+            </collision>
+
+        <visual name='visual'>
+        <pose relative_to="base_link">-.8 0 0 0 -1.5708 0</pose>
+        <geometry>
+	        <mesh>
+                <uri>file://models/tethys/meshes/MaxSonar.dae</uri>
+                <scale>.001 .001 .001</scale>
+            </mesh>
+        </geometry>  
+        <material>
+             <ambient>0 0 0 0.1</ambient>
+             <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>0 0 0 1</emissive>
+        </material>
+        
+        </visual>
+        <sensor name='front_sonar' type='gpu_lidar'>
+        <pose>0 0 0 0 0 0</pose>
+        <topic>scan/front</topic>
+        <gz_frame_id>front_sonar</gz_frame_id>
+        <update_rate>71</update_rate> 
+        <lidar>
+        <scan>
+        <horizontal>
+            <samples>1</samples> 
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>  
+            <max_angle>0</max_angle> 
+        </horizontal>
+        
+        <vertical>
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+        </vertical>
+        </scan>
+        <range>
+            <min>0.5</min> 
+            <max>20</max> 
+            <resolution>0.01</resolution>
+        </range>
+        </lidar>
+        <visualize>true</visualize>
+        </sensor>
+    </link>
+
+        <!--Left Sonar--> 
+        <link name='left_sonar'>
+        <pose relative_to="base_link">-.7 -.1 0 0 0 -1.5708 </pose>
+            <inertial>
+                <mass>0.00001</mass>
+            </inertial>
+            <collision name="left_sonar_collision">
+                <geometry>
+                    <box>
+                        <size>.0001 .0001 .0001</size>
+                    </box>
+                </geometry>
+            </collision>
+
+        <visual name='visual'>
+        <pose relative_to="base_link">-.7 -.1 0 1.5708 -1.5708 0</pose>
+        <geometry>
+	        <mesh>
+                <uri>file://models/tethys/meshes/MaxSonar.dae</uri>
+                <scale>.001 .001 .001</scale>
+            </mesh>
+        </geometry>  
+        <material>
+             <ambient>0 0 0 0.1</ambient>
+             <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>0 0 0 1</emissive>
+        </material>
+        
+        </visual>
+        <sensor name='left_sonar' type='gpu_lidar'>
+        <pose>0 0 0 0 0 0</pose>
+        <topic>scan/left</topic>
+        <gz_frame_id>left_sonar</gz_frame_id>
+        <update_rate>25</update_rate> 
+        <lidar>
+        <scan>
+        <horizontal>
+            <samples>10</samples> 
+            <resolution>1</resolution>
+            <min_angle>-.14</min_angle>  
+            <max_angle>.14</max_angle> 
+            </horizontal>
+        <vertical>
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+        </vertical>
+        </scan>
+        <range>
+            <min>0.05</min>             
+            <max>15</max> 
+            <resolution>0.02</resolution>
+        </range>
+        </lidar>
+        <visualize>true</visualize>
+        </sensor>
+    </link>
+   <!--Down Sonar-->  
+   <link name='down_sonar'>
+        <pose relative_to="base_link">-.7 0 -.1 0 1.5708 0</pose>
+            <inertial>
+                <mass>0.00001</mass>
+            </inertial>
+            <collision name="down_sonar_collision">
+                <geometry>
+                    <box>
+                        <size>.0001 .0001 .0001</size>
+                    </box>
+                </geometry>
+            </collision>
+
+        <visual name='visual'>
+        <pose relative_to="base_link">-.7 0 -.1 0 -3.1416 0</pose>
+        <geometry>
+	        <mesh>
+                <uri>file://models/tethys/meshes/MaxSonar.dae</uri>
+                <scale>.001 .001 .001</scale>
+            </mesh>
+        </geometry>  
+        <material>
+             <ambient>0 0 0 0.1</ambient>
+             <diffuse>0 0 0 1</diffuse>
+             <specular>0 0 0 1</specular>
+             <emissive>0 0 0 1</emissive>
+        </material>
+        
+        </visual>
+        <sensor name='down_sonar' type='gpu_lidar'>
+        <pose>0 0 0  0 0 0</pose>
+        <topic>scan/down</topic>
+        <gz_frame_id>down_sonar</gz_frame_id>
+        <update_rate>70</update_rate> 
+        <lidar>
+        <scan>
+        <horizontal>
+            <samples>1</samples> 
+            <resolution>1</resolution>
+            <min_angle>0</min_angle> 
+            <max_angle>0</max_angle> 
+            </horizontal>
+        <vertical>
+            <samples>1</samples>
+            <resolution>1</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+        </vertical>
+        </scan>
+        <range>
+            <min>0.05</min> 
+            <max>9</max> 
+            <resolution>0.01</resolution>
+        </range>
+        </lidar>
+        <visualize>true</visualize>
+        </sensor>
+    </link>
+    <link name='imu'>
+        <pose relative_to="base_link">0 0 0 0 0 0</pose>
+            <inertial>
+                <mass>0.00001</mass>
+            </inertial>
+
+            <visual name='visual'>
+                <geometry>
+                    <box>
+                        <size> .02 .02 .01 </size>    
+                    </box>
+                </geometry>
+            </visual>
+            <collision name='collision'>
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <box>
+                        <size> .02 .02 .01 </size>    
+                    </box>
+                </geometry>
+            </collision>
+            <sensor name="imu_sensor" type="imu">
+              <gz_frame_id>imu</gz_frame_id>
+              <always_on>1</always_on>
+              <update_rate>60</update_rate>
+              <visualize>true</visualize>
+              <topic>imu</topic>
+              <enable_metrics>true</enable_metrics>
+            </sensor>
+    </link>
+    <link name="odometer">
+        <inertial>
+          <mass>0.00001</mass>
+        </inertial>
+        <collision name="collision">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.02 0.01</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.02 0.01</size>
+            </box>
+          </geometry>
+        </visual>
+        <!-- Here's our custom sensor -->
+        <sensor name="an_odometer" type="custom" gz:type="odometer">
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+          <gz:odometer>
+            <noise type="gaussian">
+              <mean>0.00001</mean>
+              <stddev>0.00001</stddev>
+            </noise>
+          </gz:odometer>
+          <topic>odometer</topic>
+        </sensor>
+      </link>
+        <joint name='odometer_joint' type='fixed'>
+            <parent>base_link</parent>
+            <child>odometer</child>
+        </joint>
+
+        <joint name='imu_joint' type='fixed'>
+            <parent>base_link</parent>
+            <child>imu</child>
+        </joint>
+        <joint name='down_sonar_joint' type='fixed'>
+            <parent>base_link</parent>
+            <child>down_sonar</child>
+        </joint>
+        <joint name='front_sonar_joint' type='fixed'>
+            <parent>base_link</parent>
+            <child>front_sonar</child>
+        </joint>
+        <joint name='left_sonar_joint' type='fixed'>
+            <parent>base_link</parent>
+            <child>left_sonar</child>
+        </joint>
+        <joint name='base_footprint_joint' type='fixed'>
+            <parent>base_link</parent>
+            <child>base_footprint</child>
+        </joint>
+    </model>
+</sdf>

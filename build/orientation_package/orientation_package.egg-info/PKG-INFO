@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: orientation-package
+Version: 0.0.1
+Summary: Package used to publish the data from Adafruit 9-DOF Orientation IMU Fusion Breakout - BNO085 to a topic
+Maintainer: Ryan Le
+Maintainer-email: ryanhaile10@gmail.com
+License: Apache-2.0
+License-File: LICENSE

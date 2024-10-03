@@ -1,0 +1,3 @@
+[console_scripts]
+imu = orientation_package.imu:main
+orientation_publisher = orientation_package.orientation_publisher:main

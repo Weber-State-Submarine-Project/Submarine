@@ -1,0 +1,43 @@
+[0.040s] Invoking command in '/home/submarine/ros_ws/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/octomap_rviz_plugins -- -j4 -l4
+[0.223s] [  0%] Built target octomap_rviz_plugins_autogen_timestamp_deps
+[0.398s] [ 10%] Built target octomap_rviz_plugins_autogen
+[0.735s] [100%] Built target octomap_rviz_plugins
+[0.836s] Invoked command in '/home/submarine/ros_ws/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/octomap_rviz_plugins -- -j4 -l4
+[1.015s] Invoking command in '/home/submarine/ros_ws/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/octomap_rviz_plugins
+[1.064s] -- Install configuration: ""
+[1.064s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/plugins_description.xml
+[1.064s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/include
+[1.064s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/include/octomap_rviz_plugins
+[1.064s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_grid_display.hpp
+[1.064s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_map_display.hpp
+[1.064s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/library_path.sh
+[1.071s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/library_path.dsv
+[1.071s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/lib/liboctomap_rviz_plugins.so
+[1.139s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_rviz_plugins/lib/liboctomap_rviz_plugins.so" to ""
+[1.139s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons
+[1.140s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes
+[1.140s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyMapStamped.png
+[1.145s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyGrid.png
+[1.156s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/ColorOccupancyGrid.png
+[1.158s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyGridStamped.png
+[1.158s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyMap.png
+[1.161s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/ament_index/resource_index/package_run_dependencies/octomap_rviz_plugins
+[1.162s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/ament_index/resource_index/parent_prefix_path/octomap_rviz_plugins
+[1.162s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/ament_prefix_path.sh
+[1.163s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/ament_prefix_path.dsv
+[1.163s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/path.sh
+[1.163s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/path.dsv
+[1.163s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.bash
+[1.164s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.sh
+[1.169s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.zsh
+[1.169s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.dsv
+[1.169s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.dsv
+[1.169s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/ament_index/resource_index/packages/octomap_rviz_plugins
+[1.170s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/ament_index/resource_index/rviz_common__pluginlib__plugin/octomap_rviz_plugins
+[1.170s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.170s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.173s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+[1.173s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig.cmake
+[1.173s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig-version.cmake
+[1.176s] -- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.xml
+[1.186s] Invoked command in '/home/submarine/ros_ws/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/octomap_rviz_plugins

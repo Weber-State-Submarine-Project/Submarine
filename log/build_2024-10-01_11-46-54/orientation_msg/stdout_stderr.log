@@ -1,0 +1,17 @@
+[  2%] Built target orientation_msg__rosidl_generator_type_description
+[  2%] Built target ament_cmake_python_copy_orientation_msg
+[  4%] Built target orientation_msg__cpp
+[ 22%] Built target orientation_msg__rosidl_generator_c
+gmake[2]: *** No rule to make target '/opt/ros/jazzy/lib/libfastcdr.so.2.2.2', needed by 'liborientation_msg__rosidl_typesupport_fastrtps_c.so'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/orientation_msg__rosidl_typesupport_fastrtps_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 31%] Built target orientation_msg__rosidl_typesupport_cpp
+[ 40%] Built target orientation_msg__rosidl_typesupport_introspection_c
+running egg_info
+writing orientation_msg.egg-info/PKG-INFO
+writing dependency_links to orientation_msg.egg-info/dependency_links.txt
+writing top-level names to orientation_msg.egg-info/top_level.txt
+reading manifest file 'orientation_msg.egg-info/SOURCES.txt'
+writing manifest file 'orientation_msg.egg-info/SOURCES.txt'
+[ 40%] Built target ament_cmake_python_build_orientation_msg_egg
+gmake: *** [Makefile:146: all] Error 2

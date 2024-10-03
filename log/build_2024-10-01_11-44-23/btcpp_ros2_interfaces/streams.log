@@ -1,0 +1,18 @@
+[0.035s] Invoking command in '/home/submarine/ros_ws/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/btcpp_ros2_interfaces -- -j4 -l4
+[0.218s] [  1%] Built target btcpp_ros2_interfaces__rosidl_generator_type_description
+[0.270s] [  1%] Built target ament_cmake_python_copy_btcpp_ros2_interfaces
+[0.308s] [  3%] Built target btcpp_ros2_interfaces__cpp
+[0.323s] [ 24%] Built target btcpp_ros2_interfaces__rosidl_generator_c
+[0.439s] gmake[2]: *** No rule to make target '/opt/ros/jazzy/lib/libfastcdr.so.2.2.2', needed by 'libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.so'.  Stop.
+[0.439s] gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.dir/all] Error 2
+[0.439s] gmake[1]: *** Waiting for unfinished jobs....
+[0.521s] [ 33%] Built target btcpp_ros2_interfaces__rosidl_typesupport_c
+[0.521s] [ 42%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_c
+[0.801s] running egg_info
+[0.833s] writing btcpp_ros2_interfaces.egg-info/PKG-INFO
+[0.833s] writing dependency_links to btcpp_ros2_interfaces.egg-info/dependency_links.txt
+[0.834s] writing top-level names to btcpp_ros2_interfaces.egg-info/top_level.txt
+[0.931s] reading manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'
+[0.931s] writing manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'
+[1.005s] [ 42%] Built target ament_cmake_python_build_btcpp_ros2_interfaces_egg
+[1.007s] gmake: *** [Makefile:146: all] Error 2

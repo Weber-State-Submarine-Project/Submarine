@@ -1,0 +1,125 @@
+[0.038s] Invoking command in '/home/submarine/ros_ws/build/pcl_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/pcl_ros -- -j4 -l4
+[0.263s] [  5%] Built target filter_extract_indices_node
+[0.263s] [ 11%] Built target filter_passthrough_node
+[0.274s] [ 17%] Built target filter_project_inliers_node
+[0.317s] [ 22%] Built target pcl_ros_tf
+[0.431s] [ 28%] Built target filter_statistical_outlier_removal_node
+[0.458s] [ 34%] Built target filter_radius_outlier_removal_node
+[0.495s] [ 40%] Built target filter_crop_box_node
+[0.517s] [ 45%] Built target filter_voxel_grid_node
+[0.623s] [ 51%] Built target pcd_to_pointcloud
+[0.694s] [ 57%] Built target pcd_to_pointcloud_lib
+[0.726s] [ 62%] Built target pointcloud_to_pcd
+[0.769s] [ 68%] Built target pointcloud_to_pcd_lib
+[0.784s] [ 74%] Built target dummy_topics
+[0.913s] [100%] Built target pcl_ros_filters
+[0.949s] Invoked command in '/home/submarine/ros_ws/build/pcl_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/pcl_ros -- -j4 -l4
+[1.146s] Invoking command in '/home/submarine/ros_ws/build/pcl_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/pcl_ros
+[1.166s] -- Install configuration: ""
+[1.166s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_extract_indices_node
+[1.166s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_passthrough_node
+[1.167s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_project_inliers_node
+[1.167s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_radius_outlier_removal_node
+[1.168s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_statistical_outlier_removal_node
+[1.169s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_crop_box_node
+[1.170s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/filter_voxel_grid_node
+[1.170s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/pcd_to_pointcloud
+[1.170s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/pcl_ros/pointcloud_to_pcd
+[1.171s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros
+[1.173s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros
+[1.173s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/point_cloud.hpp
+[1.173s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/impl
+[1.173s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/impl/transforms.hpp
+[1.173s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/surface
+[1.173s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/surface/moving_least_squares.hpp
+[1.175s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/surface/convex_hull.hpp
+[1.175s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/publisher.hpp
+[1.176s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io
+[1.176s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io/concatenate_data.hpp
+[1.176s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io/concatenate_fields.hpp
+[1.176s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io/bag_io.hpp
+[1.176s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/io/pcd_io.hpp
+[1.178s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/pcl_node.hpp
+[1.178s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/transforms.hpp
+[1.178s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features
+[1.178s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/fpfh_omp.hpp
+[1.179s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/normal_3d_tbb.hpp
+[1.179s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/shot_omp.hpp
+[1.179s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/normal_3d.hpp
+[1.179s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/pfh.hpp
+[1.179s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/feature.hpp
+[1.179s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/shot.hpp
+[1.179s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/normal_3d_omp.hpp
+[1.179s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/principal_curvatures.hpp
+[1.180s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/moment_invariants.hpp
+[1.180s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/vfh.hpp
+[1.180s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/boundary.hpp
+[1.180s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/features/fpfh.hpp
+[1.180s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters
+[1.180s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/extract_indices.hpp
+[1.180s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/crop_box.hpp
+[1.180s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/radius_outlier_removal.hpp
+[1.181s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/voxel_grid.hpp
+[1.184s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/passthrough.hpp
+[1.184s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/statistical_outlier_removal.hpp
+[1.184s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/project_inliers.hpp
+[1.184s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/filters/filter.hpp
+[1.185s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation
+[1.185s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/sac_segmentation.hpp
+[1.185s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/extract_clusters.hpp
+[1.185s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/segment_differences.hpp
+[1.185s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/extract_polygonal_prism_data.hpp
+[1.185s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/libpcl_ros_tf.a
+[1.185s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/libpcd_to_pointcloud_lib.so
+[1.186s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/libpcl_ros_filters.so
+[1.186s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/lib/libpointcloud_to_pcd_lib.so
+[1.186s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins
+[1.187s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet
+[1.187s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_segmentation.xml
+[1.190s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_features.xml
+[1.190s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_filters.xml
+[1.191s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_io.xml
+[1.192s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_surface.xml
+[1.192s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples
+[1.192s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros
+[1.192s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/surface
+[1.192s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/surface/sample_convex_hull.launch
+[1.192s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/io
+[1.192s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/io/sample_concatenate_data.launch
+[1.192s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/features
+[1.193s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/features/sample_normal_3d.launch
+[1.193s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters
+[1.193s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_statistical_outlier_removal.launch
+[1.193s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_voxel_grid.launch
+[1.193s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config
+[1.193s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/statistical_outlier_removal.rviz
+[1.193s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/voxel_grid.rviz
+[1.193s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/segmentation
+[1.193s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/pcl_ros/segmentation/sample_extract_clusters.launch
+[1.194s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/data
+[1.194s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/samples/data/.gitignore
+[1.194s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/library_path.sh
+[1.194s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/library_path.dsv
+[1.194s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/ament_index/resource_index/package_run_dependencies/pcl_ros
+[1.194s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/ament_index/resource_index/parent_prefix_path/pcl_ros
+[1.195s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.sh
+[1.195s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.dsv
+[1.195s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/path.sh
+[1.195s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/environment/path.dsv
+[1.195s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/local_setup.bash
+[1.195s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/local_setup.sh
+[1.196s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/local_setup.zsh
+[1.196s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/local_setup.dsv
+[1.196s] -- Installing: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.dsv
+[1.196s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/ament_index/resource_index/packages/pcl_ros
+[1.196s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/ament_index/resource_index/rclcpp_components/pcl_ros
+[1.197s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport.cmake
+[1.197s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport-noconfig.cmake
+[1.197s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.197s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[1.197s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_targets-extras.cmake
+[1.198s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.198s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig.cmake
+[1.198s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig-version.cmake
+[1.198s] -- Up-to-date: /home/submarine/ros_ws/install/pcl_ros/share/pcl_ros/package.xml
+[1.198s] Invoked command in '/home/submarine/ros_ws/build/pcl_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/pcl_ros

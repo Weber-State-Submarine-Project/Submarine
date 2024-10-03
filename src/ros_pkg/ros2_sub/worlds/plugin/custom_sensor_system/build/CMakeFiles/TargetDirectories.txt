@@ -1,3 +1,0 @@
-/home/submarine/ros_ws/src/ros_pkg/ros2_sub/worlds/plugin/custom_sensor_system/build/CMakeFiles/OdometerSystem.dir
-/home/submarine/ros_ws/src/ros_pkg/ros2_sub/worlds/plugin/custom_sensor_system/build/CMakeFiles/edit_cache.dir
-/home/submarine/ros_ws/src/ros_pkg/ros2_sub/worlds/plugin/custom_sensor_system/build/CMakeFiles/rebuild_cache.dir

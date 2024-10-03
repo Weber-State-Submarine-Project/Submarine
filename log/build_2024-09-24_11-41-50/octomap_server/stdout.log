@@ -1,0 +1,71 @@
+[  7%] Built target octomap_server_multilayer_node
+[ 23%] Built target octomap_server_static
+[ 30%] Built target octomap_server_static_node
+[ 15%] Built target octomap_server_node
+[ 38%] Built target color_octomap_server_node
+[ 46%] Built target tracking_octomap_server_node
+[ 53%] Built target octomap_saver_node
+[ 61%] Built target octomap_server
+[ 73%] Built target octomap_server_multilayer
+[ 84%] Built target tracking_octomap_server
+[ 92%] Built target color_octomap_server
+[100%] Built target octomap_saver
+-- Install configuration: ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/octomap_server/octomap_server_static_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/octomap_server/octomap_server_static_node" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/octomap_server/octomap_server_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/octomap_server/octomap_server_node" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/octomap_server/octomap_server_multilayer_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/octomap_server/octomap_server_multilayer_node" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/octomap_server/tracking_octomap_server_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/octomap_server/tracking_octomap_server_node" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/octomap_server/color_octomap_server_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/octomap_server/color_octomap_server_node" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/octomap_server/octomap_saver_node
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/octomap_server/octomap_saver_node" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/include
+-- Installing: /home/submarine/ros_ws/install/octomap_server/include/octomap_server
+-- Installing: /home/submarine/ros_ws/install/octomap_server/include/octomap_server/tracking_octomap_server.hpp
+-- Installing: /home/submarine/ros_ws/install/octomap_server/include/octomap_server/octomap_server.hpp
+-- Installing: /home/submarine/ros_ws/install/octomap_server/include/octomap_server/octomap_server_static.hpp
+-- Installing: /home/submarine/ros_ws/install/octomap_server/include/octomap_server/octomap_server_multilayer.hpp
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/environment/library_path.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/environment/library_path.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/liboctomap_server_static.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/liboctomap_server_static.so" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/liboctomap_server.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/liboctomap_server.so" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/liboctomap_server_multilayer.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/liboctomap_server_multilayer.so" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/libtracking_octomap_server.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/libtracking_octomap_server.so" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/libcolor_octomap_server.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/libcolor_octomap_server.so" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/liboctomap_saver.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_server/lib/liboctomap_saver.so" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/launch
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/launch/octomap_tracking_server.launch.xml
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/launch/octomap_tracking_client.launch.xml
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/launch/octomap_mapping.launch.xml
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/params
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/params/default.yaml
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/ament_index/resource_index/package_run_dependencies/octomap_server
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/ament_index/resource_index/parent_prefix_path/octomap_server
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/environment/ament_prefix_path.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/environment/ament_prefix_path.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/environment/path.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/environment/path.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/local_setup.bash
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/local_setup.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/local_setup.zsh
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/local_setup.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/package.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/ament_index/resource_index/packages/octomap_server
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/ament_index/resource_index/rclcpp_components/octomap_server
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/cmake/octomap_serverConfig.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/cmake/octomap_serverConfig-version.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_server/share/octomap_server/package.xml
+-- Installing: /home/submarine/ros_ws/install/octomap_server/lib/octomap_server/octomap_eraser_cli.py

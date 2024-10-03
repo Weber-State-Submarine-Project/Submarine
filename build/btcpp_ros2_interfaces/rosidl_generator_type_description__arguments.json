@@ -1,0 +1,15 @@
+{
+  "package_name": "btcpp_ros2_interfaces",
+  "output_dir": "/home/submarine/ros_ws/build/btcpp_ros2_interfaces/rosidl_generator_type_description/btcpp_ros2_interfaces",
+  "idl_tuples": [
+    "/home/submarine/ros_ws/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:msg/NodeStatus.idl",
+    "/home/submarine/ros_ws/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:action/ExecuteTree.idl",
+    "/home/submarine/ros_ws/build/btcpp_ros2_interfaces/rosidl_adapter/btcpp_ros2_interfaces:action/Sleep.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

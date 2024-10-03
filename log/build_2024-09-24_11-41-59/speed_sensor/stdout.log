@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/speed_sensor/speed_sensor.egg-info
+writing ../../build/speed_sensor/speed_sensor.egg-info/PKG-INFO
+writing dependency_links to ../../build/speed_sensor/speed_sensor.egg-info/dependency_links.txt
+writing entry points to ../../build/speed_sensor/speed_sensor.egg-info/entry_points.txt
+writing requirements to ../../build/speed_sensor/speed_sensor.egg-info/requires.txt
+writing top-level names to ../../build/speed_sensor/speed_sensor.egg-info/top_level.txt
+writing manifest file '../../build/speed_sensor/speed_sensor.egg-info/SOURCES.txt'
+reading manifest file '../../build/speed_sensor/speed_sensor.egg-info/SOURCES.txt'
+writing manifest file '../../build/speed_sensor/speed_sensor.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/submarine/ros_ws/build/speed_sensor/build
+creating /home/submarine/ros_ws/build/speed_sensor/build/lib
+creating /home/submarine/ros_ws/build/speed_sensor/build/lib/speed_sensor
+copying speed_sensor/__init__.py -> /home/submarine/ros_ws/build/speed_sensor/build/lib/speed_sensor
+copying speed_sensor/velocity_sensor.py -> /home/submarine/ros_ws/build/speed_sensor/build/lib/speed_sensor
+running install
+running install_lib
+creating /home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages/speed_sensor
+copying /home/submarine/ros_ws/build/speed_sensor/build/lib/speed_sensor/__init__.py -> /home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages/speed_sensor
+copying /home/submarine/ros_ws/build/speed_sensor/build/lib/speed_sensor/velocity_sensor.py -> /home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages/speed_sensor
+byte-compiling /home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages/speed_sensor/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages/speed_sensor/velocity_sensor.py to velocity_sensor.cpython-312.pyc
+running install_data
+creating /home/submarine/ros_ws/install/speed_sensor/share/ament_index
+creating /home/submarine/ros_ws/install/speed_sensor/share/ament_index/resource_index
+creating /home/submarine/ros_ws/install/speed_sensor/share/ament_index/resource_index/packages
+copying resource/speed_sensor -> /home/submarine/ros_ws/install/speed_sensor/share/ament_index/resource_index/packages
+copying package.xml -> /home/submarine/ros_ws/install/speed_sensor/share/speed_sensor
+running install_egg_info
+Copying ../../build/speed_sensor/speed_sensor.egg-info to /home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages/speed_sensor-0.0.0-py3.12.egg-info
+running install_scripts
+Installing velocity_sensor script to /home/submarine/ros_ws/install/speed_sensor/lib/speed_sensor
+writing list of installed files to '/home/submarine/ros_ws/build/speed_sensor/install.log'

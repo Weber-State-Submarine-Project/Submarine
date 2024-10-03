@@ -1,0 +1,19 @@
+[100%] Built target controller_sub
+-- Install configuration: ""
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/lib/controller_sub/controller_sub
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.xml
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/ament_index/resource_index/package_run_dependencies/controller_sub
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/ament_index/resource_index/parent_prefix_path/controller_sub
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/ament_prefix_path.sh
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/path.sh
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/path.dsv
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.bash
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.sh
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.zsh
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.dsv
+-- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.dsv
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/ament_index/resource_index/packages/controller_sub
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/cmake/controller_subConfig.cmake
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/cmake/controller_subConfig-version.cmake
+-- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.xml

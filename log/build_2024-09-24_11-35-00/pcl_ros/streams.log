@@ -1,0 +1,30 @@
+[0.036s] Invoking command in '/home/submarine/ros_ws/build/pcl_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/pcl_ros -- -j4 -l4
+[0.255s] [  5%] Built target filter_extract_indices_node
+[0.271s] [ 11%] Built target filter_project_inliers_node
+[0.279s] [ 17%] Built target filter_passthrough_node
+[0.306s] [ 22%] Built target pcl_ros_tf
+[0.379s] [ 28%] Built target filter_radius_outlier_removal_node
+[0.398s] [ 34%] Built target filter_crop_box_node
+[0.446s] [ 40%] Built target filter_voxel_grid_node
+[0.460s] [ 45%] Built target filter_statistical_outlier_removal_node
+[0.573s] [ 51%] Built target pcd_to_pointcloud
+[0.589s] [ 54%] [32mBuilding CXX object CMakeFiles/pcd_to_pointcloud_lib.dir/tools/pcd_to_pointcloud.cpp.o[0m
+[0.597s] [ 57%] [32mBuilding CXX object CMakeFiles/pointcloud_to_pcd_lib.dir/tools/pointcloud_to_pcd.cpp.o[0m
+[0.602s] [ 62%] Built target pointcloud_to_pcd
+[0.747s] [ 68%] [32mBuilding CXX object tests/filters/CMakeFiles/dummy_topics.dir/dummy_topics.cpp.o[0m
+[0.747s] [ 68%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/extract_indices.cpp.o[0m
+[27.470s] [ 71%] [32m[1mLinking CXX shared library libpcd_to_pointcloud_lib.so[0m
+[30.566s] [ 71%] Built target pcd_to_pointcloud_lib
+[30.620s] [ 74%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/filter.cpp.o[0m
+[34.091s] [ 77%] [32m[1mLinking CXX shared library libdummy_topics.so[0m
+[36.584s] [ 77%] Built target dummy_topics
+[36.634s] [ 80%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/passthrough.cpp.o[0m
+[50.153s] [ 82%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/project_inliers.cpp.o[0m
+[52.365s] [ 85%] [32m[1mLinking CXX shared library libpointcloud_to_pcd_lib.so[0m
+[55.974s] [ 85%] Built target pointcloud_to_pcd_lib
+[55.991s] [ 88%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/radius_outlier_removal.cpp.o[0m
+[76.979s] [ 91%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/statistical_outlier_removal.cpp.o[0m
+[82.144s] [ 94%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/voxel_grid.cpp.o[0m
+[92.245s] [ 97%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/crop_box.cpp.o[0m
+[122.590s] [100%] [32m[1mLinking CXX shared library libpcl_ros_filters.so[0m
+[130.252s] [100%] Built target pcl_ros_filters

@@ -23,6 +23,7 @@
 #include "std_msgs/msg/string.hpp"
 #include "std_msgs/msg/int32.hpp"
 #include <thread>
+#include "orientation_msg/msg/esc.hpp"
 
 
 namespace chr = std::chrono;
@@ -83,7 +84,7 @@ public:
     NodeStatus tick() override
     {
         // May need to change min distance to fit hardware turn radius
-        if (front_node_->get_latest_distance() > 16)
+        if (front_node_->get_latest_distance() > 4)
         {
             std::cout << "Distance from front wall is good: " << front_node_->get_latest_distance() << "\n";
             return NodeStatus::SUCCESS;
@@ -258,7 +259,6 @@ private:
     std::shared_ptr<nav_msgs::msg::OccupancyGrid> latest_map_;
 };
 
-//THIS LOGIC NEEDS SOME REWRITING SO THAT THE BOAT TURNS RIGHT USING LEFT MOTOR FORWARD RIGHT MOTOR REVERSE INSTEAD OF FINS
 class Turn90Degrees : public SyncActionNode
 {
 public:
@@ -267,7 +267,7 @@ public:
           node_(rclcpp::Node::make_shared("turn_90_degrees_node")),
           odom_node_(odom_node)
     {
-        publisher_ = node_->create_publisher<std_msgs::msg::Float64>("/angular_vel", 10);
+        publisher_ = node_->create_publisher<orientation_msg::msg::Esc>("/esc_topic", 10);
     }
     
     static PortsList providedPorts()
@@ -304,18 +304,29 @@ public:
 
         // Calculate the angle difference between the current yaw and the target yaw
         double angle_difference = std::atan2(std::sin(yaw - target_yaw), std::cos(yaw - target_yaw));
-        // ------------------------------------------------------------------------REWRITE THIS PART--------------------------------------------------------
         if(std::fabs(angle_difference) < angle_tolerance_) {
-            std_msgs::msg::Float64 val;
-            val.data = 0;
-            publisher_->publish(val);
+            //start going streight again, may need to adjust speeds
+            auto esc = orientation_msg::msg::Esc();
+            esc.motor_selection = "Left";
+            esc.power_percentage = 15;
+            publisher_->publish(esc);
+            esc.motor_selection = "Right";
+            esc.power_percentage = 15;
+            publisher_->publish(esc);
+
             std::cout << "Turn Completed\n";
             target_yaw = 0;
             return NodeStatus::SUCCESS;
         }
+        // turning left, left motor forward, right motor reverse, may need to adjust speeds
         else{
-            std_msgs::msg::Float64 val;
-            val.data = -0.3;             publisher_->publish(val);
+            auto esc = orientation_msg::msg::Esc();
+            esc.motor_selection = "Left";
+            esc.power_percentage = 15;
+            publisher_->publish(esc);
+            esc.motor_selection = "Right";
+            esc.power_percentage = -15;
+            publisher_->publish(esc);
             std::cout << "Current angle: "<<yaw<<", target angle: " << target_yaw << "\n";
             std::cout << "Angle Difference: " << angle_difference << "\n";
             return NodeStatus::FAILURE;
@@ -324,13 +335,12 @@ public:
 
 private:
     rclcpp::Node::SharedPtr node_;
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher_;
+    rclcpp::Publisher<orientation_msg::msg::Esc>::SharedPtr publisher_;
     std::shared_ptr<Odom> odom_node_;
     double target_yaw = 0;
     const double angle_tolerance_ = 0.02; // radians
 };
 
-//THIS LOGIC NEEDS SOME REWRITING SO THAT THE BOAT TURNS  USING LEFT AND RIGHT MOTORS INSTEAD OF FINS
 class AdjustDistance : public SyncActionNode
 {
 public:
@@ -339,7 +349,7 @@ public:
           node_(rclcpp::Node::make_shared("adjust_distance_node")),
           side_node_(side_node)
     {
-        publisher_ = node_->create_publisher<std_msgs::msg::Float64>("/angular_vel", 10);
+        publisher_ = node_->create_publisher<orientation_msg::msg::Esc>("/esc_topic", 10);
     }
     // It is mandatory to define this STATIC method.
     static PortsList providedPorts()
@@ -349,46 +359,56 @@ public:
 
     NodeStatus tick() override    
     {   
-    // ------------------------------------------------------------------------REWRITE THIS PART--------------------------------------------------------
         auto dist = side_node_->get_latest_distance();
-        std_msgs::msg::Float64 val;
-        val.data = -0.3; // Adjust this value for hardware if necessary
-        std_msgs::msg::Float64 val2;
-        val2.data = 0.3; // Adjust this value for hardware if necessary
-        std_msgs::msg::Float64 val3;
-        val3.data = 0; 
+        auto msg = orientation_msg::msg::Esc();
         
-        if(dist < 1)
+        if(dist < 0.5)
         {     
             std::cout <<"DIST: " << dist <<"\n";
             std::cout << "Adjusting right\n";
-            publisher_->publish(val);
+            msg.motor_selection = "Left";
+            msg.power_percentage = 15;
+            publisher_->publish(msg);
+            msg.motor_selection = "Right";
+            msg.power_percentage = 0;
+            publisher_->publish(msg);
+
             return NodeStatus::FAILURE;
         }
-        else if(dist > 2.5)
+        else if(dist > 1.5)
         {
             std::cout <<"DIST: " << dist <<"\n";
             std::cout << "Adjusting left\n";
-            publisher_->publish(val2);
+            msg.motor_selection = "Left";
+            msg.power_percentage = 0;
+            publisher_->publish(msg);
+            msg.motor_selection = "Right";
+            msg.power_percentage = 15;
+            publisher_->publish(msg);
+
             return NodeStatus::FAILURE;
 
         }
         else
         {
             std::cout << "Distance from side wall is good: "<< dist <<"\n";
-            publisher_->publish(val3);
+            msg.motor_selection = "Left";
+            msg.power_percentage = 15;
+            publisher_->publish(msg);
+            msg.motor_selection = "Right";
+            msg.power_percentage = 15;
+            publisher_->publish(msg);
             return NodeStatus::SUCCESS;
         }
     }
 
 private:
     rclcpp::Node::SharedPtr node_;
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher_;
+    rclcpp::Publisher<orientation_msg::msg::Esc>::SharedPtr publisher_;
     std::shared_ptr<Side> side_node_;
 };
 
 
-// THIS NEEDS A REWRITE TO COMMAND BOTH MOTORS TO GO FORWARD AT A GIVEN SPEED
 class Forward : public SyncActionNode
 {
 public:
@@ -396,7 +416,7 @@ public:
         : SyncActionNode(name, config),
           node_(rclcpp::Node::make_shared("forward_node"))
     {
-        publisher_ = node_->create_publisher<std_msgs::msg::Float64>("/model/tethys/joint/propeller_joint/cmd_thrust", 10); 
+        publisher_ = node_->create_publisher<orientation_msg::msg::Esc>("/esc_topic", 10);
     }
     // It is mandatory to define this STATIC method.
     static PortsList providedPorts()
@@ -405,21 +425,24 @@ public:
     }
 
     NodeStatus tick() override    
-    {   
-    // ------------------------------------------------------------------------REWRITE THIS PART--------------------------------------------------------
-        std_msgs::msg::Float64 val;
+    {  
+        // may need to adjust motor speed
         std::cout << "Moving Forward\n";
-        val.data = -1;
-        publisher_->publish(val);//speed is hardcoded for ease of simulation, will need to be changed for hardware
+        auto msg = orientation_msg::msg::Esc();
+        msg.motor_selection = "Left";
+        msg.power_percentage = 15;
+        publisher_->publish(msg);
+        msg.motor_selection = "Right";
+        msg.power_percentage = 15;
+        publisher_->publish(msg);
         return NodeStatus::SUCCESS;
     }
 
 private:
     rclcpp::Node::SharedPtr node_;
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher_; // Add a publisher member
+    rclcpp::Publisher<orientation_msg::msg::Esc>::SharedPtr publisher_;
 };
 
-// THIS NEEDS A REWRITE TO COMMAND BOTH MOTORS TO GO REVERSE AT A GIVEN SPEED
 class Stop : public SyncActionNode
 {
 public:
@@ -428,7 +451,7 @@ public:
           node_(rclcpp::Node::make_shared("stop_node")),
           velocity_node_(velocity_node)
     {
-        publisher_ = node_->create_publisher<std_msgs::msg::Float64>("/model/tethys/joint/propeller_joint/cmd_thrust", 10); 
+        publisher_ = node_->create_publisher<orientation_msg::msg::Esc>("/esc_topic", 10);
         publisher3_ = node_->create_publisher<std_msgs::msg::Int32>("/done", 10); 
     }
     
@@ -439,41 +462,46 @@ public:
 
     NodeStatus tick() override    
     { 
-
+        //turn done on and off to have the octomap interpolate data once
         std_msgs::msg::Int32 val3;
         val3.data = 1;
+        val3.data = 0; 
+        publisher3_->publish(val3);
+
     
         publisher3_->publish(val3);
 
+        auto esc = orientation_msg::msg::Esc();
         auto velocity_msg = velocity_node_->get_latest_velocity();
         if (!velocity_msg) {
             return NodeStatus::FAILURE;
         }
         double velocity = velocity_msg->twist.twist.linear.x;
-        std_msgs::msg::Float64 val;
-        if(std::abs(velocity) > 0.02){
+        if(std::abs(velocity) > 0.1){
             std::cout<<"Slowing Down\n";
-    // --------------------------------------------------------REWRITE THIS PART TO REVERSE THE MOTORS--------------------------------------------------------
-            val.data = 10;
-            publisher_->publish(val); 
+            esc.motor_selection = "Left";
+            esc.power_percentage = -15;
+            publisher_->publish(esc);
+            esc.motor_selection = "Right";
+            esc.power_percentage = -15;
+            publisher_->publish(esc);
             return NodeStatus::FAILURE;
         }  
-        else{
-    //----------------------------------------------------------STOP MOTORS---------------------------------------------------------------------------------
-            val3.data = 0;
-    
-            publisher3_->publish(val3);
-
+        else{ 
             std::cout<<"Stop Complete";
-            val.data = 0;
-            publisher_->publish(val);
+            esc.motor_selection = "Left";
+            esc.power_percentage = 0;
+            publisher_->publish(esc);
+            esc.motor_selection = "Right";
+            esc.power_percentage = 0;
+            publisher_->publish(esc);
             return NodeStatus::SUCCESS;
         }
     }
 
 private:
     rclcpp::Node::SharedPtr node_;
-    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher_; 
+    rclcpp::Publisher<orientation_msg::msg::Esc>::SharedPtr publisher_;
     rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr publisher3_; 
     std::shared_ptr<Velocity> velocity_node_;
 };
@@ -795,12 +823,10 @@ static const char* xml_text = R"(
                             <Inverter>
                                 <CheckFront/>
                             </Inverter>
-                            <Sequence>
                     		<MapFinished starting_position="{starting_pos}"/>	
-                                <Inverter>
-                                    <CheckStart/>
-                                </Inverter>
-                            </Sequence>
+                            <Inverter>
+                                <CheckStart/>
+                            </Inverter>
                             <Sequence>
                                 <WaitForSeconds seconds="1"/>
                                 <AdjustDistance/>

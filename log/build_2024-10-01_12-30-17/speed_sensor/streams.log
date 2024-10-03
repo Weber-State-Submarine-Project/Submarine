@@ -1,0 +1,21 @@
+[1.745s] Invoking command in '/home/submarine/ros_ws/src/speed_sensor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/submarine/ros_ws/build/speed_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/speed_sensor build --build-base /home/submarine/ros_ws/build/speed_sensor/build install --record /home/submarine/ros_ws/build/speed_sensor/install.log --single-version-externally-managed install_data
+[2.315s] running egg_info
+[2.369s] writing ../../build/speed_sensor/speed_sensor.egg-info/PKG-INFO
+[2.370s] writing dependency_links to ../../build/speed_sensor/speed_sensor.egg-info/dependency_links.txt
+[2.372s] writing entry points to ../../build/speed_sensor/speed_sensor.egg-info/entry_points.txt
+[2.373s] writing requirements to ../../build/speed_sensor/speed_sensor.egg-info/requires.txt
+[2.374s] writing top-level names to ../../build/speed_sensor/speed_sensor.egg-info/top_level.txt
+[2.476s] reading manifest file '../../build/speed_sensor/speed_sensor.egg-info/SOURCES.txt'
+[2.478s] writing manifest file '../../build/speed_sensor/speed_sensor.egg-info/SOURCES.txt'
+[2.478s] running build
+[2.478s] running build_py
+[2.480s] running install
+[2.490s] running install_lib
+[2.528s] running install_data
+[2.528s] running install_egg_info
+[2.562s] removing '/home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages/speed_sensor-0.0.0-py3.12.egg-info' (and everything under it)
+[2.562s] Copying ../../build/speed_sensor/speed_sensor.egg-info to /home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages/speed_sensor-0.0.0-py3.12.egg-info
+[2.563s] running install_scripts
+[2.775s] Installing velocity_sensor script to /home/submarine/ros_ws/install/speed_sensor/lib/speed_sensor
+[2.776s] writing list of installed files to '/home/submarine/ros_ws/build/speed_sensor/install.log'
+[2.866s] Invoked command in '/home/submarine/ros_ws/src/speed_sensor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/submarine/ros_ws/build/speed_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/speed_sensor build --build-base /home/submarine/ros_ws/build/speed_sensor/build install --record /home/submarine/ros_ws/build/speed_sensor/install.log --single-version-externally-managed install_data

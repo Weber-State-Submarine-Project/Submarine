@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from orientation_msg/msg/Orientation.msg
+// generated code does not contain a copyright notice
+
+
+module orientation_msg {
+  module msg {
+    @verbatim (language="comment", text=
+      "Orientation.msg")
+    struct Orientation {
+      @verbatim (language="comment", text=
+        "Acceleration m/s^2")
+      double acc_x;
+
+      double acc_y;
+
+      double acc_z;
+
+      @verbatim (language="comment", text=
+        "Gyro")
+      double gyro_x;
+
+      double gyro_y;
+
+      double gyro_z;
+
+      @verbatim (language="comment", text=
+        "Magnetometer")
+      double mag_x;
+
+      double mag_y;
+
+      double mag_z;
+
+      @verbatim (language="comment", text=
+        "Linear Acceleration")
+      double lin_acc_x;
+
+      double lin_acc_y;
+
+      double lin_acc_z;
+
+      @verbatim (language="comment", text=
+        "Quaternion for orientation")
+      double quat_x;
+
+      double quat_y;
+
+      double quat_z;
+
+      double quat_w;
+    };
+  };
+};

@@ -1,0 +1,117 @@
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found nav_msgs: 5.3.5 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found octomap_msgs: 2.0.0 (/opt/ros/jazzy/share/octomap_msgs/cmake)
+-- Found pcl_conversions: 2.6.1 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+-- Found flann version 1.9.2
+-- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.27
+-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+-- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+-- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+-- Found PCL_2D: /usr/include/pcl-1.14  
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+-- Found PCL_MODELER: /usr/include/pcl-1.14  
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (8.9s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/submarine/ros_ws/build/ros2_sub
+[ 50%] [32mBuilding CXX object CMakeFiles/octo.dir/src/octomap.cpp.o[0m
+[100%] [32m[1mLinking CXX executable octo[0m
+[100%] Built target octo
+-- Install configuration: ""
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/sub_launch.py
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/online_async_launch.py
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//launch/octomap_mapping.launch.xml
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/Pool Map.json
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/ekf.yaml
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//config/mapper_params_online_async.yaml
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Roughness.png
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Normal.png
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Albedo.png
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/textures/Tethys_Metalness.png
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/scripts
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/materials/scripts/model.material
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/model.sdf
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/tethys.dae
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/propeller.dae
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/base.dae
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/meshes/MaxSonar.dae
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub//models/tethys/model.config
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/lib/ros2_sub/octo
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/ros2_sub/lib/ros2_sub/octo" to ""
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/package_run_dependencies/ros2_sub
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/parent_prefix_path/ros2_sub
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/ament_prefix_path.sh
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/path.sh
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/environment/path.dsv
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.bash
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.sh
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.zsh
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/local_setup.dsv
+-- Installing: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.dsv
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ament_index/resource_index/packages/ros2_sub
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/cmake/ros2_subConfig.cmake
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/cmake/ros2_subConfig-version.cmake
+-- Up-to-date: /home/submarine/ros_ws/install/ros2_sub/share/ros2_sub/package.xml

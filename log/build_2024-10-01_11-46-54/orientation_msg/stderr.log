@@ -1,0 +1,4 @@
+gmake[2]: *** No rule to make target '/opt/ros/jazzy/lib/libfastcdr.so.2.2.2', needed by 'liborientation_msg__rosidl_typesupport_fastrtps_c.so'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:267: CMakeFiles/orientation_msg__rosidl_typesupport_fastrtps_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,78 @@
+[0.000000] (-) TimerEvent: {}
+[0.000272] (orientation_msg) JobQueued: {'identifier': 'orientation_msg', 'dependencies': OrderedDict()}
+[0.000684] (orientation_msg) JobStarted: {'identifier': 'orientation_msg'}
+[0.013301] (orientation_msg) JobProgress: {'identifier': 'orientation_msg', 'progress': 'cmake'}
+[0.013532] (orientation_msg) Command: {'cmd': ['/usr/bin/cmake', '/home/submarine/ryans_ws/src/orientation_msg', '-DCMAKE_INSTALL_PREFIX=/home/submarine/ryans_ws/src/orientation_msg/install/orientation_msg'], 'cwd': '/home/submarine/ryans_ws/src/orientation_msg/build/orientation_msg', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'submarine', 'SSH_CLIENT': '137.190.213.103 50641 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/submarine/ryans_ws/install/orientation_msg/lib:/home/submarine/ros_ws/install/octomap_server/lib:/home/submarine/ros_ws/install/pcl_ros/lib:/home/submarine/ros_ws/install/octomap_rviz_plugins/lib:/home/submarine/ros_ws/install/behaviortree_ros2/lib:/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/submarine', 'OLDPWD': '/home/submarine/ryans_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PS1': '(bluerobotics-ping) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/submarine/ryans_ws/install:/home/submarine/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'submarine', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/submarine/.local/bin:/home/submarine/.local/share/pipx/venvs/bluerobotics-ping/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/submarine/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(bluerobotics-ping)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '12', 'AMENT_PREFIX_PATH': '/home/submarine/ryans_ws/install/orientation_package:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ryans_ws/install/orientation_msg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/ros_bt:/home/submarine/ros_ws/install/ros2_sub:/home/submarine/ros_ws/install/perception_pcl:/home/submarine/ros_ws/install/octomap_mapping:/home/submarine/ros_ws/install/octomap_server:/home/submarine/ros_ws/install/pcl_ros:/home/submarine/ros_ws/install/octomap_rviz_plugins:/home/submarine/ros_ws/install/controller_sub:/home/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/ros_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/submarine/.local/share/pipx/venvs/bluerobotics-ping', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/submarine/ryans_ws/src/orientation_msg/build/orientation_msg', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '137.190.213.103 50641 137.190.152.16 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/submarine/ryans_ws/install/orientation_package/lib/python3.12/site-packages:/home/submarine/ryans_ws/install/esc_pkg/lib/python3.12/site-packages:/home/submarine/ryans_ws/install/orientation_msg/lib/python3.12/site-packages:/home/submarine/ros_ws/install/speed_sensor/lib/python3.12/site-packages:/home/submarine/ros_ws/install/sonars/lib/python3.12/site-packages:/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/submarine/ryans_ws/install/orientation_msg:/home/submarine/ros_ws/install/ros_bt:/home/submarine/ros_ws/install/ros2_sub:/home/submarine/ros_ws/install/perception_pcl:/home/submarine/ros_ws/install/octomap_mapping:/home/submarine/ros_ws/install/octomap_server:/home/submarine/ros_ws/install/pcl_ros:/home/submarine/ros_ws/install/octomap_rviz_plugins:/home/submarine/ros_ws/install/controller_sub:/home/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/ros_ws/install/btcpp_ros2_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/submarine/ryans_ws/install/orientation_package:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/opt/ros/jazzy'}), 'shell': False}
+[0.099690] (-) TimerEvent: {}
+[0.127984] (orientation_msg) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.199844] (-) TimerEvent: {}
+[0.237101] (orientation_msg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.267574] (orientation_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299988] (-) TimerEvent: {}
+[0.400364] (-) TimerEvent: {}
+[0.449133] (orientation_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.464170] (orientation_msg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.464546] (orientation_msg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.465156] (orientation_msg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.480493] (orientation_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500487] (-) TimerEvent: {}
+[0.600857] (-) TimerEvent: {}
+[0.675496] (orientation_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.691417] (orientation_msg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.691843] (orientation_msg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.692540] (orientation_msg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.700928] (-) TimerEvent: {}
+[0.701098] (orientation_msg) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.801080] (-) TimerEvent: {}
+[0.888375] (orientation_msg) StdoutLine: {'line': b'-- Found Python3: /home/submarine/.local/share/pipx/venvs/bluerobotics-ping/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.901164] (-) TimerEvent: {}
+[1.001531] (-) TimerEvent: {}
+[1.101948] (-) TimerEvent: {}
+[1.120003] (orientation_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.139512] (orientation_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.202019] (-) TimerEvent: {}
+[1.260371] (orientation_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.302107] (-) TimerEvent: {}
+[1.360562] (orientation_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.3 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.402198] (-) TimerEvent: {}
+[1.502510] (-) TimerEvent: {}
+[1.602822] (-) TimerEvent: {}
+[1.614718] (orientation_msg) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):\n'}
+[1.615528] (orientation_msg) StderrLine: {'line': b'  \n'}
+[1.615632] (orientation_msg) StderrLine: {'line': b'  execute_process(/home/submarine/.local/share/pipx/venvs/bluerobotics-ping/bin/python3\n'}
+[1.615712] (orientation_msg) StderrLine: {'line': b'  -m rosidl_adapter --package-name orientation_msg --arguments-file\n'}
+[1.615788] (orientation_msg) StderrLine: {'line': b'  /home/submarine/ryans_ws/src/orientation_msg/build/orientation_msg/rosidl_adapter__arguments__orientation_msg.json\n'}
+[1.615863] (orientation_msg) StderrLine: {'line': b'  --output-dir\n'}
+[1.615959] (orientation_msg) StderrLine: {'line': b'  /home/submarine/ryans_ws/src/orientation_msg/build/orientation_msg/rosidl_adapter/orientation_msg\n'}
+[1.616040] (orientation_msg) StderrLine: {'line': b'  --output-file\n'}
+[1.616114] (orientation_msg) StderrLine: {'line': b'  /home/submarine/ryans_ws/src/orientation_msg/build/orientation_msg/rosidl_adapter/orientation_msg.idls)\n'}
+[1.616186] (orientation_msg) StderrLine: {'line': b'  returned error code 1:\n'}
+[1.616257] (orientation_msg) StderrLine: {'line': b'\n'}
+[1.616329] (orientation_msg) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[1.616412] (orientation_msg) StderrLine: {'line': b'\n'}
+[1.616484] (orientation_msg) StderrLine: {'line': b'    File "<frozen runpy>", line 198, in _run_module_as_main\n'}
+[1.616558] (orientation_msg) StderrLine: {'line': b'    File "<frozen runpy>", line 88, in _run_code\n'}
+[1.616630] (orientation_msg) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[1.616704] (orientation_msg) StderrLine: {'line': b'      sys.exit(main())\n'}
+[1.616776] (orientation_msg) StderrLine: {'line': b'               ^^^^^^\n'}
+[1.616847] (orientation_msg) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[1.616933] (orientation_msg) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[1.617013] (orientation_msg) StderrLine: {'line': b'                     ^^^^^^^^^^^^^^^\n'}
+[1.617085] (orientation_msg) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl\n'}
+[1.617157] (orientation_msg) StderrLine: {'line': b'      from rosidl_adapter.msg import convert_msg_to_idl\n'}
+[1.617228] (orientation_msg) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>\n'}
+[1.617299] (orientation_msg) StderrLine: {'line': b'      from rosidl_adapter.resource import expand_template\n'}
+[1.617372] (orientation_msg) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>\n'}
+[1.617443] (orientation_msg) StderrLine: {'line': b'      import em\n'}
+[1.617514] (orientation_msg) StderrLine: {'line': b'\n'}
+[1.617584] (orientation_msg) StderrLine: {'line': b"  ModuleNotFoundError: No module named 'em'\n"}
+[1.617655] (orientation_msg) StderrLine: {'line': b'\n'}
+[1.617725] (orientation_msg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.617795] (orientation_msg) StderrLine: {'line': b'  /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)\n'}
+[1.617866] (orientation_msg) StderrLine: {'line': b'  CMakeLists.txt:16 (rosidl_generate_interfaces)\n'}
+[1.617952] (orientation_msg) StderrLine: {'line': b'\n'}
+[1.618040] (orientation_msg) StderrLine: {'line': b'\x1b[0m\n'}
+[1.618115] (orientation_msg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.630240] (orientation_msg) CommandEnded: {'returncode': 1}
+[1.663435] (orientation_msg) JobEnded: {'identifier': 'orientation_msg', 'rc': 1}
+[1.673863] (-) EventReactorShutdown: {}

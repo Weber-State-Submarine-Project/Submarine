@@ -1,0 +1,25 @@
+[0.021s] Invoking command in '/home/submarine/ros_ws/build/ros_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/ros_bt -- -j4 -l4
+[0.207s] [ 50%] [32mBuilding CXX object CMakeFiles/sub_exec.dir/src/sub_exec.cpp.o[0m
+[42.745s] [100%] [32m[1mLinking CXX executable sub_exec[0m
+[49.938s] [100%] Built target sub_exec
+[49.963s] Invoked command in '/home/submarine/ros_ws/build/ros_bt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/ros_bt -- -j4 -l4
+[50.011s] Invoking command in '/home/submarine/ros_ws/build/ros_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/ros_bt
+[50.036s] -- Install configuration: ""
+[50.036s] -- Installing: /home/submarine/ros_ws/install/ros_bt/lib/ros_bt/sub_exec
+[50.077s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/ros_bt/lib/ros_bt/sub_exec" to ""
+[50.077s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ament_index/resource_index/package_run_dependencies/ros_bt
+[50.077s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ament_index/resource_index/parent_prefix_path/ros_bt
+[50.077s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/ament_prefix_path.sh
+[50.077s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/ament_prefix_path.dsv
+[50.077s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/path.sh
+[50.078s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/path.dsv
+[50.078s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.bash
+[50.078s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.sh
+[50.078s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.zsh
+[50.078s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.dsv
+[50.078s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.dsv
+[50.078s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ament_index/resource_index/packages/ros_bt
+[50.078s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/cmake/ros_btConfig.cmake
+[50.078s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/cmake/ros_btConfig-version.cmake
+[50.078s] -- Up-to-date: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.xml
+[50.081s] Invoked command in '/home/submarine/ros_ws/build/ros_bt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ryans_ws/install/esc_pkg:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/ros_bt

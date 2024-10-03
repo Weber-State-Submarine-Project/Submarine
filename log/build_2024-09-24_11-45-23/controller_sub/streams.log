@@ -1,0 +1,23 @@
+[0.031s] Invoking command in '/home/submarine/ros_ws/build/controller_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/controller_sub -- -j4 -l4
+[0.222s] [100%] Built target controller_sub
+[0.301s] Invoked command in '/home/submarine/ros_ws/build/controller_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/controller_sub -- -j4 -l4
+[0.493s] Invoking command in '/home/submarine/ros_ws/build/controller_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/controller_sub
+[0.546s] -- Install configuration: ""
+[0.546s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/lib/controller_sub/controller_sub
+[0.546s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.xml
+[0.548s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/ament_index/resource_index/package_run_dependencies/controller_sub
+[0.548s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/ament_index/resource_index/parent_prefix_path/controller_sub
+[0.549s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/ament_prefix_path.sh
+[0.550s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/ament_prefix_path.dsv
+[0.552s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/path.sh
+[0.553s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/path.dsv
+[0.553s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.bash
+[0.555s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.sh
+[0.555s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.zsh
+[0.555s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.dsv
+[0.556s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.dsv
+[0.556s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/ament_index/resource_index/packages/controller_sub
+[0.556s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/cmake/controller_subConfig.cmake
+[0.561s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/cmake/controller_subConfig-version.cmake
+[0.561s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.xml
+[0.571s] Invoked command in '/home/submarine/ros_ws/build/controller_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/controller_sub

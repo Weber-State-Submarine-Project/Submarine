@@ -1,0 +1,29 @@
+[  5%] Built target filter_extract_indices_node
+[ 11%] Built target filter_project_inliers_node
+[ 17%] Built target filter_passthrough_node
+[ 22%] Built target pcl_ros_tf
+[ 28%] Built target filter_radius_outlier_removal_node
+[ 34%] Built target filter_crop_box_node
+[ 40%] Built target filter_voxel_grid_node
+[ 45%] Built target filter_statistical_outlier_removal_node
+[ 51%] Built target pcd_to_pointcloud
+[ 54%] [32mBuilding CXX object CMakeFiles/pcd_to_pointcloud_lib.dir/tools/pcd_to_pointcloud.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/pointcloud_to_pcd_lib.dir/tools/pointcloud_to_pcd.cpp.o[0m
+[ 62%] Built target pointcloud_to_pcd
+[ 68%] [32mBuilding CXX object tests/filters/CMakeFiles/dummy_topics.dir/dummy_topics.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/extract_indices.cpp.o[0m
+[ 71%] [32m[1mLinking CXX shared library libpcd_to_pointcloud_lib.so[0m
+[ 71%] Built target pcd_to_pointcloud_lib
+[ 74%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/filter.cpp.o[0m
+[ 77%] [32m[1mLinking CXX shared library libdummy_topics.so[0m
+[ 77%] Built target dummy_topics
+[ 80%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/passthrough.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/project_inliers.cpp.o[0m
+[ 85%] [32m[1mLinking CXX shared library libpointcloud_to_pcd_lib.so[0m
+[ 85%] Built target pointcloud_to_pcd_lib
+[ 88%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/radius_outlier_removal.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/statistical_outlier_removal.cpp.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/voxel_grid.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/pcl_ros_filters.dir/src/pcl_ros/filters/crop_box.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libpcl_ros_filters.so[0m
+[100%] Built target pcl_ros_filters

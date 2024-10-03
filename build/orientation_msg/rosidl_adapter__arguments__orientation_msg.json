@@ -1,0 +1,7 @@
+{
+  "package_name": "orientation_msg",
+  "non_idl_tuples": [
+    "/home/submarine/ros_ws/src/orientation_msg:msg/Orientation.msg",
+    "/home/submarine/ros_ws/src/orientation_msg:msg/Esc.msg"
+  ]
+}

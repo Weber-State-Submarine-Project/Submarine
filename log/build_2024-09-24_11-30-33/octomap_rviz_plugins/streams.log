@@ -1,0 +1,95 @@
+[0.025s] Invoking command in '/home/submarine/ros_ws/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/octomap_rviz_plugins -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/octomap_rviz_plugins
+[0.818s] -- The C compiler identification is GNU 13.2.0
+[1.400s] -- The CXX compiler identification is GNU 13.2.0
+[1.443s] -- Detecting C compiler ABI info
+[1.724s] -- Detecting C compiler ABI info - done
+[1.738s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.739s] -- Detecting C compile features
+[1.740s] -- Detecting C compile features - done
+[1.762s] -- Detecting CXX compiler ABI info
+[2.051s] -- Detecting CXX compiler ABI info - done
+[2.062s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.062s] -- Detecting CXX compile features
+[2.063s] -- Detecting CXX compile features - done
+[2.079s] -- Found ament_cmake_auto: 2.5.2 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[2.510s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.275s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.311s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.353s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.400s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.744s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.753s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.970s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[4.013s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[4.074s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.394s] -- Setting OGRE_DIR to: '/opt/ros/jazzy/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[4.402s] -- Found OGRE
+[4.403s] --   static     : OFF
+[4.403s] --   components : MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[4.403s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[4.403s] --   media      : /opt/ros/jazzy/opt/rviz_ogre_vendor/share/OGRE/Media
+[4.403s] -- OGRE_LIBRARIES: OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[4.403s] -- OGRE_LIBRARY_DIRS: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib
+[4.403s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[4.403s] -- OGRE_PLUGIN_DIR: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/OGRE
+[4.403s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[4.403s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[4.404s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[4.404s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/jazzy/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[4.469s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[4.501s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+[4.924s] -- Found X11: /usr/include   
+[4.924s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[5.163s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[5.166s] -- Looking for gethostbyname
+[5.380s] -- Looking for gethostbyname - found
+[5.380s] -- Looking for connect
+[5.578s] -- Looking for connect - found
+[5.578s] -- Looking for remove
+[5.813s] -- Looking for remove - found
+[5.814s] -- Looking for shmat
+[6.051s] -- Looking for shmat - found
+[6.052s] -- Looking for IceConnectionNumber in ICE
+[6.309s] -- Looking for IceConnectionNumber in ICE - found
+[6.791s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[7.210s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[7.214s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[7.215s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[7.296s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.399s] -- Added test 'copyright' to check source files copyright and LICENSE
+[7.405s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.405s] -- Configured cppcheck include dirs: /home/submarine/ros_ws/src/octomap_rviz_plugins/include
+[7.405s] -- Configured cppcheck exclude dirs and/or files: 
+[7.410s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[7.411s] -- Configured cpplint exclude dirs and/or files: 
+[7.415s] -- Added test 'lint_cmake' to check CMake code style
+[7.420s] -- Added test 'uncrustify' to check C / C++ code style
+[7.421s] -- Configured uncrustify additional arguments: 
+[7.423s] -- Added test 'xmllint' to check XML markup files
+[7.432s] -- Configuring done (7.3s)
+[7.559s] -- Generating done (0.1s)
+[7.566s] -- Build files have been written to: /home/submarine/ros_ws/build/octomap_rviz_plugins
+[7.616s] Invoked command in '/home/submarine/ros_ws/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/octomap_rviz_plugins -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/octomap_rviz_plugins
+[7.622s] Invoking command in '/home/submarine/ros_ws/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/octomap_rviz_plugins -- -j4 -l4
+[7.768s] [  0%] Built target octomap_rviz_plugins_autogen_timestamp_deps
+[7.828s] [ 10%] [34m[1mAutomatic MOC for target octomap_rviz_plugins[0m
+[7.971s] [ 10%] Built target octomap_rviz_plugins_autogen
+[8.005s] [ 20%] [34m[1mGenerating include/octomap_rviz_plugins/moc_occupancy_map_display.cpp[0m
+[8.007s] [ 30%] [34m[1mGenerating include/octomap_rviz_plugins/moc_occupancy_grid_display.cpp[0m
+[8.113s] [ 40%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/include/octomap_rviz_plugins/moc_occupancy_grid_display.cpp.o[0m
+[8.119s] [ 50%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/octomap_rviz_plugins_autogen/mocs_compilation.cpp.o[0m
+[8.130s] [ 60%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/include/octomap_rviz_plugins/moc_occupancy_map_display.cpp.o[0m
+[8.135s] [ 70%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/src/occupancy_grid_display.cpp.o[0m
+[8.261s] [ 80%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/src/occupancy_map_display.cpp.o[0m
+[12.435s] In file included from [01m[K/home/submarine/ros_ws/build/octomap_rviz_plugins/include/octomap_rviz_plugins/../../../../src/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_map_display.hpp:41[m[K,
+[12.435s]                  from [01m[K/home/submarine/ros_ws/build/octomap_rviz_plugins/include/octomap_rviz_plugins/moc_occupancy_map_display.cpp:10[m[K:
+[12.435s] [01m[K/opt/ros/jazzy/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h:2:62:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: /opt/ros/jazzy/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h is deprecated, migrate to Ogre.h[m[K’
+[12.435s]     2 | #pragma message( __FILE__ " is deprecated, migrate to Ogre.h"[01;36m[K)[m[K
+[12.435s]       |                                                              [01;36m[K^[m[K
+[14.147s] In file included from [01m[K/home/submarine/ros_ws/src/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_map_display.hpp:41[m[K,
+[14.147s]                  from [01m[K/home/submarine/ros_ws/src/octomap_rviz_plugins/src/occupancy_map_display.cpp:30[m[K:
+[14.147s] [01m[K/opt/ros/jazzy/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h:2:62:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: /opt/ros/jazzy/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h is deprecated, migrate to Ogre.h[m[K’
+[14.147s]     2 | #pragma message( __FILE__ " is deprecated, migrate to Ogre.h"[01;36m[K)[m[K
+[14.148s]       |                                                              [01;36m[K^[m[K
+[70.941s] [ 90%] [32m[1mLinking CXX shared library liboctomap_rviz_plugins.so[0m
+[77.397s] [100%] Built target octomap_rviz_plugins

@@ -1,0 +1,5 @@
+[  0%] Built target octomap_rviz_plugins_autogen_timestamp_deps
+[ 10%] Built target octomap_rviz_plugins_autogen
+gmake[2]: *** No rule to make target '/opt/ros/jazzy/lib/libfastcdr.so.2.2.2', needed by 'liboctomap_rviz_plugins.so'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/octomap_rviz_plugins.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -25,10 +25,11 @@ find_package(nav2_util REQUIRED)
 find_package(octomap_msgs REQUIRED)
 find_package(octomap REQUIRED)
 find_package(octomap_server REQUIRED)
+find_package(orientation_msg REQUIRED)
 
 
 add_executable(sub_exec src/sub_exec.cpp)
-ament_target_dependencies(sub_exec rclcpp behaviortree_cpp behaviortree_ros2 geometry_msgs nav2_msgs nav_msgs std_msgs sensor_msgs tf2 tf2_ros tf2_geometry_msgs nav2_util octomap_msgs octomap octomap_server)
+ament_target_dependencies(sub_exec rclcpp behaviortree_cpp behaviortree_ros2 geometry_msgs nav2_msgs nav_msgs std_msgs sensor_msgs tf2 tf2_ros tf2_geometry_msgs nav2_util octomap_msgs octomap octomap_server orientation_msg)
 
 
 install(TARGETS

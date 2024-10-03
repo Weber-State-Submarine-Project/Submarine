@@ -1,0 +1,15 @@
+/home/submarine/ros_ws/install/perception_pcl/share/ament_index/resource_index/package_run_dependencies/perception_pcl
+/home/submarine/ros_ws/install/perception_pcl/share/ament_index/resource_index/parent_prefix_path/perception_pcl
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/environment/ament_prefix_path.sh
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/environment/ament_prefix_path.dsv
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/environment/path.sh
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/environment/path.dsv
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/local_setup.bash
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/local_setup.sh
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/local_setup.zsh
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/local_setup.dsv
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/package.dsv
+/home/submarine/ros_ws/install/perception_pcl/share/ament_index/resource_index/packages/perception_pcl
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/cmake/perception_pclConfig.cmake
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/cmake/perception_pclConfig-version.cmake
+/home/submarine/ros_ws/install/perception_pcl/share/perception_pcl/package.xml

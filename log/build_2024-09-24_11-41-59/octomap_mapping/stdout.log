@@ -1,0 +1,37 @@
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/submarine/ros_ws/build/octomap_mapping
+-- Install configuration: ""
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/ament_index/resource_index/package_run_dependencies/octomap_mapping
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/ament_index/resource_index/parent_prefix_path/octomap_mapping
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/environment/ament_prefix_path.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/environment/ament_prefix_path.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/environment/path.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/environment/path.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/local_setup.bash
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/local_setup.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/local_setup.zsh
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/local_setup.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/package.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/ament_index/resource_index/packages/octomap_mapping
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/cmake/octomap_mappingConfig.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/cmake/octomap_mappingConfig-version.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_mapping/share/octomap_mapping/package.xml

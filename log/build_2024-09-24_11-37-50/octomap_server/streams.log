@@ -1,0 +1,39 @@
+[0.026s] Invoking command in '/home/submarine/ros_ws/build/octomap_server': CMAKE_PREFIX_PATH=/home/submarine/ros_ws/install/pcl_ros:/home/submarine/ros_ws/install/ros_bt:/home/submarine/ros_ws/install/ros2_sub:/home/submarine/ros_ws/install/perception_pcl:/home/submarine/ros_ws/install/octomap_mapping:/home/submarine/ros_ws/install/octomap_server:/home/submarine/ros_ws/install/octomap_rviz_plugins:/home/submarine/ros_ws/install/controller_sub:/home/submarine/ros_ws/install/btcpp_ros2_samples:/home/submarine/ros_ws/install/behaviortree_ros2:/home/submarine/ros_ws/install/btcpp_ros2_interfaces:/home/submarine/ros_ws/install/behaviortree_cpp:/home/submarine/ryans_ws/install/orientation_msg:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/submarine/ros_ws/install/pcl_ros/lib:/home/submarine/ros_ws/install/octomap_server/lib:/home/submarine/ros_ws/install/octomap_rviz_plugins/lib:/home/submarine/ros_ws/install/behaviortree_ros2/lib:/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib:/home/submarine/ros_ws/install/behaviortree_cpp/lib:/home/submarine/ryans_ws/install/orientation_msg/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/submarine/ros_ws/build/octomap_server -- -j4 -l4
+[0.208s] [  3%] [32mBuilding CXX object CMakeFiles/octomap_server_node.dir/rclcpp_components/node_main_octomap_server_node.cpp.o[0m
+[0.233s] [  7%] [32mBuilding CXX object CMakeFiles/octomap_server_static.dir/src/octomap_server_static.cpp.o[0m
+[0.234s] [ 11%] [32mBuilding CXX object CMakeFiles/octomap_server_static_node.dir/rclcpp_components/node_main_octomap_server_static_node.cpp.o[0m
+[0.240s] [ 15%] [32mBuilding CXX object CMakeFiles/octomap_server_multilayer_node.dir/rclcpp_components/node_main_octomap_server_multilayer_node.cpp.o[0m
+[8.965s] [ 19%] [32m[1mLinking CXX executable octomap_server_multilayer_node[0m
+[9.405s] [ 19%] Built target octomap_server_multilayer_node
+[9.461s] [ 23%] [32mBuilding CXX object CMakeFiles/tracking_octomap_server_node.dir/rclcpp_components/node_main_tracking_octomap_server_node.cpp.o[0m
+[9.505s] [ 26%] [32m[1mLinking CXX executable octomap_server_static_node[0m
+[9.799s] [ 26%] Built target octomap_server_static_node
+[9.852s] [ 30%] [32mBuilding CXX object CMakeFiles/color_octomap_server_node.dir/rclcpp_components/node_main_color_octomap_server_node.cpp.o[0m
+[9.937s] [ 34%] [32m[1mLinking CXX executable octomap_server_node[0m
+[10.288s] [ 34%] Built target octomap_server_node
+[10.342s] [ 38%] [32mBuilding CXX object CMakeFiles/octomap_saver_node.dir/rclcpp_components/node_main_octomap_saver_node.cpp.o[0m
+[13.558s] [ 42%] [32m[1mLinking CXX shared library liboctomap_server_static.so[0m
+[15.434s] [ 42%] Built target octomap_server_static
+[15.494s] [ 46%] [32mBuilding CXX object CMakeFiles/octomap_server.dir/src/octomap_server.cpp.o[0m
+[18.492s] [ 50%] [32m[1mLinking CXX executable tracking_octomap_server_node[0m
+[18.848s] [ 53%] [32m[1mLinking CXX executable color_octomap_server_node[0m
+[18.887s] [ 53%] Built target tracking_octomap_server_node
+[19.176s] [ 53%] Built target color_octomap_server_node
+[19.272s] [ 57%] [32m[1mLinking CXX executable octomap_saver_node[0m
+[19.536s] [ 57%] Built target octomap_saver_node
+[49.450s] [ 61%] [32m[1mLinking CXX shared library liboctomap_server.so[0m
+[58.916s] [ 61%] Built target octomap_server
+[58.965s] [ 69%] [32mBuilding CXX object CMakeFiles/octomap_server_multilayer.dir/src/octomap_server.cpp.o[0m
+[58.965s] [ 69%] [32mBuilding CXX object CMakeFiles/octomap_server_multilayer.dir/src/octomap_server_multilayer.cpp.o[0m
+[94.790s] [ 73%] [32m[1mLinking CXX shared library liboctomap_server_multilayer.so[0m
+[104.909s] [ 73%] Built target octomap_server_multilayer
+[104.957s] [ 80%] [32mBuilding CXX object CMakeFiles/tracking_octomap_server.dir/src/tracking_octomap_server.cpp.o[0m
+[104.957s] [ 80%] [32mBuilding CXX object CMakeFiles/tracking_octomap_server.dir/src/octomap_server.cpp.o[0m
+[140.467s] [ 84%] [32m[1mLinking CXX shared library libtracking_octomap_server.so[0m
+[150.338s] [ 84%] Built target tracking_octomap_server
+[150.385s] [ 88%] [32mBuilding CXX object CMakeFiles/color_octomap_server.dir/src/octomap_server.cpp.o[0m
+[184.459s] [ 92%] [32m[1mLinking CXX shared library libcolor_octomap_server.so[0m
+[194.259s] [ 92%] Built target color_octomap_server
+[194.305s] [ 96%] [32mBuilding CXX object CMakeFiles/octomap_saver.dir/src/octomap_saver.cpp.o[0m
+[202.381s] [100%] [32m[1mLinking CXX shared library liboctomap_saver.so[0m
+[203.680s] [100%] Built target octomap_saver

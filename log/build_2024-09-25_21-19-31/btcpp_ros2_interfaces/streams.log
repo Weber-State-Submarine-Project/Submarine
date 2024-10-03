@@ -1,0 +1,209 @@
+[0.036s] Invoking command in '/home/submarine/ros_ws/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/btcpp_ros2_interfaces -- -j4 -l4
+[0.181s] [  1%] Built target btcpp_ros2_interfaces__rosidl_generator_type_description
+[0.279s] [ 22%] Built target btcpp_ros2_interfaces__rosidl_generator_c
+[0.294s] [ 24%] Built target btcpp_ros2_interfaces__cpp
+[0.298s] [ 24%] Built target ament_cmake_python_copy_btcpp_ros2_interfaces
+[0.402s] [ 33%] Built target btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c
+[0.419s] [ 42%] Built target btcpp_ros2_interfaces__rosidl_typesupport_c
+[0.428s] [ 51%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_c
+[0.562s] [ 61%] Built target btcpp_ros2_interfaces__rosidl_typesupport_cpp
+[0.563s] [ 70%] Built target btcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp
+[0.568s] [ 79%] Built target btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.658s] [ 79%] Built target btcpp_ros2_interfaces
+[0.732s] [ 81%] Built target btcpp_ros2_interfaces__py
+[0.790s] [ 88%] Built target btcpp_ros2_interfaces__rosidl_generator_py
+[0.877s] [ 92%] Built target btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c
+[0.893s] [ 96%] Built target btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c
+[0.897s] [100%] Built target btcpp_ros2_interfaces_s__rosidl_typesupport_c
+[1.022s] running egg_info
+[1.089s] writing btcpp_ros2_interfaces.egg-info/PKG-INFO
+[1.089s] writing dependency_links to btcpp_ros2_interfaces.egg-info/dependency_links.txt
+[1.089s] writing top-level names to btcpp_ros2_interfaces.egg-info/top_level.txt
+[1.205s] reading manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'
+[1.205s] writing manifest file 'btcpp_ros2_interfaces.egg-info/SOURCES.txt'
+[1.309s] [100%] Built target ament_cmake_python_build_btcpp_ros2_interfaces_egg
+[1.694s] Invoked command in '/home/submarine/ros_ws/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --build /home/submarine/ros_ws/build/btcpp_ros2_interfaces -- -j4 -l4
+[2.311s] Invoking command in '/home/submarine/ros_ws/build/btcpp_ros2_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/btcpp_ros2_interfaces
+[2.333s] -- Install configuration: ""
+[2.333s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/ament_index/resource_index/rosidl_interfaces/btcpp_ros2_interfaces
+[2.334s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/msg/NodeStatus.json
+[2.334s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/ExecuteTree.json
+[2.335s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/Sleep.json
+[2.335s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.336s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.336s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.336s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.h
+[2.337s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__description.c
+[2.338s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.h
+[2.338s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__functions.c
+[2.339s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__functions.c
+[2.340s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__struct.h
+[2.340s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__functions.h
+[2.341s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__struct.h
+[2.341s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__description.c
+[2.341s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.c
+[2.342s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__functions.h
+[2.343s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.c
+[2.343s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/execute_tree.h
+[2.344s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/sleep.h
+[2.344s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.344s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.345s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__description.c
+[2.348s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.c
+[2.348s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__struct.h
+[2.348s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.h
+[2.348s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__functions.c
+[2.348s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__functions.h
+[2.349s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/node_status.h
+[2.349s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.349s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/library_path.sh
+[2.349s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/library_path.dsv
+[2.349s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_generator_c.so
+[2.349s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.349s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.349s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.349s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_fastrtps_c.h
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_fastrtps_c.h
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_fastrtps_c.h
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.350s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_introspection_c.h
+[2.351s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_introspection_c.h
+[2.351s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.c
+[2.354s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.c
+[2.354s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.354s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.354s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_introspection_c.h
+[2.354s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.c
+[2.354s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_introspection_c.so
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_c.so
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.hpp
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__builder.hpp
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__struct.hpp
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__struct.hpp
+[2.355s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__builder.hpp
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__traits.hpp
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__traits.hpp
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.hpp
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/execute_tree.hpp
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/sleep.hpp
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__traits.hpp
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__struct.hpp
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__builder.hpp
+[2.356s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.hpp
+[2.357s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/node_status.hpp
+[2.357s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.360s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.360s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.360s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.360s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/dds_fastrtps
+[2.360s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_fastrtps_cpp.hpp
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_fastrtps_cpp.hpp
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/dds_fastrtps
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_fastrtps_cpp.hpp
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail
+[2.361s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__rosidl_typesupport_introspection_cpp.hpp
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__type_support.cpp
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/execute_tree__rosidl_typesupport_introspection_cpp.hpp
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/action/detail/sleep__type_support.cpp
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__type_support.cpp
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/include/btcpp_ros2_interfaces/btcpp_ros2_interfaces/msg/detail/node_status__rosidl_typesupport_introspection_cpp.hpp
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_typesupport_cpp.so
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/pythonpath.sh
+[2.362s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/pythonpath.dsv
+[2.363s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.2.0-py3.12.egg-info
+[2.363s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.2.0-py3.12.egg-info/SOURCES.txt
+[2.366s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.2.0-py3.12.egg-info/PKG-INFO
+[2.366s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.2.0-py3.12.egg-info/dependency_links.txt
+[2.366s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces-0.2.0-py3.12.egg-info/top_level.txt
+[2.366s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces
+[2.366s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action
+[2.366s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_sleep_s.c
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_execute_tree.py
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/__init__.py
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_execute_tree_s.c
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action/_sleep.py
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_c.so
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_c.c
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/__init__.py
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c.so
+[2.367s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/_btcpp_ros2_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.368s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg
+[2.368s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg/_node_status.py
+[2.368s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg/__init__.py
+[2.368s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg/_node_status_s.c
+[2.419s] Listing '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces'...
+[2.420s] Listing '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/action'...
+[2.420s] Listing '/home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/msg'...
+[2.441s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[2.441s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_introspection_c.so
+[2.441s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/python3.12/site-packages/btcpp_ros2_interfaces/btcpp_ros2_interfaces_s__rosidl_typesupport_c.so
+[2.441s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/lib/libbtcpp_ros2_interfaces__rosidl_generator_py.so
+[2.442s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/msg/NodeStatus.idl
+[2.442s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/ExecuteTree.idl
+[2.442s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/Sleep.idl
+[2.442s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/msg/NodeStatus.msg
+[2.443s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/ExecuteTree.action
+[2.444s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/action/Sleep.action
+[2.444s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/ament_index/resource_index/package_run_dependencies/btcpp_ros2_interfaces
+[2.444s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/ament_index/resource_index/parent_prefix_path/btcpp_ros2_interfaces
+[2.444s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/ament_prefix_path.sh
+[2.444s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/ament_prefix_path.dsv
+[2.445s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/path.sh
+[2.445s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/environment/path.dsv
+[2.445s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.bash
+[2.445s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.sh
+[2.446s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.zsh
+[2.446s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/local_setup.dsv
+[2.446s] -- Installing: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.dsv
+[2.446s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/ament_index/resource_index/packages/btcpp_ros2_interfaces
+[2.446s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_cExport.cmake
+[2.446s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.446s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.446s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.446s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.447s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.447s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_cExport.cmake
+[2.447s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.448s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_cppExport.cmake
+[2.449s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.453s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.453s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.454s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.454s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_cppExport.cmake
+[2.454s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.454s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_pyExport.cmake
+[2.454s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/export_btcpp_ros2_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.454s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.454s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.454s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.455s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.455s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.455s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.455s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.455s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfacesConfig.cmake
+[2.455s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/cmake/btcpp_ros2_interfacesConfig-version.cmake
+[2.455s] -- Up-to-date: /home/submarine/ros_ws/install/btcpp_ros2_interfaces/share/btcpp_ros2_interfaces/package.xml
+[2.461s] Invoked command in '/home/submarine/ros_ws/build/btcpp_ros2_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(bluerobotics-ping) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(bluerobotics-ping) /usr/bin/cmake --install /home/submarine/ros_ws/build/btcpp_ros2_interfaces

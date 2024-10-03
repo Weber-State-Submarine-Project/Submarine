@@ -1,0 +1,56 @@
+[0.025s] Invoking command in '/home/submarine/ros_ws/build/controller_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/controller_sub -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/controller_sub
+[0.823s] -- The C compiler identification is GNU 13.2.0
+[1.405s] -- The CXX compiler identification is GNU 13.2.0
+[1.448s] -- Detecting C compiler ABI info
+[1.729s] -- Detecting C compiler ABI info - done
+[1.744s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.745s] -- Detecting C compile features
+[1.747s] -- Detecting C compile features - done
+[1.771s] -- Detecting CXX compiler ABI info
+[2.057s] -- Detecting CXX compiler ABI info - done
+[2.073s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.073s] -- Detecting CXX compile features
+[2.074s] -- Detecting CXX compile features - done
+[2.092s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.548s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.896s] -- Found rclcpp: 28.1.3 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.026s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[3.065s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.127s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.170s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.379s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.393s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.641s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.687s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.733s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.964s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.383s] -- Configuring done (4.2s)
+[4.410s] -- Generating done (0.0s)
+[4.412s] -- Build files have been written to: /home/submarine/ros_ws/build/controller_sub
+[4.441s] Invoked command in '/home/submarine/ros_ws/build/controller_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/controller_sub -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/controller_sub
+[4.442s] Invoking command in '/home/submarine/ros_ws/build/controller_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/controller_sub -- -j4 -l4
+[4.578s] [ 50%] [32mBuilding CXX object CMakeFiles/controller_sub.dir/src/controller_sub.cpp.o[0m
+[49.762s] [100%] [32m[1mLinking CXX executable controller_sub[0m
+[52.117s] [100%] Built target controller_sub
+[52.173s] Invoked command in '/home/submarine/ros_ws/build/controller_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/controller_sub -- -j4 -l4
+[52.305s] Invoking command in '/home/submarine/ros_ws/build/controller_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/controller_sub
+[52.328s] -- Install configuration: ""
+[52.329s] -- Installing: /home/submarine/ros_ws/install/controller_sub/lib/controller_sub/controller_sub
+[52.341s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/controller_sub/lib/controller_sub/controller_sub" to ""
+[52.342s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.xml
+[52.344s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/ament_index/resource_index/package_run_dependencies/controller_sub
+[52.345s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/ament_index/resource_index/parent_prefix_path/controller_sub
+[52.346s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/ament_prefix_path.sh
+[52.347s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/ament_prefix_path.dsv
+[52.348s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/path.sh
+[52.349s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/environment/path.dsv
+[52.349s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.bash
+[52.350s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.sh
+[52.351s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.zsh
+[52.352s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/local_setup.dsv
+[52.354s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.dsv
+[52.354s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/ament_index/resource_index/packages/controller_sub
+[52.355s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/cmake/controller_subConfig.cmake
+[52.356s] -- Installing: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/cmake/controller_subConfig-version.cmake
+[52.356s] -- Up-to-date: /home/submarine/ros_ws/install/controller_sub/share/controller_sub/package.xml
+[52.364s] Invoked command in '/home/submarine/ros_ws/build/controller_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/controller_sub

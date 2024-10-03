@@ -1,0 +1,10 @@
+In file included from [01m[K/home/submarine/ros_ws/build/octomap_rviz_plugins/include/octomap_rviz_plugins/../../../../src/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_map_display.hpp:41[m[K,
+                 from [01m[K/home/submarine/ros_ws/build/octomap_rviz_plugins/include/octomap_rviz_plugins/moc_occupancy_map_display.cpp:10[m[K:
+[01m[K/opt/ros/jazzy/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h:2:62:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: /opt/ros/jazzy/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h is deprecated, migrate to Ogre.h[m[K’
+    2 | #pragma message( __FILE__ " is deprecated, migrate to Ogre.h"[01;36m[K)[m[K
+      |                                                              [01;36m[K^[m[K
+In file included from [01m[K/home/submarine/ros_ws/src/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_map_display.hpp:41[m[K,
+                 from [01m[K/home/submarine/ros_ws/src/octomap_rviz_plugins/src/occupancy_map_display.cpp:30[m[K:
+[01m[K/opt/ros/jazzy/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h:2:62:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: /opt/ros/jazzy/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h is deprecated, migrate to Ogre.h[m[K’
+    2 | #pragma message( __FILE__ " is deprecated, migrate to Ogre.h"[01;36m[K)[m[K
+      |                                                              [01;36m[K^[m[K

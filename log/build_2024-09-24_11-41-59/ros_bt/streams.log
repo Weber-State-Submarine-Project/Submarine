@@ -1,0 +1,125 @@
+[0.018s] Invoking command in '/home/submarine/ros_ws/build/ros_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/ros_bt -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/ros_bt
+[0.053s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.534s] -- Found rclcpp: 28.1.3 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.571s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.584s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.601s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.621s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.710s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.736s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.902s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.041s] -- Found rclcpp_action: 28.1.3 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[1.121s] -- Found rclcpp_components: 28.1.3 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.167s] -- Found behaviortree_cpp: 4.6.2 (/opt/ros/jazzy/share/behaviortree_cpp/cmake)
+[1.176s] -- Found behaviortree_ros2: 0.2.0 (/home/submarine/ros_ws/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+[1.230s] -- Found parameter_traits: 0.3.8 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[1.240s] -- Found rclcpp_lifecycle: 28.1.3 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[1.302s] -- Found nav2_msgs: 1.3.1 (/opt/ros/jazzy/share/nav2_msgs/cmake)
+[1.534s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.573s] -- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)
+[1.581s] -- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.651s] -- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[1.652s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.653s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.656s] -- Found nav2_util: 1.3.1 (/opt/ros/jazzy/share/nav2_util/cmake)
+[1.728s] -- Found octomap_msgs: 2.0.0 (/opt/ros/jazzy/share/octomap_msgs/cmake)
+[1.766s] -- Found octomap_server: 2.3.0 (/home/submarine/ros_ws/install/octomap_server/share/octomap_server/cmake)
+[1.937s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[1.938s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.938s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.938s]   cmake_policy command to set the policy and suppress this warning.
+[1.938s] 
+[1.938s]   CMake variable FLANN_ROOT is set to:
+[1.938s] 
+[1.938s]     /usr
+[1.938s] 
+[1.938s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.938s]   .cmake module might still use it.
+[1.938s] Call Stack (most recent call first):
+[1.938s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[1.939s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[1.939s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[1.939s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.939s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.939s]   /home/submarine/ros_ws/install/octomap_server/share/octomap_server/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.942s]   /home/submarine/ros_ws/install/octomap_server/share/octomap_server/cmake/octomap_serverConfig.cmake:41 (include)
+[1.942s]   CMakeLists.txt:27 (find_package)
+[1.942s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.942s] [0m
+[1.943s] -- Found flann version 1.9.2
+[2.676s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[2.677s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[5.955s] -- Checking for module 'libusb-1.0'
+[5.995s] --   Found libusb-1.0, version 1.0.27
+[6.091s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[6.096s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.284s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.284s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[6.284s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[6.289s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+[7.165s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.194s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[8.647s] -- Found Qhull version 8.0.2
+[10.256s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[11.820s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[11.824s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[11.827s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[11.830s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[11.834s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[11.837s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[11.838s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[11.840s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[11.844s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[11.846s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[11.851s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[11.854s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[11.857s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[11.860s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[11.866s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[11.869s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[11.870s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[11.875s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[11.877s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[11.881s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[11.884s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[11.887s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[11.887s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[11.890s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[11.895s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[12.276s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[12.715s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.715s] -- Configured cppcheck include dirs: 
+[12.715s] -- Configured cppcheck exclude dirs and/or files: 
+[12.723s] -- Added test 'lint_cmake' to check CMake code style
+[12.730s] -- Added test 'uncrustify' to check C / C++ code style
+[12.731s] -- Configured uncrustify additional arguments: 
+[12.736s] -- Added test 'xmllint' to check XML markup files
+[12.746s] -- Configuring done (12.7s)
+[13.065s] -- Generating done (0.2s)
+[13.081s] -- Build files have been written to: /home/submarine/ros_ws/build/ros_bt
+[13.214s] Invoked command in '/home/submarine/ros_ws/build/ros_bt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/ros_bt -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/ros_bt
+[13.222s] Invoking command in '/home/submarine/ros_ws/build/ros_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/ros_bt -- -j4 -l4
+[13.530s] [ 50%] [32mBuilding CXX object CMakeFiles/sub_exec.dir/src/sub_exec.cpp.o[0m
+[80.533s] [100%] [32m[1mLinking CXX executable sub_exec[0m
+[87.575s] [100%] Built target sub_exec
+[87.600s] Invoked command in '/home/submarine/ros_ws/build/ros_bt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/submarine/ros_ws/build/ros_bt -- -j4 -l4
+[87.649s] Invoking command in '/home/submarine/ros_ws/build/ros_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/ros_bt
+[87.668s] -- Install configuration: ""
+[87.668s] -- Installing: /home/submarine/ros_ws/install/ros_bt/lib/ros_bt/sub_exec
+[87.702s] -- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/ros_bt/lib/ros_bt/sub_exec" to ""
+[87.702s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ament_index/resource_index/package_run_dependencies/ros_bt
+[87.702s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ament_index/resource_index/parent_prefix_path/ros_bt
+[87.702s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/ament_prefix_path.sh
+[87.702s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/ament_prefix_path.dsv
+[87.703s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/path.sh
+[87.703s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/environment/path.dsv
+[87.703s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.bash
+[87.703s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.sh
+[87.703s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.zsh
+[87.703s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/local_setup.dsv
+[87.704s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.dsv
+[87.704s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ament_index/resource_index/packages/ros_bt
+[87.704s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/cmake/ros_btConfig.cmake
+[87.704s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/cmake/ros_btConfig-version.cmake
+[87.704s] -- Installing: /home/submarine/ros_ws/install/ros_bt/share/ros_bt/package.xml
+[87.708s] Invoked command in '/home/submarine/ros_ws/build/ros_bt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/submarine/ros_ws/build/ros_bt

@@ -1,0 +1,39 @@
+[  0%] Built target octomap_rviz_plugins_autogen_timestamp_deps
+[ 10%] Built target octomap_rviz_plugins_autogen
+[100%] Built target octomap_rviz_plugins
+-- Install configuration: ""
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/plugins_description.xml
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/include
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/include/octomap_rviz_plugins
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_grid_display.hpp
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_map_display.hpp
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/library_path.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/library_path.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/lib/liboctomap_rviz_plugins.so
+-- Set non-toolchain portion of runtime path of "/home/submarine/ros_ws/install/octomap_rviz_plugins/lib/liboctomap_rviz_plugins.so" to ""
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyMapStamped.png
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyGrid.png
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/ColorOccupancyGrid.png
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyGridStamped.png
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyMap.png
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/ament_index/resource_index/package_run_dependencies/octomap_rviz_plugins
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/ament_index/resource_index/parent_prefix_path/octomap_rviz_plugins
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/ament_prefix_path.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/ament_prefix_path.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/path.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/path.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.bash
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.sh
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.zsh
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.dsv
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/ament_index/resource_index/packages/octomap_rviz_plugins
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/ament_index/resource_index/rviz_common__pluginlib__plugin/octomap_rviz_plugins
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig-version.cmake
+-- Installing: /home/submarine/ros_ws/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.xml

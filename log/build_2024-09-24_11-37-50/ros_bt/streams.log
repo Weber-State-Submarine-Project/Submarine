@@ -1,0 +1,44 @@
+[0.084s] Invoking command in '/home/submarine/ros_ws/build/ros_bt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/ros_bt -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/ros_bt
+[0.119s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.567s] -- Found rclcpp: 28.1.3 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.607s] -- Found rosidl_generator_c: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.630s] -- Found rosidl_generator_cpp: 4.6.3 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.654s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.681s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.823s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.830s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.965s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.152s] -- Found rclcpp_action: 28.1.3 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[1.301s] -- Found rclcpp_components: 28.1.3 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.357s] -- Found behaviortree_cpp: 4.6.2 (/opt/ros/jazzy/share/behaviortree_cpp/cmake)
+[1.362s] -- Found behaviortree_ros2: 0.2.0 (/home/submarine/ros_ws/install/behaviortree_ros2/share/behaviortree_ros2/cmake)
+[1.405s] -- Found parameter_traits: 0.3.8 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[1.418s] -- Found rclcpp_lifecycle: 28.1.3 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[1.475s] -- Found nav2_msgs: 1.3.1 (/opt/ros/jazzy/share/nav2_msgs/cmake)
+[1.837s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.880s] -- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)
+[1.887s] -- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.956s] -- Found tf2_geometry_msgs: 0.36.4 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[1.964s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.967s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.972s] -- Found nav2_util: 1.3.1 (/opt/ros/jazzy/share/nav2_util/cmake)
+[2.105s] -- Found octomap_msgs: 2.0.0 (/opt/ros/jazzy/share/octomap_msgs/cmake)
+[2.222s] [31mCMake Error at CMakeLists.txt:27 (find_package):
+[2.222s]   By not providing "Findoctomap_server.cmake" in CMAKE_MODULE_PATH this
+[2.223s]   project has asked CMake to find a package configuration file provided by
+[2.223s]   "octomap_server", but CMake did not find one.
+[2.223s] 
+[2.223s]   Could not find a package configuration file provided by "octomap_server"
+[2.223s]   with any of the following names:
+[2.223s] 
+[2.223s]     octomap_serverConfig.cmake
+[2.223s]     octomap_server-config.cmake
+[2.223s] 
+[2.224s]   Add the installation prefix of "octomap_server" to CMAKE_PREFIX_PATH or set
+[2.224s]   "octomap_server_DIR" to a directory containing one of the above files.  If
+[2.224s]   "octomap_server" provides a separate development package or SDK, be sure it
+[2.224s]   has been installed.
+[2.224s] 
+[2.224s] [0m
+[2.228s] -- Configuring incomplete, errors occurred!
+[2.279s] Invoked command in '/home/submarine/ros_ws/build/ros_bt' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/submarine/ros_ws/install/speed_sensor:/home/submarine/ros_ws/install/sonars:/home/submarine/ros_ws/install/servo_node:/home/submarine/ryans_ws/install/orientation_package:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/submarine/ros_ws/src/ros_bt -DCMAKE_INSTALL_PREFIX=/home/submarine/ros_ws/install/ros_bt
