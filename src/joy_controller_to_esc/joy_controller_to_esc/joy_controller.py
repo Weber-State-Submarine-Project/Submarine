@@ -21,14 +21,15 @@ class JoyToEsc(Node):
         self.publisher = self.create_publisher(Esc, 'esc_topic', 10)
 
     def joy_callback(self, msg):
-        # Assuming the left joystick's vertical axis is axis[1] and horizontal axis is axis[0]
+        
+        # Joystick's vertical axis is axis[1] and horizontal axis is axis[0]
         left_vertical = msg.axes[1]  # Forward/backward control (-1 to 1)
         left_horizontal = msg.axes[0]  # Left/right control (-1 to 1)
 
-        # Max motor power (adjust this based on your motor range)
-        max_power = 50
+        # Max motor power 
+        max_power = 50 # 50/100 aka 50% power
 
-        # Corrected motor speeds based on both axes
+        # Vector Math for controller to power 
         # Left motor should move forward (positive) on right turns, and backward (negative) on left turns
         left_motor_power = (left_vertical - left_horizontal) / 2 * max_power
         # Right motor should move backward (negative) on right turns, and forward (positive) on left turns
