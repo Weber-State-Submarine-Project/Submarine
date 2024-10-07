@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: esc-pkg
+Version: 0.0.1
+Summary: Package to control 2 ESCs through a PWM hat, listening to the esc_topic topic
+Maintainer: Ryan Le
+Maintainer-email: ryanhaile10@gmail.com
+License: Apache-2.0

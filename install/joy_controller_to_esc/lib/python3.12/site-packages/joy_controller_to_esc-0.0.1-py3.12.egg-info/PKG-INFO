@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: joy-controller-to-esc
+Version: 0.0.1
+Summary: ROS2 package node that subscribes to joy node, and depending on the left joy stick will publish proper speeds to the left and right esc of the boat
+Maintainer: Ryan Le
+Maintainer-email: ryanhaile10@gmail.com
+License: TODO: License declaration

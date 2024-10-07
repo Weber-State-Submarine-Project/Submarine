@@ -1,0 +1,2 @@
+[console_scripts]
+joy_controller = joy_controller_to_esc.joy_controller:main

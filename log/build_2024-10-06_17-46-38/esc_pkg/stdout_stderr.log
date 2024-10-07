@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/esc_pkg/esc_pkg.egg-info
+writing ../../build/esc_pkg/esc_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/esc_pkg/esc_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/esc_pkg/esc_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/esc_pkg/esc_pkg.egg-info/requires.txt
+writing top-level names to ../../build/esc_pkg/esc_pkg.egg-info/top_level.txt
+writing manifest file '../../build/esc_pkg/esc_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/esc_pkg/esc_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/esc_pkg/esc_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/submarine/ros_ws/build/esc_pkg/build
+creating /home/submarine/ros_ws/build/esc_pkg/build/lib
+creating /home/submarine/ros_ws/build/esc_pkg/build/lib/esc_pkg
+copying esc_pkg/esc_publisher.py -> /home/submarine/ros_ws/build/esc_pkg/build/lib/esc_pkg
+copying esc_pkg/__init__.py -> /home/submarine/ros_ws/build/esc_pkg/build/lib/esc_pkg
+copying esc_pkg/esc_subscriber.py -> /home/submarine/ros_ws/build/esc_pkg/build/lib/esc_pkg
+running install
+running install_lib
+creating /home/submarine/ros_ws/install/esc_pkg/lib/python3.12/site-packages/esc_pkg
+copying /home/submarine/ros_ws/build/esc_pkg/build/lib/esc_pkg/esc_publisher.py -> /home/submarine/ros_ws/install/esc_pkg/lib/python3.12/site-packages/esc_pkg
+copying /home/submarine/ros_ws/build/esc_pkg/build/lib/esc_pkg/__init__.py -> /home/submarine/ros_ws/install/esc_pkg/lib/python3.12/site-packages/esc_pkg
+copying /home/submarine/ros_ws/build/esc_pkg/build/lib/esc_pkg/esc_subscriber.py -> /home/submarine/ros_ws/install/esc_pkg/lib/python3.12/site-packages/esc_pkg
+byte-compiling /home/submarine/ros_ws/install/esc_pkg/lib/python3.12/site-packages/esc_pkg/esc_publisher.py to esc_publisher.cpython-312.pyc
+byte-compiling /home/submarine/ros_ws/install/esc_pkg/lib/python3.12/site-packages/esc_pkg/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/submarine/ros_ws/install/esc_pkg/lib/python3.12/site-packages/esc_pkg/esc_subscriber.py to esc_subscriber.cpython-312.pyc
+running install_data
+creating /home/submarine/ros_ws/install/esc_pkg/share/ament_index
+creating /home/submarine/ros_ws/install/esc_pkg/share/ament_index/resource_index
+creating /home/submarine/ros_ws/install/esc_pkg/share/ament_index/resource_index/packages
+copying resource/esc_pkg -> /home/submarine/ros_ws/install/esc_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/submarine/ros_ws/install/esc_pkg/share/esc_pkg
+running install_egg_info
+Copying ../../build/esc_pkg/esc_pkg.egg-info to /home/submarine/ros_ws/install/esc_pkg/lib/python3.12/site-packages/esc_pkg-0.0.1-py3.12.egg-info
+running install_scripts
+Installing esc_publisher script to /home/submarine/ros_ws/install/esc_pkg/lib/esc_pkg
+Installing esc_subscriber script to /home/submarine/ros_ws/install/esc_pkg/lib/esc_pkg
+writing list of installed files to '/home/submarine/ros_ws/build/esc_pkg/install.log'

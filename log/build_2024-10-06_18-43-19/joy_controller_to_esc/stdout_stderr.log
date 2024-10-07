@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/joy_controller_to_esc/joy_controller_to_esc.egg-info/PKG-INFO
+writing dependency_links to ../../build/joy_controller_to_esc/joy_controller_to_esc.egg-info/dependency_links.txt
+writing entry points to ../../build/joy_controller_to_esc/joy_controller_to_esc.egg-info/entry_points.txt
+writing requirements to ../../build/joy_controller_to_esc/joy_controller_to_esc.egg-info/requires.txt
+writing top-level names to ../../build/joy_controller_to_esc/joy_controller_to_esc.egg-info/top_level.txt
+reading manifest file '../../build/joy_controller_to_esc/joy_controller_to_esc.egg-info/SOURCES.txt'
+writing manifest file '../../build/joy_controller_to_esc/joy_controller_to_esc.egg-info/SOURCES.txt'
+running build
+running build_py
+copying joy_controller_to_esc/joy_controller.py -> /home/submarine/ros_ws/build/joy_controller_to_esc/build/lib/joy_controller_to_esc
+running install
+running install_lib
+copying /home/submarine/ros_ws/build/joy_controller_to_esc/build/lib/joy_controller_to_esc/joy_controller.py -> /home/submarine/ros_ws/install/joy_controller_to_esc/lib/python3.12/site-packages/joy_controller_to_esc
+byte-compiling /home/submarine/ros_ws/install/joy_controller_to_esc/lib/python3.12/site-packages/joy_controller_to_esc/joy_controller.py to joy_controller.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/submarine/ros_ws/install/joy_controller_to_esc/lib/python3.12/site-packages/joy_controller_to_esc-0.0.1-py3.12.egg-info' (and everything under it)
+Copying ../../build/joy_controller_to_esc/joy_controller_to_esc.egg-info to /home/submarine/ros_ws/install/joy_controller_to_esc/lib/python3.12/site-packages/joy_controller_to_esc-0.0.1-py3.12.egg-info
+running install_scripts
+Installing joy_controller script to /home/submarine/ros_ws/install/joy_controller_to_esc/lib/joy_controller_to_esc
+writing list of installed files to '/home/submarine/ros_ws/build/joy_controller_to_esc/install.log'

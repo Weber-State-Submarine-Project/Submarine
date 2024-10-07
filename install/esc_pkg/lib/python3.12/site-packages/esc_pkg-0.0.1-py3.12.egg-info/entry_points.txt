@@ -1,0 +1,3 @@
+[console_scripts]
+esc_publisher = esc_pkg.esc_publisher:main
+esc_subscriber = esc_pkg.esc_subscriber:main
