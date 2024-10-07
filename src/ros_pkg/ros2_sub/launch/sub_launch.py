@@ -126,8 +126,23 @@ def generate_launch_description():
         name='motor_control',
         output='screen',
         )
+    
+    #Publishes commands to motors
+    joy_to_esc = Node(
+        package='joy_controller_to_esc',
+        executable='joy_controller',
+        name='joy_to_esc',
+        output='screen',
+        )
 
-    #add sensors/controllers as they are completed 
+    #listens to controller inputs
+    joy = Node(
+        package='joy',
+        executable='joy_node',
+        name='joy_node',
+        output='screen',
+        )
+
     return LaunchDescription([
         sub_state_publisher,
         slam,
@@ -143,5 +158,7 @@ def generate_launch_description():
         speed_sensor,
         orientation,
         imu,
-        motor_control
+        motor_control,
+        joy_to_esc,
+        joy
         ])

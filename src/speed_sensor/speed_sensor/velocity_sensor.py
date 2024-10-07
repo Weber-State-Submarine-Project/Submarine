@@ -8,7 +8,7 @@ class VelocitySensor(Node):
     def __init__(self):
         super().__init__('velocity_sensor')
         self.publisher_ = self.create_publisher(Odometry, 'odom', 10)
-        self.serial_port = serial.Serial('/dev/ttyUSB3', 9600, timeout=1)
+        self.serial_port = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
         self.last_received_time = time.time()
         self.timeout_duration = 0.1  # Duration in seconds to wait before publishing zero
         self.timer = self.create_timer(0.01, self.timer_callback)  # Reduced timer interval for more frequent checks
