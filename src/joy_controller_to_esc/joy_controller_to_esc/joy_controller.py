@@ -53,7 +53,7 @@ class JoyToEsc(Node):
         esc_msg.power_percentage = right_motor_power
         self.publisher.publish(esc_msg)
         
-        self.get_logger().info(f'Published left motor: {left_motor_power}, right motor: {right_motor_power}')
+        #self.get_logger().info(f'Published left motor: {left_motor_power}, right motor: {right_motor_power}')
 
 
 def main(args=None):

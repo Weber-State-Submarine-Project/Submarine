@@ -91,7 +91,7 @@ public:
         }
         else
         {
-            std::cout << "FAIL DIST: " << front_node_->get_latest_distance() << "\n";
+            std::cout << "Front sonar distance threshold failed: " << front_node_->get_latest_distance() << "\n";
             return NodeStatus::FAILURE;
         }
     }
@@ -364,7 +364,7 @@ public:
         
         if(dist < 0.5)
         {     
-            std::cout <<"DIST: " << dist <<"\n";
+            std::cout <<"Distance from left wall: " << dist <<"\n";
             std::cout << "Adjusting right\n";
             msg.motor_selection = "Left";
             msg.power_percentage = 15;
@@ -377,7 +377,7 @@ public:
         }
         else if(dist > 1.5)
         {
-            std::cout <<"DIST: " << dist <<"\n";
+            std::cout <<"Distance from left wall: " << dist <<"\n";
             std::cout << "Adjusting left\n";
             msg.motor_selection = "Left";
             msg.power_percentage = 0;
