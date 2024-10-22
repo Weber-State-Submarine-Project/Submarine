@@ -14,7 +14,7 @@ class SonarPublisher(Node):
         self.laser_publisher = self.create_publisher(LaserScan, '/scan/down', 10)
         self.point_cloud_publisher = self.create_publisher(PointCloud2, '/scan/down/points', 10)
         self.timer = self.create_timer(0.1, self.timer_callback)
-        self.ser = serial.Serial('/dev/ttyUSB2', 115200, timeout=1)
+        self.ser = serial.Serial('/dev/ttyUSB1', 115200, timeout=1)
         self.COM = 0x55
         self.buffer_RTT = [0, 0, 0, 0]
         self.Distance = 0

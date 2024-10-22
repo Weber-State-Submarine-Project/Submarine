@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'velocity_sensor = speed_sensor.velocity_sensor:main',
+            'ping_velocity = speed_sensor.ping_to_vel:main',
         ],
     },
 )

@@ -6,6 +6,8 @@ import numpy as np
 import struct
 import sys
 import site
+import time
+from nav_msgs.msg import Odometry
 site.addsitedir('/home/submarine/.local/share/pipx/venvs/bluerobotics-ping/lib/python3.12/site-packages')
 
 from brping import Ping1D
@@ -15,13 +17,45 @@ class PingSonarNode(Node):
         super().__init__('ping_sonar_node')
         self.scan_publisher = self.create_publisher(LaserScan, '/scan/front', 10)
         self.pointcloud_publisher = self.create_publisher(PointCloud2, '/scan/front/points', 10)
+        self.odom_publisher = self.create_publisher(Odometry, 'odom', 10)
         
+        self.distance_holder = []
+        self.prev_time = self.get_clock().now()
+
         self.ping = Ping1D()
-        self.ping.connect_serial('/dev/ttyUSB0', 115200)
-        
-        if self.ping.initialize() is False:
-            self.get_logger().error("Failed to initialize Ping2!")
-            exit(1)
+        while True:
+            self.get_logger().info("Attempting to connect to Ping2...")
+            self.ping.connect_serial('/dev/ttyUSB0', 115200)
+            if self.ping.initialize():
+                self.get_logger().info("Successfully initialized Ping2.")
+                break
+            else:
+                self.get_logger().error("Failed to initialize Ping2! Retrying...")
+
+            time.sleep(5)  # Wait for 5 seconds before retrying
+
+        # Ping needs to be in manual to set the gain and range
+        self.ping.set_mode_auto(1)
+
+        # Set the gain setting
+        gain_setting = 6  # Index for the gain value (0 corresponds to 0.6)
+        # function only returns if false
+        if not self.ping.set_gain_setting(gain_setting):
+            self.get_logger().error("Failed to set gain setting.")
+        else:
+            self.get_logger().info(f"Gain setting set to {gain_setting} successfully!")
+
+        # Set the range 0.5-30m
+        range_start = 0  # Minimum range in millimeters
+        range_end = 100000  # Maximum range in millimeters
+        # function only returns if false
+        if not self.ping.set_range(range_start, range_end):
+            self.get_logger().error("Failed to set range.")
+        else:
+            self.get_logger().info(f"Range set to {range_start} - {range_end} millimeters successfully!")
+
+        self.get_logger().info(f"Gain Val: {self.ping.get_gain_setting()}")
+        self.get_logger().info(f"Range Val: {self.ping.get_range()}")
         
         self.timer = self.create_timer(0.01, self.timer_callback)
     
@@ -33,7 +67,7 @@ class PingSonarNode(Node):
             self.publish_pointcloud(distance)
         else:
             self.get_logger().warn("Failed to get distance data from Ping2!")
-    
+
     def publish_scan(self, distance):
         scan_msg = LaserScan()
         scan_msg.header.stamp = self.get_clock().now().to_msg()

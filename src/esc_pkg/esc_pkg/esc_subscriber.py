@@ -60,7 +60,7 @@ class EscSubscriber(Node):
         self.kit.servo[self.right_esc].angle = None
 
     def listener_callback(self, msg):
-        self.get_logger().info(f'[ESC - CALLBACK] Received motor selection: "{msg.motor_selection}"')
+        #self.get_logger().info(f'[ESC - CALLBACK] Received motor selection: "{msg.motor_selection}"')
         
         motor_selected = msg.motor_selection
         power_selected = msg.power_percentage
@@ -75,11 +75,11 @@ class EscSubscriber(Node):
 
         # Sends pulse to selected motor
         if motor_selected == 'Left':
-            self.get_logger().info(f'[ESC - CONTROL] Left Motor Set to "{power_selected}"')
+            #self.get_logger().info(f'[ESC - CONTROL] Left Motor Set to "{power_selected}"')
             self.kit.servo[self.left_esc].angle = angle
 
         elif motor_selected == 'Right':
-            self.get_logger().info(f'[ESC - CONTROL] Right Motor Set to "{power_selected}"')
+            #self.get_logger().info(f'[ESC - CONTROL] Right Motor Set to "{power_selected}"')
             self.kit.servo[self.right_esc].angle = angle
 
         elif motor_selected == 'Arm':

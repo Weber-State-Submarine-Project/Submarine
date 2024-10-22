@@ -60,7 +60,6 @@ def generate_launch_description():
         output='both',
         parameters=[
             {'robot_description':sub_desc},
-            {'use_sim_time': True},
         ]
     )
 

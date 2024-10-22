@@ -84,7 +84,7 @@ public:
     NodeStatus tick() override
     {
         // May need to change min distance to fit hardware turn radius
-        if (front_node_->get_latest_distance() > 4)
+        if (front_node_->get_latest_distance() > 2.5)
         {
             std::cout << "Distance from front wall is good: " << front_node_->get_latest_distance() << "\n";
             return NodeStatus::SUCCESS;
@@ -289,13 +289,15 @@ public:
         tf2::Matrix3x3(current_quaternion).getRPY(roll, pitch, yaw);
 
         // Calculate the target yaw by subtracting pi/2 from the current yaw
-        if(target_yaw == 0){
+        if (target_yaw == 0) {
             target_yaw = yaw - M_PI_2;
+            
             // Ensure the target yaw is within the range [-pi, pi]
-            if (target_yaw < -M_PI)
-                target_yaw = M_PI_2;
-            else if (target_yaw > M_PI)
+            if (target_yaw < -M_PI) {
+                target_yaw += 2 * M_PI;
+            } else if (target_yaw > M_PI) {
                 target_yaw -= 2 * M_PI;
+            }
         }
         
         //enable the behavior tree to start checking if we are back at the start pos,
@@ -308,24 +310,24 @@ public:
             //start going streight again, may need to adjust speeds
             auto esc = orientation_msg::msg::Esc();
             esc.motor_selection = "Left";
-            esc.power_percentage = 15;
+            esc.power_percentage = 20;
             publisher_->publish(esc);
             esc.motor_selection = "Right";
-            esc.power_percentage = 15;
+            esc.power_percentage = 20;
             publisher_->publish(esc);
 
             std::cout << "Turn Completed\n";
             target_yaw = 0;
             return NodeStatus::SUCCESS;
         }
-        // turning left, left motor forward, right motor reverse, may need to adjust speeds
+        // turning right, left motor forward, right motor reverse, may need to adjust speeds
         else{
             auto esc = orientation_msg::msg::Esc();
             esc.motor_selection = "Left";
-            esc.power_percentage = 15;
+            esc.power_percentage = 20;
             publisher_->publish(esc);
             esc.motor_selection = "Right";
-            esc.power_percentage = -15;
+            esc.power_percentage = -20;
             publisher_->publish(esc);
             std::cout << "Current angle: "<<yaw<<", target angle: " << target_yaw << "\n";
             std::cout << "Angle Difference: " << angle_difference << "\n";
@@ -338,7 +340,7 @@ private:
     rclcpp::Publisher<orientation_msg::msg::Esc>::SharedPtr publisher_;
     std::shared_ptr<Odom> odom_node_;
     double target_yaw = 0;
-    const double angle_tolerance_ = 0.02; // radians
+    const double angle_tolerance_ = 0.6; // radians
 };
 
 class AdjustDistance : public SyncActionNode
@@ -367,7 +369,7 @@ public:
             std::cout <<"Distance from left wall: " << dist <<"\n";
             std::cout << "Adjusting right\n";
             msg.motor_selection = "Left";
-            msg.power_percentage = 15;
+            msg.power_percentage = 20;
             publisher_->publish(msg);
             msg.motor_selection = "Right";
             msg.power_percentage = 0;
@@ -375,7 +377,7 @@ public:
 
             return NodeStatus::FAILURE;
         }
-        else if(dist > 1.5)
+        else if(dist > 2)
         {
             std::cout <<"Distance from left wall: " << dist <<"\n";
             std::cout << "Adjusting left\n";
@@ -383,7 +385,7 @@ public:
             msg.power_percentage = 0;
             publisher_->publish(msg);
             msg.motor_selection = "Right";
-            msg.power_percentage = 15;
+            msg.power_percentage = 20;
             publisher_->publish(msg);
 
             return NodeStatus::FAILURE;
@@ -393,10 +395,10 @@ public:
         {
             std::cout << "Distance from side wall is good: "<< dist <<"\n";
             msg.motor_selection = "Left";
-            msg.power_percentage = 15;
+            msg.power_percentage = 20;
             publisher_->publish(msg);
             msg.motor_selection = "Right";
-            msg.power_percentage = 15;
+            msg.power_percentage = 20;
             publisher_->publish(msg);
             return NodeStatus::SUCCESS;
         }
@@ -430,10 +432,10 @@ public:
         std::cout << "Moving Forward\n";
         auto msg = orientation_msg::msg::Esc();
         msg.motor_selection = "Left";
-        msg.power_percentage = 15;
+        msg.power_percentage = 20;
         publisher_->publish(msg);
         msg.motor_selection = "Right";
-        msg.power_percentage = 15;
+        msg.power_percentage = 20;
         publisher_->publish(msg);
         return NodeStatus::SUCCESS;
     }
@@ -480,10 +482,10 @@ public:
         if(std::abs(velocity) > 0.1){
             std::cout<<"Slowing Down\n";
             esc.motor_selection = "Left";
-            esc.power_percentage = -15;
+            esc.power_percentage = -20;
             publisher_->publish(esc);
             esc.motor_selection = "Right";
-            esc.power_percentage = -15;
+            esc.power_percentage = -20;
             publisher_->publish(esc);
             return NodeStatus::FAILURE;
         }  
@@ -633,7 +635,7 @@ private:
     bool isApproximatelyEqual(const Pose& pos1, const Pose& pos2)
     {
         // Define a small threshold for position comparison
-        const double THRESHOLD = 10; // meters
+        const double THRESHOLD = 0.5; // meters
 
         // Use the TF2 library to calculate the difference between the two poses
         tf2::Transform tf1, tf2;
@@ -794,7 +796,7 @@ static const char* xml_text = R"(
 <root BTCPP_format="4" >
      <BehaviorTree ID="MainTree">
         <Sequence>
-            <WaitForSeconds seconds="20"/>
+            <WaitForSeconds seconds="10"/>
             <StartPos starting_position="{starting_pos}"/>
             <!--Loop until user presses start on the website-->
             <RetryUntilSuccessful num_attempts="20000">
@@ -805,19 +807,20 @@ static const char* xml_text = R"(
             </RetryUntilSuccessful>
             <PublishLog message=" - User pressed start, navigation has begun."/>
             <SaySomething message="mission started..." />
-            <RetryUntilSuccessful num_attempts="5000">
+            <RetryUntilSuccessful num_attempts="50000000">
                 <Sequence>
-                    <RetryUntilSuccessful num_attempts="200">
-                    	<Sequence>
-                    	    <Fallback name="turn">
-                                <CheckFront/>
+                    <Fallback name="turn">
+                        <CheckFront/>
+                        <Inverter>
+                            <RetryUntilSuccessful num_attempts="200">
                                 <Sequence>
-                                    <WaitForSeconds seconds="1"/>
+                                    <WaitForSeconds seconds="0.1"/>
                                     <Turn90Degrees/>
                                 </Sequence>
-                            </Fallback>
-                        </Sequence>
-                    </RetryUntilSuccessful>
+                            </RetryUntilSuccessful>
+                        </Inverter>
+                        <WaitForSeconds seconds="3"/>
+                    </Fallback>
                     <RetryUntilSuccessful num_attempts="200">
                         <Fallback>
                             <Inverter>
@@ -844,7 +847,7 @@ static const char* xml_text = R"(
             </RetryUntilSuccessful>
             <RetryUntilSuccessful num_attempts = "200">
                 <Sequence>
-                    <WaitForSeconds seconds="1"/>
+                    <WaitForSeconds seconds="0.1"/>
                     <Stop/>
                 </Sequence>
             </RetryUntilSuccessful>

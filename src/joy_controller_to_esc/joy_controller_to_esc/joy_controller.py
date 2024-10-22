@@ -27,7 +27,7 @@ class JoyToEsc(Node):
         left_horizontal = msg.axes[0]  # Left/right control (-1 to 1)
 
         # Max motor power 
-        max_power = 50 # 50/100 aka 50% power
+        max_power =  100 #50/100 aka 50% power
 
         # Vector Math for controller to power 
         # Left motor should move forward (positive) on right turns, and backward (negative) on left turns

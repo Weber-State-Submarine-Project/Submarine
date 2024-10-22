@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 
 import rclpy
 from rclpy.node import Node
@@ -27,9 +27,9 @@ class OrientationToImu(Node):
         imu_msg.header.frame_id = 'imu'
 
         # Populate IMU message with orientation data
-        imu_msg.linear_acceleration.x = msg.acc_x
-        imu_msg.linear_acceleration.y = msg.acc_y
-        imu_msg.linear_acceleration.z = msg.acc_z
+        imu_msg.linear_acceleration.x = msg.lin_acc_x
+        imu_msg.linear_acceleration.y = msg.lin_acc_y
+        imu_msg.linear_acceleration.z = msg.lin_acc_z
         imu_msg.angular_velocity.x = msg.gyro_x
         imu_msg.angular_velocity.y = msg.gyro_y
         imu_msg.angular_velocity.z = msg.gyro_z
