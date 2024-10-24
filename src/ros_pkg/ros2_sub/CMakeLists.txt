@@ -17,6 +17,7 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(octomap_msgs REQUIRED)
 find_package(octomap REQUIRED)
 find_package(pcl_conversions REQUIRED)
+find_package(tf2 REQUIRED)
 
 include_directories(${OCTOMAP_INCLUDE_DIRS})
 
@@ -30,6 +31,9 @@ endif()
 
 add_executable(octo src/octomap.cpp)
 ament_target_dependencies(octo rclcpp octomap_msgs octomap nav_msgs std_msgs sensor_msgs pcl_conversions)
+
+add_executable(pose src/pose.cpp)
+ament_target_dependencies(pose rclcpp sensor_msgs tf2 nav_msgs std_msgs)
 
 target_link_libraries(octo ${OCTOMAP_LIBRARIES} octomath)
 # Link OpenMP
@@ -51,6 +55,7 @@ install(DIRECTORY
 
 install(TARGETS
     octo
+    pose
 DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

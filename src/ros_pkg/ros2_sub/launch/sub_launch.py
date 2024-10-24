@@ -142,6 +142,13 @@ def generate_launch_description():
         output='screen',
         )
 
+    pose = Node(
+        package='ros2_sub',
+        executable='pose',
+        name='pose_node',
+        output='screen',
+        )
+
     return LaunchDescription([
         sub_state_publisher,
         slam,
@@ -154,10 +161,11 @@ def generate_launch_description():
         down_sonar,
         side_sonar,
         front_sonar,
-        speed_sensor,
+        #speed_sensor,
         orientation,
         imu,
         motor_control,
         joy_to_esc,
-        joy
+        joy,
+        pose
         ])

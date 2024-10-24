@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 from nav_msgs.msg import Odometry
+from std_msgs.msg import Float32
 
 class LaserScanVelocitySubscriber(Node):
     def __init__(self):
@@ -12,6 +13,11 @@ class LaserScanVelocitySubscriber(Node):
             self.scan_callback,
             10
         )
+        self.turning_subscriber = self.create_subscription(
+            Float32,  
+            '/turning',
+            self.turning_callback,
+            10)
         
         self.prev_distance = None
         self.prev_time = self.get_clock().now()
@@ -26,10 +32,13 @@ class LaserScanVelocitySubscriber(Node):
         self.distance_buffer = []
         self.buffer_size = 5  # Number of readings for averaging
 
+        self.turn_status = 0
+
+    def turning_callback(self, msg):
+        self.turn_status = msg.data
+
     def scan_callback(self, msg):
         
-        ''' NEED TO IMPLEMENT VELOCITY 0 WHEN TURNING '''
-
         latest_distance = msg.ranges[0]
         current_time = self.get_clock().now()
         
@@ -58,8 +67,8 @@ class LaserScanVelocitySubscriber(Node):
             avg_distance_diff = avg_distance - self.prev_distance
             
             # Apply noise threshold
-            if abs(avg_distance_diff) < self.noise_threshold:
-                velocity = 0.0  # No significant movement
+            if abs(avg_distance_diff) < self.noise_threshold or self.turn_status == 1:
+                velocity = 0.0  # No significant movement or turning
             else:
                 # Calculate velocity using the average distance
                 velocity = avg_distance_diff / time_diff

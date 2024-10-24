@@ -74,6 +74,7 @@ public:
     CheckFront(const std::string &name, const NodeConfig &config, std::shared_ptr<Front> front_node)
         : SyncActionNode(name, config), front_node_(front_node)
     {
+        turn_publisher_ = front_node_->create_publisher<std_msgs::msg::Int32>("/turning", 10);
     }
 
     static PortsList providedPorts()
@@ -83,6 +84,10 @@ public:
 
     NodeStatus tick() override
     {
+
+        turn_msg.data = 0;
+        turn_publisher_->publish(turn_msg);
+ 
         // May need to change min distance to fit hardware turn radius
         if (front_node_->get_latest_distance() > 2.5)
         {
@@ -98,6 +103,8 @@ public:
 
 private:
     std::shared_ptr<Front> front_node_;
+    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr turn_publisher_;
+    std_msgs::msg::Int32 turn_msg;
 };
 
 class Side : public rclcpp::Node
@@ -268,6 +275,8 @@ public:
           odom_node_(odom_node)
     {
         publisher_ = node_->create_publisher<orientation_msg::msg::Esc>("/esc_topic", 10);
+        turn_publisher_ = node_->create_publisher<std_msgs::msg::Int32>("/turning", 10); 
+ 
     }
     
     static PortsList providedPorts()
@@ -304,18 +313,18 @@ public:
         //this is an easy way to prevent it from detecting that we are at the start pos on starting navigation
         check_start = 1;
 
+
         // Calculate the angle difference between the current yaw and the target yaw
         double angle_difference = std::atan2(std::sin(yaw - target_yaw), std::cos(yaw - target_yaw));
         if(std::fabs(angle_difference) < angle_tolerance_) {
             //start going streight again, may need to adjust speeds
             auto esc = orientation_msg::msg::Esc();
             esc.motor_selection = "Left";
-            esc.power_percentage = 20;
+            esc.power_percentage = 0;
             publisher_->publish(esc);
             esc.motor_selection = "Right";
-            esc.power_percentage = 20;
+            esc.power_percentage = 0;
             publisher_->publish(esc);
-
             std::cout << "Turn Completed\n";
             target_yaw = 0;
             return NodeStatus::SUCCESS;
@@ -329,6 +338,8 @@ public:
             esc.motor_selection = "Right";
             esc.power_percentage = -20;
             publisher_->publish(esc);
+            turn_msg.data = 1;
+            turn_publisher_->publish(turn_msg);
             std::cout << "Current angle: "<<yaw<<", target angle: " << target_yaw << "\n";
             std::cout << "Angle Difference: " << angle_difference << "\n";
             return NodeStatus::FAILURE;
@@ -338,8 +349,11 @@ public:
 private:
     rclcpp::Node::SharedPtr node_;
     rclcpp::Publisher<orientation_msg::msg::Esc>::SharedPtr publisher_;
+    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr turn_publisher_;
     std::shared_ptr<Odom> odom_node_;
     double target_yaw = 0;
+    std_msgs::msg::Int32 turn_msg;
+
     const double angle_tolerance_ = 0.6; // radians
 };
 
@@ -467,10 +481,8 @@ public:
         //turn done on and off to have the octomap interpolate data once
         std_msgs::msg::Int32 val3;
         val3.data = 1;
-        val3.data = 0; 
         publisher3_->publish(val3);
-
-    
+        val3.data = 0; 
         publisher3_->publish(val3);
 
         auto esc = orientation_msg::msg::Esc();
