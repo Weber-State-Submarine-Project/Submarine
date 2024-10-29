@@ -7,6 +7,7 @@ import struct
 import sys
 import site
 import time
+from std_msgs.msg import Float32
 from nav_msgs.msg import Odometry
 site.addsitedir('/home/submarine/.local/share/pipx/venvs/bluerobotics-ping/lib/python3.12/site-packages')
 
@@ -18,9 +19,18 @@ class PingSonarNode(Node):
         self.scan_publisher = self.create_publisher(LaserScan, '/scan/front', 10)
         self.pointcloud_publisher = self.create_publisher(PointCloud2, '/scan/front/points', 10)
         self.odom_publisher = self.create_publisher(Odometry, 'odom', 10)
-        
-        self.distance_holder = []
-        self.prev_time = self.get_clock().now()
+        self.turning_subscriber = self.create_subscription(
+            Float32,
+            '/turning',
+            self.turning_callback,
+            10)
+
+        self.distance_buffer = [] # List of 5 valid Distance Data values
+        self.BUFFER_SIZE = 5
+        self.MAX_DISTANCE_JUMP = 1  # Meter
+        self.prev_distance = 0
+        self.turn_state = 0
+        self.stuck_count = 0
 
         self.ping = Ping1D()
         while True:
@@ -38,33 +48,67 @@ class PingSonarNode(Node):
         self.ping.set_mode_auto(1)
 
         # Set the gain setting
-        gain_setting = 6  # Index for the gain value (0 corresponds to 0.6)
+        #gain_setting = 6  # Index for the gain value (0 corresponds to 0.6)
         # function only returns if false
-        if not self.ping.set_gain_setting(gain_setting):
-            self.get_logger().error("Failed to set gain setting.")
-        else:
-            self.get_logger().info(f"Gain setting set to {gain_setting} successfully!")
+        #if not self.ping.set_gain_setting(gain_setting):
+        #    self.get_logger().error("Failed to set gain setting.")
+        #else:
+        #    self.get_logger().info(f"Gain setting set to {gain_setting} successfully!")
 
         # Set the range 0.5-30m
-        range_start = 0  # Minimum range in millimeters
-        range_end = 100000  # Maximum range in millimeters
+        #range_start = 0  # Minimum range in millimeters
+        #range_end = 100000  # Maximum range in millimeters
         # function only returns if false
-        if not self.ping.set_range(range_start, range_end):
-            self.get_logger().error("Failed to set range.")
-        else:
-            self.get_logger().info(f"Range set to {range_start} - {range_end} millimeters successfully!")
+        #if not self.ping.set_range(range_start, range_end):
+        #    self.get_logger().error("Failed to set range.")
+        #else:
+        #    self.get_logger().info(f"Range set to {range_start} - {range_end} millimeters successfully!")
 
-        self.get_logger().info(f"Gain Val: {self.ping.get_gain_setting()}")
-        self.get_logger().info(f"Range Val: {self.ping.get_range()}")
+        #self.get_logger().info(f"Gain Val: {self.ping.get_gain_setting()}")
+        #self.get_logger().info(f"Range Val: {self.ping.get_range()}")
         
         self.timer = self.create_timer(0.01, self.timer_callback)
     
+    def turning_callback(self,msg):
+        self.turn_state = msg.data
+        
+
     def timer_callback(self):
         data = self.ping.get_distance()
         if data:
             distance = data['distance'] / 1000.0  # Convert mm to meters
-            self.publish_scan(distance)
-            self.publish_pointcloud(distance)
+            prev_distance_lower = self.prev_distance - self.MAX_DISTANCE_JUMP
+            prev_distance_upper = self.prev_distance + self.MAX_DISTANCE_JUMP
+           
+            # Reset Values when turning
+            if self.turn_state == 1:
+                self.distance_buffer = []
+                return
+
+            # Logic to determine if valid data
+            if prev_distance_lower < distance < prev_distance_upper or self.prev_distance == 0:
+                self.distance_buffer.append(distance)
+            else:
+                self.get_logger().warn(f"Distance out of range --- Distance_read: {distance}  Previous_Distance: {self.prev_distance} Max_Jump: {self.MAX_DISTANCE_JUMP}")
+                self.stuck_count += 1
+
+            # Corner Case: If sonar reads bad data for over 3 seconds, it will reset itself based on new distance
+            if self.stuck_count >= 300:
+                self.distance_buffer = []
+                self.stuck_count = 0
+                self.prev_distance = distance
+
+            # Limits Buffer Size
+            if len(self.distance_buffer) > self.BUFFER_SIZE:
+                self.distance_buffer.pop(0)
+
+            # Logic to avg distance
+            if len(self.distance_buffer) == self.BUFFER_SIZE:
+                avg_distance = sum(self.distance_buffer) / self.BUFFER_SIZE
+                self.prev_distance = avg_distance
+                self.publish_scan(avg_distance)
+                self.publish_pointcloud(avg_distance)
+                self.get_logger().info(f'Raw_distance: {distance} Avg_Distance {avg_distance}')
         else:
             self.get_logger().warn("Failed to get distance data from Ping2!")
 

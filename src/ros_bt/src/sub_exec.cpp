@@ -299,13 +299,17 @@ public:
 
         // Calculate the target yaw by subtracting pi/2 from the current yaw
         if (target_yaw == 0) {
-            target_yaw = yaw - M_PI_2;
-            
-            // Ensure the target yaw is within the range [-pi, pi]
-            if (target_yaw < -M_PI) {
-                target_yaw += 2 * M_PI;
-            } else if (target_yaw > M_PI) {
-                target_yaw -= 2 * M_PI;
+            if(yaw < -M_PI_4 && yaw > -3*M_PI_4){
+                target_yaw = -M_PI;
+            }
+            else if(yaw > M_PI_4 && yaw < 3*M_PI_4){
+                target_yaw = 0;
+            }
+            else if(std::abs(yaw) <= M_PI_4){
+                target_yaw = -M_PI_2;
+            }
+            else if(std::abs(yaw) >= 3*M_PI_4){
+                target_yaw = M_PI_2;
             }
         }
         
@@ -320,10 +324,10 @@ public:
             //start going streight again, may need to adjust speeds
             auto esc = orientation_msg::msg::Esc();
             esc.motor_selection = "Left";
-            esc.power_percentage = 0;
+            esc.power_percentage = 20;
             publisher_->publish(esc);
             esc.motor_selection = "Right";
-            esc.power_percentage = 0;
+            esc.power_percentage = 30;
             publisher_->publish(esc);
             std::cout << "Turn Completed\n";
             target_yaw = 0;
@@ -357,6 +361,104 @@ private:
     const double angle_tolerance_ = 0.6; // radians
 };
 
+class AdjustAngle : public SyncActionNode
+{
+public:
+    AdjustAngle(const std::string& name, const NodeConfig& config, std::shared_ptr<Odom> odom_node)
+        : SyncActionNode(name, config),
+          node_(rclcpp::Node::make_shared("adjust_angle_node")),
+          odom_node_(odom_node)
+    {
+        publisher_ = node_->create_publisher<orientation_msg::msg::Esc>("/esc_topic", 10);
+    }
+    // It is mandatory to define this STATIC method.
+    static PortsList providedPorts()
+    {
+        return {};
+    }
+    
+    NodeStatus tick() override    
+    {   
+        auto msg = odom_node_->get_latest_imu();
+        if (!msg) {
+            return NodeStatus::FAILURE;
+        }
+        auto current_orientation = msg->orientation;
+        tf2::Quaternion current_quaternion(current_orientation.x, current_orientation.y, current_orientation.z, current_orientation.w);
+
+        // Convert the current orientation quaternion to roll, pitch, yaw
+        double roll, pitch, yaw;
+        tf2::Matrix3x3(current_quaternion).getRPY(roll, pitch, yaw);
+        
+        // Determine target yaw
+        if (target_yaw == 0) {
+            if(yaw < -M_PI_4 && yaw > -3*M_PI_4){
+                target_yaw = -M_PI_2;
+            }
+            else if(yaw > M_PI_4 && yaw < 3*M_PI_4){
+                target_yaw = M_PI_2;
+            }
+            else if(std::abs(yaw) <= M_PI_4){
+                target_yaw = 0;
+            }
+            else if(std::abs(yaw) >= 3*M_PI_4){
+                target_yaw = M_PI;
+            }
+        }
+
+        // Calculate the angle difference between the current yaw and the target yaw
+        double angle_difference = std::atan2(std::sin(yaw - target_yaw), std::cos(yaw - target_yaw));
+        if(std::fabs(angle_difference) <= angle_tolerance_) {
+            //start going streight again, may need to adjust speeds
+            auto esc = orientation_msg::msg::Esc();
+            esc.motor_selection = "Left";
+            esc.power_percentage = 20;
+            publisher_->publish(esc);
+            esc.motor_selection = "Right";
+            esc.power_percentage = 20;
+            publisher_->publish(esc);
+            target_yaw = 0;
+            return NodeStatus::SUCCESS;
+        }
+        // The target yaw is to the left of the current yaw so adjust right
+        else if(angle_difference < 0){
+            auto esc = orientation_msg::msg::Esc();
+            esc.motor_selection = "Left";
+            esc.power_percentage = 30;
+            publisher_->publish(esc);
+            esc.motor_selection = "Right";
+            esc.power_percentage = 20;
+            publisher_->publish(esc);
+            std::cout << "Adjusting right, Current angle: "<<yaw<<", target angle: " << target_yaw << "\n";
+            std::cout << "Angle Difference: " << angle_difference << "\n";
+            return NodeStatus::FAILURE;
+        }
+
+        else{
+            auto esc = orientation_msg::msg::Esc();
+            esc.motor_selection = "Left";
+            esc.power_percentage = 20;
+            publisher_->publish(esc);
+            esc.motor_selection = "Right";
+            esc.power_percentage = 30;
+            publisher_->publish(esc);
+            std::cout << "ADjusting left, Current angle: "<<yaw<<", target angle: " << target_yaw << "\n";
+            std::cout << "Angle Difference: " << angle_difference << "\n";
+            return NodeStatus::FAILURE;
+        }
+    }
+ 
+
+private:
+    rclcpp::Node::SharedPtr node_;
+    rclcpp::Publisher<orientation_msg::msg::Esc>::SharedPtr publisher_;
+    std::shared_ptr<Odom> odom_node_;
+    double target_yaw = 0;
+    std_msgs::msg::Int32 turn_msg;
+
+    const double angle_tolerance_ = 0.2; // radians
+};
+
 class AdjustDistance : public SyncActionNode
 {
 public:
@@ -378,7 +480,7 @@ public:
         auto dist = side_node_->get_latest_distance();
         auto msg = orientation_msg::msg::Esc();
         
-        if(dist < 0.5)
+        if(dist < 1)
         {     
             std::cout <<"Distance from left wall: " << dist <<"\n";
             std::cout << "Adjusting right\n";
@@ -391,7 +493,7 @@ public:
 
             return NodeStatus::FAILURE;
         }
-        else if(dist > 2)
+        else if(dist > 3)
         {
             std::cout <<"Distance from left wall: " << dist <<"\n";
             std::cout << "Adjusting left\n";
@@ -672,23 +774,23 @@ class WaitForSeconds : public StatefulActionNode
         {}
         static PortsList providedPorts()
         {
-            return{ InputPort<unsigned>("seconds") };
+            return{ InputPort<float>("seconds") };
         }
         NodeStatus onStart() override;
         NodeStatus onRunning() override;
         void onHalted() override;
     private:
-        unsigned _seconds;
+        float _seconds;
         chr::system_clock::time_point _completion_time;
 };
 NodeStatus WaitForSeconds::onStart()
 {
-    if ( !getInput<unsigned>("seconds", _seconds))
+    if ( !getInput<float>("seconds", _seconds))
     {
         throw RuntimeError("missing required input [seconds]");
     }
-    printf("[ WaitForSeconds: ] seconds = %d\n",_seconds);
-    _completion_time = chr::system_clock::now() + chr::milliseconds(_seconds*1000);
+    printf("[ WaitForSeconds: ] seconds = %f\n",_seconds);
+    _completion_time = chr::system_clock::now() + chr::milliseconds(int(_seconds*1000));
     return NodeStatus::RUNNING;
 }
 
@@ -826,12 +928,12 @@ static const char* xml_text = R"(
                         <Inverter>
                             <RetryUntilSuccessful num_attempts="200">
                                 <Sequence>
-                                    <WaitForSeconds seconds="0.1"/>
+                                    <WaitForSeconds seconds="0.001"/>
                                     <Turn90Degrees/>
                                 </Sequence>
                             </RetryUntilSuccessful>
                         </Inverter>
-                        <WaitForSeconds seconds="3"/>
+                        <WaitForSeconds seconds="4"/>
                     </Fallback>
                     <RetryUntilSuccessful num_attempts="200">
                         <Fallback>
@@ -843,8 +945,9 @@ static const char* xml_text = R"(
                                 <CheckStart/>
                             </Inverter>
                             <Sequence>
-                                <WaitForSeconds seconds="1"/>
-                                <AdjustDistance/>
+                                <WaitForSeconds seconds="0.001"/>
+                                <!--<AdjustDistance/>-->
+                                <AdjustAngle/>
                             </Sequence>
                         </Fallback>
                     </RetryUntilSuccessful>
@@ -906,7 +1009,8 @@ int main(int argc, char **argv)
     factory.registerNodeType<SaySomething>("SaySomething");
     factory.registerNodeType<MapFinished>("MapFinished",map_node);
     factory.registerNodeType<Turn90Degrees>("Turn90Degrees",odom_node);
-    factory.registerNodeType<AdjustDistance>("AdjustDistance",side_node);
+    //factory.registerNodeType<AdjustDistance>("AdjustDistance",side_node);
+    factory.registerNodeType<AdjustAngle>("AdjustAngle",odom_node);
     factory.registerNodeType<Forward>("Forward");
     factory.registerNodeType<Stop>("Stop",velocity_node);
     factory.registerNodeType<PublishLog>("PublishLog");

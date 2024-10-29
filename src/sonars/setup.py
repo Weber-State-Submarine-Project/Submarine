@@ -23,6 +23,7 @@ setup(
             'down_sonar_node = sonars.down_sonar_node:main',
             'side_sonar_node = sonars.side_sonar_node:main',
             'front_sonar_node = sonars.front_sonar_node:main',
+            'filter_front_node = sonars.filter_front:main',
         ],
     },
 )

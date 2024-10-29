@@ -60,14 +60,14 @@ private:
         // Comes from behavior tree, true when we are turning 90 degrees, stays on for [3] seconds after turn to allow sensors to correct
         if(turn_){
             turning_ = true;
+            origin_x_ = x_;
+            origin_y_ = y_;
         }
         // Should be true once 3 seconds after the boat has finished turning 90 degree, resets origin to be the new "start pos"s
         if(!turn_ && turning_){
             got_origin_ = false;
             yaw_initialized_ = false;
             turning_ = false;
-            origin_x_ = x_;
-            origin_y_ = y_;
         }
     }
 
@@ -92,7 +92,7 @@ private:
             x_ = -x_;
         }
         if(!turning_){
-            RCLCPP_INFO(this->get_logger(), "delta_d: %f, x:%f, y:%f, origin_x_: %f, origin_y_: %f yaw_: %f, scaled_yaw_: %f, initial_yaw_: %f, og_dist %f", delta_dist,x_,y_,origin_x_,origin_y_,yaw_,yaw_scaled_,initial_yaw_,origin_dist_);
+            //RCLCPP_INFO(this->get_logger(), "delta_d: %f, x:%f, y:%f, origin_x_: %f, origin_y_: %f yaw_: %f, scaled_yaw_: %f, initial_yaw_: %f, og_dist %f", delta_dist,x_,y_,origin_x_,origin_y_,yaw_,yaw_scaled_,initial_yaw_,origin_dist_);
             auto odom_msg = nav_msgs::msg::Odometry();
             odom_msg.header.stamp = this->now();
             odom_msg.header.frame_id = "odom";
