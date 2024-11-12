@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'velocity_sensor = speed_sensor.velocity_sensor:main',
             'ping_velocity = speed_sensor.ping_to_vel:main',
+            'lidar = speed_sensor.lidar:main',
         ],
     },
 )

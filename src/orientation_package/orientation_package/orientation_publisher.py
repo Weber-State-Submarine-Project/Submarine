@@ -23,10 +23,7 @@ class OrientationPublisher(Node):
         self.bno.enable_feature(adafruit_bno08x.BNO_REPORT_MAGNETOMETER)
         self.bno.enable_feature(adafruit_bno08x.BNO_REPORT_LINEAR_ACCELERATION)
         self.bno.enable_feature(adafruit_bno08x.BNO_REPORT_ROTATION_VECTOR)
-        #self.bno.enable_feature(adafruit_bno08x.BNO_REPORT_RAW_ACCELEROMETER)
-        #self.bno.enable_feature(adafruit_bno08x.BNO_REPORT_RAW_GYROSCOPE)
-        #self.bno.enable_feature(adafruit_bno08x.BNO_REPORT_RAW_MAGNETOMETER)
-
+        
         self.publisher_ = self.create_publisher(Orientation, 'orientation_topic', 1)
         self.timer = self.create_timer(.1, self.timer_callback)
 
@@ -38,10 +35,7 @@ class OrientationPublisher(Node):
             mag_x, mag_y, mag_z = self.bno.magnetic
             linear_accel_x, linear_accel_y, linear_accel_z = self.bno.linear_acceleration
             quat_x, quat_y, quat_z, quat_w = self.bno.quaternion
-            #raw_accel_x, raw_accel_y, raw_accel_z = self.bno.raw_acceleration
-            #raw_gyro_x, raw_gyro_y, raw_gyro_z = self.bno.raw_gyro
-            #raw_mag_x, raw_mag_y, raw_mag_z = self.bno.raw_magnetic
-
+            
             # Create and populate the ROS 2 message
             msg = Orientation()
             msg.acc_x = accel_x
@@ -60,16 +54,7 @@ class OrientationPublisher(Node):
             msg.quat_y = quat_y
             msg.quat_z = quat_z
             msg.quat_w = quat_w
-            #msg.raw_acc_x = str(raw_accel_x)
-            #msg.raw_acc_y = str(raw_accel_y)
-            #msg.raw_acc_z = str(raw_accel_z)
-            #msg.raw_gyro_x = str(raw_gyro_x)
-            #msg.raw_gyro_y = str(raw_gyro_y)
-            #msg.raw_gyro_z = str(raw_gyro_z)
-            #msg.raw_mag_x = str(raw_mag_x)
-            #msg.raw_mag_y = str(raw_mag_y)
-            #msg.raw_mag_z = str(raw_mag_z)
-
+            
             # Publish the message
             self.publisher_.publish(msg)
             #self.get_logger().info(f'Publishing: {msg}')

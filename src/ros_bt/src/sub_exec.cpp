@@ -68,44 +68,6 @@ private:
     float latest_distance_;
 };
 
-class CheckFront : public SyncActionNode
-{
-public:
-    CheckFront(const std::string &name, const NodeConfig &config, std::shared_ptr<Front> front_node)
-        : SyncActionNode(name, config), front_node_(front_node)
-    {
-        turn_publisher_ = front_node_->create_publisher<std_msgs::msg::Int32>("/turning", 10);
-    }
-
-    static PortsList providedPorts()
-    {
-        return {};
-    }
-
-    NodeStatus tick() override
-    {
-
-        turn_msg.data = 0;
-        turn_publisher_->publish(turn_msg);
- 
-        // May need to change min distance to fit hardware turn radius
-        if (front_node_->get_latest_distance() > 2.5)
-        {
-            std::cout << "Distance from front wall is good: " << front_node_->get_latest_distance() << "\n";
-            return NodeStatus::SUCCESS;
-        }
-        else
-        {
-            std::cout << "Front sonar distance threshold failed: " << front_node_->get_latest_distance() << "\n";
-            return NodeStatus::FAILURE;
-        }
-    }
-
-private:
-    std::shared_ptr<Front> front_node_;
-    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr turn_publisher_;
-    std_msgs::msg::Int32 turn_msg;
-};
 
 class Side : public rclcpp::Node
 {
@@ -183,38 +145,6 @@ private:
     int latest_start_ = 0;
 };
 
-class CheckStart : public SyncActionNode
-{
-public:
-    CheckStart(const std::string &name, const NodeConfig &config, std::shared_ptr<Start> start_node)
-        : SyncActionNode(name, config), start_node_(start_node)
-    {
-    }
-
-    static PortsList providedPorts()
-    {
-        return {};
-    }
-
-    NodeStatus tick() override
-    {
-        int start = start_node_->get_latest_start();
-        if (start == 0) {
-            std::cout << "Waiting for user to start navigation\n";
-            return NodeStatus::FAILURE;
-        } else if (start == 1) {
-            std::cout << "User started navigation\n";
-            return NodeStatus::SUCCESS;
-        } else {
-            std::cout << "Error, unable to get user input from website\n";
-            return NodeStatus::FAILURE;
-        }
-    }
-
-private:
-    std::shared_ptr<Start> start_node_;
-};
-
 class Velocity : public rclcpp::Node
 {
 public:
@@ -265,6 +195,74 @@ private:
     rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr subscription_;
     std::shared_ptr<nav_msgs::msg::OccupancyGrid> latest_map_;
 };
+
+
+class CheckFront : public SyncActionNode
+{
+public:
+    CheckFront(const std::string &name, const NodeConfig &config, std::shared_ptr<Front> front_node)
+        : SyncActionNode(name, config), front_node_(front_node)
+    {
+    }
+
+    static PortsList providedPorts()
+    {
+        return {};
+    }
+
+    NodeStatus tick() override
+    {
+
+         
+        // May need to change min distance to fit hardware turn radius
+        if (front_node_->get_latest_distance() > 2.5)
+        {
+            std::cout << "Distance from front wall is good: " << front_node_->get_latest_distance() << "\n";
+            return NodeStatus::SUCCESS;
+        }
+        else
+        {
+            std::cout << "Front sonar distance threshold failed: " << front_node_->get_latest_distance() << "\n";
+            return NodeStatus::FAILURE;
+        }
+    }
+
+private:
+    std::shared_ptr<Front> front_node_;
+    };
+
+class CheckStart : public SyncActionNode
+{
+public:
+    CheckStart(const std::string &name, const NodeConfig &config, std::shared_ptr<Start> start_node)
+        : SyncActionNode(name, config), start_node_(start_node)
+    {
+    }
+
+    static PortsList providedPorts()
+    {
+        return {};
+    }
+
+    NodeStatus tick() override
+    {
+        int start = start_node_->get_latest_start();
+        if (start == 0) {
+            std::cout << "Waiting for user to start navigation\n";
+            return NodeStatus::FAILURE;
+        } else if (start == 1) {
+            std::cout << "User started navigation\n";
+            return NodeStatus::SUCCESS;
+        } else {
+            std::cout << "Error, unable to get user input from website\n";
+            return NodeStatus::FAILURE;
+        }
+    }
+
+private:
+    std::shared_ptr<Start> start_node_;
+};
+
 
 class Turn90Degrees : public SyncActionNode
 {
@@ -321,13 +319,13 @@ public:
         // Calculate the angle difference between the current yaw and the target yaw
         double angle_difference = std::atan2(std::sin(yaw - target_yaw), std::cos(yaw - target_yaw));
         if(std::fabs(angle_difference) < angle_tolerance_) {
-            //start going streight again, may need to adjust speeds
+            // Corrects the drift from the turn by full turning left for a short time 
             auto esc = orientation_msg::msg::Esc();
             esc.motor_selection = "Left";
-            esc.power_percentage = 20;
+            esc.power_percentage = -20;
             publisher_->publish(esc);
             esc.motor_selection = "Right";
-            esc.power_percentage = 30;
+            esc.power_percentage = 20;
             publisher_->publish(esc);
             std::cout << "Turn Completed\n";
             target_yaw = 0;
@@ -358,7 +356,7 @@ private:
     double target_yaw = 0;
     std_msgs::msg::Int32 turn_msg;
 
-    const double angle_tolerance_ = 0.6; // radians
+    const double angle_tolerance_ = 0.4; // radians
 };
 
 class AdjustAngle : public SyncActionNode
@@ -389,23 +387,20 @@ public:
         // Convert the current orientation quaternion to roll, pitch, yaw
         double roll, pitch, yaw;
         tf2::Matrix3x3(current_quaternion).getRPY(roll, pitch, yaw);
-        
         // Determine target yaw
-        if (target_yaw == 0) {
-            if(yaw < -M_PI_4 && yaw > -3*M_PI_4){
-                target_yaw = -M_PI_2;
-            }
-            else if(yaw > M_PI_4 && yaw < 3*M_PI_4){
-                target_yaw = M_PI_2;
-            }
-            else if(std::abs(yaw) <= M_PI_4){
-                target_yaw = 0;
-            }
-            else if(std::abs(yaw) >= 3*M_PI_4){
-                target_yaw = M_PI;
-            }
+        if(yaw < -M_PI_4 && yaw > -3*M_PI_4){
+            target_yaw = -M_PI_2;
         }
-
+        else if(yaw > M_PI_4 && yaw < 3*M_PI_4){
+            target_yaw = M_PI_2;
+        }
+        else if(std::abs(yaw) <= M_PI_4){
+            target_yaw = 0;
+        }
+        else if(std::abs(yaw) >= 3*M_PI_4){
+            target_yaw = M_PI;
+        }
+        
         // Calculate the angle difference between the current yaw and the target yaw
         double angle_difference = std::atan2(std::sin(yaw - target_yaw), std::cos(yaw - target_yaw));
         if(std::fabs(angle_difference) <= angle_tolerance_) {
@@ -417,11 +412,23 @@ public:
             esc.motor_selection = "Right";
             esc.power_percentage = 20;
             publisher_->publish(esc);
-            target_yaw = 0;
             return NodeStatus::SUCCESS;
         }
         // The target yaw is to the left of the current yaw so adjust right
         else if(angle_difference < 0){
+            auto esc = orientation_msg::msg::Esc();
+            esc.motor_selection = "Left";
+            esc.power_percentage = 20;
+            publisher_->publish(esc);
+            esc.motor_selection = "Right";
+            esc.power_percentage = 30;
+            publisher_->publish(esc);
+            std::cout << "Adjusting left, Current angle: "<<yaw<<", target angle: " << target_yaw << "\n";
+            std::cout << "Angle Difference: " << angle_difference << "\n";
+            return NodeStatus::FAILURE;
+        }
+
+        else{
             auto esc = orientation_msg::msg::Esc();
             esc.motor_selection = "Left";
             esc.power_percentage = 30;
@@ -430,19 +437,6 @@ public:
             esc.power_percentage = 20;
             publisher_->publish(esc);
             std::cout << "Adjusting right, Current angle: "<<yaw<<", target angle: " << target_yaw << "\n";
-            std::cout << "Angle Difference: " << angle_difference << "\n";
-            return NodeStatus::FAILURE;
-        }
-
-        else{
-            auto esc = orientation_msg::msg::Esc();
-            esc.motor_selection = "Left";
-            esc.power_percentage = 20;
-            publisher_->publish(esc);
-            esc.motor_selection = "Right";
-            esc.power_percentage = 30;
-            publisher_->publish(esc);
-            std::cout << "ADjusting left, Current angle: "<<yaw<<", target angle: " << target_yaw << "\n";
             std::cout << "Angle Difference: " << angle_difference << "\n";
             return NodeStatus::FAILURE;
         }
@@ -664,6 +658,7 @@ public:
       map_node_(map_node)
     {
         publisher_ = node_->create_publisher<std_msgs::msg::Int32>("/done", 10); 
+        turn_publisher_ = node_->create_publisher<std_msgs::msg::Int32>("/turning", 10);
         // Initialize the starting position
         starting_position_ = Pose();
     }
@@ -677,6 +672,9 @@ public:
 
     NodeStatus tick() override
     {
+        turn_msg.data = 0;
+        turn_publisher_->publish(turn_msg);
+
         // Get the inputs
         auto map_input = map_node_->get_latest_map();
         auto starting_position_input = getInput<Pose>("starting_position");
@@ -745,6 +743,9 @@ private:
     tf2_ros::Buffer tf_buffer_;
     tf2_ros::TransformListener tf_listener_;
     std::shared_ptr<Map> map_node_;
+    rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr turn_publisher_;
+    std_msgs::msg::Int32 turn_msg;
+
 
     bool isApproximatelyEqual(const Pose& pos1, const Pose& pos2)
     {
@@ -906,6 +907,38 @@ private:
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_; 
 };
 
+class StopMotors : public SyncActionNode
+{
+public:
+    StopMotors(const std::string& name, const NodeConfig& config)
+        : SyncActionNode(name, config),
+          node_(rclcpp::Node::make_shared("stop_motors_node"))
+    {
+        publisher_ = node_->create_publisher<orientation_msg::msg::Esc>("/esc_topic", 10);
+    }
+    // It is mandatory to define this STATIC method.
+    static PortsList providedPorts()
+    {
+	    return {};
+    }
+
+    NodeStatus tick() override    
+    { 
+        auto esc = orientation_msg::msg::Esc();
+        esc.motor_selection = "Left";
+        esc.power_percentage = 0;
+        publisher_->publish(esc);
+        esc.motor_selection = "Right";
+        esc.power_percentage = 0;
+        publisher_->publish(esc);
+        return NodeStatus::SUCCESS;
+    }
+private:
+    rclcpp::Node::SharedPtr node_;
+    rclcpp::Publisher<orientation_msg::msg::Esc>::SharedPtr publisher_;
+};
+
+
 static const char* xml_text = R"(
 <root BTCPP_format="4" >
      <BehaviorTree ID="MainTree">
@@ -920,7 +953,6 @@ static const char* xml_text = R"(
                 </Sequence>
             </RetryUntilSuccessful>
             <PublishLog message=" - User pressed start, navigation has begun."/>
-            <SaySomething message="mission started..." />
             <RetryUntilSuccessful num_attempts="50000000">
                 <Sequence>
                     <Fallback name="turn">
@@ -931,18 +963,25 @@ static const char* xml_text = R"(
                                     <WaitForSeconds seconds="0.001"/>
                                     <Turn90Degrees/>
                                 </Sequence>
-                            </RetryUntilSuccessful>
+                            </RetryUntilSuccessful> 
                         </Inverter>
-                        <WaitForSeconds seconds="4"/>
+                        <Inverter>
+                            <WaitForSeconds seconds="0.001"/>
+                        </Inverter>
+                        <Inverter>
+                            <StopMotors/>
+                        </Inverter>
+                        <WaitForSeconds seconds="5"/>
+
                     </Fallback>
                     <RetryUntilSuccessful num_attempts="200">
                         <Fallback>
-                            <Inverter>
-                                <CheckFront/>
-                            </Inverter>
-                    		<MapFinished starting_position="{starting_pos}"/>	
+                            <MapFinished starting_position="{starting_pos}"/>	
                             <Inverter>
                                 <CheckStart/>
+                            </Inverter>
+                            <Inverter>
+                                <CheckFront/>
                             </Inverter>
                             <Sequence>
                                 <WaitForSeconds seconds="0.001"/>
@@ -967,7 +1006,6 @@ static const char* xml_text = R"(
                 </Sequence>
             </RetryUntilSuccessful>
             <PublishLog message="place holder"/>
-            <SaySomething   message="mission completed!" />
         </Sequence> 
      </BehaviorTree>
  </root>
@@ -1017,6 +1055,7 @@ int main(int argc, char **argv)
     factory.registerNodeType<CheckFront>("CheckFront",front_node); 
     factory.registerNodeType<CheckStart>("CheckStart",start_node); 
     factory.registerNodeType<StartPos>("StartPos",map_node); 
+    factory.registerNodeType<StopMotors>("StopMotors"); 
 
     // Create the behavior tree from the XML text
     auto tree = factory.createTreeFromText(xml_text);

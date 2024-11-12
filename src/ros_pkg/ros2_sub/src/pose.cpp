@@ -34,7 +34,10 @@ private:
           origin_dist_ = dist_; 
           got_origin_ = true;
         }
-        calcPose();
+        // Calculate the x, y only if we aren't turning 90 degrees
+        if(!turning_){
+            calcPose();
+        }
     }
 
     void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg)
@@ -56,15 +59,15 @@ private:
 
     void turnCallback(const std_msgs::msg::Int32::SharedPtr msg)
     {
-        turn_ = msg->data;
+        int turn = msg->data;
         // Comes from behavior tree, true when we are turning 90 degrees, stays on for [3] seconds after turn to allow sensors to correct
-        if(turn_){
+        if(turn){
             turning_ = true;
             origin_x_ = x_;
             origin_y_ = y_;
         }
-        // Should be true once 3 seconds after the boat has finished turning 90 degree, resets origin to be the new "start pos"s
-        if(!turn_ && turning_){
+        // Should be true a few seconds after the boat has finished turning 90 degree, resets the "start pos" to be the current x,y
+        if(!turn && turning_){
             got_origin_ = false;
             yaw_initialized_ = false;
             turning_ = false;
@@ -91,32 +94,29 @@ private:
         if(std::abs(yaw_) <= M_PI_2){
             x_ = -x_;
         }
-        if(!turning_){
-            //RCLCPP_INFO(this->get_logger(), "delta_d: %f, x:%f, y:%f, origin_x_: %f, origin_y_: %f yaw_: %f, scaled_yaw_: %f, initial_yaw_: %f, og_dist %f", delta_dist,x_,y_,origin_x_,origin_y_,yaw_,yaw_scaled_,initial_yaw_,origin_dist_);
-            auto odom_msg = nav_msgs::msg::Odometry();
-            odom_msg.header.stamp = this->now();
-            odom_msg.header.frame_id = "odom";
-            odom_msg.child_frame_id = "base_link";
+        RCLCPP_INFO(this->get_logger(), "delta_d: %f, x:%f, y:%f, origin_x_: %f, origin_y_: %f yaw_: %f, scaled_yaw_: %f, initial_yaw_: %f, og_dist %f", delta_dist,x_,y_,origin_x_,origin_y_,yaw_,yaw_scaled_,initial_yaw_,origin_dist_);
+        auto odom_msg = nav_msgs::msg::Odometry();
+        odom_msg.header.stamp = this->now();
+        odom_msg.header.frame_id = "odom";
+        odom_msg.child_frame_id = "base_link";
 
-            odom_msg.pose.pose.position.x = x_;  
-            odom_msg.pose.pose.position.y = y_;
-            odom_pub_->publish(odom_msg);
-       }
+        odom_msg.pose.pose.position.x = x_;  
+        odom_msg.pose.pose.position.y = y_;
+        odom_pub_->publish(odom_msg);      
     }
 
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;    
     rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr turn_sub_;    
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;
-    float dist_ = 0.;
+    float dist_ = 0;
     float initial_yaw_ = 0;
-    float yaw_ = 0.;
+    float yaw_ = 0;
     float yaw_scaled_ = 0;
-    float origin_dist_ = 0.;
+    float origin_dist_ = 0;
     bool got_origin_ = false;
     bool yaw_initialized_ = false;
     bool turning_ = false;
-    int turn_;
     float x_ = 0;
     float y_ = 0;
     float origin_x_= 0;

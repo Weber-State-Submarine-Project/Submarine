@@ -98,7 +98,7 @@ def generate_launch_description():
     #/odom
     speed_sensor = Node(
         package='speed_sensor',
-        executable='velocity_sensor',
+        executable='ping_velocity',
         name='speed_sensor',
         output='screen',
         )
@@ -149,6 +149,17 @@ def generate_launch_description():
         output='screen',
         )
 
+
+    lidar = Node(
+        package='speed_sensor',
+        executable='lidar',
+        name='lidar',
+        output='screen',
+        )
+
+
+    
+
     return LaunchDescription([
         sub_state_publisher,
         slam,
@@ -161,11 +172,12 @@ def generate_launch_description():
         down_sonar,
         side_sonar,
         front_sonar,
-        #speed_sensor,
+        speed_sensor,
         orientation,
         imu,
         motor_control,
         joy_to_esc,
         joy,
-        pose
+        #pose
+        #lidar
         ])

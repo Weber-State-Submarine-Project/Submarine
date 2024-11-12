@@ -11,14 +11,16 @@ from std_msgs.msg import Int32
 from nav_msgs.msg import Odometry
 site.addsitedir('/home/submarine/.local/share/pipx/venvs/bluerobotics-ping/lib/python3.12/site-packages')
 
+import board
+import busio
+import adafruit_lidarlite
+
 from brping import Ping1D
 
 class PingSonarNode(Node):
     def __init__(self):
         super().__init__('ping_sonar_node')
-        self.scan_publisher = self.create_publisher(LaserScan, '/scan/front', 10)
-        self.pointcloud_publisher = self.create_publisher(PointCloud2, '/scan/front/points', 10)
-        self.odom_publisher = self.create_publisher(Odometry, 'odom', 10)
+        self.scan_publisher = self.create_publisher(LaserScan, '/scan', 10)
         self.turning_subscriber = self.create_subscription(
             Int32,
             '/turning',
@@ -28,29 +30,17 @@ class PingSonarNode(Node):
         self.distance_buffer = [] # List of 5 valid Distance Data values
         self.BUFFER_SIZE = 5
         self.MAX_DISTANCE_JUMP = 1          # Meters
-        self.TURN_DISTANCE_THRESHOLD = 3    # Meters
         self.STUCK_COUNT_LIMIT = 10
         self.prev_distance = 0
         self.turn_state = 0
         self.stuck_count = 0
 
-        self.ping = Ping1D()
-        while True:
-            self.get_logger().info("Attempting to connect to Ping2...")
-            self.ping.connect_serial('/dev/ttyUSB0', 115200)
-            if self.ping.initialize():
-                self.get_logger().info("Successfully initialized Ping2.")
-                break
-            else:
-                self.get_logger().error("Failed to initialize Ping2! Retrying...")
+        # Create library object using our Bus I2C port
+        i2c = busio.I2C(board.SCL, board.SDA)
 
-            time.sleep(5)  # Wait for 5 seconds before retrying
+        # Default configuration, with only i2c wires
+        self.sensor = adafruit_lidarlite.LIDARLite(i2c)
 
-        self.ping.set_mode_auto(1)
- 
-        #self.get_logger().info(f"Gain Val: {self.ping.get_gain_setting()}")
-        #self.get_logger().info(f"Range Val: {self.ping.get_range()}")
-        
         self.timer = self.create_timer(0.01, self.timer_callback)
     
     def turning_callback(self,msg):
@@ -58,14 +48,18 @@ class PingSonarNode(Node):
         
 
     def timer_callback(self):
-        data = self.ping.get_distance()
-        if data:
-            distance = data['distance'] / 1000.0  # Convert mm to meters
+        try:
+            distance = self.sensor.distance
+        except RuntimeError as e:
+            return
+
+        if distance:
+            distance = distance / 100.0  # Convert cm to meters
             prev_distance_lower = self.prev_distance - self.MAX_DISTANCE_JUMP
             prev_distance_upper = self.prev_distance + self.MAX_DISTANCE_JUMP
            
             # Reset Values when turning
-            if self.turn_state == 1 and distance < self.TURN_DISTANCE_THRESHOLD:
+            if self.turn_state == 1:
                 self.distance_buffer = []
                 self.prev_distance = 0
                 return
@@ -92,7 +86,6 @@ class PingSonarNode(Node):
                 avg_distance = sum(self.distance_buffer) / self.BUFFER_SIZE
                 self.prev_distance = avg_distance
                 self.publish_scan(avg_distance)
-                self.publish_pointcloud(avg_distance)
                 #self.get_logger().info(f'Raw_distance: {distance} Avg_Distance {avg_distance}')
         #else:
             #self.get_logger().warn("Failed to get distance data from Ping2!")
@@ -113,30 +106,6 @@ class PingSonarNode(Node):
         
         self.scan_publisher.publish(scan_msg)
     
-    def publish_pointcloud(self, distance):
-        header = Header()
-        header.stamp = self.get_clock().now().to_msg()
-        header.frame_id = 'front_sonar'
-        
-        points = np.array([[distance, 0.0, 0.0]], dtype=np.float32)
-        
-        pointcloud_msg = PointCloud2()
-        pointcloud_msg.header = header
-        pointcloud_msg.height = 1
-        pointcloud_msg.width = points.shape[0]
-        pointcloud_msg.fields = [
-            PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
-            PointField(name='y', offset=4, datatype=PointField.FLOAT32, count=1),
-            PointField(name='z', offset=8, datatype=PointField.FLOAT32, count=1),
-        ]
-        pointcloud_msg.is_bigendian = False
-        pointcloud_msg.point_step = 12
-        pointcloud_msg.row_step = pointcloud_msg.point_step * points.shape[0]
-        pointcloud_msg.is_dense = True
-        pointcloud_msg.data = np.asarray(points, np.float32).tobytes()
-        
-        self.pointcloud_publisher.publish(pointcloud_msg)
-
 def main(args=None):
     rclpy.init(args=args)
     node = PingSonarNode()

@@ -25,20 +25,3 @@ float64 quat_x
 float64 quat_y
 float64 quat_z
 float64 quat_w
-
-# Raw Acceleration
-#string raw_acc_x
-#string raw_acc_y
-#string raw_acc_z
-
-# Raw Gyro
-#string raw_gyro_x
-#string raw_gyro_y
-#string raw_gyro_z
-
-# Raw Magnetometer
-#string raw_mag_x
-#string raw_mag_y
-#string raw_mag_z
-
-
