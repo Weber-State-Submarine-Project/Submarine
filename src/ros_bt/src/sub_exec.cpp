@@ -750,7 +750,7 @@ private:
     bool isApproximatelyEqual(const Pose& pos1, const Pose& pos2)
     {
         // Define a small threshold for position comparison
-        const double THRESHOLD = 0.5; // meters
+        const double THRESHOLD = 1; // meters
 
         // Use the TF2 library to calculate the difference between the two poses
         tf2::Transform tf1, tf2;

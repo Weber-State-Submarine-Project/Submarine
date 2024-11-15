@@ -19,6 +19,7 @@ class SonarPublisher(Node):
         self.buffer_RTT = [0, 0, 0, 0]
         self.Distance = 0
         self.prev_dist = None
+        self.reset_counter = 0
 
     def timer_callback(self):
         self.ser.write(bytes([self.COM]))
@@ -39,7 +40,8 @@ class SonarPublisher(Node):
                     if self.prev_dist != None:
                         diff = abs(distance_in_meters - self.prev_dist)
                     # Publish LaserScan message
-                    if distance_in_meters != 0 and diff <= 0.5:
+                    if distance_in_meters != 0 and (diff <= 0.5 or self.reset_counter > 3):
+                        reset_counter = 0
                         laser_msg = LaserScan()
                         laser_msg.header.stamp = self.get_clock().now().to_msg()
                         laser_msg.header.frame_id = 'down_sonar'
@@ -63,7 +65,8 @@ class SonarPublisher(Node):
 
                         #self.get_logger().info(f'Distance: {distance_in_meters:.3f}m')
                         self.prev_dist = distance_in_meters
-
+                    if diff >= 0.5:
+                        self.reset_counter += 1
 
 def main(args=None):
     rclpy.init(args=args)

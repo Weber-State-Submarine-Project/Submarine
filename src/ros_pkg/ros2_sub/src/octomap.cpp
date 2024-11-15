@@ -9,7 +9,7 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 #include <set>
-
+#include <pcl/io/pcd_io.h>
 
 class OctomapProcessingNode : public rclcpp::Node
 {
@@ -177,7 +177,9 @@ private:
                     pcl_cloud.push_back(pcl::PointXYZ(it.getX(), it.getY(), it.getZ()));
                 }
             }
-
+            // Save the point cloud to a PCD file 
+            pcl::io::savePCDFileASCII("~/Downloads/saved_pointcloud.pcd", pcl_cloud); 
+            std::cout << "Saved " << pcl_cloud.points.size() << " data points to saved_pointcloud.pcd." << std::endl;
             pcl::toROSMsg(pcl_cloud, cloud_msg_);
             cloud_msg_.header.frame_id = "map";  // Set the appropriate frame ID
             cloud_msg_.header.stamp = this->get_clock()->now();
@@ -204,7 +206,7 @@ private:
                 // Check if the x value is already present in the set
                 if (unique_x.find(x) == unique_x.end()) {
                     // Save the x and z values as a pair
-                    xz_values.push_back(std::make_pair(x, z));
+                    xz_values.push_back(std::pair<float, float>(x, z));
                     unique_x.insert(x); // Add the x value to the set
                 }
             }
