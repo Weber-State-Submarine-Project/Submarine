@@ -1,2 +1,0 @@
-[console_scripts]
-velocity_sensor = speed_sensor.velocity_sensor:main
