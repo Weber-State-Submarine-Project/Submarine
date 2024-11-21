@@ -8,3 +8,5 @@ The purpose of this project is to develop an autonomous water vehicle capable of
 The demand for mapping in confined water environments, such as swimming pools and small reservoirs, is growing within fields like environmental monitoring and infrastructure inspection. However, current underwater mapping solutions are primarily large-scale and ill-suited for small, controlled environments. This project aims to bridge this gap by developing an autonomous water vehicle capable of navigating a swimming pool and create a 3D map of the pool floor and surrounding walls.
 
 ![boat](https://github.com/user-attachments/assets/b52a5283-6b44-4416-b65c-6a7bf5537ce8)
+
+For detailed documentation and results refer to the [Wiki](https://github.com/Weber-State-Submarine-Project/Submarine/wiki)
